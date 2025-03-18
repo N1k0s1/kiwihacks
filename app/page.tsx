@@ -70,10 +70,10 @@ export default function Home() {
               )}
             >
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
-                Kiwi<span className="text-primary">Hacks</span> 2024
+                Kiwi<span className="text-primary">Hacks</span> 2025
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-8">
-                Auckland&apos;s premier Hack Club hackathon for innovators 18 and under
+                Auckland&apos;s Hack Club hackathon for Teen Hackers!
               </p>
             </div>
 
@@ -85,7 +85,7 @@ export default function Home() {
             >
               <div className="flex items-center gap-2 text-sm md:text-base">
                 <Calendar className="h-5 w-5 text-primary" />
-                <span>July 19-20, 2024</span>
+                <span>July 19-20, 2025</span>
               </div>
               <div className="hidden md:block h-4 border-r border-muted"></div>
               <div className="flex items-center gap-2 text-sm md:text-base">
@@ -95,7 +95,7 @@ export default function Home() {
               <div className="hidden md:block h-4 border-r border-muted"></div>
               <div className="flex items-center gap-2 text-sm md:text-base">
                 <Users className="h-5 w-5 text-primary" />
-                <span>300+ Hackers</span>
+                <span>100 Hackers</span>
               </div>
             </div>
 
@@ -122,7 +122,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <p className="text-lg mb-6">
-                  KiwiHacks is Auckland&apos;s premier 36-hour Hack Club hackathon bringing together young innovators,
+                  KiwiHacks is Auckland&apos;s premier 24-hour / 12-hour Hack Club hackathon bringing together young innovators,
                   designers, and problem-solvers 18 and under to create amazing projects.
                 </p>
                 <p className="text-lg mb-6">
@@ -159,7 +159,7 @@ export default function Home() {
                 },
                 {
                   q: "When & where is KiwiHacks hosted?",
-                  a: "KiwiHacks will be hosted in Auckland, New Zealand from July 19-20, 2024. The event will run for 36 hours, starting at 9:00 AM on Friday and ending at 6:00 PM on Saturday.",
+                  a: "KiwiHacks will be hosted in Auckland, New Zealand from July 19-20, 2025. The event will run for 36 hours, starting at 9:00 AM on Friday and ending at 6:00 PM on Saturday.",
                 },
                 {
                   q: "Who can participate in KiwiHacks?",
@@ -262,7 +262,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Hack?</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
               Join us for 36 hours of coding, creativity, and collaboration. Open to all innovators 18 and under.
-              Register now to secure your spot at KiwiHacks 2024!
+              Register now to secure your spot at KiwiHacks 2025!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="px-8">
