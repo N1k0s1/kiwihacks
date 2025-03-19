@@ -554,14 +554,12 @@ export default function Home() {
               >
                 Register Now
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90] transition-all duration-300 hover:-translate-y-1"
-                href="https://forms.fillout.com/t/gwKJLcFXhQus"
-              >
-                Contact Us
-              </Button>
+              <form action="https://forms.fillout.com/t/gwKJLcFXhQus" target="_blank">
+                <Button size="lg" variant="outline" className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90] transition-all duration-300 hover:-translate-y-1">
+                  Contact Us
+                </Button>
+              </form>
+                
             </div>
           </div>
 
