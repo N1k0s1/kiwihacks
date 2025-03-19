@@ -486,7 +486,7 @@ export default function Home() {
             <div className="space-y-12">
               {/* Platinum Sponsors */}
               <div>
-                <h3 className="text-xl font-medium text-center mb-6 text-[#d0ffd0]">Platinum Sponsors</h3>
+                {/*<h3 className="text-xl font-medium text-center mb-6 text-[#d0ffd0]">Platinum Sponsors</h3>*/}
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
                   {[1, 2, 3].map((i) => (
                     <div
@@ -501,7 +501,7 @@ export default function Home() {
 
               {/* Gold Sponsors */}
               <div>
-                <h3 className="text-xl font-medium text-center mb-6 text-[#d0ffd0]">Gold Sponsors</h3>
+                {/*<h3 className="text-xl font-medium text-center mb-6 text-[#d0ffd0]">Gold Sponsors</h3>*/}
                 <div className="grid grid-cols-3 md:grid-cols-4 gap-6">
                   {[1, 2, 3, 4].map((i) => (
                     <div
@@ -516,7 +516,7 @@ export default function Home() {
 
               {/* Silver Sponsors */}
               <div>
-                <h3 className="text-xl font-medium text-center mb-6 text-[#d0ffd0]">Silver Sponsors</h3>
+                {/*<h3 className="text-xl font-medium text-center mb-6 text-[#d0ffd0]">Silver Sponsors</h3>*/}
                 <div className="grid grid-cols-4 md:grid-cols-6 gap-4">
                   {[1, 2, 3, 4, 5, 6].map((i) => (
                     <div
