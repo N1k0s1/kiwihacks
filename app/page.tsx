@@ -2,12 +2,13 @@
 
 import { useEffect, useState } from "react"
 import { useMediaQuery } from "@/hooks/use-mobile"
-import { Calendar, MapPin, Users, ChevronDown } from "lucide-react"
+import { Calendar, MapPin, Users, ChevronDown, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const isMobile = useMediaQuery("(max-width: 768px)")
 
   useEffect(() => {
@@ -27,6 +28,11 @@ export default function Home() {
       document.documentElement.style.scrollBehavior = ""
     }
   }, [isMobile])
+
+  // Close mobile menu when clicking a link
+  const handleMobileNavClick = () => {
+    setMobileMenuOpen(false)
+  }
 
   return (
     <div
@@ -52,9 +58,80 @@ export default function Home() {
           <Button size="sm" className="hidden md:inline-flex">
             Register Now
           </Button>
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <ChevronDown className="h-5 w-5" />
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden transition-transform duration-300"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
           </Button>
+        </div>
+
+        {/* Mobile Menu */}
+        <div
+          className={cn(
+            "md:hidden absolute top-16 left-0 right-0 bg-background/95 backdrop-blur-sm border-b shadow-lg overflow-hidden transition-all duration-500 ease-in-out",
+            mobileMenuOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0 border-b-0",
+          )}
+        >
+          <nav className="container py-4 flex flex-col">
+            <a
+              href="#about"
+              className="py-3 px-4 text-sm font-medium hover:bg-muted rounded-md transition-all duration-300 ease-in-out transform hover:translate-x-1"
+              onClick={handleMobileNavClick}
+              style={{
+                opacity: mobileMenuOpen ? 1 : 0,
+                transform: mobileMenuOpen ? "translateY(0)" : "translateY(-10px)",
+                transitionDelay: "100ms",
+                transitionProperty: "opacity, transform",
+              }}
+            >
+              About
+            </a>
+            <a
+              href="#faq"
+              className="py-3 px-4 text-sm font-medium hover:bg-muted rounded-md transition-all duration-300 ease-in-out transform hover:translate-x-1"
+              onClick={handleMobileNavClick}
+              style={{
+                opacity: mobileMenuOpen ? 1 : 0,
+                transform: mobileMenuOpen ? "translateY(0)" : "translateY(-10px)",
+                transitionDelay: "150ms",
+                transitionProperty: "opacity, transform",
+              }}
+            >
+              FAQ
+            </a>
+            <a
+              href="#sponsors"
+              className="py-3 px-4 text-sm font-medium hover:bg-muted rounded-md transition-all duration-300 ease-in-out transform hover:translate-x-1"
+              onClick={handleMobileNavClick}
+              style={{
+                opacity: mobileMenuOpen ? 1 : 0,
+                transform: mobileMenuOpen ? "translateY(0)" : "translateY(-10px)",
+                transitionDelay: "200ms",
+                transitionProperty: "opacity, transform",
+              }}
+            >
+              Sponsors
+            </a>
+            <div
+              className="pt-2 pb-1"
+              style={{
+                opacity: mobileMenuOpen ? 1 : 0,
+                transform: mobileMenuOpen ? "translateY(0)" : "translateY(-10px)",
+                transitionDelay: "250ms",
+                transitionDuration: "300ms",
+                transitionProperty: "opacity, transform",
+                transitionTimingFunction: "ease-in-out",
+              }}
+            >
+              <Button className="w-full" size="sm">
+                Register Now
+              </Button>
+            </div>
+          </nav>
         </div>
       </header>
 
@@ -73,7 +150,7 @@ export default function Home() {
                 Kiwi<span className="text-primary">Hacks</span> 2025
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-8">
-                Auckland&apos;s Hack Club hackathon for Teen Hackers!
+                Auckland&apos;s Hack Club hackathon for teen hackers!
               </p>
             </div>
 
@@ -95,7 +172,7 @@ export default function Home() {
               <div className="hidden md:block h-4 border-r border-muted"></div>
               <div className="flex items-center gap-2 text-sm md:text-base">
                 <Users className="h-5 w-5 text-primary" />
-                <span>100 Hackers</span>
+                <span>100+ Hackers</span>
               </div>
             </div>
 
@@ -122,7 +199,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <p className="text-lg mb-6">
-                  KiwiHacks is Auckland&apos;s premier 24-hour / 12-hour Hack Club hackathon bringing together young innovators,
+                  KiwiHacks is Auckland&apos;s premier 24-hour Hack Club hackathon bringing together young innovators,
                   designers, and problem-solvers 18 and under to create amazing projects.
                 </p>
                 <p className="text-lg mb-6">
@@ -131,7 +208,7 @@ export default function Home() {
                 </p>
                 <p className="text-lg">
                   Join us for an unforgettable weekend of creativity, mentorship, and fun as we push the boundaries of
-                  what&apos;s possible in technology. Open exclusively to participants 18 and under.
+                  what&apos;s possible in technology.
                 </p>
               </div>
               <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
@@ -155,19 +232,19 @@ export default function Home() {
               {[
                 {
                   q: "What is KiwiHacks?",
-                  a: "KiwiHacks is Auckland's premier hackathon for high school students and makers 18 and under. It's organized by Hack Club, a 501(c)(3) nonprofit that supports a global community of 48k+ high school makers.",
+                  a: "KiwiHacks is Auckland's premier hackathon for high school students and makers 18 and under. It's organized by a group of teen hackers at Hack Club, a 501(c)(3) nonprofit that supports a global community of 53k+ high school makers.",
                 },
                 {
                   q: "When & where is KiwiHacks hosted?",
-                  a: "KiwiHacks will be hosted in Auckland, New Zealand from July 19-20, 2025. The event will run for 36 hours, starting at 9:00 AM on Friday and ending at 6:00 PM on Saturday.",
+                  a: "KiwiHacks will be hosted in Auckland, New Zealand¹ from July 19-20, 2025. The event will run for 24 hours, starting at 9:00 AM on Friday and ending at 6:00 PM on Saturday.",
                 },
                 {
                   q: "Who can participate in KiwiHacks?",
-                  a: "All high-school & upper-middle-school aged students (18 and under) are welcome to come! You don't have to be a member of the Hack Club community or be a Hack Club leader.",
+                  a: "All high-school & upper-middle-school aged students (18 and under) are welcome to come! You don't have to be a member of the Hack Club community.",
                 },
                 {
                   q: "All this, for free?",
-                  a: "Yep! Food, swag, and good vibes are all included. Thanks to our sponsors and Hack Club, there's no cost to participate in KiwiHacks.",
+                  a: "Yep! Food, swag, and good vibes are all included. Thanks to our sponsors, there's no cost to participate in KiwiHacks.",
                 },
                 {
                   q: "What do I need?",
@@ -187,7 +264,7 @@ export default function Home() {
                 },
                 {
                   q: "What if my parents are concerned?",
-                  a: "We're here to help! Parents can reach out to us at kiwihacks@hackclub.com for questions. All participants will need a signed parental consent form if under 18.",
+                  a: "We're here to help! Parents can reach out to us at kiwihacks@hackclub.com for questions. All participants will need a signed parental consent form.",
                 },
                 {
                   q: "What if I have more questions?",
@@ -200,6 +277,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
+            <p>¹ Venue location will be shared closer to the event date.</p>
           </div>
         </section>
 
