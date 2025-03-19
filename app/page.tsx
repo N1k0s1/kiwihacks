@@ -300,7 +300,7 @@ export default function Home() {
                 <div className="absolute -bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-[#90ee90] to-transparent"></div>
               </div>
               <p className="text-xl md:text-2xl text-[#a0d0a0] max-w-2xl mx-auto mb-8">
-                Auckland&apos;s premier Club hackathon for coders and innovators 18 and under
+                Auckland&apos;s premier hackathon for coders and innovators 18 and under
               </p>
             </div>
 
@@ -312,7 +312,7 @@ export default function Home() {
             >
               <div className="flex items-center gap-2 text-sm md:text-base text-[#d0ffd0]">
                 <Calendar className="h-5 w-5 text-[#90ee90]" />
-                <span>July 19-20, 2024</span>
+                <span>July 19-20, 2025</span>
               </div>
               <div className="hidden md:block h-4 border-r border-[#2a5a2a]"></div>
               <div className="flex items-center gap-2 text-sm md:text-base text-[#d0ffd0]">
@@ -386,7 +386,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <p className="text-lg mb-6 text-[#d0ffd0]">
-                  KiwiHacks is a 24 hour Hackthon in Auckland&apos;, split over 2 days, bringing together young innovators,
+                  KiwiHacks is a 24 hour Hackthon in Auckland, split over 2 days, bringing together young innovators,
                   designers, and problem-solvers 18 and under to create amazing projects.
                 </p>
                 <p className="text-lg mb-6 text-[#d0ffd0]">
@@ -544,8 +544,8 @@ export default function Home() {
           <div className="container text-center relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Hack?</h2>
             <p className="text-lg text-[#d0ffd0] max-w-2xl mx-auto mb-8">
-              Join us for 36 hours of coding, creativity, and collaboration. Open to all innovators 18 and under.
-              Register now to secure your spot at KiwiHacks 2024!
+              Join us for 24 hours of coding, creativity, and collaboration. Open to all innovators 18 and under.
+              Register now to secure your spot at KiwiHacks 2025!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -558,6 +558,7 @@ export default function Home() {
                 size="lg"
                 variant="outline"
                 className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90] transition-all duration-300 hover:-translate-y-1"
+                href="https://forms.fillout.com/t/gwKJLcFXhQus"
               >
                 Contact Us
               </Button>
