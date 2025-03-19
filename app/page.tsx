@@ -336,7 +336,6 @@ export default function Home() {
                 size="lg"
                 className="mr-4 bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]"
               >
-                <form action="https://forms.fillout.com/t/gwKJLcFXhQus" target="_blank">
                 Register Now
               </Button>
               <Button size="lg" variant="outline" className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]">
