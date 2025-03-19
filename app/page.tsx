@@ -300,7 +300,7 @@ export default function Home() {
                 <div className="absolute -bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-[#90ee90] to-transparent"></div>
               </div>
               <p className="text-xl md:text-2xl text-[#a0d0a0] max-w-2xl mx-auto mb-8">
-                Auckland&apos;s premier Hack Club hackathon for innovators 18 and under
+                Auckland&apos;s premier Club hackathon for coders and innovators 18 and under
               </p>
             </div>
 
@@ -386,12 +386,12 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <p className="text-lg mb-6 text-[#d0ffd0]">
-                  KiwiHacks is Auckland&apos;s premier 36-hour Hack Club hackathon bringing together young innovators,
+                  KiwiHacks is a 24 hour Hackthon in Auckland&apos;, split over 2 days, bringing together young innovators,
                   designers, and problem-solvers 18 and under to create amazing projects.
                 </p>
                 <p className="text-lg mb-6 text-[#d0ffd0]">
                   Whether you&apos;re just starting to code or you&apos;ve been building projects for years, KiwiHacks
-                  provides the perfect platform to learn, build, and connect with other young tech enthusiasts.
+                  will have workshops to learn and build new things, and opportunities connect with other young tech enthusiasts.
                 </p>
                 <p className="text-lg text-[#d0ffd0]">
                   Join us for an unforgettable weekend of creativity, mentorship, and fun as we push the boundaries of
@@ -423,43 +423,39 @@ export default function Home() {
               {[
                 {
                   q: "What is KiwiHacks?",
-                  a: "KiwiHacks is Auckland's premier hackathon for high school students and makers 18 and under. It's organized by Hack Club, a 501(c)(3) nonprofit that supports a global community of 48k+ high school makers.",
+                  a: "KiwiHacks is Auckland's premier hackathon for high school students and makers 18 and under. It's organized by a small team of like-minded teenagers, who are all passionate about technology and innovation.",
                 },
                 {
                   q: "When & where is KiwiHacks hosted?",
-                  a: "KiwiHacks will be hosted in Auckland, New Zealand from July 19-20, 2024. The event will run for 36 hours, starting at 9:00 AM on Friday and ending at 6:00 PM on Saturday.",
+                  a: "KiwiHacks will be hosted in Auckland, New Zealand from July 19-20, 2025. The event will run for 24 hours over 2 days, day 1 starting at 8:00 AM on Saturday, running through until Saturday at 8:00 PM, and day 2 starting at 8:00 AM on Sunday, running through until Sunday at 8:00 PM. (If you need to stay overnight for any reason, please email us!)",
                 },
                 {
                   q: "Who can participate in KiwiHacks?",
-                  a: "All high-school & upper-middle-school aged students (18 and under) are welcome to come! You don't have to be a member of the Hack Club community or be a Hack Club leader.",
+                  a: "All high-school & upper-middle-school aged students (18 and under) are welcome to come!",
                 },
                 {
                   q: "All this, for free?",
-                  a: "Yep! Food, swag, and good vibes are all included. Thanks to our sponsors and Hack Club, there's no cost to participate in KiwiHacks.",
+                  a: "Yep! Food, swag, and good vibes are all included. Thanks to our sponsors, there's no cost to participate in KiwiHacks.",
                 },
                 {
                   q: "What do I need?",
-                  a: "Your laptop, chargers, toiletries, sleeping bag (if you plan to stay overnight), and an open mind! If you plan to work on a hardware project, bring the tools you'll need.",
+                  a: "Your laptop, chargers, toiletries, sleeping bag (if you plan to stay overnight), and an open mind! If you plan to work on a hardware project, bring the tools you'll need. We'll have limited tools, and a 3d printer & soldering station available.",
                 },
                 {
                   q: "I'm not good at coding. Can I still participate?",
-                  a: "This hackathon is for creatives of all skill levels! We'll have workshops and other events so join us and let's learn together. If you'd like to start exploring some introductory projects, check out Hack Club Workshops.",
+                  a: "This hackathon is for creatives of all skill levels! We'll have workshops and other events so join us and let's learn together.",
                 },
                 {
                   q: "What can I make at KiwiHacks?",
                   a: "Anything you can imagine! Games? Apps? Websites? Programming languages? Hardware? You name it! We'll have a bunch of resources and mentors to help you out.",
                 },
                 {
-                  q: "What has Hack Club done before?",
-                  a: "Hack Club has run an overnight hackathon in San Francisco, a Game Jam across 50 cities, a hackathon on a Train from Vermont to Los Angeles, and much more!",
-                },
-                {
                   q: "What if my parents are concerned?",
-                  a: "We're here to help! Parents can reach out to us at kiwihacks@hackclub.com for questions. All participants will need a signed parental consent form if under 18.",
+                  a: "We're here to help! Parents can reach out to us at PLACEHOLDER for questions. All participants will need a signed parental consent form if under 18.",
                 },
                 {
                   q: "What if I have more questions?",
-                  a: "Contact us! Feel free to reach out to us in the #kiwihacks channel on the Hack Club slack or email us at kiwihacks@hackclub.com.",
+                  a: "Contact us! Feel free to reach out to us via email at PLACEHOLDER.",
                 },
               ].map((item, index) => (
                 <div
@@ -593,7 +589,7 @@ export default function Home() {
                 <Leaf className="mr-2 h-5 w-5" />
                 KiwiHacks
               </h3>
-              <p className="text-[#d0ffd0]">Auckland&apos;s premier Hack Club hackathon for innovators 18 and under.</p>
+              <p className="text-[#d0ffd0]">Auckland&apos;s premier hackathon for coders and innovators 18 and under.</p>
             </div>
 
             <div>
@@ -620,8 +616,8 @@ export default function Home() {
             <div>
               <h3 className="font-bold text-lg mb-4 text-[#90ee90]">Contact</h3>
               <ul className="space-y-2 text-[#d0ffd0]">
-                <li>kiwihacks@hackclub.com</li>
-                <li>+64 9 123 4567</li>
+                <li>PLACEHOLDER</li>
+                <li>+64 22 135 0419</li>
                 <li>Auckland, New Zealand</li>
               </ul>
             </div>
@@ -645,7 +641,7 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
-                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 </a>15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
                   </svg>
                 </a>
                 <a
