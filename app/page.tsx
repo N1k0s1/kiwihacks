@@ -401,7 +401,7 @@ export default function Home() {
               <div className="relative h-64 md:h-96 rounded-lg overflow-hidden border border-[#2a5a2a] shadow-[0_0_30px_rgba(144,238,144,0.1)]">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#90ee90]/20 to-transparent rounded-lg"></div>
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/hackers-discussing.JPEG?height=400&width=600"
                   alt="Hackers collaborating"
                   className="w-full h-full object-cover rounded-lg"
                 />
