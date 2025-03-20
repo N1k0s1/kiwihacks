@@ -176,7 +176,7 @@ export default function Home() {
               FAQ
             </a>
             <a href="#sponsors" className="text-sm font-medium text-[#d0ffd0] hover:text-[#90ee90] transition-colors">
-              Sponsors
+              Sponsor
             </a>
             <Link
               href="/gallery"
@@ -186,15 +186,17 @@ export default function Home() {
               Gallery
             </Link>
           </nav>
-          <Button
-            size="sm"
-            className={cn(
-              "hidden md:inline-flex bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white transition-all duration-300",
-              isScrolled ? "scale-90" : "scale-100",
-            )}
-          >
-            Register Now
-          </Button>
+          <form action="https://example.com">
+            <Button
+              size="sm"
+              className={cn(
+                "hidden md:inline-flex bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white transition-all duration-300",
+                isScrolled ? "scale-90" : "scale-100",
+              )}
+            >
+              Register Now
+            </Button>
+          </form>
           <Button
             variant="ghost"
             size="icon"
@@ -255,7 +257,7 @@ export default function Home() {
                 transitionProperty: "opacity, transform",
               }}
             >
-              Sponsors
+              Sponsor
             </a>
             <Link
               href="/gallery"
@@ -282,9 +284,11 @@ export default function Home() {
                 transitionTimingFunction: "ease-in-out",
               }}
             >
-              <Button className="w-full bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white" size="sm">
-                Register Now
-              </Button>
+              <form action="https://example.com">
+                <Button className="w-full bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white" size="sm">
+                  Register Now
+                </Button>
+              </form>
             </div>
           </nav>
         </div>
@@ -359,7 +363,7 @@ export default function Home() {
                 isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0",
               )}
             >
-              <form>
+              <form action="https://example.com">
                 <Button
                   size="lg"
                   className="w-full bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]"
@@ -517,57 +521,7 @@ export default function Home() {
         <section id="sponsors" className="py-16 md:py-24 bg-[#0a2a0a]/50 relative">
           <div className="absolute inset-0 bg-[url('/fern-pattern.svg')] opacity-5 pointer-events-none"></div>
           <div className="container relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white relative inline-block mx-auto">
-              Our Sponsors
-              <div className="absolute -bottom-2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#90ee90] to-transparent"></div>
-            </h2>
 
-            <div className="space-y-12">
-              {/* Platinum Sponsors */}
-              <div>
-                {/*<h3 className="text-xl font-medium text-center mb-6 text-[#d0ffd0]">Platinum Sponsors</h3>*/}
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-                  {[1, 2, 3].map((i) => (
-                    <div
-                      key={i}
-                      className="aspect-[3/1] bg-[#0a1f0a] border border-[#2a5a2a] rounded-lg flex items-center justify-center p-6 hover:shadow-[0_0_20px_rgba(144,238,144,0.1)] transition-all duration-300 hover:-translate-y-1"
-                    >
-                      <img src="/placeholder-logo.svg" alt={`Platinum Sponsor ${i}`} className="max-h-12 max-w-full" />
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Gold Sponsors */}
-              <div>
-                {/*<h3 className="text-xl font-medium text-center mb-6 text-[#d0ffd0]">Gold Sponsors</h3>*/}
-                <div className="grid grid-cols-3 md:grid-cols-4 gap-6">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div
-                      key={i}
-                      className="aspect-[3/1] bg-[#0a1f0a] border border-[#2a5a2a] rounded-lg flex items-center justify-center p-4 hover:shadow-[0_0_15px_rgba(144,238,144,0.1)] transition-all duration-300 hover:-translate-y-1"
-                    >
-                      <img src="/placeholder-logo.svg" alt={`Gold Sponsor ${i}`} className="max-h-10 max-w-full" />
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Silver Sponsors */}
-              <div>
-                {/*<h3 className="text-xl font-medium text-center mb-6 text-[#d0ffd0]">Silver Sponsors</h3>*/}
-                <div className="grid grid-cols-4 md:grid-cols-6 gap-4">
-                  {[1, 2, 3, 4, 5, 6].map((i) => (
-                    <div
-                      key={i}
-                      className="aspect-[3/1] bg-[#0a1f0a] border border-[#2a5a2a] rounded-lg flex items-center justify-center p-3 hover:shadow-[0_0_10px_rgba(144,238,144,0.1)] transition-all duration-300 hover:-translate-y-1"
-                    >
-                      <img src="/placeholder-logo.svg" alt={`Silver Sponsor ${i}`} className="max-h-8 max-w-full" />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
 
             <div className="mt-12 text-center">
               <h3 className="text-xl font-bold mb-4 text-white">Interested in sponsoring?</h3>
@@ -721,7 +675,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a href="#sponsors" className="text-[#d0ffd0] hover:text-[#90ee90] transition-colors">
-                    Sponsors
+                    Sponsor
                   </a>
                 </li>
                 <li>
