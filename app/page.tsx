@@ -332,16 +332,24 @@ export default function Home() {
                 isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0",
               )}
             >
-              <Button
-                size="lg"
-                className="mr-4 bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]"
-              >
-                Register Now
-              </Button>
-              <Button size="lg" variant="outline" className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]">
-              <form action="https://hcb.hackclub.com/donations/start/kiwihacks" target="_blank">
+              <form>
+                <Button
+                  size="lg"
+                  className="mr-4 bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]"
+                >
+                  Register Now
+                </Button>
+              </form>
+              <form action="/slack">
+                <Button size="lg" variant="outline" className="mr-4 border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]">
+                Join The Slack
+                </Button>
+              </form>
+              <form action="https://hcb.hackclub.com/donations/start/kiwihacks">
+                <Button size="lg" className="bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]">
                 Donate!
-              </Button>
+                </Button>
+              </form>
             </div>
           </div>
 
@@ -549,13 +557,14 @@ export default function Home() {
               Register now to secure your spot at KiwiHacks 2025!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="px-8 bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)] transition-all duration-300 hover:-translate-y-1"
-              >
               <form action="https://forms.fillout.com/t/gwKJLcFXhQus" target="_blank">
-                Register Now
-              </Button>
+                <Button
+                  size="lg"
+                  className="px-8 bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)] transition-all duration-300 hover:-translate-y-1"
+                >
+                  Register Now
+                </Button>
+              </form>
               <form action="https://forms.fillout.com/t/gwKJLcFXhQus" target="_blank">
                 <Button size="lg" variant="outline" className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90] transition-all duration-300 hover:-translate-y-1">
                   Contact Us
