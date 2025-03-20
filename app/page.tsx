@@ -2,9 +2,15 @@
 
 import { useEffect, useState, useRef } from "react"
 import { useMediaQuery } from "@/hooks/use-mobile"
-import { Calendar, MapPin, Users, ChevronDown, X, Leaf } from "lucide-react"
+import { Calendar, MapPin, Users, ChevronDown, X, Leaf, Image, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
+
+import { getRecentGalleryItems } from "@/data/gallery-items"
+
+// Get the 5 most recent gallery items
+const recentGalleryItems = getRecentGalleryItems(5)
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -172,6 +178,13 @@ export default function Home() {
             <a href="#sponsors" className="text-sm font-medium text-[#d0ffd0] hover:text-[#90ee90] transition-colors">
               Sponsors
             </a>
+            <Link
+              href="/gallery"
+              className="text-sm font-medium text-[#d0ffd0] hover:text-[#90ee90] transition-colors flex items-center"
+            >
+              <Image className="mr-1 h-4 w-4" />
+              Gallery
+            </Link>
           </nav>
           <Button
             size="sm"
@@ -244,6 +257,20 @@ export default function Home() {
             >
               Sponsors
             </a>
+            <Link
+              href="/gallery"
+              className="py-3 px-4 text-sm font-medium text-[#d0ffd0] hover:bg-[#2a5a2a]/50 rounded-md transition-all duration-300 ease-in-out transform hover:translate-x-1 flex items-center"
+              onClick={handleMobileNavClick}
+              style={{
+                opacity: mobileMenuOpen ? 1 : 0,
+                transform: mobileMenuOpen ? "translateY(0)" : "translateY(-10px)",
+                transitionDelay: "250ms",
+                transitionProperty: "opacity, transform",
+              }}
+            >
+              <Image className="mr-2 h-4 w-4" />
+              Gallery
+            </Link>
             <div
               className="pt-2 pb-1"
               style={{
@@ -328,26 +355,33 @@ export default function Home() {
 
             <div
               className={cn(
-                "transition-all duration-1000 delay-700 justify-center flex",
+                "transition-all duration-1000 delay-700 justify-center flex flex-col sm:flex-row gap-4 sm:gap-4",
                 isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0",
               )}
             >
               <form>
                 <Button
                   size="lg"
-                  className="mr-4 bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]"
+                  className="w-full bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]"
                 >
                   Register Now
                 </Button>
               </form>
               <form action="/slack">
-                <Button size="lg" variant="outline" className="mr-4 border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]">
-                Join The Slack
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="w-full border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]"
+                >
+                  Join The Slack
                 </Button>
               </form>
               <form action="https://hcb.hackclub.com/donations/start/kiwihacks">
-                <Button size="lg" className="bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]">
-                Donate!
+                <Button 
+                  size="lg" 
+                  className="w-full bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]"
+                >
+                  Donate!
                 </Button>
               </form>
             </div>
@@ -547,6 +581,76 @@ export default function Home() {
           </div>
         </section>
 
+                {/* Gallery Preview Section */}
+                <section className="py-16 md:py-24 relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a2a0a]/50 to-[#0a1f0a]"></div>
+          <div className="container relative z-10">
+            <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-white relative inline-block">
+                Event Gallery
+                <div className="absolute -bottom-2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#90ee90] to-transparent"></div>
+              </h2>
+              <Link
+                href="/gallery"
+                className="mt-4 md:mt-0 flex items-center text-[#90ee90] hover:text-white transition-colors"
+              >
+                View all photos and videos
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 ml-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              {recentGalleryItems.map((item) => (
+                <Link
+                  key={item.id}
+                  href="/gallery"
+                  className="relative aspect-square rounded-lg overflow-hidden border border-[#2a5a2a] hover:shadow-[0_0_20px_rgba(144,238,144,0.1)] transition-all duration-300 hover:-translate-y-1 group"
+                >
+                  <img
+                    src={item.thumbnail || "/placeholder.svg"}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
+                  {item.type === "video" && (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="h-10 w-10 rounded-full bg-[#2a5a2a]/80 flex items-center justify-center">
+                        <Play className="h-5 w-5 text-white" />
+                      </div>
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                    <div className="p-3 text-white w-full">
+                      <div className="flex justify-between items-center">
+                        <p className="text-sm font-medium truncate">{item.title}</p>
+                        <span className="text-xs bg-[#2a5a2a] px-1.5 py-0.5 rounded">{item.event}</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-8 text-center">
+              <Link href="/gallery">
+                <Button variant="outline" className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]">
+                  Explore Gallery
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-[#0a1f0a] relative">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(144,238,144,0.1),transparent_70%)]"></div>
@@ -619,6 +723,11 @@ export default function Home() {
                   <a href="#sponsors" className="text-[#d0ffd0] hover:text-[#90ee90] transition-colors">
                     Sponsors
                   </a>
+                </li>
+                <li>
+                  <Link href="/gallery" className="text-[#d0ffd0] hover:text-[#90ee90] transition-colors">
+                    Gallery
+                  </Link>
                 </li>
               </ul>
             </div>
