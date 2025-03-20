@@ -371,13 +371,13 @@ export default function Home() {
                   Register Now
                 </Button>
               </form>
-              <form action="/slack">
+              <form action="/contact">
                 <Button 
                   size="lg" 
                   variant="outline" 
                   className="w-full border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]"
                 >
-                  Join The Slack
+                  Contact Us
                 </Button>
               </form>
               <form action="https://hcb.hackclub.com/donations/start/kiwihacks">
@@ -681,6 +681,11 @@ export default function Home() {
                 <li>
                   <Link href="/gallery" className="text-[#d0ffd0] hover:text-[#90ee90] transition-colors">
                     Gallery
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="text-[#d0ffd0] hover:text-[#90ee90] transition-colors">
+                    Contact
                   </Link>
                 </li>
               </ul>
