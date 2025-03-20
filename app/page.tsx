@@ -338,11 +338,18 @@ export default function Home() {
               >
                 Register Now
               </Button>
+<<<<<<< HEAD
               <form action="/slack">
                 <Button size="lg" variant="outline" className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]">
                 Join The Slack
                 </Button>
               </form>
+=======
+              <Button size="lg" variant="outline" className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]">
+              <form action="https://hcb.hackclub.com/donations/start/kiwihacks" target="_blank">
+                Donate!
+              </Button>
+>>>>>>> 4b24abde1606f9ba8d3d2196904befe673cd0ab6
             </div>
           </div>
 
@@ -554,6 +561,7 @@ export default function Home() {
                 size="lg"
                 className="px-8 bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)] transition-all duration-300 hover:-translate-y-1"
               >
+              <form action="https://forms.fillout.com/t/gwKJLcFXhQus" target="_blank">
                 Register Now
               </Button>
               <form action="https://forms.fillout.com/t/gwKJLcFXhQus" target="_blank">
