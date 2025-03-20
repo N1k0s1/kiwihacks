@@ -13,15 +13,15 @@ export type GalleryItem = {
   // Export the gallery items data
   export const galleryItems: GalleryItem[] = [
     {
-        id: "scrapyard-2025",
+        id: "rick-astley",
         type: "video",
         thumbnail: "/rick.png",
         src: "/rick.mp4", 
-        title: "ScrapYard 2025",
+        title: "Never Gonna Give You Up",
         description:
-          "Our inaugural hackathon brought together 18+ young innovators for 12 hours of coding, creativity, and collaboration.",
-        event: "Scrapyard",
-        location: "Auckland, New Zealand",
+          "Never gonna let you down, never gonna run around and desert you. Never gonna make you cry, never gonna say goodbye, never gonna tell a lie and hurt you.",
+        event: "test",
+        location: "somewhere",
       },
       { // make a copy of me
         id: "workshop-2023", // useless
