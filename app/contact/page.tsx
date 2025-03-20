@@ -337,39 +337,6 @@ export default function ContactPage() {
               </div>
             ))}
           </div>
-
-          {/* Newsletter Signup */}
-          <div
-            className={cn(
-              "mt-12 transition-all duration-1000 delay-900",
-              isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0",
-            )}
-          >
-            <div className="bg-[#0a2a0a]/50 backdrop-blur-sm border border-[#2a5a2a] rounded-lg p-6 md:p-8 shadow-[0_0_30px_rgba(144,238,144,0.1)]">
-              <h2 className="text-2xl font-bold text-white mb-4">Subscribe to Our Newsletter</h2>
-              <p className="text-[#d0ffd0] mb-6">
-                Stay updated with the latest news, event announcements, and hackathon tips delivered directly to your
-                inbox.
-              </p>
-
-              <form className="flex flex-col md:flex-row gap-3">
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  className="flex-1 px-4 py-3 bg-[#0a1f0a] border border-[#2a5a2a] rounded-md text-white focus:outline-none focus:ring-2 focus:ring-[#90ee90] focus:border-transparent"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="px-6 py-3 bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white rounded-md transition-all duration-300 border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)] hover:-translate-y-1"
-                >
-                  Subscribe
-                </button>
-              </form>
-
-              <p className="text-sm text-[#a0d0a0] mt-4">We respect your privacy. Unsubscribe at any time.</p>
-            </div>
-          </div>
         </div>
       </main>
 
