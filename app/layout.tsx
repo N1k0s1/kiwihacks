@@ -7,8 +7,8 @@ import type { Metadata } from "next"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "KiwiHacks 2024 | Auckland's Premier Hackathon",
-  description: "Join us on July 19-20, 2024 for Auckland's premier hackathon for innovation and collaboration.",
+  title: "KiwiHacks 2025 | Auckland's Premier Hackathon",
+  description: "Join us on July 19-20, 2025 for Auckland's premier hackathon for innovation and collaboration.",
     generator: 'v0.dev'
 }
 
@@ -22,7 +22,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.png" />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-[#0a1f0a]`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>

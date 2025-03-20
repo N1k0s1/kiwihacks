@@ -328,7 +328,7 @@ export default function Home() {
 
             <div
               className={cn(
-                "transition-all duration-1000 delay-700",
+                "transition-all duration-1000 delay-700 justify-center flex",
                 isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0",
               )}
             >
@@ -338,9 +338,11 @@ export default function Home() {
               >
                 Register Now
               </Button>
-              <Button size="lg" variant="outline" className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]">
+              <form action="/slack">
+                <Button size="lg" variant="outline" className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]">
                 Join The Slack
-              </Button>
+                </Button>
+              </form>
             </div>
           </div>
 
