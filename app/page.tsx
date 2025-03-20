@@ -186,7 +186,7 @@ export default function Home() {
               Gallery
             </Link>
           </nav>
-          <form action="https://example.com">
+          <form action="https://forms.fillout.com/t/gwKJLcFXhQus" target="_blank">
             <Button
               size="sm"
               className={cn(
@@ -284,7 +284,7 @@ export default function Home() {
                 transitionTimingFunction: "ease-in-out",
               }}
             >
-              <form action="https://example.com">
+              <form action="https://forms.fillout.com/t/gwKJLcFXhQus" target="_blank">
                 <Button className="w-full bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white" size="sm">
                   Register Now
                 </Button>
@@ -363,7 +363,7 @@ export default function Home() {
                 isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0",
               )}
             >
-              <form action="https://example.com">
+              <form action="https://forms.fillout.com/t/gwKJLcFXhQus" target="_blank">
                 <Button
                   size="lg"
                   className="w-full bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]"
@@ -623,7 +623,7 @@ export default function Home() {
                   Register Now
                 </Button>
               </form>
-              <form action="/contact" target="_blank">
+              <form action="/contact">
                 <Button size="lg" variant="outline" className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90] transition-all duration-300 hover:-translate-y-1">
                   Contact Us
                 </Button>
