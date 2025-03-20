@@ -338,18 +338,10 @@ export default function Home() {
               >
                 Register Now
               </Button>
-<<<<<<< HEAD
-              <form action="/slack">
-                <Button size="lg" variant="outline" className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]">
-                Join The Slack
-                </Button>
-              </form>
-=======
               <Button size="lg" variant="outline" className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]">
               <form action="https://hcb.hackclub.com/donations/start/kiwihacks" target="_blank">
                 Donate!
               </Button>
->>>>>>> 4b24abde1606f9ba8d3d2196904befe673cd0ab6
             </div>
           </div>
 
