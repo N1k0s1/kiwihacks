@@ -479,7 +479,7 @@ export default function GalleryPage() {
                 variant="outline"
                 size="sm"
                 onClick={handlePrevItem}
-                className="border-[#2a5a2a] text-[#d0ffd0] hover:bg-[#2a5a2a]/20"
+                className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]"
               >
                 <ChevronLeft className="h-4 w-4 mr-2" />
                 Previous
@@ -488,7 +488,7 @@ export default function GalleryPage() {
                 variant="outline"
                 size="sm"
                 onClick={handleNextItem}
-                className="border-[#2a5a2a] text-[#d0ffd0] hover:bg-[#2a5a2a]/20"
+                className="border-[#90ee90] text-[#0a2e12] hover:bg-[#90ee90]/10 hover:text-[#90ee90]"
               >
                 Next
                 <ChevronRight className="h-4 w-4 ml-2" />
