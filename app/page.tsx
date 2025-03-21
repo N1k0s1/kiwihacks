@@ -353,7 +353,7 @@ export default function Home() {
               <div className="hidden md:block h-4 border-r border-[#2a5a2a]"></div>
               <div className="flex items-center gap-2 text-sm md:text-base text-[#d0ffd0]">
                 <Users className="h-5 w-5 text-[#90ee90]" />
-                <span>300+ Hackers</span>
+                <span>75+ Hackers</span>
               </div>
             </div>
 
