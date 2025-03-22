@@ -526,11 +526,11 @@ export default function Home() {
             <div className="mt-12 text-center">
               <h3 className="text-xl font-bold mb-4 text-white">Interested in sponsoring?</h3>
               <p className="text-[#d0ffd0] max-w-2xl mx-auto mb-6">
-                Support the next generation of innovators and gain visibility for your brand among top tech talent.
+                <s>Support the next generation of innovators and gain visibility for your brand among top tech talent.</s>
               </p>
               <form action="javascript:void(0);" >
                 <Button className="bg-[#2a5a2a] hover:bg-[#3a7a3a] cursor-not-allowed text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]">
-                  Become a Sponsor
+                  <s>Become a Sponsor</s>
                 </Button>
               </form>
             </div>
