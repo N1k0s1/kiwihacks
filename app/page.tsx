@@ -528,9 +528,11 @@ export default function Home() {
               <p className="text-[#d0ffd0] max-w-2xl mx-auto mb-6">
                 Support the next generation of innovators and gain visibility for your brand among top tech talent.
               </p>
-              <Button className="bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]">
-                Become a Sponsor
-              </Button>
+              <form action="javascript:void(0);" >
+                <Button className="bg-[#2a5a2a] hover:bg-[#3a7a3a] cursor-not-allowed text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]">
+                  Become a Sponsor
+                </Button>
+              </form>
             </div>
           </div>
         </section>
