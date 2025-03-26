@@ -212,7 +212,76 @@ export type GalleryItem = {
         event: "Scrapyard Auckland", // Name of event for filtering
         location: "Auckland, New Zealand", // location of event
       },
- 
+      { 
+        id: "counterspell2024", // useless
+        type: "image", // Define the type of thing you want to show
+        thumbnail: "/gallery/counterspell/counterspell 1.png?height=400&width=600", // small image to be displayed on the post
+        src: "/gallery/counterspell/counterspell 1.png?height=800&width=1200", // main thing you want to show
+        title: "", // Title to be shown on the psot
+        description: "", // Description to be shown on the post
+        event: "Counterspell Auckland", // Name of event for filtering
+        location: "Auckland, New Zealand", // location of event
+      },
+      { 
+        id: "counterspell2024", // useless
+        type: "image", // Define the type of thing you want to show
+        thumbnail: "/gallery/counterspell/counterspell 2.png?height=400&width=600", // small image to be displayed on the post
+        src: "/gallery/counterspell/counterspell 2.png?height=800&width=1200", // main thing you want to show
+        title: "", // Title to be shown on the psot
+        description: "", // Description to be shown on the post
+        event: "Counterspell Auckland", // Name of event for filtering
+        location: "Auckland, New Zealand", // location of event
+      },
+      { 
+        id: "counterspell2024", // useless
+        type: "image", // Define the type of thing you want to show
+        thumbnail: "/gallery/counterspell/counterspell 3.png?height=400&width=600", // small image to be displayed on the post
+        src: "/gallery/counterspell/counterspell 3.png?height=800&width=1200", // main thing you want to show
+        title: "", // Title to be shown on the psot
+        description: "", // Description to be shown on the post
+        event: "Counterspell Auckland", // Name of event for filtering
+        location: "Auckland, New Zealand", // location of event
+      },
+      { 
+        id: "counterspell2024", // useless
+        type: "image", // Define the type of thing you want to show
+        thumbnail: "/gallery/counterspell/counterspell 4.png?height=400&width=600", // small image to be displayed on the post
+        src: "/gallery/counterspell/counterspell 4.png?height=800&width=1200", // main thing you want to show
+        title: "", // Title to be shown on the psot
+        description: "", // Description to be shown on the post
+        event: "Counterspell Auckland", // Name of event for filtering
+        location: "Auckland, New Zealand", // location of event
+      },
+      { 
+        id: "counterspell2024", // useless
+        type: "image", // Define the type of thing you want to show
+        thumbnail: "/gallery/counterspell/counterspell 5.png?height=400&width=600", // small image to be displayed on the post
+        src: "/gallery/counterspell/counterspell 5.png?height=800&width=1200", // main thing you want to show
+        title: "", // Title to be shown on the psot
+        description: "", // Description to be shown on the post
+        event: "Counterspell Auckland", // Name of event for filtering
+        location: "Auckland, New Zealand", // location of event
+      },
+      { 
+        id: "counterspell2024", // useless
+        type: "image", // Define the type of thing you want to show
+        thumbnail: "/gallery/counterspell/counterspell 6.png?height=400&width=600", // small image to be displayed on the post
+        src: "/gallery/counterspell/counterspell 6.png?height=800&width=1200", // main thing you want to show
+        title: "", // Title to be shown on the psot
+        description: "", // Description to be shown on the post
+        event: "Counterspell Auckland", // Name of event for filtering
+        location: "Auckland, New Zealand", // location of event
+      },
+      { 
+        id: "counterspell2024", // useless
+        type: "image", // Define the type of thing you want to show
+        thumbnail: "/gallery/counterspell/counterspell 7.png?height=400&width=600", // small image to be displayed on the post
+        src: "/gallery/counterspell/counterspell 7.png?height=800&width=1200", // main thing you want to show
+        title: "", // Title to be shown on the psot
+        description: "", // Description to be shown on the post
+        event: "Counterspell Auckland", // Name of event for filtering
+        location: "Auckland, New Zealand", // location of event
+      }
 ]
 
 // Helper function to get the most recent items
