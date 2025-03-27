@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
+
 export function RetroButton() {
   const [blink, setBlink] = useState(true)
   const pathname = usePathname()
@@ -66,7 +67,7 @@ export function RetroButton() {
             {/* Outer border effect */}
             <div className="absolute inset-0 border border-white opacity-30"></div>
             {buttonText}
-            <div className="text-[10px] mt-0.5">{isRetroPage ? "v32.44" : "v4.3"}</div>
+            <div className="text-[10px] mt-0.5">{isRetroPage ? "v35.0" : "v4.3"}</div>
           </div>
 
           {/* Button press effect */}

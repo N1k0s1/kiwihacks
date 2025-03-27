@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-[#0a1f0a]`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
-          <RetroButton />
+            {!/Mobi|Android/i.test(navigator.userAgent) && <RetroButton />}
         </ThemeProvider>
       </body>
     </html>
