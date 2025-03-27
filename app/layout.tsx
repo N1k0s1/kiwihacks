@@ -22,8 +22,8 @@ export default function RootLayout({
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    setIsMobile(/Mobi|Android/i.test(navigator.userAgent))
-  }, [])
+    setIsMobile(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))
+  }, [])  
 
   return (
     <html lang="en" suppressHydrationWarning>
