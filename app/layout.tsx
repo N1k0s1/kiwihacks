@@ -1,4 +1,6 @@
-import type React from "react"
+"use client"
+
+import React, { useState, useEffect } from "react"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Inter } from "next/font/google"
@@ -17,6 +19,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    setIsMobile(/Mobi|Android/i.test(navigator.userAgent))
+  }, [])
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -25,13 +33,9 @@ export default function RootLayout({
       <body className={`${inter.className} bg-[#0a1f0a]`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
-            {!/Mobi|Android/i.test(navigator.userAgent) && <RetroButton />}
+          {!isMobile && <RetroButton />}
         </ThemeProvider>
       </body>
     </html>
   )
 }
-
-
-
-import './globals.css'
