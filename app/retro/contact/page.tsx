@@ -6,8 +6,108 @@ import RetroHeading from "../components/retro-heading"
 import RetroButton from "../components/retro-button"
 import MarqueeText from "../components/marquee-text"
 import Link from "next/link"
+import { useMediaQuery } from "@/hooks/use-mobile"
+import { useState, useEffect } from "react"
 
 export default function RetroContactPage() {
+  const isMobile = useMediaQuery("(max-width: 768px)")
+  const [blink, setBlink] = useState(true)
+  const [showPopup, setShowPopup] = useState(false) // State to show/hide popup
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBlink((prev) => !prev)
+    }, 500)
+
+    return () => clearInterval(interval) // Cleanup on unmount
+  }, []) // Runs once on mount
+
+  const handleTryAgainClick = () => {
+    setShowPopup(true)
+  }
+
+  const handleClosePopup = () => {
+    setShowPopup(false)
+  }
+
+  if (isMobile) {
+    return (
+      <div className="h-screen flex flex-col items-center justify-center bg-black text-yellow-300 p-4 font-mono">
+        {/* Glitching Text */}
+        <div className="relative text-3xl sm:text-5xl font-bold glitch">
+          <span aria-hidden="true" className="absolute top-0 left-0 text-red-500">SORRY!</span>
+          <span>SORRY!</span>
+          <span aria-hidden="true" className="absolute top-0 left-0 text-blue-500">SORRY!</span>
+        </div>
+
+        {/* Blinking Warning Text */}
+        <p className={`mt-4 text-xl ${blink ? "opacity-100" : "opacity-20"} text-center transition-opacity duration-500`}>
+          This page doesn't work on small screens.
+        </p>
+
+        {/* Try Again Button */}
+        <button
+          className="mt-6 px-6 py-2 bg-blue-600 text-white text-lg font-bold border-2 border-white shadow-md transform transition hover:scale-105 active:scale-95"
+          onClick={handleTryAgainClick}
+        >
+          TRY AGAIN
+        </button>
+
+        {/* Popup */}
+        {showPopup && (
+          <div className="fixed inset-0 p-2  bg-gray-800 bg-opacity-70 backdrop-blur-sm flex justify-center items-center z-50">
+            <div className="bg-white text-black p-6 rounded-lg shadow-xl max-w-md w-full">
+              <h2 className="text-xl font-bold mb-5">Really?</h2>
+              <p>Did you think that would work?</p>
+              <div className="flex justify-between mt-4">
+                <button
+                  className="px-6 py-4 bg-red-500 text-white font-bold rounded-md text-xs"
+                  onClick={handleClosePopup}
+                >
+                  No, never mind
+                </button>
+                <span className="mx-2" />
+                <button
+                  className="px-4 py-4 bg-green-500 text-white font-bold rounded-md text-xs"
+                  onClick={handleClosePopup}
+                >
+                  Yes, maybe it will
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Pixelated Loading Bar */}
+        <div className="mt-6 w-48 h-6 bg-gray-800 border-2 border-white flex overflow-hidden">
+          <div className="h-full bg-green-500 animate-loading"></div>
+        </div>
+
+        {/* CSS Animations */}
+        <style jsx>{`
+          @keyframes glitch {
+            0% { transform: translate(0, 0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(2px, -2px); }
+            60% { transform: translate(-2px, -2px); }
+            80% { transform: translate(2px, 2px); }
+            100% { transform: translate(0, 0); }
+          }
+          .glitch {
+            animation: glitch 0.3s infinite;
+          }
+          @keyframes loading {
+            0% { width: 0%; }
+            100% { width: 100%; }
+          }
+          .animate-loading {
+            animation: loading 3s infinite;
+          }
+        `}</style>
+      </div>
+    )
+  }
+  
   return (
     <RetroLayout title="KiwiHacks 2025 - Contact Us">
       <RetroSection>
