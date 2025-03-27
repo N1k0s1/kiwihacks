@@ -21,27 +21,17 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.png" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              document.addEventListener("DOMContentLoaded", function() {
-                if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                  const btn = document.getElementById("retro-button");
-                  if (btn) btn.remove();
-                }
-              });
-            `,
-          }}
-        />
       </head>
       <body className={`${inter.className} bg-[#0a1f0a]`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
-          <div id="retro-button">
-            <RetroButton />
-          </div>
+          <RetroButton />
         </ThemeProvider>
       </body>
     </html>
   )
 }
+
+
+
+import './globals.css'
