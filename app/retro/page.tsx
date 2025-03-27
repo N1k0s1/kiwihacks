@@ -23,14 +23,16 @@ export default function RetroHomePage() {
         <p>
           Join us on <b>July 19-20, 2025</b> in <b>Auckland, New Zealand</b> for an unforgettable hackathon experience!
         </p>
-        <p>75+ hackers. 24 hours. Unlimited creativity.</p>
+        <p>75+ hackers. 24 hours. Unlimited creativity!</p>
         <div className="my-4">
-          <RetroButton>Register Now</RetroButton>
+          <RetroButton href="https://forms.fillout.com/t/gwKJLcFXhQus?" target="_blank">Register Now!</RetroButton>
           <span className="mx-2"></span>
-          <RetroButton>Learn More</RetroButton>
+          <RetroButton href="/retro/contact">Contact Us!</RetroButton>
+          <span className="mx-2"></span>
+          <RetroButton href="https://hcb.hackclub.com/donations/start/kiwihacks">Donate!</RetroButton>
         </div>
         <p>
-          <BlinkText>Registration closes soon! Don&apos;t miss out!</BlinkText>
+          <BlinkText>Registration closes in a while! You probably won&apos;t miss out!</BlinkText>
         </p>
       </RetroSection>
 
@@ -125,7 +127,7 @@ export default function RetroHomePage() {
                 <p>
                   <b>What if I have more questions?</b>
                   <br />
-                  Contact us! Feel free to reach out to us via email at PLACEHOLDER.
+                  Contact us! Feel free to reach out to us via email at <Link href="mailto:PLACEHOLDER" className="text-[#00ff00]">PLACEHOLDER</Link>.
                 </p>
               </td>
             </tr>

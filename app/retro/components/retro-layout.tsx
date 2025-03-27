@@ -29,8 +29,8 @@ export default function RetroLayout({ children, title, description }: RetroLayou
             FAQ
           </Link>{" "}
           |
-          <Link href="/retro#sponsors" className="text-[#00ff00] mx-2.5 font-bold no-underline hover:underline">
-            Sponsors
+          <Link href="" className="text-[#00ff00] mx-2.5 font-bold no-underline hover:underline cursor-not-allowed">
+            <s>Sponsors</s>
           </Link>{" "}
           |
           <Link href="/retro/contact" className="text-[#00ff00] mx-2.5 font-bold no-underline hover:underline">
