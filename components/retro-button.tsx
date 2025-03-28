@@ -16,7 +16,7 @@ export function RetroButton() {
   // Detect screen size
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768) // Adjust breakpoint if needed
+      setIsMobile(window.innerWidth <= 800) // Adjust breakpoint if needed
     }
 
     checkScreenSize() // Run on mount

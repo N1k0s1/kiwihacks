@@ -10,7 +10,7 @@ import { useMediaQuery } from "@/hooks/use-mobile"
 import { useState, useEffect } from "react"
 
 export default function RetroContactPage() {
-  const isMobile = useMediaQuery("(max-width: 768px)")
+  const isMobile = useMediaQuery("(max-width: 800px)")
   const [blink, setBlink] = useState(true)
   const [showPopup, setShowPopup] = useState(false) // State to show/hide popup
 
