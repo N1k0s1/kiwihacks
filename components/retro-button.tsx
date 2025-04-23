@@ -4,15 +4,26 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-
 export function RetroButton() {
   const [blink, setBlink] = useState(true)
+  const [isMobile, setIsMobile] = useState(false)
   const pathname = usePathname()
   const isRetroPage = pathname?.startsWith("/retro")
 
-  // Determine button text and link based on current path
   const buttonText = isRetroPage ? "TAKE ME BACK!" : "RETRO"
   const buttonLink = isRetroPage ? "/" : "/retro"
+
+  // Detect screen size
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 800) // Adjust breakpoint if needed
+    }
+
+    checkScreenSize() // Run on mount
+    window.addEventListener("resize", checkScreenSize)
+
+    return () => window.removeEventListener("resize", checkScreenSize)
+  }, [])
 
   // Classic blinking text effect
   useEffect(() => {
@@ -22,6 +33,8 @@ export function RetroButton() {
 
     return () => clearInterval(interval)
   }, [])
+
+  if (isMobile) return null // Prevent rendering on mobile
 
   return (
     <div className="fixed bottom-4 right-8 z-50 flex flex-col items-center">
@@ -48,7 +61,7 @@ export function RetroButton() {
             </div>
           </div>
 
-          {/* Main button with classic Windows 98 / early 2000s styling */}
+          {/* Main button */}
           <div
             className="relative px-4 py-2 w-24 text-center font-bold text-sm cursor-pointer select-none"
             style={{
@@ -82,4 +95,3 @@ export function RetroButton() {
     </div>
   )
 }
-
