@@ -504,6 +504,10 @@ export default function Home() {
                   q: "What if I have more questions?",
                   a: "Contact us! Feel free to reach out to us via email at PLACEHOLDER.",
                 },
+                {
+                  q: "Is KiwiHacks affiliated with Hack Club or an official Hack Club Hackathon?",
+                  a: "No, KiwiHacks is not an official Hack Club hackathon, and we are not affiliated with or partnered with Hack Club. Our event is independently organized by a passionate team of young New Zealanders dedicated to empowering youth through technology and innovation.",
+                },
               ].map((item, index) => (
                 <div
                   key={index}
