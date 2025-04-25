@@ -104,7 +104,7 @@ export default function ContactPage() {
       ),
       description: "Join our Discord server to chat with fellow hackers, get event updates, and find teammates.",
       buttonText: "Join Discord Server",
-      url: "https://discord.gg/sfrHFbrQAc",
+      url: "https://discord.gg/WcxtjRRUCJ",
       color: "#5865F2",
       members: "N/A",
     },
