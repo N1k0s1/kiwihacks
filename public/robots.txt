@@ -12,4 +12,4 @@ Allow: /gallery$
 # Add sitemap location
 Sitemap: https://kiwihacks.nz/sitemap.xml
 
-# :3 Hello world
+# :3 Hello world!!!
