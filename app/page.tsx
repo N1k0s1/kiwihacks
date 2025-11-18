@@ -67,7 +67,7 @@ export default function Home() {
     window.addEventListener("resize", resizeCanvas)
 
     // Create wind particles
-    const particles = []
+    const particles: any[]  = []
     const particleCount = 80 // Reduced count for subtlety
 
     for (let i = 0; i < particleCount; i++) {
