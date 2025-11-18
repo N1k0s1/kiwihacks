@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "KiwiHacks 2025 | Auckland's Premier Student Hackathon",
-  description: "Join us on July 19-20, 2025 for Auckland's premier hackathon for innovation and collaboration.",
+  description: "Join us at the start of 2026 for a 24 hour hackathon!",
 }
 
 export default function RootLayout({

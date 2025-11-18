@@ -123,7 +123,7 @@ export default function RetroHomePage() {
           />
         </div>*/}
         <p>
-          Join us on <b>July 19-20, 2025</b> in <b>Auckland, New Zealand</b> for an unforgettable hackathon experience!
+          Join us in <b>January/February 2026</b> in <b>Auckland, New Zealand</b> for an unforgettable hackathon experience!
         </p>
         <p>75+ hackers. 24 hours. Unlimited creativity!</p>
         <div className="my-4">
@@ -186,7 +186,7 @@ export default function RetroHomePage() {
                 <p>
                   <b>When & where is KiwiHacks hosted?</b>
                   <br />
-                  KiwiHacks will be hosted in Auckland, New Zealand from July 19-20, 2025. The event will run for 24 hours over 2 days, day 1 starting at 8:00 AM on Saturday, running through until Saturday at 8:00 PM, and day 2 starting at 8:00 AM on Sunday, running through until Sunday at 8:00 PM. (If you need to stay overnight for any reason, please email us!)
+                  KiwiHacks will be hosted in Auckland, New Zealand in January / February 2026. The event will run for 24 hours over 2 days, day 1 starting at 8:00 AM on Saturday, running through until Saturday at 8:00 PM, and day 2 starting at 8:00 AM on Sunday, running through until Sunday at 8:00 PM. (If you need to stay overnight for any reason, please email us!)
                 </p>
 
                 <p>
