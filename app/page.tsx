@@ -129,7 +129,7 @@ export default function RetroHomePage() {
         <div className="my-4">
           <RetroButton href="https://forms.fillout.com/t/gwKJLcFXhQus?" target="_blank">Register Now!</RetroButton>
           <span className="mx-2"></span>
-          <RetroButton href="/retro/contact">Contact Us!</RetroButton>
+          <RetroButton href="/contact">Contact Us!</RetroButton>
           <span className="mx-2"></span>
           <RetroButton href="https://hcb.hackclub.com/donations/start/kiwihacks">Donate!</RetroButton>
         </div>

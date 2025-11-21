@@ -371,7 +371,7 @@ export default function Home() {
                   Register Now
                 </Button>
               </form>
-              <form action="/contact">
+              <form action="/modern/contact">
                 <Button 
                   size="lg" 
                   variant="outline" 
