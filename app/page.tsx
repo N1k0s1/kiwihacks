@@ -343,7 +343,7 @@ export default function Home() {
             >
               <div className="flex items-center gap-2 text-sm md:text-base text-[#d0ffd0]">
                 <Calendar className="h-5 w-5 text-[#90ee90]" />
-                <span>January/February 2026</span>
+                <span>March 2026</span>
               </div>
               <div className="hidden md:block h-4 border-r border-[#2a5a2a]"></div>
               <div className="flex items-center gap-2 text-sm md:text-base text-[#d0ffd0]">
@@ -474,7 +474,7 @@ export default function Home() {
                 },
                 {
                   q: "When & where is KiwiHacks hosted?",
-                  a: "KiwiHacks will be hosted in Auckland, New Zealand at sometime in January / February 2026. The event will run for 24 hours over 2 days, day 1 starting at 8:00 AM on Saturday, running through until Saturday at 8:00 PM, and day 2 starting at 8:00 AM on Sunday, running through until Sunday at 8:00 PM. (If you need to stay overnight for any reason, please email us!)",
+                  a: "KiwiHacks will be hosted in Auckland, New Zealand at sometime in March 2026. The event will run for 24 hours over 2 days, day 1 starting at 8:00 AM on Saturday, running through until Saturday at 8:00 PM, and day 2 starting at 8:00 AM on Sunday, running through until Sunday at 8:00 PM. (If you need to stay overnight for any reason, please email us!)",
                 },
                 {
                   q: "Who can participate in KiwiHacks?",
