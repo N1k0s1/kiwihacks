@@ -203,7 +203,7 @@ export default function RetroContactPage() {
 
         <div className="mt-5">
           <MarqueeText>
-            Join us for KiwiHacks 2025 on July 19-20 in Auckland, New Zealand! Register now to secure your spot!
+            Join us for KiwiHacks 2026 in March, in Auckland, New Zealand! Register now to secure your spot!
           </MarqueeText>
         </div>
       </RetroSection>
