@@ -149,18 +149,23 @@ export default function RetroContactPage() {
               name: "Discord",
               description:
                 "Join our Discord server to chat with fellow hackers, get event updates, and find teammates.",
-              members: "500+",
-              url: "https://discord.gg/kiwihacks",
+              url: "https://discord.gg/q3Sgvac3YA",
               buttonText: "Join Discord Server",
               isNew: true,
             },
             {
               name: "Instagram",
               description: "Follow us on Instagram for event photos, announcements, and behind-the-scenes content.",
-              members: "1.2k",
               url: "https://instagram.com/kiwihacks",
               buttonText: "Follow on Instagram",
             },
+       {
+              name: "Whatsapp Community",
+              description: "Join out Whatsapp Community for announcements!",
+              url: "https://chat.whatsapp.com/LPJfKlLYYpX7WZ5kPar1K5",
+              buttonText: "Join the Community",
+            },
+      /* I dont think we have these?
             {
               name: "LinkedIn",
               description: "Connect with our team and sponsors on LinkedIn for professional networking opportunities.",
@@ -174,7 +179,8 @@ export default function RetroContactPage() {
               members: "800+",
               url: "https://twitter.com/kiwihacks",
               buttonText: "Follow on Twitter",
-            },
+            }, 
+            */
           ].map((platform, index) => (
             <div
               key={index}
