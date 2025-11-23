@@ -109,7 +109,7 @@ export default function RetroContactPage() {
   }
   
   return (
-    <RetroLayout title="KiwiHacks 2025 - Contact Us">
+    <RetroLayout title="KiwiHacks - Contact Us">
       <RetroSection>
         <RetroHeading level={1}>Connect with KiwiHacks</RetroHeading>
         <p>Join our community across various platforms to stay updated and connect with fellow hackers</p>

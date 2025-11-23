@@ -12,7 +12,7 @@ export default function RetroLayout({ children, title, description }: RetroLayou
     <div className="font-serif bg-[#003300] text-white m-0 p-0 text-center">
       <div className="w-full max-w-[800px] mx-auto bg-[#004400] border border-[#006600] px-2 sm:px-0">
         <div className="bg-[#002200] p-2.5 border-b-2 border-[#006600]">
-          <div className="text-lg sm:text-2xl font-bold text-[#00ff00]">KiwiHacks 2025</div>
+          <div className="text-lg sm:text-2xl font-bold text-[#00ff00]">KiwiHacks 2026</div>
           <div className="text-xs sm:text-sm text-[#00cc00]">Auckland&apos;s Premier Hackathon for Innovators 18 and Under</div>
         </div>
 

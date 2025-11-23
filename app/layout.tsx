@@ -8,7 +8,7 @@ import { RetroButton } from "@/components/retro-button"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "KiwiHacks 2025 | Auckland's Premier Student Hackathon",
+  title: "KiwiHacks 2026",
   description: "Join us at the start of 2026 for a 24 hour hackathon!",
 }
 

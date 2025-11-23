@@ -110,9 +110,9 @@ export default function RetroHomePage() {
   // }
 
   return (
-    <RetroLayout title="KiwiHacks 2025 - Auckland's Premier Hackathon">
+    <RetroLayout title="KiwiHacks 2026 - Retro">
       <RetroSection>
-        <RetroHeading level={1}>Welcome to KiwiHacks 2025!</RetroHeading>
+        <RetroHeading level={1}>Welcome to KiwiHacks!</RetroHeading>
         {/*<div className="my-4">
           <Image
             src="/placeholder.svg?height=200&width=400"

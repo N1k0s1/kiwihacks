@@ -619,15 +619,15 @@ export default function Home() {
                 },
                 {
                   q: "When & where is KiwiHacks hosted?",
-                  a: "KiwiHacks will be hosted in Auckland, New Zealand at sometime in March 2026. The event will run for 24 hours over 2 days, day 1 starting at 8:00 AM on Saturday, running through until Saturday at 8:00 PM, and day 2 starting at 8:00 AM on Sunday, running through until Sunday at 8:00 PM. (If you need to stay overnight for any reason, please email us!)",
+                  a: "KiwiHacks will be hosted in Auckland, New Zealand at sometime in March 2026. The event will run for 24 hours, with the start being 9am Saturday, and the end being 9am Sunday. You're welcome to choose to keep hacking overnight, or to go home! Contact us if this is the case! ",
                 },
                 {
                   q: "Who can participate in KiwiHacks?",
-                  a: "All high-school & upper-middle-school aged students (18 and under) are welcome to come!",
+                  a: "All high-school students (18 and under) are welcome to come!",
                 },
                 {
                   q: "All this, for free?",
-                  a: "Yep! Food, swag, and good vibes are all included. Thanks to our sponsors, there's no cost to participate in KiwiHacks.",
+                  a: "Yep! Food, swag, and everything else is all included! Shoutout to our sponnsors!",
                 },
                 {
                   q: "What do I need?",
@@ -635,7 +635,7 @@ export default function Home() {
                 },
                 {
                   q: "I'm not good at coding. Can I still participate?",
-                  a: "This hackathon is for creatives of all skill levels! We'll have workshops and other events so join us and let's learn together.",
+                  a: "This hackathon is for creatives of all skill levels! We'll have workshops for beginners on how to code the basics, and everyone will finish with a project!.",
                 },
                 {
                   q: "What can I make at KiwiHacks?",
@@ -650,8 +650,8 @@ export default function Home() {
                   a: "Contact us! Feel free to reach out to us via email at PLACEHOLDER.",
                 },
                 {
-                  q: "Is KiwiHacks affiliated with Hack Club or an official Hack Club Hackathon?",
-                  a: "No, KiwiHacks is not an official Hack Club hackathon, and we are not affiliated with or partnered with Hack Club. Our event is independently organized by a passionate team of young New Zealanders dedicated to empowering youth through technology and innovation.",
+//                  q: "Is KiwiHacks affiliated with Hack Club or an official Hack Club Hackathon?",
+//                  a: "No, KiwiHacks is not an official Hack Club hackathon, and we are not affiliated with or partnered with Hack Club. Our event is independently organized by a passionate team of young New Zealanders dedicated to empowering youth through technology and innovation.",
                 },
               ].map((item, index) => (
                 <div
