@@ -134,7 +134,7 @@ export default function RetroHomePage() {
           >
             Register Now!
           </RetroButton>
-          <RetroButton href="/contact">Contact Us!</RetroButton>
+          <RetroButton href="/retro/contact">Contact Us!</RetroButton>
           <RetroButton href="https://hcb.hackclub.com/donations/start/kiwihacks">
             Donate!
           </RetroButton>
