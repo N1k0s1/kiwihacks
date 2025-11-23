@@ -126,11 +126,9 @@ export default function RetroHomePage() {
           Join us in <b>March 2026</b> in <b>Auckland, New Zealand</b> for an unforgettable hackathon experience!
         </p>
         <p>75+ hackers. 24 hours. Unlimited creativity!</p>
-        <div className="my-4">
+        <div className="my-4 flex flex-col sm:flex-row gap-2">
           <RetroButton href="https://forms.fillout.com/t/gwKJLcFXhQus?" target="_blank">Register Now!</RetroButton>
-          <span className="mx-2"></span>
           <RetroButton href="/contact">Contact Us!</RetroButton>
-          <span className="mx-2"></span>
           <RetroButton href="https://hcb.hackclub.com/donations/start/kiwihacks">Donate!</RetroButton>
         </div>
         <p>
@@ -140,101 +138,93 @@ export default function RetroHomePage() {
 
       <RetroSection id="about">
         <RetroHeading level={2}>About KiwiHacks</RetroHeading>
-        <table className="w-full border-collapse">
-          <tbody>
-            <tr>
-              <td className="p-1.5 align-top w-[60%]">
-                <p>
-                  KiwiHacks is a 24 hour Hackthon in Auckland, split over 2 days, bringing together young innovators,
-                  designers, and problem-solvers 18 and under to create amazing projects.
-                </p>
-                <p>
-                  Whether you&apos;re just starting to code or you&apos;ve been building projects for years, KiwiHacks
-                  will have workshops to learn and build new things, and opportunities connect with other young tech enthusiasts.
-                </p>
-                <p>
-                  Join us for an unforgettable weekend of creativity, mentorship, and fun as we push the boundaries of
-                  what&apos;s possible in technology. Open exclusively to participants 18 and under.
-                </p>
-              </td>
-              <td className="p-1.5 align-top w-[40%]">
-                <Image
-                  src="/hackers-discussing.JPEG?height=150&width=250"
-                  alt="Hackers Collaborating"
-                  width={250}
-                  height={150}
-                  className="border border-[#006600]"
-                />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="flex flex-col lg:flex-row gap-4">
+          <div className="lg:w-[60%]">
+            <p>
+              KiwiHacks is a 24 hour Hackthon in Auckland, split over 2 days, bringing together young innovators,
+              designers, and problem-solvers 18 and under to create amazing projects.
+            </p>
+            <p>
+              Whether you&apos;re just starting to code or you&apos;ve been building projects for years, KiwiHacks
+              will have workshops to learn and build new things, and opportunities connect with other young tech enthusiasts.
+            </p>
+            <p>
+              Join us for an unforgettable weekend of creativity, mentorship, and fun as we push the boundaries of
+              what&apos;s possible in technology. Open exclusively to participants 18 and under.
+            </p>
+          </div>
+          <div className="lg:w-[40%] flex justify-center lg:justify-start">
+            <Image
+              src="/hackers-discussing.JPEG?height=150&width=250"
+              alt="Hackers Collaborating"
+              width={250}
+              height={150}
+              className="border border-[#006600] max-w-full h-auto"
+            />
+          </div>
+        </div>
       </RetroSection>
 
       <RetroSection id="faq">
         <RetroHeading level={2}>Frequently Asked Questions</RetroHeading>
-        <table className="w-full border-collapse">
-          <tbody>
-            <tr>
-              <td className="p-1.5 align-top w-1/2">
-                <p>
-                  <b>What is KiwiHacks?</b>
-                  <br />
-                  KiwiHacks is Auckland's premier hackathon for high school students and makers 18 and under. It's organized by a small team of like-minded teenagers, who are all passionate about technology and innovation.
-                </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div>
+            <p>
+              <b>What is KiwiHacks?</b>
+              <br />
+              KiwiHacks is Auckland's premier hackathon for high school students and makers 18 and under. It's organized by a small team of like-minded teenagers, who are all passionate about technology and innovation.
+            </p>
 
-                <p>
-                  <b>When & where is KiwiHacks hosted?</b>
-                  <br />
-                  KiwiHacks will be hosted in Auckland, New Zealand in March 2026. The event will run for 24 hours over 2 days, day 1 starting at 8:00 AM on Saturday, running through until Saturday at 8:00 PM, and day 2 starting at 8:00 AM on Sunday, running through until Sunday at 8:00 PM. (If you need to stay overnight for any reason, please email us!)
-                </p>
+            <p>
+              <b>When & where is KiwiHacks hosted?</b>
+              <br />
+              KiwiHacks will be hosted in Auckland, New Zealand in March 2026. The event will run for 24 hours over 2 days, day 1 starting at 8:00 AM on Saturday, running through until Saturday at 8:00 PM, and day 2 starting at 8:00 AM on Sunday, running through until Sunday at 8:00 PM. (If you need to stay overnight for any reason, please email us!)
+            </p>
 
-                <p>
-                  <b>Who can participate in KiwiHacks?</b>
-                  <br />
-                  All high-school & upper-middle-school aged students (18 and under) are welcome to come!
-                </p>
+            <p>
+              <b>Who can participate in KiwiHacks?</b>
+              <br />
+              All high-school & upper-middle-school aged students (18 and under) are welcome to come!
+            </p>
 
-                <p>
-                  <b>All this, for free?</b>
-                  <br />
-                  Yep! Food, swag, and good vibes are all included. Thanks to our sponsors, there's no cost to participate in KiwiHacks.
-                </p>
+            <p>
+              <b>All this, for free?</b>
+              <br />
+              Yep! Food, swag, and good vibes are all included. Thanks to our sponsors, there's no cost to participate in KiwiHacks.
+            </p>
 
-                <p>
-                  <b>What do I need?</b>
-                  <br />
-                  Your laptop, chargers, toiletries, sleeping bag (if you plan to stay overnight), and an open mind! If you plan to work on a hardware project, bring the tools you'll need. We'll have limited tools, and a 3d printer & soldering station available.
-                </p>
-              </td>
-              <td className="p-1.5 align-top w-1/2">
-                <p>
-                  <b>I&apos;m not good at coding. Can I still participate?</b>
-                  <br />
-                  This hackathon is for creatives of all skill levels! We'll have workshops and other events so join us and let's learn together.
-                </p>
+            <p>
+              <b>What do I need?</b>
+              <br />
+              Your laptop, chargers, toiletries, sleeping bag (if you plan to stay overnight), and an open mind! If you plan to work on a hardware project, bring the tools you'll need. We'll have limited tools, and a 3d printer & soldering station available.
+            </p>
+          </div>
+          <div>
+            <p>
+              <b>I&apos;m not good at coding. Can I still participate?</b>
+              <br />
+              This hackathon is for creatives of all skill levels! We'll have workshops and other events so join us and let's learn together.
+            </p>
 
-                <p>
-                  <b>What can I make at KiwiHacks?</b>
-                  <br />
-                  Anything you can imagine! Games? Apps? Websites? Programming languages? Hardware? You name it! We'll have a bunch of resources and mentors to help you out.
-                </p>
+            <p>
+              <b>What can I make at KiwiHacks?</b>
+              <br />
+              Anything you can imagine! Games? Apps? Websites? Programming languages? Hardware? You name it! We'll have a bunch of resources and mentors to help you out.
+            </p>
 
-                <p>
-                  <b>What if my parents are concerned?</b>
-                  <br />
-                  We're here to help! Parents can reach out to us at PLACEHOLDER for questions. All participants will need a signed parental consent form if under 18.
-                </p>
+            <p>
+              <b>What if my parents are concerned?</b>
+              <br />
+              We're here to help! Parents can reach out to us at PLACEHOLDER for questions. All participants will need a signed parental consent form if under 18.
+            </p>
 
-                <p>
-                  <b>What if I have more questions?</b>
-                  <br />
-                  Contact us! Feel free to reach out to us via email at <Link href="mailto:PLACEHOLDER" className="text-[#00ff00]">PLACEHOLDER</Link>.
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+            <p>
+              <b>What if I have more questions?</b>
+              <br />
+              Contact us! Feel free to reach out to us via email at <Link href="mailto:PLACEHOLDER" className="text-[#00ff00]">PLACEHOLDER</Link>.
+            </p>
+          </div>
+        </div>
       </RetroSection>
 
       {/*<RetroSection id="sponsors">
