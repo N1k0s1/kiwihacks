@@ -382,7 +382,7 @@ export default function Home() {
             >
               <div className="relative inline-block">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
-                  Kiwi<span className="text-[#90ee90]">Hacks</span> 2025
+                  Kiwi<span className="text-[#90ee90]">Hacks</span> 2026
                 </h1>
                 <div className="absolute -bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-[#90ee90] to-transparent"></div>
               </div>
@@ -704,7 +704,7 @@ export default function Home() {
             <p className="text-lg text-[#d0ffd0] max-w-2xl mx-auto mb-8">
               Join us for 24 hours of coding, creativity, and collaboration.
               Open to all innovators 18 and under. Register now to secure your
-              spot at KiwiHacks 2025!
+              spot at KiwiHacks!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <form
