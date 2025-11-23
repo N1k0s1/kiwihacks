@@ -8,10 +8,10 @@ export function RetroButton() {
   const [blink, setBlink] = useState(true)
   const [isMobile, setIsMobile] = useState(false)
   const pathname = usePathname()
-  const isModernPage = pathname?.startsWith("/modern")
+  const isRetroPage = pathname?.startsWith("/retro")
 
-  const buttonText = isModernPage ? "TAKE ME BACK!" : "TO THE FUTURE!"
-  const buttonLink = isModernPage ? "/" : "/modern"
+  const buttonText = isRetroPage ? "TAKE ME BACK!" : "RETRO"
+  const buttonLink = isRetroPage ? "/" : "/retro"
 
   // Detect screen size
   useEffect(() => {
@@ -46,7 +46,7 @@ export function RetroButton() {
             textShadow: "1px 1px 2px #000",
           }}
         >
-          {isModernPage ? "BACK TO THE PAST!" : "TIME TRAVEL!"}
+          {isRetroPage ? "BACK TO THE FUTURE!" : "TIME TRAVEL!"}
         </div>
       </div>
 
@@ -56,7 +56,7 @@ export function RetroButton() {
           <div className="absolute -top-6 -right-6 w-8 h-8 z-10">
             <div className="w-8 h-8 bg-yellow-300 rounded-full flex items-center justify-center animate-spin-slow">
               <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center text-xs text-yellow-300 font-bold">
-                {isModernPage ? "GO!" : "NEW!"}
+                {isRetroPage ? "GO!" : "NEW!"}
               </div>
             </div>
           </div>
@@ -65,10 +65,10 @@ export function RetroButton() {
           <div
             className="relative px-4 py-2 w-24 text-center font-bold text-sm cursor-pointer select-none"
             style={{
-              background: isModernPage
+              background: isRetroPage
                 ? "linear-gradient(to bottom, #ee6868, #8b3d3d)"
                 : "linear-gradient(to bottom, #7b68ee, #483d8b)",
-              border: isModernPage ? "2px outset #db7070" : "2px outset #9370db",
+              border: isRetroPage ? "2px outset #db7070" : "2px outset #9370db",
               boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
               color: "#ffffff",
               fontFamily: '"Comic Sans MS", cursive',
@@ -80,14 +80,14 @@ export function RetroButton() {
             {/* Outer border effect */}
             <div className="absolute inset-0 border border-white opacity-30"></div>
             {buttonText}
-            <div className="text-[10px] mt-0.5">{isModernPage ? "v35.0" : "v4.3"}</div>
+            <div className="text-[10px] mt-0.5">{isRetroPage ? "v35.0" : "v4.3"}</div>
           </div>
 
           {/* Button press effect */}
           <div
             className="absolute inset-0 bg-black opacity-0 group-active:opacity-20 transition-opacity"
             style={{
-              border: isModernPage ? "2px inset #db7070" : "2px inset #9370db",
+              border: isRetroPage ? "2px inset #db7070" : "2px inset #9370db",
             }}
           ></div>
         </div>
