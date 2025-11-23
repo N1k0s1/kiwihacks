@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import RetroLayout from "./components/retro-layout"
-import RetroSection from "./components/retro-section"
-import RetroHeading from "./components/retro-heading"
-import RetroButton from "./components/retro-button"
-import BlinkText from "./components/blink-text"
-import Image from "next/image"
-import Link from "next/link"
+import RetroLayout from "../components/retro-layout";
+import RetroSection from "../components/retro-section";
+import RetroHeading from "../components/retro-heading";
+import RetroButton from "../components/retro-button";
+import BlinkText from "../components/blink-text";
+import Image from "next/image";
+import Link from "next/link";
 // import { useMediaQuery } from "@/hooks/use-mobile"
 // import { useState, useEffect } from "react"
 
@@ -123,16 +123,26 @@ export default function RetroHomePage() {
           />
         </div>*/}
         <p>
-          Join us in <b>March 2026</b> in <b>Auckland, New Zealand</b> for an unforgettable hackathon experience!
+          Join us in <b>March 2026</b> in <b>Auckland, New Zealand</b> for an
+          unforgettable hackathon experience!
         </p>
         <p>75+ hackers. 24 hours. Unlimited creativity!</p>
         <div className="my-4 flex flex-col sm:flex-row gap-2">
-          <RetroButton href="https://forms.fillout.com/t/gwKJLcFXhQus?" target="_blank">Register Now!</RetroButton>
+          <RetroButton
+            href="https://forms.fillout.com/t/gwKJLcFXhQus?"
+            target="_blank"
+          >
+            Register Now!
+          </RetroButton>
           <RetroButton href="/contact">Contact Us!</RetroButton>
-          <RetroButton href="https://hcb.hackclub.com/donations/start/kiwihacks">Donate!</RetroButton>
+          <RetroButton href="https://hcb.hackclub.com/donations/start/kiwihacks">
+            Donate!
+          </RetroButton>
         </div>
         <p>
-          <BlinkText>Registration closes in a while! You probably won&apos;t miss out!</BlinkText>
+          <BlinkText>
+            Registration closes in a while! You probably won&apos;t miss out!
+          </BlinkText>
         </p>
       </RetroSection>
 
@@ -141,16 +151,20 @@ export default function RetroHomePage() {
         <div className="flex flex-col lg:flex-row gap-4">
           <div className="lg:w-[60%]">
             <p>
-              KiwiHacks is a 24 hour Hackthon in Auckland, split over 2 days, bringing together young innovators,
-              designers, and problem-solvers 18 and under to create amazing projects.
+              KiwiHacks is a 24 hour Hackthon in Auckland, split over 2 days,
+              bringing together young innovators, designers, and problem-solvers
+              18 and under to create amazing projects.
             </p>
             <p>
-              Whether you&apos;re just starting to code or you&apos;ve been building projects for years, KiwiHacks
-              will have workshops to learn and build new things, and opportunities connect with other young tech enthusiasts.
+              Whether you&apos;re just starting to code or you&apos;ve been
+              building projects for years, KiwiHacks will have workshops to
+              learn and build new things, and opportunities connect with other
+              young tech enthusiasts.
             </p>
             <p>
-              Join us for an unforgettable weekend of creativity, mentorship, and fun as we push the boundaries of
-              what&apos;s possible in technology. Open exclusively to participants 18 and under.
+              Join us for an unforgettable weekend of creativity, mentorship,
+              and fun as we push the boundaries of what&apos;s possible in
+              technology. Open exclusively to participants 18 and under.
             </p>
           </div>
           <div className="lg:w-[40%] flex justify-center lg:justify-start">
@@ -172,56 +186,78 @@ export default function RetroHomePage() {
             <p>
               <b>What is KiwiHacks?</b>
               <br />
-              KiwiHacks is Auckland's premier hackathon for high school students and makers 18 and under. It's organized by a small team of like-minded teenagers, who are all passionate about technology and innovation.
+              KiwiHacks is Auckland's premier hackathon for high school students
+              and makers 18 and under. It's organized by a small team of
+              like-minded teenagers, who are all passionate about technology and
+              innovation.
             </p>
 
             <p>
               <b>When & where is KiwiHacks hosted?</b>
               <br />
-              KiwiHacks will be hosted in Auckland, New Zealand in March 2026. The event will run for 24 hours over 2 days, day 1 starting at 8:00 AM on Saturday, running through until Saturday at 8:00 PM, and day 2 starting at 8:00 AM on Sunday, running through until Sunday at 8:00 PM. (If you need to stay overnight for any reason, please email us!)
+              KiwiHacks will be hosted in Auckland, New Zealand in March 2026.
+              The event will run for 24 hours over 2 days, day 1 starting at
+              8:00 AM on Saturday, running through until Saturday at 8:00 PM,
+              and day 2 starting at 8:00 AM on Sunday, running through until
+              Sunday at 8:00 PM. (If you need to stay overnight for any reason,
+              please email us!)
             </p>
 
             <p>
               <b>Who can participate in KiwiHacks?</b>
               <br />
-              All high-school & upper-middle-school aged students (18 and under) are welcome to come!
+              All high-school & upper-middle-school aged students (18 and under)
+              are welcome to come!
             </p>
 
             <p>
               <b>All this, for free?</b>
               <br />
-              Yep! Food, swag, and good vibes are all included. Thanks to our sponsors, there's no cost to participate in KiwiHacks.
+              Yep! Food, swag, and good vibes are all included. Thanks to our
+              sponsors, there's no cost to participate in KiwiHacks.
             </p>
 
             <p>
               <b>What do I need?</b>
               <br />
-              Your laptop, chargers, toiletries, sleeping bag (if you plan to stay overnight), and an open mind! If you plan to work on a hardware project, bring the tools you'll need. We'll have limited tools, and a 3d printer & soldering station available.
+              Your laptop, chargers, toiletries, sleeping bag (if you plan to
+              stay overnight), and an open mind! If you plan to work on a
+              hardware project, bring the tools you'll need. We'll have limited
+              tools, and a 3d printer & soldering station available.
             </p>
           </div>
           <div>
             <p>
               <b>I&apos;m not good at coding. Can I still participate?</b>
               <br />
-              This hackathon is for creatives of all skill levels! We'll have workshops and other events so join us and let's learn together.
+              This hackathon is for creatives of all skill levels! We'll have
+              workshops and other events so join us and let's learn together.
             </p>
 
             <p>
               <b>What can I make at KiwiHacks?</b>
               <br />
-              Anything you can imagine! Games? Apps? Websites? Programming languages? Hardware? You name it! We'll have a bunch of resources and mentors to help you out.
+              Anything you can imagine! Games? Apps? Websites? Programming
+              languages? Hardware? You name it! We'll have a bunch of resources
+              and mentors to help you out.
             </p>
 
             <p>
               <b>What if my parents are concerned?</b>
               <br />
-              We're here to help! Parents can reach out to us at PLACEHOLDER for questions. All participants will need a signed parental consent form if under 18.
+              We're here to help! Parents can reach out to us at PLACEHOLDER for
+              questions. All participants will need a signed parental consent
+              form if under 18.
             </p>
 
             <p>
               <b>What if I have more questions?</b>
               <br />
-              Contact us! Feel free to reach out to us via email at <Link href="mailto:PLACEHOLDER" className="text-[#00ff00]">PLACEHOLDER</Link>.
+              Contact us! Feel free to reach out to us via email at{" "}
+              <Link href="mailto:PLACEHOLDER" className="text-[#00ff00]">
+                PLACEHOLDER
+              </Link>
+              .
             </p>
           </div>
         </div>
@@ -254,6 +290,5 @@ export default function RetroHomePage() {
         <p className="mt-4">Interested in sponsoring? Contact us at PLACEHOLDER</p>
       </RetroSection>*/}
     </RetroLayout>
-  )
+  );
 }
-
