@@ -823,7 +823,7 @@ export default function Home() {
                   href="https://discord.gg/596VN4SYVr"
                   className="h-10 w-10 rounded-full bg-[#0a2a0a] border border-[#2a5a2a] flex items-center justify-center hover:bg-[#2a5a2a] transition-colors"
                 >
-                  <span className="sr-only">X</span>
+                  <span className="sr-only">Discord</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -836,7 +836,11 @@ export default function Home() {
                     strokeLinejoin="round"
                     className="lucide lucide-discord"
                   >
-                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                    <circle cx="9" cy="12" r="1" />
+                    <circle cx="15" cy="12" r="1" />
+                    <path d="M7.5 17c0 .5.5 1 1 1h7c.5 0 1-.5 1-1V7c0-.5-.5-1-1-1h-7c-.5 0-1 .5-1 1v10z" />
+                    <path d="M15.5 17c0 1 1.5 3 2 3 2.5 0 4-2.5 4.5-5 .5-2.5-2-5-4.5-5" />
+                    <path d="M8.5 17c0 1-1.5 3-2 3-2.5 0-4-2.5-4.5-5-.5-2.5 2-5 4.5-5" />
                   </svg>
                 </a>
                 <a
