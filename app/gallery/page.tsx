@@ -318,7 +318,7 @@ export default function GalleryPage() {
                 <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#90ee90] to-transparent"></div>
               </div>
               <p className="text-lg md:text-xl text-[#a0d0a0] max-w-2xl mx-auto mt-6">
-                Explore highlights from our past events and get inspired for KiwiHacks 2025
+                Explore highlights from our past events and get inspired for KiwiHacks 2026
               </p>
             </div>
           </div>
