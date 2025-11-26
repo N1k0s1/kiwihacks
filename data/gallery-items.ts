@@ -37,18 +37,8 @@ export type GalleryItem = {
         type: "image", // Define the type of thing you want to show
         thumbnail: "/gallery/scrapyard/scrapyard3.webp?height=400&width=600", // small image to be displayed on the post
         src: "/gallery/scrapyard/scrapyard3.webp?height=800&width=1200", // main thing you want to show
-        title: "", // Title to be shown on the psot
-        description: "", // Description to be shown on the post
-        event: "Scrapyard Auckland", // Name of event for filtering
-        location: "Auckland, New Zealand", // location of event
-      },
-      { 
-        id: "scrapyard2025-3", // useless
-        type: "image", // Define the type of thing you want to show
-        thumbnail: "/gallery/scrapyard/scrapyard4.webp?height=400&width=600", // small image to be displayed on the post
-        src: "/gallery/scrapyard/scrapyard4.webp?height=800&width=1200", // main thing you want to show
-        title: "Socialising", // Title to be shown on the psot
-        description: "Students talking about projects", // Description to be shown on the post
+        title: "Dinner!", // Title to be shown on the psot
+        description: "Some students getting some pizza!", // Description to be shown on the post
         event: "Scrapyard Auckland", // Name of event for filtering
         location: "Auckland, New Zealand", // location of event
       },
@@ -83,16 +73,6 @@ export type GalleryItem = {
         location: "Auckland, New Zealand", // location of event
       },
       { 
-        id: "scrapyard2025-7", // useless
-        type: "image", // Define the type of thing you want to show
-        thumbnail: "/gallery/scrapyard/scrapyard8.webp?height=400&width=600", // small image to be displayed on the post
-        src: "/gallery/scrapyard/scrapyard8.webp?height=800&width=1200", // main thing you want to show
-        title: "Group photo!", // Title to be shown on the psot
-        description: "A few had to leave before we took a group photo!", // Description to be shown on the post
-        event: "Scrapyard Auckland", // Name of event for filtering
-        location: "Auckland, New Zealand", // location of event
-      },
-      { 
         id: "scrapyard2025-8", // useless
         type: "image", // Define the type of thing you want to show
         thumbnail: "/gallery/scrapyard/scrapyard9.webp?height=400&width=600", // small image to be displayed on the post
@@ -109,16 +89,6 @@ export type GalleryItem = {
         src: "/gallery/scrapyard/scrapyard10.webp?height=800&width=1200", // main thing you want to show
         title: "Coding", // Title to be shown on the psot
         description: "Students working on their projects!", // Description to be shown on the post
-        event: "Scrapyard Auckland", // Name of event for filtering
-        location: "Auckland, New Zealand", // location of event
-      },
-      { 
-        id: "scrapyard2025-10", // useless
-        type: "image", // Define the type of thing you want to show
-        thumbnail: "/gallery/scrapyard/scrapyard11.webp?height=400&width=600", // small image to be displayed on the post
-        src: "/gallery/scrapyard/scrapyard11.webp?height=800&width=1200", // main thing you want to show
-        title: "", // Title to be shown on the psot
-        description: "", // Description to be shown on the post
         event: "Scrapyard Auckland", // Name of event for filtering
         location: "Auckland, New Zealand", // location of event
       },
@@ -217,26 +187,6 @@ export type GalleryItem = {
         type: "image", // Define the type of thing you want to show
         thumbnail: "/gallery/counterspell/counterspell 1.webp?height=400&width=600", // small image to be displayed on the post
         src: "/gallery/counterspell/counterspell 1.webp?height=800&width=1200", // main thing you want to show
-        title: "", // Title to be shown on the psot
-        description: "", // Description to be shown on the post
-        event: "Counterspell Auckland", // Name of event for filtering
-        location: "Auckland, New Zealand", // location of event
-      },
-      { 
-        id: "counterspell2024-1", // useless
-        type: "image", // Define the type of thing you want to show
-        thumbnail: "/gallery/counterspell/counterspell 2.webp?height=400&width=600", // small image to be displayed on the post
-        src: "/gallery/counterspell/counterspell 2.webp?height=800&width=1200", // main thing you want to show
-        title: "", // Title to be shown on the psot
-        description: "", // Description to be shown on the post
-        event: "Counterspell Auckland", // Name of event for filtering
-        location: "Auckland, New Zealand", // location of event
-      },
-      { 
-        id: "counterspell2024-2", // useless
-        type: "image", // Define the type of thing you want to show
-        thumbnail: "/gallery/counterspell/counterspell 3.webp?height=400&width=600", // small image to be displayed on the post
-        src: "/gallery/counterspell/counterspell 3.webp?height=800&width=1200", // main thing you want to show
         title: "", // Title to be shown on the psot
         description: "", // Description to be shown on the post
         event: "Counterspell Auckland", // Name of event for filtering
