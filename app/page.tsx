@@ -402,7 +402,7 @@ export default function Home() {
             >
               <div className="flex items-center gap-2 text-sm md:text-base text-[#d0ffd0]">
                 <Calendar className="h-5 w-5 text-[#90ee90]" />
-                <span>21-22nd March 2026</span>
+                <span>21st/22nd March 2026</span>
               </div>
               <div className="hidden md:block h-4 border-r border-[#2a5a2a]"></div>
               <div className="flex items-center gap-2 text-sm md:text-base text-[#d0ffd0]">
