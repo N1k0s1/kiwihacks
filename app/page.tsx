@@ -402,7 +402,7 @@ export default function Home() {
             >
               <div className="flex items-center gap-2 text-sm md:text-base text-[#d0ffd0]">
                 <Calendar className="h-5 w-5 text-[#90ee90]" />
-                <span>March 2026</span>
+                <span>21-22nd March 2026</span>
               </div>
               <div className="hidden md:block h-4 border-r border-[#2a5a2a]"></div>
               <div className="flex items-center gap-2 text-sm md:text-base text-[#d0ffd0]">
@@ -500,7 +500,7 @@ export default function Home() {
                   KiwiHacks is a 24 hour Hackthon in Auckland, New Zealand!
                   It's run by teenagers for teenagers - if you're 18 or under,
                   join us for this amazing opportunity to make new friends and
-                  make a project together!
+                  build a project together!
                 </p>
                 <p className="text-lg mb-6 text-[#d0ffd0]">
                   Whether you're new to coding or you're an experienced
@@ -752,7 +752,7 @@ export default function Home() {
                 KiwiHacks
               </h3>
               <p className="text-[#d0ffd0]">
-                Auckland&apos;s premier hackathon for coders and innovators 18
+                Auckland&apos;s premier hackathon for students 18
                 and under.
               </p>
             </div>
@@ -808,7 +808,7 @@ export default function Home() {
             <div>
               <h3 className="font-bold text-lg mb-4 text-[#90ee90]">Contact</h3>
               <ul className="space-y-2 text-[#d0ffd0]">
-                <li>PLACEHOLDER</li>
+                <li>niko@kiwihacks.org</li>
                 <li>+64 22 135 0419</li>
                 <li>Auckland, New Zealand</li>
               </ul>
