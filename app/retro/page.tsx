@@ -151,20 +151,19 @@ export default function RetroHomePage() {
         <div className="flex flex-col lg:flex-row gap-4">
           <div className="lg:w-[60%]">
             <p>
-              KiwiHacks is a 24 hour Hackthon in Auckland, split over 2 days,
-              bringing together young innovators, designers, and problem-solvers
-              18 and under to create amazing projects.
+              KiwiHacks is a 24 hour Hackthon in Auckland, split over 2 days!
+              It's run by teenagers for teenagers - if you're under 18, join us
+              for this amazing opportunity to make friends and code together!
             </p>
             <p>
-              Whether you&apos;re just starting to code or you&apos;ve been
-              building projects for years, KiwiHacks will have workshops to
-              learn and build new things, and opportunities connect with other
-              young tech enthusiasts.
+              Whether you're new to coding or you're an experienced developer,
+              KiwiHacks provides workshops and opportunities to meet other
+              coders!
             </p>
             <p>
               Join us for an unforgettable weekend of creativity, mentorship,
-              and fun as we push the boundaries of what&apos;s possible in
-              technology. Open exclusively to participants 18 and under.
+              and fun as we create memories and develop projects together! Open
+              exclusively to participants 18 and under.
             </p>
           </div>
           <div className="lg:w-[40%] flex justify-center lg:justify-start">
