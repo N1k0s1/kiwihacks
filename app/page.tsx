@@ -498,20 +498,19 @@ export default function Home() {
               <div>
                 <p className="text-lg mb-6 text-[#d0ffd0]">
                   KiwiHacks is a 24 hour Hackthon in Auckland, split over 2
-                  days, bringing together young innovators, designers, and
-                  problem-solvers 18 and under to create amazing projects.
+                  days! It's run by teenagers for teenagers - if you're under
+                  18, join us for this amazing opportunity to make friends and
+                  code together!
                 </p>
                 <p className="text-lg mb-6 text-[#d0ffd0]">
-                  Whether you&apos;re just starting to code or you&apos;ve been
-                  building projects for years, KiwiHacks will have workshops to
-                  learn and build new things, and opportunities connect with
-                  other young tech enthusiasts.
+                  Whether you're new to coding or you're an experienced
+                  developer, KiwiHacks provides workshops and opportunities to
+                  meet other coders!
                 </p>
                 <p className="text-lg text-[#d0ffd0]">
                   Join us for an unforgettable weekend of creativity,
-                  mentorship, and fun as we push the boundaries of what&apos;s
-                  possible in technology. Open exclusively to participants 18
-                  and under.
+                  mentorship, and fun as we create memories and develop projects
+                  together! Open exclusively to participants 18 and under.
                 </p>
               </div>
               <div className="relative h-64 md:h-96 rounded-lg overflow-hidden border border-[#2a5a2a] shadow-[0_0_30px_rgba(144,238,144,0.1)]">
@@ -650,8 +649,8 @@ export default function Home() {
                   a: "Contact us! Feel free to reach out to us via email at PLACEHOLDER.",
                 },
                 {
-//                  q: "Is KiwiHacks affiliated with Hack Club or an official Hack Club Hackathon?",
-//                  a: "No, KiwiHacks is not an official Hack Club hackathon, and we are not affiliated with or partnered with Hack Club. Our event is independently organized by a passionate team of young New Zealanders dedicated to empowering youth through technology and innovation.",
+                  //                  q: "Is KiwiHacks affiliated with Hack Club or an official Hack Club Hackathon?",
+                  //                  a: "No, KiwiHacks is not an official Hack Club hackathon, and we are not affiliated with or partnered with Hack Club. Our event is independently organized by a passionate team of young New Zealanders dedicated to empowering youth through technology and innovation.",
                 },
               ].map((item, index) => (
                 <div
