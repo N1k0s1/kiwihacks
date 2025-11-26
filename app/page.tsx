@@ -497,20 +497,20 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <p className="text-lg mb-6 text-[#d0ffd0]">
-                  KiwiHacks is a 24 hour Hackthon in Auckland, split over 2
-                  days! It's run by teenagers for teenagers - if you're under
-                  18, join us for this amazing opportunity to make friends and
-                  code together!
+                  KiwiHacks is a 24 hour Hackthon in Auckland, New Zealand!
+                  It's run by teenagers for teenagers - if you're 18 or under,
+                  join us for this amazing opportunity to make new friends and
+                  make a project together!
                 </p>
                 <p className="text-lg mb-6 text-[#d0ffd0]">
                   Whether you're new to coding or you're an experienced
-                  developer, KiwiHacks provides workshops and opportunities to
-                  meet other coders!
+                  developer, KiwiHacks provides workshops on how to code 
+                  from scratch, and opportunities to meet other coders!
                 </p>
                 <p className="text-lg text-[#d0ffd0]">
-                  Join us for an unforgettable weekend of creativity,
+                  Join us for an unforgettable weekend of coding,
                   mentorship, and fun as we create memories and develop projects
-                  together! Open exclusively to participants 18 and under.
+                  together! Open to students 18 and under.
                 </p>
               </div>
               <div className="relative h-64 md:h-96 rounded-lg overflow-hidden border border-[#2a5a2a] shadow-[0_0_30px_rgba(144,238,144,0.1)]">
@@ -618,7 +618,7 @@ export default function Home() {
                 },
                 {
                   q: "When & where is KiwiHacks hosted?",
-                  a: "KiwiHacks will be hosted in Auckland, New Zealand at sometime in March 2026. The event will run for 24 hours, with the start being 9am Saturday, and the end being 9am Sunday. You're welcome to choose to keep hacking overnight, or to go home! Contact us if this is the case! ",
+                  a: "KiwiHacks will be hosted in Auckland, New Zealand at the GridAKL / John Lysaght Startup Coworking space on the 21st until the 22nd of March 2026. The event will run for 24 hours, with the start being 10am Saturday, and the end being 10am Sunday. You're welcome to choose to keep hacking overnight, or to go home! Contact us if this is the case! ",
                 },
                 {
                   q: "Who can participate in KiwiHacks?",
@@ -626,11 +626,11 @@ export default function Home() {
                 },
                 {
                   q: "All this, for free?",
-                  a: "Yep! Food, swag, and everything else is all included! Shoutout to our sponnsors!",
+                  a: "Yep! Food, swag, and everything else is all included! Shoutout to our sponsors!",
                 },
                 {
                   q: "What do I need?",
-                  a: "Your laptop, chargers, toiletries, sleeping bag (if you plan to stay overnight), and an open mind! If you plan to work on a hardware project, bring the tools you'll need. We'll have limited tools, and a 3d printer & soldering station available.",
+                  a: "Your laptop, chargers, toiletries, sleeping bag (if you plan to stay overnight), and an open mind! If you plan to work on a hardware project, bring the tools you'll need. We'll have limited tools, a 3d printer & soldering station available.",
                 },
                 {
                   q: "I'm not good at coding. Can I still participate?",
@@ -642,16 +642,12 @@ export default function Home() {
                 },
                 {
                   q: "What if my parents are concerned?",
-                  a: "We're here to help! Parents can reach out to us at PLACEHOLDER for questions. All participants will need a signed parental consent form if under 18.",
+                  a: "We're here to help! Parents can reach out to us at niko@kiwihacks.org for questions.",
                 },
                 {
                   q: "What if I have more questions?",
-                  a: "Contact us! Feel free to reach out to us via email at PLACEHOLDER.",
-                },
-                {
-                  //                  q: "Is KiwiHacks affiliated with Hack Club or an official Hack Club Hackathon?",
-                  //                  a: "No, KiwiHacks is not an official Hack Club hackathon, and we are not affiliated with or partnered with Hack Club. Our event is independently organized by a passionate team of young New Zealanders dedicated to empowering youth through technology and innovation.",
-                },
+                  a: "Contact us! Feel free to reach out to us via email at niko@kiwihacks.org.",
+                }
               ].map((item, index) => (
                 <div
                   key={index}
@@ -679,15 +675,17 @@ export default function Home() {
                 Interested in sponsoring?
               </h3>
               <p className="text-[#d0ffd0] max-w-2xl mx-auto mb-6">
-                <s>
                   Support the next generation of innovators and gain visibility
-                  for your brand among top tech talent.
-                </s>
+                  for your brand among emerging tech talent!
               </p>
               <form action="javascript:void(0);">
-                <Button className="bg-[#2a5a2a] hover:bg-[#3a7a3a] cursor-not-allowed text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)]">
-                  <s>Become a Sponsor</s>
-                </Button>
+                <a
+                  href="mailto:niko@kiwihacks.org"
+                  className="inline-flex items-center justify-center px-4 py-2 bg-[#2a5a2a] hover:bg-[#3a7a3a] text-white border border-[#90ee90]/30 shadow-[0_0_15px_rgba(144,238,144,0.15)] rounded-md"
+                  aria-label="Become a Sponsor!"
+                >
+                  Become a Sponsor!
+                </a>
               </form>
             </div>
           </div>
@@ -702,8 +700,7 @@ export default function Home() {
             </h2>
             <p className="text-lg text-[#d0ffd0] max-w-2xl mx-auto mb-8">
               Join us for 24 hours of coding, creativity, and collaboration.
-              Open to all innovators 18 and under. Register now to secure your
-              spot at KiwiHacks!
+              Register now to secure your spot at KiwiHacks 2026!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <form
@@ -823,7 +820,7 @@ export default function Home() {
               </h3>
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href="https://discord.gg/596VN4SYVr"
                   className="h-10 w-10 rounded-full bg-[#0a2a0a] border border-[#2a5a2a] flex items-center justify-center hover:bg-[#2a5a2a] transition-colors"
                 >
                   <span className="sr-only">X</span>
@@ -837,7 +834,7 @@ export default function Home() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="lucide lucide-twitter"
+                    className="lucide lucide-discord"
                   >
                     <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
                   </svg>
@@ -871,7 +868,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/kiwihacks/"
                   className="h-10 w-10 rounded-full bg-[#0a2a0a] border border-[#2a5a2a] flex items-center justify-center hover:bg-[#2a5a2a] transition-colors"
                 >
                   <span className="sr-only">LinkedIn</span>
