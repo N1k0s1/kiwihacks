@@ -387,7 +387,7 @@ export default function Home() {
                 <div className="absolute -bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-[#90ee90] to-transparent"></div>
               </div>
               <p className="text-xl md:text-2xl text-[#a0d0a0] max-w-2xl mx-auto mb-8">
-                Auckland&apos;s premier hackathon for coders and innovators 18
+                Auckland&apos;s premier hackathon student coders and innovators 18
                 and under
               </p>
             </div>
