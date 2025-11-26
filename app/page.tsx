@@ -199,7 +199,7 @@ export default function Home() {
               href="#sponsors"
               className="text-sm font-medium text-[#d0ffd0] hover:text-[#90ee90] transition-colors"
             >
-              Sponsor
+              Sponsors
             </a>
             <Link
               href="/gallery"
@@ -295,7 +295,7 @@ export default function Home() {
                 transitionProperty: "opacity, transform",
               }}
             >
-              Sponsor
+              Sponsors
             </a>
             <Link
               href="/gallery"
@@ -783,7 +783,7 @@ export default function Home() {
                     href="#sponsors"
                     className="text-[#d0ffd0] hover:text-[#90ee90] transition-colors"
                   >
-                    Sponsor
+                    Sponsors
                   </a>
                 </li>
                 <li>

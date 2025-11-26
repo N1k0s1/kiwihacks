@@ -205,7 +205,7 @@ export default function RetroHomePage() {
             <p>
               <b>Who can participate in KiwiHacks?</b>
               <br />
-              All high-school & upper-middle-school aged students (18 and under)
+              All high-school students aged 18 and under
               are welcome to come!
             </p>
 
