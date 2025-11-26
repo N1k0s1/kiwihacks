@@ -210,7 +210,7 @@ export default function Home() {
             </Link>
           </nav>
           <form
-            action="https://forms.fillout.com/t/gwKJLcFXhQus"
+            action="https://forms.hackclub.com/kiwihacks"
             target="_blank"
           >
             <Button
@@ -327,7 +327,7 @@ export default function Home() {
               }}
             >
               <form
-                action="https://forms.fillout.com/t/gwKJLcFXhQus"
+                action="https://forms.hackclub.com/kiwihacks"
                 target="_blank"
               >
                 <Button
@@ -425,7 +425,7 @@ export default function Home() {
               )}
             >
               <form
-                action="https://forms.fillout.com/t/gwKJLcFXhQus"
+                action="https://forms.hackclub.com/kiwihacks"
                 target="_blank"
               >
                 <Button
@@ -708,7 +708,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <form
-                action="https://forms.fillout.com/t/gwKJLcFXhQus"
+                action="https://forms.hackclub.com/kiwihacks"
                 target="_blank"
               >
                 <Button

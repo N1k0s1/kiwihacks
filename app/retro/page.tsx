@@ -129,7 +129,7 @@ export default function RetroHomePage() {
         <p>75+ hackers. 24 hours. Unlimited creativity!</p>
         <div className="my-4 flex flex-col sm:flex-row gap-2">
           <RetroButton
-            href="https://forms.fillout.com/t/gwKJLcFXhQus?"
+            href="https://forms.hackclub.com/kiwihacks"
             target="_blank"
           >
             Register Now!
