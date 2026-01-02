@@ -6,9 +6,21 @@ export default function App() {
       <nav>
         <a href="/">Home</a>
       </nav>
-      <h1 class="display" id="title">KiwiHacks</h1>
-      <h2 class="mono">Auckland’s 24hr hackathon for teenage coders and innovators</h2>
+      <h1 class="display" id="title">
+        KiwiHacks
+      </h1>
+      <h2 class="mono">
+        Auckland’s 24hr hackathon for teenage coders and innovators
+      </h2>
       <p>March 21-22. GridAKL.</p>
+
+      <a
+        id="sign-up-link"
+        href="https://forms.hackclub.com/kiwihacks"
+        target="_blank"
+      >
+        Sign up for KiwiHacks!
+      </a>
 
       <div>
         <p class="mono">

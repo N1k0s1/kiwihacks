@@ -19,3 +19,10 @@
 #title {
   color: #2e522b;
 }
+
+#sign-up-link {
+  padding: 1em;
+  background: #76b070;
+  border-radius: 5%;
+  color: #132f1e;
+}
