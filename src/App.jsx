@@ -19,7 +19,7 @@ export default function App() {
         href="https://forms.hackclub.com/kiwihacks"
         target="_blank"
       >
-        Sign up for KiwiHacks!
+        <b>Sign up for KiwiHacks!</b>
       </a>
 
       <div>
