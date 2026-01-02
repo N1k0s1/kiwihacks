@@ -7,6 +7,7 @@ export default function App() {
         <a href="/">Home</a>
       </nav>
       <h1 class="display">KiwiHacks</h1>
+      <p>March 21-22. GridAKL.</p>
     </>
   );
 }
