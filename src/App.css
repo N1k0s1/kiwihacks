@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 #root {
   max-width: 1280px;
@@ -10,4 +10,8 @@
 
 .display {
   font-family: ABeeZee;
+}
+
+.mono {
+  font-family: "Source Code Pro";
 }
