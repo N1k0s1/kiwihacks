@@ -3,7 +3,9 @@ import "./App.css";
 export default function App() {
   return (
     <>
-      <nav></nav>
+      <nav>
+        <a href="/">Home</a>
+      </nav>
       <h1 class="display">KiwiHacks</h1>
     </>
   );
