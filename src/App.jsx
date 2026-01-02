@@ -6,7 +6,8 @@ export default function App() {
       <nav>
         <a href="/">Home</a>
       </nav>
-      <h1 class="display">KiwiHacks</h1>
+      <h1 class="display" id="title">KiwiHacks</h1>
+      <h2 class="mono">Auckland’s 24hr hackathon for teenage coders and innovators</h2>
       <p>March 21-22. GridAKL.</p>
 
       <div>
