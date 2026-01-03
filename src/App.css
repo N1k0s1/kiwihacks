@@ -26,3 +26,39 @@
   border-radius: 5%;
   color: #132f1e;
 }
+
+.navbar {
+  position: relative;
+  width: 100%;
+  background-color: var(--cpt-surface1);
+  padding: 1.35rem 1.8rem;
+  display: flex;
+  gap: 0.9rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--cpt-surface2);
+  margin-top: -0.9rem;
+  margin-bottom: 0.9rem;
+  z-index: 1;
+}
+
+.navbar a {
+  color: var(--cpt-text);
+  border: 2px solid var(--cpt-blue);
+  padding: 0.45rem 0.9rem;
+  border-radius: 0.45rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a:visited {
+  color: var(--cpt-text);
+}
+
+.navbar a:hover {
+  background-color: var(--cpt-blue);
+  color: var(--cpt-crust);
+}
