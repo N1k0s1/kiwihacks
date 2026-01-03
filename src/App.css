@@ -6,6 +6,7 @@
   padding: 2rem;
   text-align: center;
   font-family: Figtree;
+  color: #132f1e;
 }
 
 .display {
@@ -31,7 +32,7 @@
 .navbar {
   position: relative;
   width: 100%;
-  background-color: #64D6FF4D;
+  background-color: #64d6ff4d;
   padding: 1.35rem 1.8rem;
   display: flex;
   gap: 0.9rem;
@@ -43,9 +44,9 @@
 }
 
 .navbar a {
+  color: #132f1e;
   padding: 0.45rem 0.9rem;
   border-radius: 0.45rem;
-  text-decoration: none;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
