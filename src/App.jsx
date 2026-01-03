@@ -3,9 +3,14 @@ import "./App.css";
 export default function App() {
   return (
     <>
-      <nav>
+      <header>
+      <nav class="navbar">
         <a href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="#sponsor">Sponsors</a>
       </nav>
+      </header>
+
       <h1 class="display" id="title">
         KiwiHacks
       </h1>
