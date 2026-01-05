@@ -1,45 +1,110 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
+:root {
+  --bg-colour:
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 .display {
-  font-family: ABeeZee;
+  font-family: "ABeeZee", sans-serif;
 }
 
 .mono {
   font-family: "Source Code Pro";
 }
 
-#title {
-  color: #2e522b;
+#subtitle {
+  font-weight: 400;
+  color: #132F1E;
+  margin: 0;
+  padding: 0;
 }
 
-#sign-up-link {
-  padding: 1em;
-  background: #76b070;
+#title {
+  color: #2E522B;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0.1rem;
+}
+
+.sign-up-link {
   border-radius: 15px;
   color: #132f1e;
   text-decoration: none;
 }
 
+#big-button {
+  padding: 1rem;
+  background: #76b070;
+  margin: 2rem;
+}
+
+#small-button {
+  padding: 0.5em;
+  background: #91e2ffce;
+  font-size: 0.8rem;
+  margin-left: 55%;
+  text-decoration: none;
+}
+
 .navbar {
   position: relative;
-  width: 100%;
   background-color: #64d6ff4d;
-  padding: 1.35rem 1.8rem;
   display: flex;
-  gap: 0.9rem;
+  gap: 2.5rem;
+  padding: 1.2rem;
   justify-content: flex;
   flex-wrap: wrap;
-  margin-top: -0.9rem;
   margin-bottom: 0.9rem;
+  margin-left: 0;
+  margin-right: 0;
   z-index: 1;
+  width: 100vw;
+  align-items: center;
 }
 
 .navbar a {
   color: #132f1e;
-  padding: 0.45rem 0.9rem;
-  border-radius: 0.45rem;
-  transition: all 0.2s ease;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Code Pro", monospace;
+  text-decoration: underline;
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+p {
+  text-align: left;
+  margin: auto;
+  width: 50%;
+  padding: 1rem;
+}
+
+.info {
+  font-family: "Source Code Pro", monospace;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 0;
+}
+
+#basicinfo {
+  display: flex;
+  padding: 1rem;
+  background: rgba(118, 176, 112, 0.50);
+  width: 70%;
+  text-align: center;
+  margin: auto;
 }
