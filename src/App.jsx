@@ -18,7 +18,7 @@ export default function App() {
         </a>
       </nav>
 
-      <img src="public\kiwihackslogo.png" alt="KiwiHacks Logo" />
+      <img src="kiwihackslogo.png" alt="KiwiHacks Logo" />
 
       <header id="home">
         <h1 class="display" id="title">
