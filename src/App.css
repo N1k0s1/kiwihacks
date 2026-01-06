@@ -6,8 +6,8 @@
 
 html,
 body {
-  max-width: 100%;
-  overflow: hidden;
+  max-width: 100vw;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -25,11 +25,12 @@ body {
   color: #132F1E;
   margin: 0;
   padding: 0;
+  margin-bottom: 1rem;
 }
 
 #title {
   color: #2E522B;
-  font-size: 7rem;
+  font-size: 6rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -38,7 +39,12 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 0;
-  margin: 0.1rem;
+  margin: 0;
+  transition: 0.4s ease;
+}
+
+#title:hover {
+  transform: scale(1.05);
 }
 
 .sign-up-link {
@@ -49,16 +55,29 @@ body {
 
 #big-button {
   padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   background: #76b070;
-  margin: 2rem;
+}
+
+#big-button:hover {
+  background: rgb(136, 188, 130);
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
 }
 
 #small-button {
   padding: 0.5em;
   background: #91e2ffce;
   font-size: 0.8rem;
-  margin-left: 55%;
+  right: 5%;
+  position: absolute;
   text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+#small-button:hover {
+  background: #baedff;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -86,6 +105,14 @@ body {
   display: flex;
 }
 
+#link {
+  transition: 0.3s ease;
+}
+
+#link:hover {
+  color: #36c6fb;
+}
+
 p {
   text-align: left;
   margin: auto;
@@ -103,8 +130,17 @@ p {
 #basicinfo {
   display: flex;
   padding: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   background: rgba(118, 176, 112, 0.50);
-  width: 70%;
+  width: 80%;
   text-align: center;
   margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+}
+
+img {
+  width: 25%;
+  height: auto;
 }

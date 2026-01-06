@@ -4,10 +4,10 @@ export default function App() {
   return (
     <>
       <nav class="navbar">
-        <a href="/">Home</a>
-        <a href="#faq">FAQ</a>
-        <a href="#about">About</a>
-        <a href="#sponsor">Sponsors</a>
+        <a href="/" id="link">Home</a>
+        <a href="#faq" id="link">FAQ</a>
+        <a href="#about" id="link">About</a>
+        <a href="#sponsor" id="link">Sponsors</a>
         <a
           class="sign-up-link"
           id="small-button"
@@ -17,6 +17,8 @@ export default function App() {
           <b>Sign up for KiwiHacks</b>
         </a>
       </nav>
+
+      <img src="public\kiwihackslogo.png" alt="KiwiHacks Logo" />
 
       <header id="home">
         <h1 class="display" id="title">
