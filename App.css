@@ -58,6 +58,7 @@ body {
   padding-left: 4rem;
   padding-right: 4rem;
   background: #76b070;
+  margin-bottom: 3rem;
 }
 
 #big-button:hover {
@@ -140,7 +141,38 @@ p {
   border-radius: 15px;
 }
 
-img {
+#logo {
   width: 25%;
   height: auto;
+}
+
+.text {
+  margin: 0;
+  padding: 1rem;
+  width: 60%;
+}
+
+#about {
+  gap: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 2rem;
+  background-color: rgba(118, 176, 112, 0.15);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-text {
+  font-size: 1.5rem;
+  width: 50vw;
+}
+
+#example {
+  width: fit-content;
+  height: 53vh;
+  border-radius: 25px !important;
+  padding-left: 10%;
+  padding-right: 5%;
+  margin: 0;
 }
