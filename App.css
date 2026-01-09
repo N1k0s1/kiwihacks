@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  --bg-colour:
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.display {
+  font-family: "ABeeZee", sans-serif;
+}
+
+.mono {
+  font-family: "Source Code Pro";
+}
+
+#subtitle {
+  font-weight: 400;
+  color: #132F1E;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+#title {
+  color: #2E522B;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  transition: 0.4s ease;
+}
+
+#title:hover {
+  transform: scale(1.05);
+}
+
+.sign-up-link {
+  border-radius: 15px;
+  color: #132f1e;
+  text-decoration: none;
+}
+
+#big-button {
+  padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background: #76b070;
+  margin-bottom: 3rem;
+}
+
+#big-button:hover {
+  background: rgb(136, 188, 130);
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+}
+
+#small-button {
+  padding: 0.5em;
+  background: #91e2ffce;
+  font-size: 0.8rem;
+  right: 5%;
+  position: absolute;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+#small-button:hover {
+  background: #baedff;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  position: relative;
+  background-color: #64d6ff4d;
+  display: flex;
+  gap: 2.5rem;
+  padding: 1.2rem;
+  justify-content: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.9rem;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 1;
+  width: 100vw;
+  align-items: center;
+}
+
+.navbar a {
+  color: #132f1e;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Code Pro", monospace;
+  text-decoration: underline;
+  display: flex;
+}
+
+#link {
+  transition: 0.3s ease;
+}
+
+#link:hover {
+  color: #36c6fb;
+}
+
+p {
+  text-align: left;
+  margin: auto;
+  width: 50%;
+  padding: 1rem;
+}
+
+.info {
+  font-family: "Source Code Pro", monospace;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 0;
+}
+
+#basicinfo {
+  display: flex;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: rgba(118, 176, 112, 0.50);
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+}
+
+#logo {
+  width: 25%;
+  height: auto;
+}
+
+.text {
+  margin: 0;
+  padding: 1rem;
+  width: 60%;
+}
+
+#about {
+  gap: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 2rem;
+  background-color: rgba(118, 176, 112, 0.15);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-text {
+  font-size: 1.5rem;
+  width: 50vw;
+}
+
+#example {
+  width: fit-content;
+  height: 53vh;
+  border-radius: 25px !important;
+  padding-left: 10%;
+  padding-right: 5%;
+  margin: 0;
+}
