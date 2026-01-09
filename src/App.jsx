@@ -1,4 +1,6 @@
 import "./App.css";
+import Logo from "./assets/kiwihackslogo.png";
+import ExampleImage from "./assets/example.webp";
 
 export default function App() {
   return (
@@ -18,7 +20,7 @@ export default function App() {
         </a>
       </nav>
 
-      <img id="logo" src="/assets/kiwihackslogo.png" alt="KiwiHacks Logo" />
+      <img id="logo" src={Logo} alt="KiwiHacks Logo" />
 
       <header id="home">
         <h1 class="display" id="title">
@@ -56,7 +58,7 @@ export default function App() {
             skill levels welcome.
           </p>
         </div>
-        <img id="example" src="/assets/example.webp" alt="Image of previous hackathon" />
+        <img id="example" src={ExampleImage} alt="Image of previous hackathon" />
       </section>
     </>
   );
