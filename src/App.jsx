@@ -18,7 +18,7 @@ export default function App() {
         </a>
       </nav>
 
-      <img src="public/kiwihackslogo.png" alt="KiwiHacks Logo" />
+      <img id="logo" src="src/assets/kiwihackslogo.png" alt="KiwiHacks Logo" />
 
       <header id="home">
         <h1 class="display" id="title">
@@ -45,15 +45,18 @@ export default function App() {
       </a>
 
       <section id="about">
-        <p class="mono">
-          KiwiHacks is a 24 hour hackathon run by teenagers for teenagers - if
-          you're 18 or under, join us for this amazing opportunity to make new
-          friends and build a project together!
-        </p>
-        <p class="mono">
-          It’ll be an unforgettable weekend of coding, mentorship, and fun. All
-          skill levels welcome.
-        </p>
+        <div class="text">
+          <p class="mono" id="about-text">
+            KiwiHacks is a 24 hour hackathon run by teenagers for teenagers - if
+            you're 18 or under, join us for this amazing opportunity to make new
+            friends and build a project together!
+          </p>
+          <p class="mono" id="about-text">
+            It’ll be an unforgettable weekend of coding, mentorship, and fun. All
+            skill levels welcome.
+          </p>
+        </div>
+        <img id="example" src="src\assets\example.webp" alt="Image of previous hackathon" />
       </section>
     </>
   );
