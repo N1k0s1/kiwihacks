@@ -18,7 +18,7 @@ export default function App() {
         </a>
       </nav>
 
-      <img id="logo" src="src/assets/kiwihackslogo.png" alt="KiwiHacks Logo" />
+      <img id="logo" src="/assets/kiwihackslogo.png" alt="KiwiHacks Logo" />
 
       <header id="home">
         <h1 class="display" id="title">
@@ -56,7 +56,7 @@ export default function App() {
             skill levels welcome.
           </p>
         </div>
-        <img id="example" src="src\assets\example.webp" alt="Image of previous hackathon" />
+        <img id="example" src="/assets/example.webp" alt="Image of previous hackathon" />
       </section>
     </>
   );
