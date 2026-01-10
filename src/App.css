@@ -144,3 +144,17 @@ img {
   width: 25%;
   height: auto;
 }
+
+#example {
+  width: 50%;
+  height: 50%;
+  border-radius: 25px;
+  height: 57vh;
+  width: fit-content;
+  margin: 0;
+}
+
+#example:hover {
+  transform: scale(1.02);
+  box-shadow: #2E522B 0px 4px 8px 0px;
+}
