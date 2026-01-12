@@ -1,15 +1,23 @@
 import "./App.css";
-import Logo from "./assets/kiwihackslogo.png";
-import ExampleImage from "./assets/example.webp";
+import Logo from "/assets/kiwihackslogo.png";
+import ExampleImage from "/assets/example.webp";
 
 export default function App() {
   return (
     <>
       <nav class="navbar">
-        <a href="/" id="link">Home</a>
-        <a href="#faq" id="link">FAQ</a>
-        <a href="#about" id="link">About</a>
-        <a href="#sponsor" id="link">Sponsors</a>
+        <a href="/" id="link">
+          Home
+        </a>
+        <a href="#faq" id="link">
+          FAQ
+        </a>
+        <a href="#about" id="link">
+          About
+        </a>
+        <a href="#sponsor" id="link">
+          Sponsors
+        </a>
         <a
           class="sign-up-link"
           id="small-button"
@@ -54,11 +62,15 @@ export default function App() {
             friends and build a project together!
           </p>
           <p class="mono" id="about-text">
-            It’ll be an unforgettable weekend of coding, mentorship, and fun. All
-            skill levels welcome.
+            It’ll be an unforgettable weekend of coding, mentorship, and fun.
+            All skill levels welcome.
           </p>
         </div>
-        <img id="example" src={ExampleImage} alt="Image of previous hackathon" />
+        <img
+          id="example"
+          src={ExampleImage}
+          alt="Image of previous hackathon"
+        />
       </section>
     </>
   );
