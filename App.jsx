@@ -1,6 +1,6 @@
 import "./App.css";
-import Logo from "/assets/kiwihackslogo.png";
-import ExampleImage from "/assets/example.webp";
+import Logo from "./assets/kiwihackslogo.png";
+import ExampleImage from "./assets/example.webp";
 
 export default function App() {
   return (
