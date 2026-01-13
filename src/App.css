@@ -141,6 +141,10 @@ p {
   border-radius: 15px;
 }
 
+#basicinfo:hover {
+  box-shadow: #2E522B 0px 4px 8px 0px;
+}
+
 #logo {
   width: 25%;
   height: auto;
@@ -187,10 +191,10 @@ p {
   background: #36c6fb;
   border-radius: 15px;
   width: 35%;
-  min-height: 20vh;
   margin: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
   box-shadow: #132F1E 0px 2px 4px 0px;
+  display: grid;
 }
 
 .faq-box:hover {
@@ -232,4 +236,22 @@ p {
 
 .faq-box:nth-child(10) {
   margin-left: 50%;
+}
+
+.faq-question {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-answer {
+  width: 100% !important;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+  vertical-align: middle;
+  font-size: 1.2rem;
 }
