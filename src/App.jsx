@@ -74,9 +74,16 @@ export default function App() {
       </section>
 
       <section id="faq">
-        <div class="text">
-          <h1>FAQ</h1>
-        </div>
+        <h1 class="mono">FAQ</h1>
+        <div class="faq-box"></div>
+        <div class="faq-box"></div>
+        <div class="faq-box"></div>
+        <div class="faq-box"></div>
+        <div class="faq-box"></div>
+        <div class="faq-box"></div>
+        <div class="faq-box"></div>
+        <div class="faq-box"></div>
+        <div class="faq-box"></div>
       </section>
     </>
   );
