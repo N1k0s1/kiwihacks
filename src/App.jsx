@@ -15,7 +15,7 @@ export default function App() {
         <a href="#faq" id="link">
           FAQ
         </a>
-        <a href="#sponsors" id="link">
+        <a href="#sponsorships" id="link">
           Sponsors
         </a>
         <a
@@ -143,8 +143,20 @@ export default function App() {
         </div>
       </section>
 
-      <section id="sponsors">
+      <section id="sponsorships">
         <h1>Sponsorships</h1>
+
+        <p id="sponsor-text">A HUGE thank you to our sponsors!</p>
+
+        <div id="sponsors">
+          <a id="sponsor-link" href="https://hackclub.com" target="_blank">
+            <div id="sponsor">
+              <img src="https://assets.hackclub.com/flag-standalone.svg" />
+              <p>Hack Club</p>
+            </div>
+          </a>
+        </div>
+
         <p id="sponsor-text">
           {" "}
           By becoming a sponsor, you support the next generation of innovators

@@ -278,6 +278,55 @@ p {
     text-align: center;
 }
 
+#sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+#sponsor {
+    background-color: rgba(118, 176, 112, 0.3);
+    width: 200px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: rgba(46, 82, 43, 0.1) 0px 2px 8px 0px;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(46, 82, 43, 0.1);
+}
+
+#sponsor-link {
+    text-decoration: none;
+    color: #132f1e;
+}
+
+#sponsor img {
+    max-width: 120px;
+    max-height: 80px;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0.9);
+    transition: all 0.3s ease;
+}
+
+#sponsor:hover {
+    background-color: rgba(118, 176, 112, 0.5);
+    box-shadow: rgba(46, 82, 43, 0.2) 0px 4px 12px 0px;
+    transform: translateY(-2px);
+    border-color: rgba(46, 82, 43, 0.3);
+}
+
+#sponsor:hover img {
+    filter: brightness(1);
+    transform: scale(1.05);
+}
+
 #cta {
     margin: auto;
     padding: 2rem;
