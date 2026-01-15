@@ -9,11 +9,11 @@ export default function App() {
         <a href="/" id="link">
           Home
         </a>
-        <a href="#faq" id="link">
-          FAQ
-        </a>
         <a href="#about" id="link">
           About
+        </a>
+        <a href="#faq" id="link">
+          FAQ
         </a>
         <a href="#sponsor" id="link">
           Sponsors
@@ -77,37 +77,69 @@ export default function App() {
         <h1 class="mono">FAQ</h1>
         <div class="faq-box">
           <h2 class="mono faq-question">When & where is KiwiHacks hosted?</h2>
-          <p class="mono faq-answer">KiwiHacks will be hosted in Auckland at the GridAKL / John Lysaght Startup Coworking space on the 21st until the 22nd of March 2026. The event will run for 24 hours, starting at 10am on Saturday, finishing at 10am on Sunday. You can either keep hacking overnight, or to go home and return in the morning!
-
+          <p class="mono faq-answer">
+            KiwiHacks will be hosted in Auckland at the GridAKL / John Lysaght
+            Startup Coworking space on the 21st until the 22nd of March 2026.
+            The event will run for 24 hours, starting at 10am on Saturday,
+            finishing at 10am on Sunday. You can either keep hacking overnight,
+            or to go home and return in the morning!
           </p>
         </div>
         <div class="faq-box">
           <h2 class="mono faq-question">Who can attend KiwiHacks?</h2>
-          <p class="mono faq-answer">All high-school students 18 and under are welcome at KiwiHacks!</p>
+          <p class="mono faq-answer">
+            All high-school students 18 and under are welcome at KiwiHacks!
+          </p>
         </div>
         <div class="faq-box">
           <h2 class="mono faq-question">I'm not a good coder. Can I come?</h2>
-          <p class="mono faq-answer">Absolutely! KiwiHacks is for creatives of all skill levels! We'll have workshops for beginners on how to code the basics, and everyone will finish with a project!.</p>
+          <p class="mono faq-answer">
+            Absolutely! KiwiHacks is for creatives of all skill levels! We'll
+            have workshops for beginners on how to code the basics, and everyone
+            will finish with a project!.
+          </p>
         </div>
         <div class="faq-box">
-          <h2 class="mono faq-question">What should I bring to the hackathon?</h2>
-          <p class="mono faq-answer">Bring your laptop, charger,  toiletries and sleeping bag (if you plan to stay overnight), and an open mind! If you plan to work on a hardware project, bring the tools you'll need. We'll have limited tools, a 3D printer & soldering station available. We'll provide food, drinks, and snacks throughout the event.</p>
+          <h2 class="mono faq-question">
+            What should I bring to the hackathon?
+          </h2>
+          <p class="mono faq-answer">
+            Bring your laptop, charger, toiletries and sleeping bag (if you plan
+            to stay overnight), and an open mind! If you plan to work on a
+            hardware project, bring the tools you'll need. We'll have limited
+            tools, a 3D printer & soldering station available. We'll provide
+            food, drinks, and snacks throughout the event.
+          </p>
         </div>
         <div class="faq-box">
           <h2 class="mono faq-question">All this, for free?</h2>
-          <p class="mono faq-answer">Yep! KiwiHacks (and swag!) is completely free thanks to our generous sponsors. Just sign up, turn up, and have fun!</p>
+          <p class="mono faq-answer">
+            Yep! KiwiHacks (and swag!) is completely free thanks to our generous
+            sponsors. Just sign up, turn up, and have fun!
+          </p>
         </div>
         <div class="faq-box">
           <h2 class="mono faq-question">What can I make at KiwiHacks?</h2>
-          <p class="mono faq-answer">Anything you want! You can build a website, app, game, robot, or anything else you can dream up. We'll have a bunch resources and mentors to help you out!</p>
+          <p class="mono faq-answer">
+            Anything you want! You can build a website, app, game, robot, or
+            anything else you can dream up. We'll have a bunch resources and
+            mentors to help you out!
+          </p>
         </div>
         <div class="faq-box">
           <h2 class="mono faq-question">What if my parents are concerned?</h2>
-          <p class="mono faq-answer">We understand that parents want to ensure their children are safe. If your parents have any questions or concerns, we're here to help - please have them reach out to us at niko@kiwihacks.org!</p>
+          <p class="mono faq-answer">
+            We understand that parents want to ensure their children are safe.
+            If your parents have any questions or concerns, we're here to help -
+            please have them reach out to us at niko@kiwihacks.org!
+          </p>
         </div>
         <div class="faq-box">
           <h2 class="mono faq-question">What if I have more questions?</h2>
-          <p class="mono faq-answer">No worries! Contact us! Feel free to reach out to us via email at niko@kiwihacks.org.</p>
+          <p class="mono faq-answer">
+            No worries! Contact us! Feel free to reach out to us via email at
+            niko@kiwihacks.org.
+          </p>
         </div>
       </section>
     </>
