@@ -35,14 +35,14 @@ export default function App() {
           KiwiHacks
         </h1>
         <h2 class="mono" id="subtitle">
-          Auckland’s 24hr hackathon for teenage coders and innovators
+          Auckland’s free 24hr hackathon for teenage coders and innovators
         </h2>
       </header>
 
       <section id="basicinfo">
         <p class="info">Sat 21/Sun 22 March 2026</p>
         <p class="info">GridAKL/John Lysaght Building</p>
-        <p class="info">75+ participants</p>
+        <p class="info">75+ teenage participants</p>
       </section>
 
       <a

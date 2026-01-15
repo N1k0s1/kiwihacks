@@ -101,6 +101,7 @@ body {
   color: #132f1e;
   margin: 0;
   padding: 0;
+  font-family: "Source Code Pro", monospace;
   text-decoration: underline;
   display: flex;
 }
@@ -121,6 +122,7 @@ p {
 }
 
 .info {
+  font-family: "Source Code Pro", monospace;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   padding: 0;
@@ -137,10 +139,6 @@ p {
   margin: auto;
   margin-bottom: 2rem;
   border-radius: 15px;
-}
-
-#basicinfo:hover {
-  box-shadow: #2E522B 0px 4px 8px 0px;
 }
 
 #logo {
@@ -171,85 +169,10 @@ p {
 }
 
 #example {
-  width: 50%;
-  height: 50%;
-  border-radius: 25px;
-  border: 2px solid #2E522B;
-  height: 57vh;
   width: fit-content;
+  height: 53vh;
+  border-radius: 25px !important;
+  padding-left: 10%;
+  padding-right: 5%;
   margin: 0;
-}
-
-#example:hover {
-  transform: scale(1.02);
-  box-shadow: #2E522B 0px 4px 8px 0px;
-}
-
-.faq-box {
-  background: #36c6fb;
-  border-radius: 15px;
-  width: 35%;
-  margin: 2rem;
-  padding: 1.5rem;
-  box-shadow: #132F1E 0px 2px 4px 0px;
-  display: grid;
-}
-
-.faq-box:hover {
-  box-shadow: #132F1E 0px 6px 12px 0px;
-  transform: scale(1.02);
-}
-
-.faq-box:nth-child(2) {
-  margin-left: 20%;
-}
-
-.faq-box:nth-child(3) {
-  margin-left: 50%;
-}
-
-.faq-box:nth-child(4) {
-  margin-left: 40%;
-}
-
-.faq-box:nth-child(5) {
-  margin-left: 60%;
-}
-
-.faq-box:nth-child(6) {
-  margin-left: 40%;
-}
-
-.faq-box:nth-child(7) {
-  margin-left: 30%;
-}
-
-.faq-box:nth-child(8) {
-  margin-left: 10%;
-}
-
-.faq-box:nth-child(9) {
-  margin-left: 40%;
-}
-
-.faq-box:nth-child(10) {
-  margin-left: 50%;
-}
-
-.faq-question {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.faq-answer {
-  width: 100% !important;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  padding: 0;
-  vertical-align: middle;
-  font-size: 1.2rem;
 }
