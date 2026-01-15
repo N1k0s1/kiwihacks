@@ -143,7 +143,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="sponsorships">
+      <section id="sponsors">
         <h1>Sponsorships</h1>
         <p id="sponsor-text">
           {" "}
