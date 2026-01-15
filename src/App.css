@@ -124,7 +124,6 @@ p {
 .info {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    text-align: center;
     padding: 0;
 }
 
@@ -135,9 +134,11 @@ p {
     padding-bottom: 1.5rem;
     background: rgba(118, 176, 112, 0.5);
     width: 80%;
+    text-align: center;
     margin: auto;
     margin-bottom: 2rem;
     border-radius: 15px;
+    justify-content: space-between !important;
 }
 
 #basicinfo:hover {
@@ -176,7 +177,7 @@ p {
     height: 50%;
     border-radius: 25px;
     border: 2px solid #2e522b;
-    height: 57vh;
+    height: 55vh;
     width: fit-content;
     margin: 0;
 }
@@ -253,4 +254,74 @@ p {
     padding: 0;
     vertical-align: middle;
     font-size: 1.2rem;
+}
+
+#sponsorships {
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(118, 176, 112, 0.15);
+}
+
+#sponsorships h1 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+}
+
+#sponsorships p {
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#cta {
+    margin: auto;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    background-color: #baedff;
+}
+
+#cta p {
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    width: 60% !important;
+    text-align: center;
+}
+
+#last-button {
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background: #36c6fbb2;
+    margin: 3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#last-button:hover {
+    background: #36c6fbd8;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+}
+
+.boldp {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.lastp {
+    margin-bottom: 3rem !important;
 }
