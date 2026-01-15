@@ -15,7 +15,7 @@ export default function App() {
         <a href="#about" id="link">
           About
         </a>
-        <a href="#sponsor" id="link">
+        <a href="#sponsors" id="link">
           Sponsors
         </a>
         <a
