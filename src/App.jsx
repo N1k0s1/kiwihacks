@@ -9,11 +9,11 @@ export default function App() {
         <a href="/" id="link">
           Home
         </a>
-        <a href="#faq" id="link">
-          FAQ
-        </a>
         <a href="#about" id="link">
           About
+        </a>
+        <a href="#faq" id="link">
+          FAQ
         </a>
         <a href="#sponsors" id="link">
           Sponsors
