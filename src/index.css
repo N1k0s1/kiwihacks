@@ -18,25 +18,9 @@
 
 body {
     max-width: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    overflow-x: hidden;
 }
 
 h1 {
-    font-size: clamp(1.8em, 5vw, 3.2em);
+    font-size: 3.2em;
     line-height: 1.1;
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-    body {
-        font-size: 15px;
-    }
 }
