@@ -157,6 +157,7 @@ p {
 #logo {
     width: 25%;
     height: auto;
+    margin-bottom: 0;
 }
 
 .text {
@@ -382,4 +383,8 @@ p {
 
 .lastp {
     margin-bottom: 3rem !important;
+}
+
+#kiwihacks-text {
+    margin-top: 0;
 }

@@ -1,6 +1,7 @@
 import "./App.css";
 import Logo from "./assets/kiwihackslogo.png";
 import ExampleImage from "./assets/example.webp";
+import LogoText from "./assets/kiwihackstext.png";
 
 export default function App() {
   return (
@@ -31,9 +32,7 @@ export default function App() {
       <img id="logo" src={Logo} alt="KiwiHacks Logo" />
 
       <header id="home">
-        <h1 className="display" id="title">
-          KiwiHacks
-        </h1>
+        <img id="kiwihacks-text" src={LogoText} alt="KiwiHacks" width="40%" />
         <h2 className="mono" id="subtitle">
           Auckland’s free 24hr hackathon for teenage coders and innovators
         </h2>
