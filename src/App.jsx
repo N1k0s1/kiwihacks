@@ -56,6 +56,7 @@ export default function App() {
 
       <section id="about">
         <div class="text">
+          <h2>About KiwiHacks</h2>
           <p id="about-text">
             KiwiHacks is a 24 hour hackathon run FOR FREE by teenagers for
             teenagers - if you're 18 or under, join us for this amazing
