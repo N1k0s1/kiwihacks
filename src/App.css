@@ -17,7 +17,6 @@
     --medium-green: #76b070;
     --semi-opaque-green: #64d6ff4d;
     --medium-light-green: #76b07080;
-
 }
 
 html,
@@ -67,6 +66,11 @@ body {
     border-radius: 15px;
     color: var(--very-dark-green);
     text-decoration: none;
+}
+
+#kiwihacks-text {
+    width: 30%;
+    margin-top: 0;
 }
 
 #big-button {
@@ -164,6 +168,7 @@ p {
 #logo {
     width: 25%;
     height: auto;
+    margin-bottom: 0;
 }
 
 .text {

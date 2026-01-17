@@ -1,5 +1,6 @@
 import "./App.css";
 import Logo from "./assets/kiwihackslogo.png";
+import LogoText from "./assets/kiwihackstext.png";
 import ExampleImage from "./assets/example.png";
 import SignatureImage from "./assets/signatures.png";
 
@@ -32,9 +33,7 @@ export default function App() {
       <img id="logo" src={Logo} alt="KiwiHacks Logo" />
 
       <header id="home">
-        <h1 className="display" id="title">
-          KiwiHacks
-        </h1>
+        <img src={LogoText} alt="Kiwihacks" id="kiwihacks-text" />
         <h2 className="mono" id="subtitle">
           Auckland’s free 24hr hackathon for teenage coders and innovators
         </h2>
