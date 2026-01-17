@@ -200,7 +200,11 @@ export default function App() {
             Built with ❤️ by teens, for teens.
           </p>
         </div>
-        <img src={SignatureImage} alt="Signatures of the KiwiHacks team" id="signatures" />
+        <img
+          src={SignatureImage}
+          alt="Signatures of the KiwiHacks team"
+          id="signatures"
+        />
       </footer>
     </>
   );
