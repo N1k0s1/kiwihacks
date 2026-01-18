@@ -34,10 +34,10 @@ export default function App() {
         <a href="/" id="link">
           Home
         </a>
-        <a href="#about" id="link">
+        <a href="#about" className="link">
           About
         </a>
-        <a href="#faq" id="link">
+        <a href="#faq" className="link">
           FAQ
         </a>
         <a href="#sponsorships" id="link">
