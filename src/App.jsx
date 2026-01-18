@@ -1,14 +1,36 @@
 import "./App.css";
 import Logo from "./assets/kiwihackslogo.png";
-import LogoText from "./assets/kiwihackstext.png";
 import ExampleImage from "./assets/example.png";
 import SignatureImage from "./assets/signatures.png";
+import PolaroidImage1 from "./assets/polaroid1.png";
+import PolaroidImage2 from "./assets/polaroid2.png";
+import StarsImage from "./assets/stars.png";
+import TapeImage from "./assets/tape.png";
+import { useEffect } from "react";
 
 export default function App() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.faq-box');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
   return (
     <>
       <nav className="navbar">
-        <a href="/" className="link">
+        <a href="/" id="link">
           Home
         </a>
         <a href="#about" className="link">
@@ -17,7 +39,7 @@ export default function App() {
         <a href="#faq" className="link">
           FAQ
         </a>
-        <a href="#sponsorships" className="link">
+        <a href="#sponsorships" id="link">
           Sponsors
         </a>
         <a
@@ -33,7 +55,17 @@ export default function App() {
       <img id="logo" src={Logo} alt="KiwiHacks Logo" />
 
       <header id="home">
-        <img src={LogoText} alt="Kiwihacks" id="kiwihacks-text" />
+        <img src={StarsImage} alt="cute little stars" id="stars" />
+        <img src={StarsImage} alt="cute little stars" id="stars" />
+        <img src={StarsImage} alt="cute little stars" id="stars" />
+        <img src={StarsImage} alt="cute little stars" id="stars" />
+        <img src={StarsImage} alt="cute little stars" id="stars" />
+        <img src={StarsImage} alt="cute little stars" id="stars" />
+        <img src={StarsImage} alt="cute little stars" id="stars" />
+
+        <h1 className="display" id="title">
+          KiwiHacks
+        </h1>
         <h2 className="mono" id="subtitle">
           Auckland’s free 24hr hackathon for teenage coders and innovators
         </h2>
@@ -55,7 +87,7 @@ export default function App() {
       </a>
 
       <section id="about">
-        <div class="text">
+        <div className="text">
           <h2>About KiwiHacks</h2>
           <p id="about-text">
             KiwiHacks is a 24 hour hackathon run FOR FREE by teenagers for
@@ -75,7 +107,7 @@ export default function App() {
       </section>
 
       <section id="faq">
-        <h1 className="mono">FAQ</h1>
+        <h1 className="mono">Event Info</h1>
         <div className="faq-box">
           <h2 className="mono faq-question">
             When & where is KiwiHacks hosted?
@@ -94,14 +126,16 @@ export default function App() {
             All high-school students 18 and under are welcome at KiwiHacks!
           </p>
         </div>
+        <img src={PolaroidImage2} alt="Photo from a previous hackathon" id="small-decorative-image" />
+
         <div className="faq-box">
           <h2 className="mono faq-question">
             I'm not a good coder. Can I come?
           </h2>
           <p className="faq-answer">
-            Absolutely! KiwiHacks is for creatives of all skill levels! We'll
-            have workshops for beginners on how to code the basics, and everyone
-            will finish with a project!.
+            Absolutely -- KiwiHacks is for creatives of all skill levels!
+            We'll have workshops for beginners on how to code the basics, and everyone
+            will finish a project.
           </p>
         </div>
         <div className="faq-box">
@@ -116,6 +150,8 @@ export default function App() {
             food, drinks, and snacks throughout the event.
           </p>
         </div>
+        <img src={PolaroidImage1} alt="Photo from a previous hackathon" id="small-decorative-image" />
+
         <div className="faq-box">
           <h2 className="mono faq-question">All this, for free?</h2>
           <p className="faq-answer">
@@ -144,13 +180,30 @@ export default function App() {
         <div className="faq-box">
           <h2 className="mono faq-question">What if I have more questions?</h2>
           <p className="faq-answer">
-            No worries! Contact us! Feel free to reach out to us via email at
+            No worries, just contact us! Feel free to reach out to us via email at
             niko@kiwihacks.org.
           </p>
         </div>
       </section>
 
       <section id="sponsorships">
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="Piece of tape" id="tape" />
         <h1>Sponsorships</h1>
 
         <p id="sponsor-text">A HUGE thank you to our sponsors!</p>
@@ -176,6 +229,7 @@ export default function App() {
         </p>
         <br />
         <p id="sponsor-text">We're really grateful for your support.</p>
+
       </section>
 
       <section id="cta">
@@ -199,11 +253,7 @@ export default function App() {
             Built with ❤️ by teens, for teens.
           </p>
         </div>
-        <img
-          src={SignatureImage}
-          alt="Signatures of the KiwiHacks team"
-          id="signatures"
-        />
+        <img src={SignatureImage} alt="Signatures of the KiwiHacks team" id="signatures" />
       </footer>
     </>
   );
