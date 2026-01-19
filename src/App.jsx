@@ -292,6 +292,17 @@ export default function App() {
               create something cool at KiwiHacks!
             </p>
           </div>
+
+          <div className="team-member-div">
+            <h2>Christie Berenshteyn</h2>
+            <p>Email: christie@kiwihacks.org</p>
+            <p>
+              I’m a 15 year old coder from Glendowie College and am helping
+              design and build the website. I’ve got heaps of different
+              passions, and I love to learn new things. I’m super excited to
+              make KiwiHacks New Zealand’s biggest and BEST hackathon!
+            </p>
+          </div>
         </div>
       </section>
 
