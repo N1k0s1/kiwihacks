@@ -13,20 +13,21 @@ export default function App() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('show');
+          entry.target.classList.add("show");
         } else {
-          entry.target.classList.remove('show');
+          entry.target.classList.remove("show");
         }
       });
     });
 
-    const hiddenElements = document.querySelectorAll('.faq-box');
+    const hiddenElements = document.querySelectorAll(".faq-box");
     hiddenElements.forEach((el) => observer.observe(el));
 
     return () => {
       hiddenElements.forEach((el) => observer.unobserve(el));
     };
   }, []);
+
   return (
     <>
       <nav className="navbar">
@@ -41,6 +42,9 @@ export default function App() {
         </a>
         <a href="#sponsorships" id="link">
           Sponsors
+        </a>
+        <a href="#team" id="link">
+          Meet The Team
         </a>
         <a
           className="sign-up-link"
@@ -126,15 +130,19 @@ export default function App() {
             All high-school students 18 and under are welcome at KiwiHacks!
           </p>
         </div>
-        <img src={PolaroidImage2} alt="Photo from a previous hackathon" id="small-decorative-image" />
+        <img
+          src={PolaroidImage2}
+          alt="Photo from a previous hackathon"
+          id="small-decorative-image"
+        />
 
         <div className="faq-box">
           <h2 className="mono faq-question">
             I'm not a good coder. Can I come?
           </h2>
           <p className="faq-answer">
-            Absolutely -- KiwiHacks is for creatives of all skill levels!
-            We'll have workshops for beginners on how to code the basics, and everyone
+            Absolutely -- KiwiHacks is for creatives of all skill levels! We'll
+            have workshops for beginners on how to code the basics, and everyone
             will finish a project.
           </p>
         </div>
@@ -150,7 +158,11 @@ export default function App() {
             food, drinks, and snacks throughout the event.
           </p>
         </div>
-        <img src={PolaroidImage1} alt="Photo from a previous hackathon" id="small-decorative-image" />
+        <img
+          src={PolaroidImage1}
+          alt="Photo from a previous hackathon"
+          id="small-decorative-image"
+        />
 
         <div className="faq-box">
           <h2 className="mono faq-question">All this, for free?</h2>
@@ -180,8 +192,8 @@ export default function App() {
         <div className="faq-box">
           <h2 className="mono faq-question">What if I have more questions?</h2>
           <p className="faq-answer">
-            No worries, just contact us! Feel free to reach out to us via email at
-            niko@kiwihacks.org.
+            No worries, just contact us! Feel free to reach out to us via email
+            at niko@kiwihacks.org.
           </p>
         </div>
       </section>
@@ -229,7 +241,22 @@ export default function App() {
         </p>
         <br />
         <p id="sponsor-text">We're really grateful for your support.</p>
+      </section>
 
+      <section id="team">
+      <h1>Meet the Team!</h1>
+        <div className="team-member-div">
+          <h2>Niko Purdie</h2>
+          <p>Mob: </p>
+          <p>Email: </p>
+          <p>
+            I'm a 17 year old coder from Sacred Heart College and the lead
+            organiser of KiwiHacks. This is the fourth hackathon I’ve organized
+            for students in Auckland! I’m passionate about both sailing and
+            coding, and I’m super excited to help create an awesome experience
+            for everyone who attends!!
+          </p>
+        </div>
       </section>
 
       <section id="cta">
@@ -245,7 +272,6 @@ export default function App() {
           Sign up for KiwiHacks
         </a>
       </section>
-
       <footer>
         <div className="footer-text">
           <p className="footer-text-piece">© 2026 KiwiHacks</p>
@@ -253,7 +279,11 @@ export default function App() {
             Built with ❤️ by teens, for teens.
           </p>
         </div>
-        <img src={SignatureImage} alt="Signatures of the KiwiHacks team" id="signatures" />
+        <img
+          src={SignatureImage}
+          alt="Signatures of the KiwiHacks team"
+          id="signatures"
+        />
       </footer>
     </>
   );

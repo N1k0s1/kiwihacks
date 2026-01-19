@@ -604,3 +604,9 @@ footer {
 #stars:hover {
     transform: scale(1.1);
 }
+
+.team-member-div {
+  max-width: 30%;
+  border-radius: 10px;
+  background: var(--semi-opaque-green);
+}
