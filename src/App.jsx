@@ -244,18 +244,54 @@ export default function App() {
       </section>
 
       <section id="team">
-      <h1>Meet the Team!</h1>
-        <div className="team-member-div">
-          <h2>Niko Purdie</h2>
-          <p>Mob: </p>
-          <p>Email: </p>
-          <p>
-            I'm a 17 year old coder from Sacred Heart College and the lead
-            organiser of KiwiHacks. This is the fourth hackathon I’ve organized
-            for students in Auckland! I’m passionate about both sailing and
-            coding, and I’m super excited to help create an awesome experience
-            for everyone who attends!!
-          </p>
+        <h1>Meet the Team!</h1>
+        <div className="meet-the-team">
+          <div className="team-member-div">
+            <h2>Niko Purdie</h2>
+            <p>Mob: 022 135 0419</p>
+            <p>Email: niko@kiwihacks.org</p>
+            <p>
+              I'm a 17 year old coder from Sacred Heart College and the lead
+              organiser of KiwiHacks. This is the fourth hackathon I’ve
+              organized for students in Auckland! I’m passionate about both
+              sailing and coding, and I’m super excited to help create an
+              awesome experience for everyone who attends!!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <h2>Josh Palmer</h2>
+            <p>Email: josh@kiwihacks.org</p>
+            <p>
+              I’m a 14-year-old scout from Selwyn College leading outreach +
+              helping out the website. I'm passionate about coding & learning. I
+              love the thrill of getting a project finally working & I’m super
+              excited to see what people create at KiwiHacks!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <h2>Audrey Shi</h2>
+            <p>Email: audrey@kiwihacks.org</p>
+            <p>
+              Hey there! I’m a 15 year old coder from Glendowie College, and the
+              Art & Branding lead at KiwiHacks. I have a passion for all sorts
+              of things, including coding, art, and learning. I’m extremely
+              grateful to be a part of the team, and I’m excited to make
+              Kiwihacks an amazing event for all our attendees!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <h2>Kyle Bendall</h2>
+            <p>Email: kyle@kiwihacks.org</p>
+            <p>
+              I’m a 16 year old coder from Marcellin College leading website
+              building and helping with outreach. I’m passionate about coding
+              and learning (and playing video games). I’m excited to help people
+              create something cool at KiwiHacks!
+            </p>
+          </div>
         </div>
       </section>
 
