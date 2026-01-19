@@ -1,5 +1,6 @@
 import "./App.css";
 import Logo from "./assets/kiwihackslogo.png";
+import LogoText from "./assets/kiwihackstext.png";
 import ExampleImage from "./assets/example.png";
 import SignatureImage from "./assets/signatures.png";
 import PolaroidImage1 from "./assets/polaroid1.png";
@@ -13,14 +14,14 @@ export default function App() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('show');
+          entry.target.classList.add("show");
         } else {
-          entry.target.classList.remove('show');
+          entry.target.classList.remove("show");
         }
       });
     });
 
-    const hiddenElements = document.querySelectorAll('.faq-box');
+    const hiddenElements = document.querySelectorAll(".faq-box");
     hiddenElements.forEach((el) => observer.observe(el));
 
     return () => {
@@ -63,9 +64,7 @@ export default function App() {
         <img src={StarsImage} alt="cute little stars" id="stars" />
         <img src={StarsImage} alt="cute little stars" id="stars" />
 
-        <h1 className="display" id="title">
-          KiwiHacks
-        </h1>
+        <img src={LogoText} alt="KiwiHacks" id="kiwihacks-text" />
         <h2 className="mono" id="subtitle">
           Auckland’s free 24hr hackathon for teenage coders and innovators
         </h2>
@@ -126,15 +125,19 @@ export default function App() {
             All high-school students 18 and under are welcome at KiwiHacks!
           </p>
         </div>
-        <img src={PolaroidImage2} alt="Photo from a previous hackathon" id="small-decorative-image" />
+        <img
+          src={PolaroidImage2}
+          alt="Photo from a previous hackathon"
+          id="small-decorative-image"
+        />
 
         <div className="faq-box">
           <h2 className="mono faq-question">
             I'm not a good coder. Can I come?
           </h2>
           <p className="faq-answer">
-            Absolutely -- KiwiHacks is for creatives of all skill levels!
-            We'll have workshops for beginners on how to code the basics, and everyone
+            Absolutely -- KiwiHacks is for creatives of all skill levels! We'll
+            have workshops for beginners on how to code the basics, and everyone
             will finish a project.
           </p>
         </div>
@@ -150,7 +153,11 @@ export default function App() {
             food, drinks, and snacks throughout the event.
           </p>
         </div>
-        <img src={PolaroidImage1} alt="Photo from a previous hackathon" id="small-decorative-image" />
+        <img
+          src={PolaroidImage1}
+          alt="Photo from a previous hackathon"
+          id="small-decorative-image"
+        />
 
         <div className="faq-box">
           <h2 className="mono faq-question">All this, for free?</h2>
@@ -180,8 +187,8 @@ export default function App() {
         <div className="faq-box">
           <h2 className="mono faq-question">What if I have more questions?</h2>
           <p className="faq-answer">
-            No worries, just contact us! Feel free to reach out to us via email at
-            niko@kiwihacks.org.
+            No worries, just contact us! Feel free to reach out to us via email
+            at niko@kiwihacks.org.
           </p>
         </div>
       </section>
@@ -229,7 +236,6 @@ export default function App() {
         </p>
         <br />
         <p id="sponsor-text">We're really grateful for your support.</p>
-
       </section>
 
       <section id="cta">
@@ -253,7 +259,11 @@ export default function App() {
             Built with ❤️ by teens, for teens.
           </p>
         </div>
-        <img src={SignatureImage} alt="Signatures of the KiwiHacks team" id="signatures" />
+        <img
+          src={SignatureImage}
+          alt="Signatures of the KiwiHacks team"
+          id="signatures"
+        />
       </footer>
     </>
   );
