@@ -1,5 +1,6 @@
 import "./App.css";
 import Logo from "./assets/kiwihackslogo.png";
+import NikoImage from "./assets/niko.jpg";
 import JoshImage from "./assets/josh.jpg";
 import AudreyImage from "./assets/audrey.jpg";
 import ChristieImage from "./assets/christie.jpg";
@@ -250,6 +251,7 @@ export default function App() {
         <h1>Meet the Team!</h1>
         <div className="meet-the-team">
           <div className="team-member-div">
+            <img src={NikoImage} />
             <h2>Niko Purdie</h2>
             <p>Mob: 022 135 0419</p>
             <p>Email: niko@kiwihacks.org</p>
