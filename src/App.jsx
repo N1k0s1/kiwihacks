@@ -1,5 +1,8 @@
 import "./App.css";
 import Logo from "./assets/kiwihackslogo.png";
+import JoshImage from "./assets/josh.jpg";
+import AudreyImage from "./assets/audrey.jpg";
+import ChristieImage from "./assets/christie.jpg";
 import ExampleImage from "./assets/example.png";
 import SignatureImage from "./assets/signatures.png";
 import PolaroidImage1 from "./assets/polaroid1.png";
@@ -260,6 +263,7 @@ export default function App() {
           </div>
 
           <div className="team-member-div">
+            <img src={JoshImage} />
             <h2>Josh Palmer</h2>
             <p>Email: josh@kiwihacks.org</p>
             <p>
@@ -271,6 +275,7 @@ export default function App() {
           </div>
 
           <div className="team-member-div">
+            <img src={AudreyImage} />
             <h2>Audrey Shi</h2>
             <p>Email: audrey@kiwihacks.org</p>
             <p>
@@ -294,6 +299,7 @@ export default function App() {
           </div>
 
           <div className="team-member-div">
+            <img src={ChristieImage} />
             <h2>Christie Berenshteyn</h2>
             <p>Email: christie@kiwihacks.org</p>
             <p>

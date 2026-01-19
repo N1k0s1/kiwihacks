@@ -613,6 +613,12 @@ footer {
   width: 80%;
 }
 
+.team-member-div img {
+  margin-top: 8px;
+  width: 250px;
+  border-radius: 10px;
+}
+
 .meet-the-team {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
