@@ -1,5 +1,10 @@
 import "./App.css";
 import Logo from "./assets/kiwihackslogo.png";
+import NikoImage from "./assets/niko.jpg";
+import JoshImage from "./assets/josh.jpg";
+import KyleImage from "./assets/kyle.jpg";
+import AudreyImage from "./assets/audrey.jpg";
+import ChristieImage from "./assets/christie.jpg";
 import LogoText from "./assets/kiwihackstext.png";
 import ExampleImage from "./assets/example.png";
 import SignatureImage from "./assets/signatures.png";
@@ -28,6 +33,7 @@ export default function App() {
       hiddenElements.forEach((el) => observer.unobserve(el));
     };
   }, []);
+
   return (
     <>
       <nav className="navbar">
@@ -42,6 +48,9 @@ export default function App() {
         </a>
         <a href="#sponsorships" id="link">
           Sponsors
+        </a>
+        <a href="#team" id="link">
+          Meet The Team
         </a>
         <a
           className="sign-up-link"
@@ -238,6 +247,74 @@ export default function App() {
         <p id="sponsor-text">We're really grateful for your support.</p>
       </section>
 
+      <section id="team">
+        <h1>Meet the Team!</h1>
+        <div className="meet-the-team">
+          <div className="team-member-div">
+            <img src={NikoImage} />
+            <h2>Niko Purdie</h2>
+            <p>Mob: 022 135 0419</p>
+            <p>Email: niko@kiwihacks.org</p>
+            <p>
+              I'm a 17 year old coder from Sacred Heart College and the lead
+              organiser of KiwiHacks. This is the fourth hackathon I’ve
+              organized for students in Auckland! I’m passionate about both
+              sailing and coding, and I’m super excited to help create an
+              awesome experience for everyone who attends!!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <img src={JoshImage} />
+            <h2>Josh Palmer</h2>
+            <p>Email: josh@kiwihacks.org</p>
+            <p>
+              I’m a 14-year-old scout from Selwyn College leading outreach +
+              helping out the website. I'm passionate about coding & learning. I
+              love the thrill of getting a project finally working & I’m super
+              excited to see what people create at KiwiHacks!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <img src={AudreyImage} />
+            <h2>Audrey Shi</h2>
+            <p>Email: audrey@kiwihacks.org</p>
+            <p>
+              Hey there! I’m a 15 year old coder from Glendowie College, and the
+              Art & Branding lead at KiwiHacks. I have a passion for all sorts
+              of things, including coding, art, and learning. I’m extremely
+              grateful to be a part of the team, and I’m excited to make
+              Kiwihacks an amazing event for all our attendees!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <img src={KyleImage} />
+            <h2>Kyle Bendall</h2>
+            <p>Email: kyle@kiwihacks.org</p>
+            <p>
+              I’m a 16 year old coder from Marcellin College leading website
+              building and helping with outreach. I’m passionate about coding
+              and learning (and playing video games). I’m excited to help people
+              create something cool at KiwiHacks!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <img src={ChristieImage} />
+            <h2>Christie Berenshteyn</h2>
+            <p>Email: christie@kiwihacks.org</p>
+            <p>
+              I’m a 15 year old coder from Glendowie College and am helping
+              design and build the website. I’ve got heaps of different
+              passions, and I love to learn new things. I’m super excited to
+              make KiwiHacks New Zealand’s biggest and BEST hackathon!
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="cta">
         <p className="boldp">What are you waiting for?</p>
         <p className="lastp">
@@ -251,7 +328,6 @@ export default function App() {
           Sign up for KiwiHacks
         </a>
       </section>
-
       <footer>
         <div className="footer-text">
           <p className="footer-text-piece">© 2026 KiwiHacks</p>
