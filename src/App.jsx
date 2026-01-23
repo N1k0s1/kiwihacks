@@ -2,6 +2,7 @@ import "./App.css";
 import Logo from "./assets/kiwihackslogo.png";
 import NikoImage from "./assets/niko.jpg";
 import JoshImage from "./assets/josh.jpg";
+import KyleImage from "./assets/kyle.jpg";
 import AudreyImage from "./assets/audrey.jpg";
 import ChristieImage from "./assets/christie.jpg";
 import ExampleImage from "./assets/example.png";
@@ -290,6 +291,7 @@ export default function App() {
           </div>
 
           <div className="team-member-div">
+            <img src={KyleImage} />
             <h2>Kyle Bendall</h2>
             <p>Email: kyle@kiwihacks.org</p>
             <p>
