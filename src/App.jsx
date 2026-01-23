@@ -5,6 +5,7 @@ import JoshImage from "./assets/josh.jpg";
 import KyleImage from "./assets/kyle.jpg";
 import AudreyImage from "./assets/audrey.jpg";
 import ChristieImage from "./assets/christie.jpg";
+import LogoText from "./assets/kiwihackstext.png";
 import ExampleImage from "./assets/example.png";
 import SignatureImage from "./assets/signatures.png";
 import PolaroidImage1 from "./assets/polaroid1.png";
@@ -72,9 +73,7 @@ export default function App() {
         <img src={StarsImage} alt="cute little stars" id="stars" />
         <img src={StarsImage} alt="cute little stars" id="stars" />
 
-        <h1 className="display" id="title">
-          KiwiHacks
-        </h1>
+        <img src={LogoText} alt="KiwiHacks" id="kiwihacks-text" />
         <h2 className="mono" id="subtitle">
           Auckland’s free 24hr hackathon for teenage coders and innovators
         </h2>
