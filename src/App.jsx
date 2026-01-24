@@ -299,10 +299,9 @@ export default function App() {
             <img src={NikoImage} alt="Niko Purdie" loading="lazy" />
             <h2>Niko Purdie</h2>
             <p>
-              Mob: <a href="tel:0221350419">022 135 0419</a>
-            </p>
-            <p>
               Email: <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>
+              <br />
+              Mobile: <a href="tel:0221350419">022 135 0419</a>
             </p>
             <p>
               I'm a 17 year old coder from Sacred Heart College and the lead
@@ -392,6 +391,11 @@ export default function App() {
           <p className="footer-text-piece">
             Built with ❤️ by teens, for teens.
           </p>
+          <p className="footer-text-piece">
+            <a href="https://github.com/N1k0s1/kiwihacks" target="_blank" rel="noreferrer" style={{ color: "inherit", textDecoration: "underline" }}>
+              View our code on GitHub
+            </a>
+          </p>
         </div>
         <img
           src={SignatureImage}
@@ -400,7 +404,7 @@ export default function App() {
         />
         <div className="footer-links">
           <a
-            href="https://discord.gg/un7hF7e8"
+            href="https://discord.gg/KsKGtsk28B"
             target="_blank"
             className="footer-link"
             aria-label="Discord"
@@ -416,7 +420,7 @@ export default function App() {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com/kiwihacksnz/"
+            href="https://www.instagram.com/kiwihacks/"
             target="_blank"
             className="footer-link"
             aria-label="Instagram"
@@ -463,22 +467,9 @@ export default function App() {
               <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
             </svg>
           </a>
-          <a
-            href="https://discord.gg/KsKGtsk28B"
-            target="_blank"
-            className="footer-link"
-            aria-label="Discord"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
+
               <path d="M20.317 4.37c-1.53-.741-3.17-1.287-4.885-1.615a.074.074 0 0 0-.079.037c-.211.375-.445.864-.607 1.25-1.852-.278-3.697-.278-5.52 0-.162-.386-.396-.875-.608-1.25a.077.077 0 0 0-.079-.037c-1.715.328-3.354.874-4.885 1.615a.07.07 0 0 0-.033.027C1.533 10.071.08 15.837 1.052 21.486a.08.08 0 0 0 .031.055c1.644.972 3.237 1.56 4.803 1.949a.077.077 0 0 0 .083-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.042-.106 6.975 6.975 0 0 1-.997-.476.077.077 0 0 1-.008-.128 5.46 5.46 0 0 0 .198-.154.075.075 0 0 1 .078-.01c2.092 1.281 4.361 1.281 6.429 0a.075.075 0 0 1 .079.009c.063.05.13.1.198.154a.077.077 0 0 1-.006.127c-.318.19-.659.35-.997.476a.076.076 0 0 0-.042.107c.353.698.765 1.364 1.225 1.994a.077.077 0 0 0 .084.028c1.566-.389 3.159-.977 4.803-1.949a.077.077 0 0 0 .032-.055c1.064-6.181-.556-11.551-2.357-15.786a.061.061 0 0 0-.031-.03zM8.02 17.982c-1.182 0-2.157-.968-2.157-2.156 0-1.188.975-2.157 2.157-2.157 1.188 0 2.157.969 2.157 2.157 0 1.188-.969 2.156-2.157 2.156zm7.975 0c-1.183 0-2.157-.968-2.157-2.156 0-1.188.974-2.157 2.157-2.157 1.188 0 2.157.969 2.157 2.157 0 1.188-.969 2.156-2.157 2.156z" />
-            </svg>
-          </a>
+
         </div>
       </footer>
     </>
