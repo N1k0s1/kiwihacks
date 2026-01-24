@@ -12,9 +12,11 @@ import PolaroidImage1 from "./assets/polaroid1.png";
 import PolaroidImage2 from "./assets/polaroid2.png";
 import StarsImage from "./assets/stars.png";
 import TapeImage from "./assets/tape.png";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -37,29 +39,37 @@ export default function App() {
   return (
     <>
       <nav className="navbar">
-        <a href="/" id="link">
-          Home
-        </a>
-        <a href="#about" className="link">
-          About
-        </a>
-        <a href="#faq" className="link">
-          FAQ
-        </a>
-        <a href="#sponsorships" id="link">
-          Sponsors
-        </a>
-        <a href="#team" id="link">
-          Meet The Team
-        </a>
-        <a
-          className="sign-up-link"
-          id="small-button"
-          href="https://forms.hackclub.com/kiwihacks"
-          target="_blank"
-        >
-          <b>Sign up for KiwiHacks</b>
-        </a>
+        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+        <div className={`nav-links ${isOpen ? "open" : ""}`}>
+          <a href="/" id="link" onClick={() => setIsOpen(false)}>
+            Home
+          </a>
+          <a href="#about" className="link" onClick={() => setIsOpen(false)}>
+            About
+          </a>
+          <a href="#faq" className="link" onClick={() => setIsOpen(false)}>
+            FAQ
+          </a>
+          <a href="#sponsorships" id="link" onClick={() => setIsOpen(false)}>
+            Sponsors
+          </a>
+          <a href="#team" id="link" onClick={() => setIsOpen(false)}>
+            Meet The Team
+          </a>
+          <a
+            className="sign-up-link"
+            id="small-button"
+            href="https://forms.hackclub.com/kiwihacks"
+            target="_blank"
+            onClick={() => setIsOpen(false)}
+          >
+            <b>Sign up for KiwiHacks</b>
+          </a>
+        </div>
       </nav>
 
       <img id="logo" src={Logo} alt="KiwiHacks Logo" />

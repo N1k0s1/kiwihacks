@@ -27,6 +27,10 @@ body {
   padding: 0;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .display {
   font-family: "ABeeZee", sans-serif;
 }
@@ -105,9 +109,8 @@ body {
   position: relative;
   background-color: var(--semi-opaque-green);
   display: flex;
-  gap: 2.5rem;
   padding: 1.2rem;
-  justify-content: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 0.9rem;
   margin-left: 0;
@@ -118,6 +121,27 @@ body {
   border-width: 1.5px;
   border-style: dashed;
   border-color: var(--very-dark-green);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #132f1e;
 }
 
 .navbar a {
@@ -327,6 +351,8 @@ p {
 }
 
 #sponsor {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(118, 176, 112, 0.3);
   width: 200px;
   height: auto;
@@ -337,6 +363,11 @@ p {
   box-shadow: rgba(46, 82, 43, 0.1) 0px 2px 8px 0px;
   transition: all 0.3s ease;
   border: 2px solid rgba(46, 82, 43, 0.1);
+}
+
+#sponsor p {
+  text-align: center;
+  width: 100%;
 }
 
 #sponsor-link {
@@ -624,4 +655,165 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* Typography Scale */
+  html {
+    font-size: 14px;
+  }
+
+  #title {
+    font-size: 3rem;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Structural Adjustments */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 2rem;
+  }
+
+  .hamburger {
+    display: block;
+    align-self: flex-end;
+    margin-right: 0.5rem; /* Give it a little space from the edge */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Disable Animations & Transitions */
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .faq-box {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  #title:hover, #big-button:hover, #link:hover, .faq-box:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  #small-button {
+    position: static;
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+
+  /* Global Paragraphs */
+  p, .info, #cta p, #sponsorships p {
+    width: 90% !important;
+  }
+
+  /* Header Section */
+  #kiwihacks-text {
+    width: 80%;
+  }
+
+  #logo {
+    width: 50%;
+  }
+
+
+  /* Basic Info Box */
+  #basicinfo {
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+    height: auto;
+  }
+
+  /* About Section */
+  #about {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #about .text {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  #about-text {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  #example {
+    width: 80%;
+    height: auto;
+  }
+
+  /* FAQ Section */
+  .faq-box {
+    width: 90% !important;
+    margin: 1.5rem auto !important; /* Overrides specific margins */
+    display: block;
+  }
+
+  /* Decoration Management - Hide on mobile to prevent clutter/overflow */
+  #tape, #stars, #small-decorative-image {
+    display: none;
+  }
+
+  /* Buttons */
+  #big-button, #last-button {
+    width: 80%;
+    padding: 1rem;
+    display: block;
+    margin: 2rem auto;
+    box-sizing: border-box;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  #signatures {
+    max-width: 80%;
+  }
+
+  /* Team Grid adjustments if needed */
+  .meet-the-team {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .team-member-div {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
 }
