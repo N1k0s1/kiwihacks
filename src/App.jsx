@@ -85,7 +85,7 @@ export default function App() {
 
         <img src={LogoText} alt="KiwiHacks" id="kiwihacks-text" />
         <h2 className="mono" id="subtitle">
-          Auckland’s free 24hr hackathon for teenage coders and innovators
+          Auckland’s free 24hr hackathon for high schoolers
         </h2>
       </header>
 
