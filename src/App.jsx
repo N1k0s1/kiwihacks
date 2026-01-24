@@ -91,7 +91,16 @@ export default function App() {
 
       <section id="basicinfo">
         <p className="info">Sat 21/Sun 22 March 2026</p>
-        <p className="info">GridAKL/John Lysaght Building</p>
+        <p className="info">
+          <a
+            href="https://maps.app.goo.gl/K1r9xAjy5etimeZx8"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "inherit" }}
+          >
+            GridAKL/John Lysaght Building
+          </a>
+        </p>
         <p className="info">75+ teenage participants</p>
       </section>
 
