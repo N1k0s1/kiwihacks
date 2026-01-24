@@ -72,19 +72,19 @@ export default function App() {
         </div>
       </nav>
 
-      <img id="logo" src={Logo} alt="KiwiHacks Logo" />
+      <img id="logo" src={Logo} alt="KiwiHacks Logo" fetchpriority="high" width="150" height="150" />
 
       <main>
       <header id="home">
-        <img src={StarsImage} alt="" id="stars" />
-        <img src={StarsImage} alt="" id="stars" />
-        <img src={StarsImage} alt="" id="stars" />
-        <img src={StarsImage} alt="" id="stars" />
-        <img src={StarsImage} alt="" id="stars" />
-        <img src={StarsImage} alt="" id="stars" />
-        <img src={StarsImage} alt="" id="stars" />
+        <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
 
-        <img src={LogoText} alt="KiwiHacks" id="kiwihacks-text" />
+        <img src={LogoText} alt="KiwiHacks" id="kiwihacks-text" fetchpriority="high" />
         <h2 className="mono" id="subtitle">
           Auckland’s free 24hr hackathon for high schoolers
         </h2>
@@ -245,25 +245,25 @@ export default function App() {
       </section>
 
       <section id="sponsorships">
-        <img src={TapeImage} alt="" id="tape" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
 
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="" id="tape" />
-        <img src={TapeImage} alt="Piece of tape" id="tape" />
-        <img src={TapeImage} alt="Piece of tape" id="tape" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
         <h1>Sponsorships</h1>
 
         <p id="sponsor-text">A HUGE thank you to our sponsors!</p>
