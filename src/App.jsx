@@ -5,6 +5,7 @@ import JoshImage from "./assets/josh.jpg";
 import KyleImage from "./assets/kyle.jpg";
 import AudreyImage from "./assets/audrey.jpg";
 import ChristieImage from "./assets/christie.jpg";
+import MaggieImage from "./assets/maggie.jpg";
 import LogoText from "./assets/kiwihackstext.png";
 import ExampleImage from "./assets/example.png";
 import SignatureImage from "./assets/signatures.png";
@@ -310,6 +311,18 @@ export default function App() {
               design and build the website. I’ve got heaps of different
               passions, and I love to learn new things. I’m super excited to
               make KiwiHacks New Zealand’s biggest and BEST hackathon!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <img src={MaggieImage} />
+            <h2>Maggie Berenshteyn</h2>
+            <p>Email: maggie.berenshteyn@gmail.com</p>
+            <p>
+              I’m a 15 year old student from Glendowie College who organises the
+              social media and advertising for KiwiHacks. I’m excited to help
+              spread the word about KiwiHacks to make it a super fun event for
+              everyone!
             </p>
           </div>
         </div>
