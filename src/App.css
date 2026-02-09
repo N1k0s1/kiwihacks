@@ -150,6 +150,39 @@ body {
   align-items: center;
 }
 
+.campfire-chip {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  width: fit-content;
+  margin: 0.6rem auto 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campfire-chip:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.campfire-chip strong {
+  color: #ffb347;
+}
+
+.campfire-chip span {
+  color: #ccc;
+}
+
+.campfire-img {
+  width: 32px;
+  height: auto;
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -691,6 +724,13 @@ footer {
 
 .team-member-div p {
   width: 80%;
+  padding: 0.2rem 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.team-member-div h2 {
+  margin-bottom: 0;
 }
 
 .team-member-div img {
@@ -828,6 +868,11 @@ footer {
     width: 90% !important;
     margin: 1.5rem auto !important; /* Overrides specific margins */
     display: block;
+  }
+
+  /* Campfire Chip */
+  .campfire-chip {
+    font-size: 0.8rem;
   }
 
   /* Decoration Management - Hide on mobile to prevent clutter/overflow */
