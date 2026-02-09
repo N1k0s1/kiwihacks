@@ -13,11 +13,11 @@ import PolaroidImage1 from "./assets/polaroid1.png";
 import PolaroidImage2 from "./assets/polaroid2.png";
 import StarsImage from "./assets/stars.png";
 import TapeImage from "./assets/tape.png";
+import CampfireImage from "./assets/campfire.png";
 import { useEffect, useState } from "react";
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -72,6 +72,17 @@ export default function App() {
           </a>
         </div>
       </nav>
+
+      <a
+        href="https://campfire.hackclub.com/auckland"
+        target="_blank"
+        rel="noreferrer"
+        className="campfire-chip"
+      >
+        <img src={CampfireImage} alt="Campfire" className="campfire-img" />
+        <strong>Campfire Auckland</strong>
+        <span>Join us at Campfire Auckland! →</span>
+      </a>
 
       <img id="logo" src={Logo} alt="KiwiHacks Logo" fetchpriority="high" width="150" height="150" />
 
@@ -166,12 +177,14 @@ export default function App() {
             All high-school students 18 and under are welcome at KiwiHacks!
           </p>
         </div>
+        {/* TODO: Add back when fixed — these images break layout on large screens
         <img
           src={PolaroidImage2}
           alt=""
           id="small-decorative-image"
           loading="lazy"
         />
+        */}
 
         <div className="faq-box">
           <h2 className="mono faq-question">
@@ -195,12 +208,14 @@ export default function App() {
             food, drinks, and snacks throughout the event.
           </p>
         </div>
+        {/* TODO: Add back when fixed — these images break layout on large screens
         <img
           src={PolaroidImage1}
           alt=""
           id="small-decorative-image"
           loading="lazy"
         />
+        */}
 
         <div className="faq-box">
           <h2 className="mono faq-question">All this, for free?</h2>
@@ -300,9 +315,9 @@ export default function App() {
             <img src={NikoImage} alt="Niko Purdie" loading="lazy" />
             <h2>Niko Purdie</h2>
             <p>
-              Email: <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>
+              <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>
               <br />
-              Mobile: <a href="tel:0221350419">022 135 0419</a>
+              <a href="tel:0221350419">022 135 0419</a>
             </p>
             <p>
               I'm a 17 year old coder from Sacred Heart College and the lead
@@ -317,7 +332,7 @@ export default function App() {
             <img src={JoshImage} alt="Josh Palmer" loading="lazy" />
             <h2>Josh Palmer</h2>
             <p>
-              Email: <a href="mailto:josh@kiwihacks.org">josh@kiwihacks.org</a>
+              <a href="mailto:josh@kiwihacks.org">josh@kiwihacks.org</a>
             </p>
             <p>
               I’m a 14-year-old scout from Selwyn College leading outreach +
@@ -331,7 +346,7 @@ export default function App() {
             <img src={AudreyImage} alt="Audrey Shi" loading="lazy" />
             <h2>Audrey Shi</h2>
             <p>
-              Email: <a href="mailto:audrey@kiwihacks.org">audrey@kiwihacks.org</a>
+              <a href="mailto:audrey@kiwihacks.org">audrey@kiwihacks.org</a>
             </p>
             <p>
               Hey there! I’m a 15 year old coder from Glendowie College, and the
@@ -346,7 +361,7 @@ export default function App() {
             <img src={KyleImage} alt="Kyle Bendall" loading="lazy" />
             <h2>Kyle Bendall</h2>
             <p>
-              Email: <a href="mailto:kyle@kiwihacks.org">kyle@kiwihacks.org</a>
+              <a href="mailto:kyle@kiwihacks.org">kyle@kiwihacks.org</a>
             </p>
             <p>
               I’m a 16 year old coder from Marcellin College leading website
@@ -360,7 +375,7 @@ export default function App() {
             <img src={ChristieImage} alt="Christie Berenshteyn" loading="lazy" />
             <h2>Christie Berenshteyn</h2>
             <p>
-              Email: <a href="mailto:christie@kiwihacks.org">christie@kiwihacks.org</a>
+              <a href="mailto:christie@kiwihacks.org">christie@kiwihacks.org</a>
             </p>
             <p>
               I’m a 15 year old coder from Glendowie College and am helping
@@ -373,7 +388,7 @@ export default function App() {
           <div className="team-member-div">
             <img src={MaggieImage} />
             <h2>Maggie Berenshteyn</h2>
-            <p>Email: maggie.berenshteyn@gmail.com</p>
+            <p><a href="mailto:maggie.berenshteyn@gmail.com">maggie.berenshteyn@gmail.com</a></p>
             <p>
               I’m a 15 year old student from Glendowie College who organises the
               social media and advertising for KiwiHacks. I’m excited to help
