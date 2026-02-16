@@ -409,7 +409,7 @@ p {
   flex-direction: column;
   background-color: rgba(118, 176, 112, 0.3);
   width: 200px;
-  height: auto;
+  height: 160px;
   align-items: center;
   justify-content: center;
   border-radius: 15px;

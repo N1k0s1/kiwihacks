@@ -291,6 +291,13 @@ export default function App() {
               <p>Hack Club</p>
             </div>
           </a>
+
+          <a id="sponsor-link" href="https://gen.xyz/" target="_blank">
+            <div id="sponsor">
+              <img src="https://gen.xyz/wp-content/themes/xyz/images/our-tlds/xyz.png" alt="xyz domains" loading="lazy" />
+              <p>.xyz domains</p>
+            </div>
+          </a>
         </div>
 
         <p id="sponsor-text">
