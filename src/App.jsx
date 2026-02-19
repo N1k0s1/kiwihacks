@@ -103,7 +103,7 @@ export default function App() {
       </header>
 
       <section id="basicinfo">
-        <p className="info">Sat 21/Sun 22 March 2026</p>
+        <p className="info">Sat 28/Sun 29 March 2026</p>
         <p className="info">
           <a
             href="https://maps.app.goo.gl/K1r9xAjy5etimeZx8"
@@ -165,7 +165,7 @@ export default function App() {
           </h2>
           <p className="faq-answer">
             KiwiHacks will be hosted in Auckland at the GridAKL / John Lysaght
-            Startup Coworking space on the 21st until the 22nd of March 2026.
+            Startup Coworking space on the 28th until the 29th of March 2026.
             The event will run for 24 hours, starting at 10am on Saturday,
             finishing at 10am on Sunday. You can either keep hacking overnight,
             or to go home and return in the morning!
