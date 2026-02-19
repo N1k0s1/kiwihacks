@@ -761,6 +761,8 @@ footer {
 .team-member-div {
   border-radius: 10px;
   background: var(--semi-opaque-green);
+  width: 100%;
+  max-width: 320px;
 }
 
 .team-member-div p {
@@ -781,8 +783,10 @@ footer {
 }
 
 .meet-the-team {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
   gap: 1.5rem;
   padding: 1rem;
 }
