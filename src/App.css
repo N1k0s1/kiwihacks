@@ -144,6 +144,47 @@ body {
   border-color: var(--very-dark-green);
 }
 
+.mute-toggle {
+  position: fixed;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  z-index: 10;
+  border: 1.5px dashed var(--very-dark-green);
+  background: var(--light-blue);
+  color: var(--very-dark-green);
+  padding: 0.5rem 0.9rem;
+  border-radius: 15px;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mute-toggle--attention {
+  animation: mute-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes mute-pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(54, 198, 251, 0.45);
+  }
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 0 16px rgba(54, 198, 251, 0.55);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(54, 198, 251, 0.45);
+  }
+}
+
+.mute-toggle:hover {
+  transform: translateY(-1px);
+  background: var(--very-light-blue);
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
 .nav-links {
   display: flex;
   gap: 2.5rem;
@@ -720,6 +761,8 @@ footer {
 .team-member-div {
   border-radius: 10px;
   background: var(--semi-opaque-green);
+  width: 100%;
+  max-width: 320px;
 }
 
 .team-member-div p {
@@ -740,8 +783,10 @@ footer {
 }
 
 .meet-the-team {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
   gap: 1.5rem;
   padding: 1rem;
 }
