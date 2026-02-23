@@ -385,10 +385,9 @@ export default function App() {
               <a href="mailto:christie@kiwihacks.org">christie@kiwihacks.org</a>
             </p>
             <p>
-              I’m a 15 year old coder from Glendowie College and am helping
-              design and build the website. I’ve got heaps of different
-              passions, and I love to learn new things. I’m super excited to
-              make KiwiHacks New Zealand’s biggest and BEST hackathon!
+              I’m a Year 11 Glendowie College student helping with the website, outreach, and marketing, among other things &mdash; I have my eggs in a lot of baskets! <br />
+              Outside of coding, I enjoy playing the piano, baking, and learning new things. I'm also super passionate about supporting my community, and lead several school clubs. <br />
+              I’m really excited to make KiwiHacks New Zealand’s BEST hackathon!
             </p>
           </div>
 
