@@ -73,17 +73,6 @@ export default function App() {
         </div>
       </nav>
 
-      <a
-        href="https://campfire.hackclub.com/auckland"
-        target="_blank"
-        rel="noreferrer"
-        className="campfire-chip"
-      >
-        <img src={CampfireImage} alt="Campfire" className="campfire-img" />
-        <strong>Campfire Auckland</strong>
-        <span>Join us at Campfire Auckland! →</span>
-      </a>
-
       <img id="logo" src={Logo} alt="KiwiHacks Logo" fetchPriority="high" width="150" height="150" />
 
       <main>
