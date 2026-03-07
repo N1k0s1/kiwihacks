@@ -1,0 +1,120 @@
+/* ── Navbar ── */
+.navbar {
+  position: relative;
+  background-color: var(--semi-opaque-green);
+  display: flex;
+  padding: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.9rem;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 100;
+  width: 100vw;
+  align-items: center;
+  border-width: 1.5px;
+  border-style: dashed;
+  border-color: var(--very-dark-green);
+}
+
+/* ── Desktop nav links ── */
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: #132f1e;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #36c6fb;
+}
+
+/* ── Sign-up button in navbar ── */
+.nav-signup {
+  padding: 0.5em;
+  background: var(--light-blue);
+  font-size: 0.8rem;
+  border-radius: 15px;
+  color: var(--very-dark-green);
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+.nav-signup:hover {
+  background: var(--very-light-blue);
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ── Hamburger (hidden on desktop) ── */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #132f1e;
+}
+
+/* ── Mobile ── */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: stretch;
+    gap: 0;
+    margin-bottom: 2rem;
+  }
+
+  /* Hamburger visible, pinned top-right */
+  .hamburger {
+    display: block;
+    align-self: flex-end;
+    margin-right: 0.5rem;
+    z-index: 10;
+  }
+
+  /* Animate bars into X */
+  .hamburger.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Nav links layout on mobile (visibility controlled by inline style) */
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .nav-signup {
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+}
