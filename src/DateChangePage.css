@@ -1,0 +1,237 @@
+:root {
+  --date-bg: linear-gradient(180deg, #eaf6ef 0%, #dff2ff 100%);
+  --date-ink: #132f1e;
+  --date-green: #76b070;
+  --date-green-deep: #5c8f57;
+  --date-blue-soft: rgba(54, 198, 251, 0.2);
+}
+
+.date-navbar {
+  width: 100%;
+  background: rgba(100, 214, 255, 0.3);
+  border: 1.5px dashed #132f1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.4rem;
+}
+
+.date-nav-link {
+  color: var(--date-ink);
+  font-family: "Source Code Pro", monospace;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.date-signup-link {
+  color: var(--date-ink);
+  text-decoration: none;
+  background: rgba(145, 226, 255, 0.85);
+  border-radius: 12px;
+  padding: 0.6rem 0.9rem;
+}
+
+.date-page-main {
+  min-height: calc(100vh - 78px);
+  padding: 2rem 1rem 2.5rem;
+  background: var(--date-bg);
+}
+
+.date-hero-card {
+  width: min(900px, 94vw);
+  margin: 0 auto;
+  background: rgba(118, 176, 112, 0.16);
+  border: 2px solid rgba(19, 47, 30, 0.18);
+  border-radius: 20px;
+  padding: 2rem 1.25rem;
+  box-shadow: 0 10px 30px rgba(19, 47, 30, 0.12);
+  text-align: center;
+}
+
+.date-brand-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.date-page-logo {
+  width: clamp(110px, 18vw, 150px);
+  height: auto;
+}
+
+.date-page-wordmark {
+  width: min(330px, 82vw);
+  margin-top: 0.3rem;
+}
+
+.date-page-title {
+  margin: 0.6rem 0 0.4rem;
+  color: var(--date-ink);
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+  line-height: 1.1;
+  font-family: "Source Code Pro", monospace;
+}
+
+.date-page-subtitle {
+  width: min(660px, 95%);
+  margin: 0 auto;
+  color: var(--date-ink);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-align: center;
+}
+
+.date-boxes-wrap {
+  margin-top: 1.5rem;
+  background: var(--date-blue-soft);
+  border: 1.5px dashed #132f1e;
+  border-radius: 16px;
+  padding: 1.1rem;
+  display: flex;
+  gap: 0.9rem;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.date-box {
+  flex: 1;
+  min-width: 240px;
+  border-radius: 12px;
+  padding: 0.95rem;
+  text-align: center;
+}
+
+.date-box-label {
+  display: block;
+  color: #132f1e;
+  font-size: 0.95rem;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.date-box-text {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.16rem;
+  color: #132f1e;
+  text-align: center;
+}
+
+.date-box-old {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.date-box-old .date-box-text {
+  text-decoration: line-through;
+  text-decoration-color: #b04747;
+  text-decoration-thickness: 2px;
+  opacity: 0.84;
+}
+
+.date-box-new {
+  background: var(--date-green);
+}
+
+.date-box-new .date-box-label,
+.date-box-new .date-box-text {
+  color: #fff;
+}
+
+.date-box-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 70px;
+  padding: 0 0.2rem;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+  color: #132f1e;
+  text-transform: uppercase;
+}
+
+.date-page-note {
+  width: min(640px, 94%);
+  margin: 1rem auto 0.9rem;
+  color: var(--date-ink);
+  text-align: center;
+  font-size: 1.03rem;
+}
+
+.date-cta-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
+}
+
+.date-primary-cta {
+  display: inline-block;
+  color: #132f1e;
+  text-decoration: none;
+  background: var(--date-green);
+  border-radius: 14px;
+  padding: 0.95rem 1.8rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.date-primary-cta:hover {
+  background: var(--date-green-deep);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.date-secondary-cta {
+  display: inline-block;
+  color: var(--date-ink);
+  text-decoration: none;
+  border: 2px solid rgba(19, 47, 30, 0.55);
+  border-radius: 14px;
+  padding: 0.95rem 1.8rem;
+  background: rgba(255, 255, 255, 0.55);
+  transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.date-secondary-cta:hover {
+  background: rgba(19, 47, 30, 0.92);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .date-navbar {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .date-hero-card {
+    width: 95%;
+    padding: 1.4rem 0.9rem;
+  }
+
+  .date-page-subtitle,
+  .date-page-note {
+    width: 96%;
+  }
+
+  .date-boxes-wrap {
+    padding: 0.9rem;
+  }
+
+  .date-box {
+    min-width: 100%;
+  }
+
+  .date-box-divider {
+    min-width: 100%;
+    margin-top: -0.2rem;
+    margin-bottom: -0.1rem;
+  }
+}

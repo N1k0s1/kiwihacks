@@ -14,10 +14,12 @@ import PolaroidImage2 from "./assets/polaroid2.png";
 import StarsImage from "./assets/stars.png";
 import TapeImage from "./assets/tape.png";
 import CampfireImage from "./assets/campfire.png";
-import { useEffect, useState } from "react";
+import ExtraordinaryLogo from "./assets/Sponsors/extraordinary-logo.png";
+import { useEffect } from "react";
+import Navbar from "./Navbar";
+
 
 export default function App() {
-  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -39,95 +41,67 @@ export default function App() {
 
   return (
     <>
-      <nav className="navbar">
-        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </div>
-        <div className={`nav-links ${isOpen ? "open" : ""}`}>
-          <a href="/" id="link" onClick={() => setIsOpen(false)}>
-            Home
-          </a>
-          <a href="#about" className="link" onClick={() => setIsOpen(false)}>
-            About
-          </a>
-          <a href="#faq" className="link" onClick={() => setIsOpen(false)}>
-            FAQ
-          </a>
-          <a href="#sponsorships" id="link" onClick={() => setIsOpen(false)}>
-            Sponsors
-          </a>
-          <a href="#team" id="link" onClick={() => setIsOpen(false)}>
-            Meet The Team
-          </a>
-          <a
-            className="sign-up-link"
-            id="small-button"
-            href="https://forms.hackclub.com/kiwihacks"
-            target="_blank"
-            onClick={() => setIsOpen(false)}
-          >
-            <b>Sign up for KiwiHacks</b>
-          </a>
-        </div>
-      </nav>
+      <Navbar />
 
-      <img
-        id="logo"
-        src={Logo}
-        alt="KiwiHacks Logo"
-        fetchPriority="high"
-        width="150"
-        height="150"
-      />
+      <a
+        className="date-change-chip"
+        href="/date-change"
+        aria-label="Learn more about the KiwiHacks date change"
+      >
+        <strong>DATE CHANGE</strong>
+        <span className="date-change-main">
+          May 2nd through 3rd, 2026 (was March 28-29)
+        </span>
+        <span>
+          We apologize for the inconvenience, but we are working hard to make
+          this the best hackathon possible.
+        </span>
+        <span className="date-change-cta">Click to learn more</span>
+      </a>
+
+      <img id="logo" src={Logo} alt="KiwiHacks Kiwi Bird" fetchPriority="high" width="150" height="150" />
 
       <main>
-        <header id="home">
-          <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
-          <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
-          <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
-          <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
-          <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
-          <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
-          <img src={StarsImage} alt="" id="stars" aria-hidden="true" />
+      <header id="home">
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
 
-          <img
-            src={LogoText}
-            alt="KiwiHacks"
-            id="kiwihacks-text"
-            fetchPriority="high"
-          />
-          <h2 className="mono" id="subtitle">
-            Auckland’s free 24hr hackathon for high schoolers
-          </h2>
-        </header>
+        <img src={LogoText} alt="Kiwihacks" id="kiwihacks-text" fetchPriority="high" />
+        <h2 className="mono" id="subtitle">
+          Auckland’s free 24hr hackathon for high schoolers
+        </h2>
+      </header>
 
-        <section id="basicinfo">
-          <p className="info">Sat 28/Sun 29 March 2026</p>
-          <p className="info">
-            <a
-              href="https://maps.app.goo.gl/K1r9xAjy5etimeZx8"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: "inherit" }}
-            >
-              GridAKL/John Lysaght Building
-            </a>
-          </p>
-          <p className="info">75+ teenage participants</p>
-        </section>
-
-        <div className="button-container">
+      <section id="basicinfo">
+        <p className="info">Sat 2nd - Sun 3rd May 2026</p>
+        <p className="info">
           <a
-            className="sign-up-link"
-            id="big-button"
-            href="https://forms.hackclub.com/kiwihacks"
+            href="https://maps.app.goo.gl/K1r9xAjy5etimeZx8"
             target="_blank"
+            rel="noreferrer"
+            style={{ color: "inherit" }}
           >
-            <b>Sign up for KiwiHacks!</b>
+            GridAKL/John Lysaght Building
           </a>
-          {/* <a
+        </p>
+        <p className="info">75+ teenage participants</p>
+      </section>
+
+      <div className="button-container">
+        <a
+          className="sign-up-link"
+          id="big-button"
+          href="https://forms.hackclub.com/kiwihacks"
+          target="_blank"
+        >
+          <b>Sign up for KiwiHacks!</b>
+        </a>
+        {/* <a
           className="sign-up-link"
           id="calendar-button"
           href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=KiwiHacks+2026&dates=20260320T210000Z/20260321T210000Z&details=Auckland%E2%80%99s+free+24hr+hackathon+for+teenage+coders+and+innovators.+Join+us+for+a+weekend+of+coding%2C+mentorship%2C+and+fun!&location=GridAKL+%2F+John+Lysaght+Building%2C+Auckland"
@@ -135,50 +109,59 @@ export default function App() {
         >
           <b>Add to Calendar</b>
         </a> */}
+      </div>
+
+      <section id="about">
+        <div className="text">
+          <h2>About KiwiHacks</h2>
+          <p id="about-text">
+            KiwiHacks is a free 24-hour hackathon run by teenagers, for teenagers. 
+            If you’re 18 or under, come along to meet new people, learn new skills, 
+            and build something awesome together.
+          </p>
+          <p id="about-text">
+            Held at the GridAKL / John Lysaght Building, 
+            KiwiHacks brings together 75+ students for a full weekend of creating and experimenting. 
+            You can build any coding or hardware project you like - 
+            apps, games, websites, robots, or something totally different.
+          </p>
+          <p id="about-text">
+            Throughout the event there will be mentors and beginner-friendly workshops to help you get started or solve problems along the way. 
+            Food, snacks, and drinks are all provided for free, plus there are free T-shirts, swag, and prizes for some of the best projects.
+          </p>
+          <p id="about-text">
+            It’s an unforgettable weekend of coding, creativity, and collaboration, and all skill levels are welcome.
+          </p>
         </div>
+        <img
+          id="example"
+          src={ExampleImage}
+          alt="Students hacking at previous events"
+          loading="lazy"
+        />
+      </section>
 
-        <section id="about">
-          <div className="text">
-            <h2>About KiwiHacks</h2>
-            <p id="about-text">
-              KiwiHacks is a 24 hour hackathon run FOR FREE by teenagers for
-              teenagers - if you're 18 or under, join us for this amazing
-              opportunity to make new friends and build a project together!
-            </p>
-            <p id="about-text">
-              It’ll be an unforgettable weekend of coding, mentorship, and fun.
-              All skill levels welcome.
-            </p>
-          </div>
-          <img
-            id="example"
-            src={ExampleImage}
-            alt="Students hacking at a previous event"
-            loading="lazy"
-          />
-        </section>
-
-        <section id="faq">
-          <h1 className="mono">Event Info</h1>
-          <div className="faq-box">
-            <h2 className="mono faq-question">
-              When & where is KiwiHacks hosted?
-            </h2>
-            <p className="faq-answer">
-              KiwiHacks will be hosted in Auckland at the GridAKL / John Lysaght
-              Startup Coworking space on the 28th until the 29th of March 2026.
-              The event will run for 24 hours, starting at 10am on Saturday,
-              finishing at 10am on Sunday. You can either keep hacking
-              overnight, or to go home and return in the morning!
-            </p>
-          </div>
-          <div className="faq-box">
-            <h2 className="mono faq-question">Who can attend KiwiHacks?</h2>
-            <p className="faq-answer">
-              All high-school students 18 and under are welcome at KiwiHacks!
-            </p>
-          </div>
-          {/* TODO: Add back when fixed — these images break layout on large screens
+      <section id="faq">
+        <h1 className="mono">Event Info</h1>
+        <div className="faq-box">
+          <h2 className="mono faq-question">
+            When & where is KiwiHacks hosted?
+          </h2>
+          <p className="faq-answer">
+            KiwiHacks will be hosted in Auckland at the GridAKL / John Lysaght
+            Startup Coworking space on the 2nd until the 3rd of May 2026.
+            The event will run for 24 hours, starting at 11am on Saturday,
+            finishing at 11am on Sunday. You can either keep hacking overnight,
+            or to go home and return in the morning!
+          </p>
+        </div>
+        <div className="faq-box">
+          <h2 className="mono faq-question">Who can attend KiwiHacks?</h2>
+          <p className="faq-answer">
+            All high-school students 18 and under are welcome at KiwiHacks!
+          </p>
+        </div>
+        {/* TODO: Add back when fixed — these images break layout on large screens
         <img
           src={PolaroidImage2}
           alt=""
@@ -187,29 +170,29 @@ export default function App() {
         />
         */}
 
-          <div className="faq-box">
-            <h2 className="mono faq-question">
-              I'm not a good coder. Can I come?
-            </h2>
-            <p className="faq-answer">
-              Absolutely -- KiwiHacks is for creatives of all skill levels!
-              We'll have workshops for beginners on how to code the basics, and
-              everyone will finish a project.
-            </p>
-          </div>
-          <div className="faq-box">
-            <h2 className="mono faq-question">
-              What should I bring to the hackathon?
-            </h2>
-            <p className="faq-answer">
-              Bring your laptop, charger, toiletries and sleeping bag (if you
-              plan to stay overnight), and an open mind! If you plan to work on
-              a hardware project, bring the tools you'll need. We'll have
-              limited tools, a 3D printer & soldering station available. We'll
-              provide food, drinks, and snacks throughout the event.
-            </p>
-          </div>
-          {/* TODO: Add back when fixed — these images break layout on large screens
+        <div className="faq-box">
+          <h2 className="mono faq-question">
+            I'm not a good coder. Can I come?
+          </h2>
+          <p className="faq-answer">
+            Absolutely -- KiwiHacks is for creatives of all skill levels! We'll
+            have workshops for beginners on how to code the basics, and everyone
+            will finish a project.
+          </p>
+        </div>
+        <div className="faq-box">
+          <h2 className="mono faq-question">
+            What should I bring to the hackathon?
+          </h2>
+          <p className="faq-answer">
+            Bring your laptop, charger, toiletries and sleeping bag (if you plan
+            to stay overnight), and an open mind! If you plan to work on a
+            hardware project, bring the tools you'll need. We'll have limited
+            tools, a 3D printer & soldering station available. We'll provide
+            food, drinks, and snacks throughout the event.
+          </p>
+        </div>
+        {/* TODO: Add back when fixed — these images break layout on large screens
         <img
           src={PolaroidImage1}
           alt=""
@@ -218,263 +201,216 @@ export default function App() {
         />
         */}
 
-          <div className="faq-box">
-            <h2 className="mono faq-question">All this, for free?</h2>
-            <p className="faq-answer">
-              Yep! KiwiHacks (and swag!) is completely free thanks to our
-              generous sponsors. Just sign up, turn up, and have fun!
-            </p>
-          </div>
-          <div className="faq-box">
-            <h2 className="mono faq-question">What can I make at KiwiHacks?</h2>
-            <p className="faq-answer">
-              Anything you want! You can build a website, app, game, robot, or
-              anything else you can dream up. We'll have a bunch resources and
-              mentors to help you out!
-            </p>
-          </div>
-          <div className="faq-box">
-            <h2 className="mono faq-question">
-              What if my parents are concerned?
-            </h2>
-            <p className="faq-answer">
-              We understand that parents want to ensure their children are safe.
-              Check out our{" "}
-              <a
-                href="https://docs.google.com/document/d/14HMPfRkPQrFVf1E87cvsUqguILbtwoifEJ5hYUwhgRM/edit?tab=t.0#heading=h.12mg8uzylly"
-                target="_blank"
-              >
-                parents guide
-              </a>
-              . If your parents have any questions or concerns, we're here to
-              help - please have them reach out to us at{" "}
-              <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>!
-            </p>
-          </div>
-          <div className="faq-box">
-            <h2 className="mono faq-question">
-              What if I have more questions?
-            </h2>
-            <p className="faq-answer">
-              No worries, just contact us! Feel free to reach out to us via
-              email at{" "}
-              <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>.
-            </p>
-          </div>
-        </section>
-
-        <section id="sponsorships">
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <img src={TapeImage} alt="" id="tape" aria-hidden="true" />
-          <h1>Sponsorships</h1>
-
-          <p id="sponsor-text">A HUGE thank you to our sponsors!</p>
-
-          <div id="sponsors">
-            <a id="sponsor-link" href="https://hackclub.com" target="_blank">
-              <div id="sponsor">
-                <img
-                  src="https://assets.hackclub.com/flag-standalone.svg"
-                  alt="Hack Club Flag"
-                  loading="lazy"
-                />
-                <p>Hack Club</p>
-              </div>
-            </a>
-
-            <a id="sponsor-link" href="https://gen.xyz/" target="_blank">
-              <div id="sponsor">
-                <img
-                  src="https://gen.xyz/wp-content/themes/xyz/images/our-tlds/xyz.png"
-                  alt="xyz domains"
-                  loading="lazy"
-                />
-                <p>.xyz domains</p>
-              </div>
-            </a>
-
+        <div className="faq-box">
+          <h2 className="mono faq-question">All this, for free?</h2>
+          <p className="faq-answer">
+            Yep! KiwiHacks (and swag!) is completely free thanks to our generous
+            sponsors. Just sign up, turn up, and have fun!
+          </p>
+        </div>
+        <div className="faq-box">
+          <h2 className="mono faq-question">What can I make at KiwiHacks?</h2>
+          <p className="faq-answer">
+            Anything you want! You can build a website, app, game, robot, or
+            anything else you can dream up. We'll have a bunch resources and
+            mentors to help you out!
+          </p>
+        </div>
+        <div className="faq-box">
+          <h2 className="mono faq-question">
+            What if my parents are concerned?
+          </h2>
+          <p className="faq-answer">
+            We understand that parents want to ensure their children are safe.
+            Check out our{" "}
             <a
+              href="https://docs.google.com/document/d/14HMPfRkPQrFVf1E87cvsUqguILbtwoifEJ5hYUwhgRM/edit?tab=t.0#heading=h.12mg8uzylly"
+              target="_blank"
+            >
+              parents guide
+            </a>
+            . If your parents have any questions or concerns, we're here to help
+            - please have them reach out to us at{" "}
+            <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>!
+          </p>
+        </div>
+        <div className="faq-box">
+          <h2 className="mono faq-question">What if I have more questions?</h2>
+          <p className="faq-answer">
+            No worries, just contact us! Feel free to reach out to us via email
+            at{" "}
+            <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>.
+          </p>
+        </div>
+      </section>
+
+      <section id="sponsorships">
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+        <h1>Sponsorships</h1>
+
+        <p id="sponsor-text">A HUGE thank you to our sponsors!</p>
+
+        <div id="sponsors">
+          <a id="sponsor-link" href="https://hackclub.com" target="_blank">
+            <div id="sponsor">
+              <img class="sponsor-img" src="https://assets.hackclub.com/flag-standalone.svg" alt="Hack Club Flag Logo" loading="lazy" />
+              <p>Hack Club</p>
+            </div>
+          </a>
+
+          <a id="sponsor-link" href="https://gen.xyz/" target="_blank">
+            <div id="sponsor">
+              <img class="sponsor-img" src="https://gen.xyz/wp-content/themes/xyz/images/our-tlds/xyz.png" alt=".xyz domains Logo" loading="lazy" />
+              <p>.xyz domains</p>
+            </div>
+          </a>
+
+          <a
               id="sponsor-link"
               href="https://www.extraordinarypay.com/"
               target="_blank"
             >
               <div id="sponsor">
-                <svg
-                  width="1020"
-                  height="1020"
-                  viewBox="0 0 1020 1020"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_156_639)">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M1019.93 518.232C1019.96 515.476 1020 512.756 1020 510C1020 228.337 791.663 0 510 0C228.337 0 0 228.337 0 510C0 791.663 228.337 1020 510 1020C683.185 1020 836.185 933.676 928.379 801.72C884.107 824.232 834.789 836.293 784.183 836.293C699.827 836.293 618.943 802.794 559.282 743.133C499.621 683.472 466.122 602.587 466.122 518.232H1019.93ZM614.183 438.707C555.13 438.707 507.244 390.821 507.244 331.768C507.244 272.716 555.13 224.829 614.183 224.829C673.236 224.829 721.122 272.716 721.122 331.768C721.122 390.821 673.236 438.707 614.183 438.707Z"
-                      fill="black"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_156_639">
-                      <rect width="1020" height="1020" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
+                <img class="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" />
                 <p>Extraordinary</p>
               </div>
             </a>
+        </div>
+
+        <p id="sponsor-text">
+          {" "}
+          By becoming a sponsor, you support the next generation of innovators
+          and gain visibility for your brand within the tech community.
+        </p>
+        <br />
+        <p id="sponsor-text">
+          If you're interested in making the hackathon better by sponsoring
+          KiwiHacks, please reach out to{" "}
+          <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>.
+        </p>
+        <br />
+        <p id="sponsor-text">We're really grateful for your support.</p>
+      </section>
+
+      <section id="team">
+        <h1>Meet the Team!</h1>
+        <div className="meet-the-team">
+          <div className="team-member-div">
+            <img src={NikoImage} alt="Niko Purdie" loading="lazy" />
+            <h2>Niko Purdie</h2>
+            <p>
+              <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>
+              <br />
+              <a href="tel:0221350419">022 135 0419</a>
+            </p>
+            <p>
+              I'm a 17 year old coder from Sacred Heart College and the lead
+              organiser of KiwiHacks. This is the fourth hackathon I’ve
+              organized for students in Auckland! I’m passionate about both
+              sailing and coding, and I’m super excited to help create an
+              awesome experience for everyone who attends!!
+            </p>
           </div>
 
-          <p id="sponsor-text">
-            {" "}
-            By becoming a sponsor, you support the next generation of innovators
-            and gain visibility for your brand within the tech community.
-          </p>
-          <br />
-          <p id="sponsor-text">
-            If you're interested in making the hackathon better by sponsoring
-            KiwiHacks, please reach out to{" "}
-            <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>.
-          </p>
-          <br />
-          <p id="sponsor-text">We're really grateful for your support.</p>
-        </section>
-
-        <section id="team">
-          <h1>Meet the Team!</h1>
-          <div className="meet-the-team">
-            <div className="team-member-div">
-              <img src={NikoImage} alt="Niko Purdie" loading="lazy" />
-              <h2>Niko Purdie</h2>
-              <p>
-                <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>
-                <br />
-                <a href="tel:0221350419">022 135 0419</a>
-              </p>
-              <p>
-                I'm a 17 year old coder from Sacred Heart College and the lead
-                organiser of KiwiHacks. This is the fourth hackathon I’ve
-                organized for students in Auckland! I’m passionate about both
-                sailing and coding, and I’m super excited to help create an
-                awesome experience for everyone who attends!!
-              </p>
-            </div>
-
-            <div className="team-member-div">
-              <img src={JoshImage} alt="Josh Palmer" loading="lazy" />
-              <h2>Josh Palmer</h2>
-              <p>
-                <a href="mailto:josh@kiwihacks.org">josh@kiwihacks.org</a>
-              </p>
-              <p>
-                I’m a 14-year-old scout from Selwyn College leading outreach +
-                helping out the website. I'm passionate about coding & learning.
-                I love the thrill of getting a project finally working & I’m
-                super excited to see what people create at KiwiHacks!
-              </p>
-            </div>
-
-            <div className="team-member-div">
-              <img src={AudreyImage} alt="Audrey Shi" loading="lazy" />
-              <h2>Audrey Shi</h2>
-              <p>
-                <a href="mailto:audrey@kiwihacks.org">audrey@kiwihacks.org</a>
-              </p>
-              <p>
-                Hey there! I’m a 15 year old coder from Glendowie College, and
-                the Art & Branding lead at KiwiHacks. I have a passion for all
-                sorts of things, including coding, art, and learning. I’m
-                extremely grateful to be a part of the team, and I’m excited to
-                make Kiwihacks an amazing event for all our attendees!
-              </p>
-            </div>
-
-            <div className="team-member-div">
-              <img src={KyleImage} alt="Kyle Bendall" loading="lazy" />
-              <h2>Kyle Bendall</h2>
-              <p>
-                <a href="mailto:kyle@kiwihacks.org">kyle@kiwihacks.org</a>
-              </p>
-              <p>
-                I’m a 16 year old coder from Marcellin College leading website
-                building and helping with outreach. I’m passionate about coding
-                and learning (and playing video games). I’m excited to help
-                people create something cool at KiwiHacks!
-              </p>
-            </div>
-
-            <div className="team-member-div">
-              <img
-                src={ChristieImage}
-                alt="Christie Berenshteyn"
-                loading="lazy"
-              />
-              <h2>Christie Berenshteyn</h2>
-              <p>
-                <a href="mailto:christie@kiwihacks.org">
-                  christie@kiwihacks.org
-                </a>
-              </p>
-              <p>
-                I’m a Year 11 Glendowie College student helping with the
-                website, outreach, and marketing, among other things &mdash; I
-                have my eggs in a lot of baskets! <br />
-                Outside of coding, I enjoy playing the piano, baking, and
-                learning new things. I'm also super passionate about supporting
-                my community, and lead several school clubs. <br />
-                I’m really excited to make KiwiHacks New Zealand’s BEST
-                hackathon!
-              </p>
-            </div>
-
-            <div className="team-member-div">
-              <img src={MaggieImage} />
-              <h2>Maggie Berenshteyn</h2>
-              <p>
-                <a href="mailto:maggie.berenshteyn@gmail.com">
-                  maggie.berenshteyn@gmail.com
-                </a>
-              </p>
-              <p>
-                I’m a 15 year old student from Glendowie College who organises
-                the social media and advertising for KiwiHacks. I’m excited to
-                help spread the word about KiwiHacks to make it a super fun
-                event for everyone!
-              </p>
-            </div>
+          <div className="team-member-div">
+            <img src={JoshImage} alt="Josh Palmer" loading="lazy" />
+            <h2>Josh Palmer</h2>
+            <p>
+              <a href="mailto:josh@kiwihacks.org">josh@kiwihacks.org</a>
+            </p>
+            <p>
+              I’m a 14-year-old scout from Selwyn College leading outreach +
+              helping out the website. I'm passionate about coding & learning. I
+              love the thrill of getting a project finally working & I’m super
+              excited to see what people create at KiwiHacks!
+            </p>
           </div>
-        </section>
 
-        <section id="cta">
-          <p className="boldp">What are you waiting for?</p>
-          <p className="lastp">
-            Join us for an unforgettable weekend of coding, creativity, and fun.
-          </p>
-          <a
-            href="https://forms.hackclub.com/kiwihacks"
-            className="sign-up-link"
-            id="last-button"
-          >
-            Sign up for KiwiHacks
-          </a>
-        </section>
+          <div className="team-member-div">
+            <img src={AudreyImage} alt="Audrey Shi" loading="lazy" />
+            <h2>Audrey Shi</h2>
+            <p>
+              <a href="mailto:audrey@kiwihacks.org">audrey@kiwihacks.org</a>
+            </p>
+            <p>
+              Hey there! I’m a 15 year old coder from Glendowie College, and the
+              Art & Branding lead at KiwiHacks. I have a passion for all sorts
+              of things, including coding, art, and learning. I’m extremely
+              grateful to be a part of the team, and I’m excited to make
+              Kiwihacks an amazing event for all our attendees!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <img src={KyleImage} alt="Kyle Bendall" loading="lazy" />
+            <h2>Kyle Bendall</h2>
+            <p>
+              <a href="mailto:kyle@kiwihacks.org">kyle@kiwihacks.org</a>
+            </p>
+            <p>
+              I’m a 16 year old coder from Marcellin College leading website
+              building and helping with outreach. I’m passionate about coding
+              and learning (and playing video games). I’m excited to help people
+              create something cool at KiwiHacks!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <img src={ChristieImage} alt="Christie Berenshteyn" loading="lazy" />
+            <h2>Christie Berenshteyn</h2>
+            <p>
+              <a href="mailto:christie@kiwihacks.org">christie@kiwihacks.org</a>
+            </p>
+            <p>
+              I’m a Year 11 Glendowie College student helping with the website, outreach, and marketing, among other things &mdash; I have my eggs in a lot of baskets! <br />
+              Outside of coding, I enjoy playing the piano, baking, and learning new things. I'm also super passionate about supporting my community, and lead several school clubs. <br />
+              I’m really excited to make KiwiHacks New Zealand’s BEST hackathon!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <img src={MaggieImage} alt="Maggie Berenshteyn" loading="lazy" />
+            <h2>Maggie Berenshteyn</h2>
+            <p><a href="mailto:maggie.berenshteyn@gmail.com">maggie.berenshteyn@gmail.com</a></p>
+            <p>
+              I’m a 15 year old student from Glendowie College who organises the
+              social media and advertising for KiwiHacks. I’m excited to help
+              spread the word about KiwiHacks to make it a super fun event for
+              everyone!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta">
+        <p className="boldp">What are you waiting for?</p>
+        <p className="lastp">
+          Join us for an unforgettable weekend of coding, creativity, and fun.
+        </p>
+        <a
+          href="https://forms.hackclub.com/kiwihacks"
+          className="sign-up-link"
+          id="last-button"
+        >
+          Sign up for KiwiHacks
+        </a>
+      </section>
       </main>
       <footer>
         <div className="footer-text">
@@ -483,12 +419,7 @@ export default function App() {
             Built with ❤️ by teens, for teens.
           </p>
           <p className="footer-text-piece">
-            <a
-              href="https://github.com/N1k0s1/kiwihacks"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: "inherit", textDecoration: "underline" }}
-            >
+            <a href="https://github.com/N1k0s1/kiwihacks" target="_blank" rel="noreferrer" style={{ color: "inherit", textDecoration: "underline" }}>
               View our code on GitHub
             </a>
           </p>

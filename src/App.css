@@ -126,24 +126,6 @@ body {
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
 }
 
-.navbar {
-  position: relative;
-  background-color: var(--semi-opaque-green);
-  display: flex;
-  padding: 1.2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 0.9rem;
-  margin-left: 0;
-  margin-right: 0;
-  z-index: 1;
-  width: 100vw;
-  align-items: center;
-  border-width: 1.5px;
-  border-style: dashed;
-  border-color: var(--very-dark-green);
-}
-
 .mute-toggle {
   position: fixed;
   bottom: 1.2rem;
@@ -185,74 +167,61 @@ body {
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
 }
 
-.nav-links {
+.date-change-chip {
   display: flex;
-  gap: 2.5rem;
+  flex-direction: column;
   align-items: center;
-}
-
-.campfire-chip {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  gap: 0.6rem;
+  background: linear-gradient(135deg, #89BD83, #6a9265);
   color: #fff;
-  padding: 0.6rem 1.5rem;
+  padding: 1.2rem 1.9rem;
   border-radius: 12px;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   width: fit-content;
   margin: 0.6rem auto 0;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  z-index: 100;
+  text-align: center;
 }
 
-.campfire-chip:hover {
+.date-change-chip:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.campfire-chip strong {
-  color: #ffb347;
+.date-change-chip strong {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 1.05rem;
 }
 
-.campfire-chip span {
-  color: #ccc;
+.date-change-chip span {
+  color: #f0f0f0;
+  font-size: 0.98rem;
+  max-width: 58ch;
+}
+
+.date-change-main {
+  font-size: 1.06rem !important;
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.date-change-cta {
+  margin-top: 0.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  padding-top: 0.55rem;
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .campfire-img {
   width: 32px;
   height: auto;
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #132f1e;
-}
-
-.navbar a {
-  color: #132f1e;
-  margin: 0;
-  padding: 0;
-  text-decoration: underline;
-  display: flex;
-}
-
-#link {
-  transition: 0.3s ease;
-}
-
-#link:hover {
-  color: #36c6fb;
 }
 
 p {
@@ -470,7 +439,7 @@ p {
   color: #132f1e;
 }
 
-#sponsor img {
+.sponsor-img {
   max-width: 120px;
   max-height: 80px;
   height: auto;
@@ -810,35 +779,6 @@ footer {
     overflow-x: hidden;
   }
 
-  /* Navbar */
-  .navbar {
-    width: 100%;
-    flex-direction: column;
-    padding: 1rem;
-    align-items: center;
-    gap: 0;
-    margin-bottom: 2rem;
-  }
-
-  .hamburger {
-    display: block;
-    align-self: flex-end;
-    margin-right: 0.5rem; /* Give it a little space from the edge */
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-    padding-top: 1rem;
-    text-align: center;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
   /* Disable Animations & Transitions */
   *, *::before, *::after {
     transition: none !important;
@@ -851,15 +791,9 @@ footer {
     transition: none !important;
   }
 
-  #title:hover, #big-button:hover, #link:hover, .faq-box:hover {
+  #title:hover, #big-button:hover, .faq-box:hover {
     transform: none !important;
     box-shadow: none !important;
-  }
-
-  #small-button {
-    position: static;
-    margin-top: 0.5rem;
-    display: inline-block;
   }
 
   /* Global Paragraphs */
@@ -915,9 +849,22 @@ footer {
     display: block;
   }
 
-  /* Campfire Chip */
-  .campfire-chip {
-    font-size: 0.8rem;
+  /* Date Change Chip */
+  .date-change-chip {
+    font-size: 0.96rem;
+    padding: 1rem 1.1rem;
+    width: calc(100% - 1.8rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .date-change-chip strong {
+    font-size: 0.98rem;
+  }
+
+  .date-change-chip span,
+  .date-change-main {
+    font-size: 0.95rem !important;
   }
 
   /* Decoration Management - Hide on mobile to prevent clutter/overflow */
