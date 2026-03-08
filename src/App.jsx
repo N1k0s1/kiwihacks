@@ -70,6 +70,8 @@ export default function App() {
         <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
         <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
         <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
 
         <img src={LogoText} alt="Kiwihacks" id="kiwihacks-text" fetchPriority="high" />
         <h2 className="mono" id="subtitle">
