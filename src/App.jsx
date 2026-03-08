@@ -15,6 +15,7 @@ import StarsImage from "./assets/stars.png";
 import TapeImage from "./assets/tape.png";
 import CampfireImage from "./assets/campfire.png";
 import ExtraordinaryLogo from "./assets/Sponsors/extraordinary-logo.png";
+//import SebastianImage from "./assets/sebastian.jpg";
 import { useEffect } from "react";
 import Navbar from "./Navbar";
 
@@ -80,7 +81,7 @@ export default function App() {
       </header>
 
       <section id="basicinfo">
-        <p className="info">Sat 2nd - Sun 3rd May 2026</p>
+        <p className="info">May 2nd - 3rd 2026</p>
         <p className="info">
           <a
             href="https://maps.app.goo.gl/K1r9xAjy5etimeZx8"
@@ -151,10 +152,10 @@ export default function App() {
           </h2>
           <p className="faq-answer">
             KiwiHacks will be hosted in Auckland at the GridAKL / John Lysaght
-            Startup Coworking space on the 2nd until the 3rd of May 2026.
+            Startup Coworking space on May 2nd - 3rd 2026.
             The event will run for 24 hours, starting at 11am on Saturday,
             finishing at 11am on Sunday. You can either keep hacking overnight,
-            or to go home and return in the morning!
+            or go home and return in the morning!
           </p>
         </div>
         <div className="faq-box">
@@ -214,7 +215,7 @@ export default function App() {
           <h2 className="mono faq-question">What can I make at KiwiHacks?</h2>
           <p className="faq-answer">
             Anything you want! You can build a website, app, game, robot, or
-            anything else you can dream up. We'll have a bunch resources and
+            anything else you can dream up. We'll have a bunch of resources and
             mentors to help you out!
           </p>
         </div>
@@ -269,16 +270,16 @@ export default function App() {
         <p id="sponsor-text">A HUGE thank you to our sponsors!</p>
 
         <div id="sponsors">
-          <a id="sponsor-link" href="https://hackclub.com" target="_blank">
+          <a id="sponsor-link" href="https://hackclub.com" target="_blank" rel="noreferrer">
             <div id="sponsor">
-              <img class="sponsor-img" src="https://assets.hackclub.com/flag-standalone.svg" alt="Hack Club Flag Logo" loading="lazy" />
+              <img className="sponsor-img" src="https://assets.hackclub.com/flag-standalone.svg" alt="Hack Club Flag Logo" loading="lazy" />
               <p>Hack Club</p>
             </div>
           </a>
 
-          <a id="sponsor-link" href="https://gen.xyz/" target="_blank">
+          <a id="sponsor-link" href="https://gen.xyz/" target="_blank" rel="noreferrer">
             <div id="sponsor">
-              <img class="sponsor-img" src="https://gen.xyz/wp-content/themes/xyz/images/our-tlds/xyz.png" alt=".xyz domains Logo" loading="lazy" />
+              <img className="sponsor-img" src="https://gen.xyz/wp-content/themes/xyz/images/our-tlds/xyz.png" alt=".xyz domains Logo" loading="lazy" />
               <p>.xyz domains</p>
             </div>
           </a>
@@ -287,9 +288,10 @@ export default function App() {
               id="sponsor-link"
               href="https://www.extraordinarypay.com/"
               target="_blank"
+              rel="noreferrer"
             >
               <div id="sponsor">
-                <img class="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" />
+                <img className="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" />
                 <p>Extraordinary</p>
               </div>
             </a>
@@ -337,7 +339,7 @@ export default function App() {
               <a href="mailto:josh@kiwihacks.org">josh@kiwihacks.org</a>
             </p>
             <p>
-              I’m a 14-year-old scout from Selwyn College leading outreach +
+              I’m a 14 year old scout from Selwyn College leading outreach +
               helping out the website. I'm passionate about coding & learning. I
               love the thrill of getting a project finally working & I’m super
               excited to see what people create at KiwiHacks!
@@ -355,7 +357,7 @@ export default function App() {
               Art & Branding lead at KiwiHacks. I have a passion for all sorts
               of things, including coding, art, and learning. I’m extremely
               grateful to be a part of the team, and I’m excited to make
-              Kiwihacks an amazing event for all our attendees!
+              KiwiHacks an amazing event for all our attendees!
             </p>
           </div>
 
@@ -397,6 +399,19 @@ export default function App() {
               everyone!
             </p>
           </div>
+
+          {/*<div className="team-member-div">
+            <img src="https://placehold.co/600x581?text=Placeholder\nImage" alt="Sebastian Johnson" loading="lazy" />
+            <h2>Sebastian Johnson</h2>
+            <p><a href="mailto:pakkid@stuffandthings.cc">pakkid@stuffandthings.cc</a></p>
+            <p>
+              I’m a 15 year old student from Pakuranga College helping out with the
+              website and technical infrastructure for KiwiHacks. I’m passionate about
+              technology, AV, and building cool systems that make events run smoothly.
+              I’m excited to help bring KiwiHacks to life and see the amazing projects
+              people create during the hackathon!
+            </p>
+          </div>*/}
         </div>
       </section>
 
