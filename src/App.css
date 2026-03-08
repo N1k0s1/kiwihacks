@@ -47,6 +47,8 @@ body {
   margin: 0;
   padding: 0 1.5rem;
   margin-bottom: 1rem;
+  position: relative;
+  z-index: 10;
 }
 
 #title {
@@ -209,6 +211,7 @@ p {
   margin-bottom: 2rem;
   border-radius: 15px;
   justify-content: space-between !important;
+  transition: box-shadow 0.3s ease;
 }
 
 #basicinfo:hover {
@@ -248,6 +251,7 @@ p {
   width: 35%;
   height: 35%;
   margin: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #example:hover {
@@ -263,7 +267,7 @@ p {
   padding: 1.5rem;
   box-shadow: var(--very-dark-green) 0px 2px 4px 0px;
   display: grid;
-  transition: all 3s ease;
+  transition: box-shadow 3.0s ease, transform 0.3s ease;
   opacity: 0;
   transform: translateX(-100%);
 }
@@ -447,6 +451,7 @@ p {
   margin: 3rem;
   font-weight: 600;
   font-size: 1.2rem;
+  transition: box-shadow 0.3s ease;
 }
 
 #last-button:hover {
@@ -489,6 +494,7 @@ footer {
   height: auto;
   border: 5px solid var(--medium-green);
   box-shadow: var(--very-dark-green) 0px 1px 2px 0px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #signatures:hover {
@@ -625,8 +631,7 @@ footer {
 #stars {
   max-width: 10vw !important;
   height: auto;
-  position: absolute;
-
+  position: absolute; 
   margin: 0;
   padding: 0;
 }
@@ -664,8 +669,8 @@ footer {
 }
 
 #stars:nth-child(5) {
-  top: 70%;
-  left: 15%;
+  top: 53%;
+  left: 20%;
   transform: rotate(-25deg);
   max-width: 13vw !important;
 }
@@ -683,8 +688,8 @@ footer {
 }
 
 #stars:nth-child(8) {
-  top: 75%;
-  right: 15%;
+  top: 51%;
+  right: 20%;
   transform: rotate(75deg);
 }
 
