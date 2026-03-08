@@ -19,6 +19,28 @@
 
 body {
     max-width: 100%;
+    /* Custom scrollbar styling */
+    scrollbar-width: thin;
+    scrollbar-color: #76b070 #eae6e2;
+}
+
+/* Scrollbar styling for Chromium browsers (Chrome, Edge, etc.) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eae6e2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #76b070;
+    border-radius: 6px;
+    border: 2px solid #eae6e2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #598654;
 }
 
 h1 {

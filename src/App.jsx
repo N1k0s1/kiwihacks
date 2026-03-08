@@ -50,7 +50,7 @@ export default function App() {
       >
         <strong>DATE CHANGE</strong>
         <span className="date-change-main">
-          May 2nd through 3rd, 2026 (was March 28-29)
+          May 2nd - 3rd, 2026 (was March 28-29)
         </span>
         <span>
           We apologize for the inconvenience, but we are working hard to make

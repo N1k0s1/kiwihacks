@@ -42,6 +42,7 @@
   padding: 0.5em;
   background: var(--light-blue);
   font-size: 0.8rem;
+  border: 1.5px dashed var(--very-dark-green);
   border-radius: 15px;
   color: var(--very-dark-green);
   text-decoration: none;
@@ -116,5 +117,6 @@
   .nav-signup {
     margin-top: 0.5rem;
     display: inline-block;
+    
   }
 }

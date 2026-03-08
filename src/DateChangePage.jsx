@@ -35,7 +35,7 @@ export default function DateChangePage() {
           <div className="date-boxes-wrap">
             <div className="date-box date-box-old">
               <span className="date-box-label">Old date</span>
-              <p className="date-box-text">March 28th through 29th, 2026</p>
+              <p className="date-box-text">March 28th - 29th, 2026</p>
             </div>
 
             <div className="date-box-divider" aria-hidden="true">
@@ -44,7 +44,7 @@ export default function DateChangePage() {
 
             <div className="date-box date-box-new">
               <span className="date-box-label">New date</span>
-              <p className="date-box-text">May 2nd through 3rd, 2026</p>
+              <p className="date-box-text">May 2nd - 3rd, 2026</p>
             </div>
           </div>
 

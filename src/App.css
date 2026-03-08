@@ -45,7 +45,7 @@ body {
   font-weight: 400;
   color: #132f1e;
   margin: 0;
-  padding: 0;
+  padding: 0 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -710,10 +710,12 @@ footer {
   padding: 0.2rem 1rem;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
+  text-align: center;
 }
 
 .team-member-div h2 {
   margin-bottom: 0;
+  text-align: center;
 }
 
 .team-member-div img {
@@ -872,5 +874,19 @@ footer {
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
+  }
+
+  .footer-text-piece {
+    text-align: center;
+  }
+
+  .footer-text {
+    width: 100% !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
   }
 }
