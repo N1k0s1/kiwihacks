@@ -46,7 +46,7 @@
   border-radius: 15px;
   color: var(--very-dark-green);
   text-decoration: none;
-  transition: background-color 0.25s ease;
+  transition: box-shadow 0.3s ease, background-color 0.25s ease;
 }
 
 .nav-signup:hover {

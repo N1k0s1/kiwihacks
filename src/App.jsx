@@ -50,7 +50,7 @@ export default function App() {
       >
         <strong>DATE CHANGE</strong>
         <span className="date-change-main">
-          May 2nd - 3rd, 2026 (was March 28-29)
+          May 2nd - 3rd, 2026 (was March 28th - 29th)
         </span>
         <span>
           We apologize for the inconvenience, but we are working hard to make
@@ -91,7 +91,7 @@ export default function App() {
             GridAKL/John Lysaght Building
           </a>
         </p>
-        <p className="info">75+ teenage participants</p>
+        <p className="info">100+ teenage participants</p>
       </section>
 
       <div className="button-container">
@@ -123,7 +123,7 @@ export default function App() {
           </p>
           <p id="about-text">
             Held at the GridAKL / John Lysaght Building, 
-            KiwiHacks brings together 75+ students for a full weekend of creating and experimenting. 
+            KiwiHacks brings together 100+ students for a full weekend of creating and experimenting. 
             You can build any coding or hardware project you like - 
             apps, games, websites, robots, or something totally different.
           </p>
@@ -177,7 +177,7 @@ export default function App() {
             I'm not a good coder. Can I come?
           </h2>
           <p className="faq-answer">
-            Absolutely -- KiwiHacks is for creatives of all skill levels! We'll
+            Absolutely &mdash; KiwiHacks is for creatives of all skill levels! We'll
             have workshops for beginners on how to code the basics, and everyone
             will finish a project.
           </p>
@@ -409,6 +409,8 @@ export default function App() {
           href="https://forms.hackclub.com/kiwihacks"
           className="sign-up-link"
           id="last-button"
+          target="_blank"
+          rel="noreferrer"
         >
           Sign up for KiwiHacks
         </a>

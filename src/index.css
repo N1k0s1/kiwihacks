@@ -4,6 +4,10 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     line-height: 1.5;
     font-weight: 400;
