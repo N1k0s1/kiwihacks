@@ -120,7 +120,7 @@ body {
   right: 5%;
   position: absolute;
   text-decoration: none;
-  transition: background-color 0.25s ease;
+  transition: background-color 0.3s ease;
 }
 
 #small-button:hover {
@@ -141,7 +141,7 @@ body {
   font-size: 1.05rem;
   width: fit-content;
   margin: 0.6rem auto 0;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   z-index: 100;
   text-align: center;
@@ -267,7 +267,7 @@ p {
   padding: 1.5rem;
   box-shadow: var(--very-dark-green) 0px 2px 4px 0px;
   display: grid;
-  transition: box-shadow 3.0s ease, transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
   opacity: 0;
   transform: translateX(-100%);
 }
@@ -451,12 +451,13 @@ p {
   margin: 3rem;
   font-weight: 600;
   font-size: 1.2rem;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 #last-button:hover {
   background: #36c6fbd8;
   box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
 .boldp {
@@ -528,6 +529,32 @@ footer {
 .footer-link svg {
   width: 32px;
   height: 32px;
+}
+
+.footer-important-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.footer-important-links p {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.footer-important-links a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.footer-important-links a:hover {
+  color: var(--bright-blue);
 }
 
 #small-decorative-image {

@@ -1,5 +1,5 @@
 :root {
-  --date-bg: linear-gradient(180deg, #eaf6ef 0%, #dff2ff 100%);
+  --date-bg: #EAE6E2;
   --date-ink: #132f1e;
   --date-green: #76b070;
   --date-green-deep: #5c8f57;
@@ -178,13 +178,14 @@
   background: var(--date-green);
   border-radius: 14px;
   padding: 0.95rem 1.8rem;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .date-primary-cta:hover {
   background: var(--date-green-deep);
   color: #fff;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
 }
 
 .date-secondary-cta {
@@ -195,13 +196,14 @@
   border-radius: 14px;
   padding: 0.95rem 1.8rem;
   background: rgba(255, 255, 255, 0.55);
-  transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
 .date-secondary-cta:hover {
   background: rgba(19, 47, 30, 0.92);
   color: #fff;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {

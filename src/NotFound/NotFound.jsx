@@ -1,6 +1,6 @@
 import "./NotFound.css";
 import { useState } from "react";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar/Navbar";
 
 export default function NotFound() {
   const [isMuted, setIsMuted] = useState(false);
