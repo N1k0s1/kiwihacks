@@ -1,0 +1,72 @@
+.fork-gate {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    background: radial-gradient(circle at 15% 20%, #f8f6f3 0%, #eae6e2 42%, #ddd4ca 100%);
+}
+
+.fork-gate-card {
+    width: min(760px, 100%);
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid #c8b9a9;
+    box-shadow: 0 20px 60px rgba(56, 39, 18, 0.16);
+    border-radius: 20px;
+    padding: clamp(1.25rem, 2vw + 1rem, 2.25rem);
+}
+
+.fork-gate-card h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+}
+
+.fork-gate-card p {
+    margin: 0;
+    font-size: 1.05rem;
+    width: 100%;
+    text-align: center;
+}
+
+.fork-gate-eyebrow {
+    margin: 0 0 0.75rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: #4a5f3f;
+}
+
+.fork-gate-actions {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.fork-gate-actions button,
+.fork-gate-actions a {
+    border-radius: 999px;
+    border: 1px solid #567547;
+    padding: 0.7rem 1.2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.fork-gate-actions button {
+    background: #5e8b4a;
+    color: #fff;
+}
+
+.fork-gate-actions a {
+    background: #fff;
+    color: #2f4a27;
+}
+
+.fork-gate-actions button:hover,
+.fork-gate-actions a:hover {
+    transform: translateY(-3px);
+}
