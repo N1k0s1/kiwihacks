@@ -1,23 +1,23 @@
 import "./App.css";
-import Logo from "./assets/kiwihackslogo.png";
-import NikoImage from "./assets/niko.jpg";
-import JoshImage from "./assets/josh.jpg";
-import KyleImage from "./assets/kyle.jpg";
-import AudreyImage from "./assets/audrey.jpg";
-import ChristieImage from "./assets/christie.jpg";
-import MaggieImage from "./assets/maggie.jpg";
-import LogoText from "./assets/kiwihackstext.png";
-import ExampleImage from "./assets/example.png";
-import SignatureImage from "./assets/signatures.png";
-import PolaroidImage1 from "./assets/polaroid1.png";
-import PolaroidImage2 from "./assets/polaroid2.png";
-import StarsImage from "./assets/stars.png";
-import TapeImage from "./assets/tape.png";
-import CampfireImage from "./assets/campfire.png";
-import ExtraordinaryLogo from "./assets/Sponsors/extraordinary-logo.png";
-//import SebastianImage from "./assets/sebastian.jpg";
+import Logo from "../assets/kiwihackslogo.png";
+import NikoImage from "../assets/niko.jpg";
+import JoshImage from "../assets/josh.jpg";
+import KyleImage from "../assets/kyle.jpg";
+import AudreyImage from "../assets/audrey.jpg";
+import ChristieImage from "../assets/christie.jpg";
+import MaggieImage from "../assets/maggie.jpg";
+import LogoText from "../assets/kiwihackstext.png";
+import ExampleImage from "../assets/example.png";
+import SignatureImage from "../assets/signatures.png";
+import PolaroidImage1 from "../assets/polaroid1.png";
+import PolaroidImage2 from "../assets/polaroid2.png";
+import StarsImage from "../assets/stars.png";
+import TapeImage from "../assets/tape.png";
+import CampfireImage from "../assets/campfire.png";
+import ExtraordinaryLogo from "../assets/Sponsors/extraordinary-logo.png";
+//import SebastianImage from "../assets/sebastian.jpg";
 import { useEffect } from "react";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar/Navbar";
 
 
 export default function App() {
@@ -514,6 +514,11 @@ export default function App() {
             </svg>
           </a>
         </div>
+        {/* <div className="footer-important-links">
+          <p>Important Links</p>
+          <a href="/code-of-conduct">Code of Conduct</a>
+          <a href="https://hackclub.com" target="_blank" rel="noreferrer">Hack Club</a>
+        </div> */}
       </footer>
     </>
   );
