@@ -15,7 +15,7 @@ import StarsImage from "../assets/stars.png";
 import TapeImage from "../assets/tape.png";
 import CampfireImage from "../assets/campfire.png";
 import ExtraordinaryLogo from "../assets/Sponsors/extraordinary-logo.png";
-//import SebastianImage from "../assets/sebastian.jpg";
+import SebastianImage from "../assets/sebastian.jpg";
 import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 
@@ -333,6 +333,19 @@ export default function App() {
           </div>
 
           <div className="team-member-div">
+            <img src={SebastianImage} alt="Sebastian Johnson" loading="lazy" />
+            <h2>Sebastian Johnson</h2>
+            <p><a href="mailto:pakkid@stuffandthings.cc">pakkid@stuffandthings.cc</a></p>
+            <p>
+              I’m a 15 year old student from Pakuranga College helping out with the
+              website and technical infrastructure for KiwiHacks. I’m passionate about
+              technology, AV, and building cool systems that make events run smoothly.
+              I’m excited to help bring KiwiHacks to life and see the amazing projects
+              people create during the hackathon!
+            </p>
+          </div>
+
+          <div className="team-member-div">
             <img src={JoshImage} alt="Josh Palmer" loading="lazy" />
             <h2>Josh Palmer</h2>
             <p>
@@ -399,19 +412,6 @@ export default function App() {
               everyone!
             </p>
           </div>
-
-          {/*<div className="team-member-div">
-            <img src="https://placehold.co/600x581?text=Placeholder\nImage" alt="Sebastian Johnson" loading="lazy" />
-            <h2>Sebastian Johnson</h2>
-            <p><a href="mailto:pakkid@stuffandthings.cc">pakkid@stuffandthings.cc</a></p>
-            <p>
-              I’m a 15 year old student from Pakuranga College helping out with the
-              website and technical infrastructure for KiwiHacks. I’m passionate about
-              technology, AV, and building cool systems that make events run smoothly.
-              I’m excited to help bring KiwiHacks to life and see the amazing projects
-              people create during the hackathon!
-            </p>
-          </div>*/}
         </div>
       </section>
 
