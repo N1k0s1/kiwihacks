@@ -267,7 +267,7 @@ p {
   padding: 1.5rem;
   box-shadow: var(--very-dark-green) 0px 2px 4px 0px;
   display: grid;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 3.0s ease, opacity 3.0s ease;
   opacity: 0;
   transform: translateX(-100%);
 }
