@@ -282,7 +282,6 @@ p {
   .faq-box {
     opacity: 1;
     transform: translateX(0);
-    transition: none;
   }
 }
 
