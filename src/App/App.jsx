@@ -517,7 +517,6 @@ export default function App() {
         <div className="footer-important-links">
           <p>Important Links</p>
           <a href="/code-of-conduct">Code of Conduct</a>
-          <a href="https://hackclub.com" target="_blank" rel="noreferrer">Hack Club</a>
         </div>
       </footer>
     </>
