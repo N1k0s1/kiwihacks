@@ -79,6 +79,8 @@ body {
 #kiwihacks-text {
   width: 30%;
   margin-top: 0;
+-webkit-user-drag: none;
+  user-select: none;
 }
 
 .button-container {
@@ -222,6 +224,8 @@ p {
   width: 25%;
   height: auto;
   margin-bottom: 0;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 .text {
@@ -408,6 +412,8 @@ p {
   object-fit: contain;
   filter: brightness(0.9);
   transition: all 0.3s ease;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 #sponsor:hover {
@@ -495,6 +501,8 @@ footer {
   border: 5px solid var(--medium-green);
   box-shadow: var(--very-dark-green) 0px 1px 2px 0px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 #signatures:hover {
@@ -660,6 +668,8 @@ footer {
   position: absolute; 
   margin: 0;
   padding: 0;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 #small-decorative-image:hover {

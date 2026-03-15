@@ -60,21 +60,21 @@ export default function App() {
         <span className="date-change-cta">Click to learn more</span>
       </a>
 
-      <img id="logo" src={Logo} alt="KiwiHacks Kiwi Bird" fetchPriority="high" width="150" height="150" />
+      <img id="logo" src={Logo} alt="KiwiHacks Kiwi Bird" fetchPriority="high" width="150" height="150" draggable="false" />
 
       <main>
       <header id="home">
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
 
-        <img src={LogoText} alt="Kiwihacks" id="kiwihacks-text" fetchPriority="high" />
+        <img src={LogoText} alt="Kiwihacks" id="kiwihacks-text" fetchPriority="high" draggable="false" />
         <h2 className="mono" id="subtitle">
           Auckland’s free 24hr hackathon for high schoolers
         </h2>
@@ -272,14 +272,14 @@ export default function App() {
         <div id="sponsors">
           <a id="sponsor-link" href="https://hackclub.com" target="_blank" rel="noreferrer">
             <div id="sponsor">
-              <img className="sponsor-img" src="https://assets.hackclub.com/flag-standalone.svg" alt="Hack Club Flag Logo" loading="lazy" />
+              <img className="sponsor-img" src="https://assets.hackclub.com/flag-standalone.svg" alt="Hack Club Flag Logo" loading="lazy" draggable="false" />
               <p>Hack Club</p>
             </div>
           </a>
 
           <a id="sponsor-link" href="https://gen.xyz/" target="_blank" rel="noreferrer">
             <div id="sponsor">
-              <img className="sponsor-img" src="https://gen.xyz/wp-content/themes/xyz/images/our-tlds/xyz.png" alt=".xyz domains Logo" loading="lazy" />
+              <img className="sponsor-img" src="https://gen.xyz/wp-content/themes/xyz/images/our-tlds/xyz.png" alt=".xyz domains Logo" loading="lazy" draggable="false" />
               <p>.xyz domains</p>
             </div>
           </a>
@@ -291,7 +291,7 @@ export default function App() {
               rel="noreferrer"
             >
               <div id="sponsor">
-                <img className="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" />
+                <img className="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" draggable="false" />
                 <p>Extraordinary</p>
               </div>
             </a>
@@ -447,6 +447,7 @@ export default function App() {
           src={SignatureImage}
           alt="Signatures of the KiwiHacks team"
           id="signatures"
+          draggable="false"
         />
         <div className="footer-links">
           <a
