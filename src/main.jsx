@@ -82,11 +82,15 @@ applySeoSettings(isSeoEnabled);
 
 const pathname = window.location.pathname.toLowerCase();
 let PageComponent;
+const EmptyPage = () => null;
 
 if (pathname === "/" || pathname === "") {
   PageComponent = App;
 } else if (pathname === "/date-change") {
   PageComponent = DateChangePage;
+} else if (pathname === "/discord" || pathname === "/chat" || pathname === "/community" || pathname === "/dc") {
+  window.location.replace("https://discord.gg/GSZXeYwS");
+  PageComponent = EmptyPage;
 } else if (pathname === "/code-of-conduct" || pathname === "/coc" || pathname === "/codeofconduct" || pathname === "/conduct") {
   PageComponent = CodeOfConduct;
 } else {
