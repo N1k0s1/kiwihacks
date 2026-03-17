@@ -1,11 +1,11 @@
 import "./App.css";
 import Logo from "../assets/kiwihackslogo.png";
-import NikoImage from "../assets/niko.jpg";
-import JoshImage from "../assets/josh.jpg";
-import KyleImage from "../assets/kyle.jpg";
-import AudreyImage from "../assets/audrey.jpg";
-import ChristieImage from "../assets/christie.jpg";
-import MaggieImage from "../assets/maggie.jpg";
+import NikoImage from "../assets/People/niko.jpg";
+import JoshImage from "../assets/People/josh.jpg";
+import KyleImage from "../assets/People/kyle.jpg";
+import AudreyImage from "../assets/People/audrey.jpg";
+import ChristieImage from "../assets/People/christie.jpg";
+import MaggieImage from "../assets/People/maggie.jpg";
 import LogoText from "../assets/kiwihackstext.png";
 import ExampleImage from "../assets/example.png";
 import SignatureImage from "../assets/signatures.png";
@@ -15,7 +15,8 @@ import StarsImage from "../assets/stars.png";
 import TapeImage from "../assets/tape.png";
 import CampfireImage from "../assets/campfire.png";
 import ExtraordinaryLogo from "../assets/Sponsors/extraordinary-logo.png";
-import SebastianImage from "../assets/sebastian.jpg";
+import CanvaLogo from "../assets/Sponsors/canva-logo.png";
+import SebastianImage from "../assets/People/sebastian.jpg";
 import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 
@@ -270,14 +271,24 @@ export default function App() {
         <p id="sponsor-text">A HUGE thank you to our sponsors!</p>
 
         <div id="sponsors">
-          <a id="sponsor-link" href="https://hackclub.com" target="_blank" rel="noreferrer">
+          <a 
+              id="sponsor-link" 
+              href="https://hackclub.com" 
+              target="_blank" 
+              rel="noreferrer"
+            >
             <div id="sponsor">
               <img className="sponsor-img" src="https://assets.hackclub.com/flag-standalone.svg" alt="Hack Club Flag Logo" loading="lazy" draggable="false" />
               <p>Hack Club</p>
             </div>
           </a>
 
-          <a id="sponsor-link" href="https://gen.xyz/" target="_blank" rel="noreferrer">
+          <a 
+              id="sponsor-link" 
+              href="https://gen.xyz/" 
+              target="_blank" 
+              rel="noreferrer"
+            >
             <div id="sponsor">
               <img className="sponsor-img" src="https://gen.xyz/wp-content/themes/xyz/images/our-tlds/xyz.png" alt=".xyz domains Logo" loading="lazy" draggable="false" />
               <p>.xyz domains</p>
@@ -290,11 +301,23 @@ export default function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <div id="sponsor">
-                <img className="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" draggable="false" />
-                <p>Extraordinary</p>
-              </div>
-            </a>
+            <div id="sponsor">
+              <img className="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" draggable="false" />
+              <p>Extraordinary</p>
+            </div>
+          </a>
+
+          <a
+              id="sponsor-link"
+              href="https://www.canva.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+            <div id="sponsor">
+              <img className="sponsor-img" src={CanvaLogo} alt="Canva Logo" loading="lazy" draggable="false" />
+              <p>Canva</p>
+            </div>
+          </a>
         </div>
 
         <p id="sponsor-text">
