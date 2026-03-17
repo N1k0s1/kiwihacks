@@ -474,7 +474,7 @@ export default function App() {
         />
         <div className="footer-links">
           <a
-            href="https://discord.gg/GSZXeYwS"
+            href="https://discord.gg/NgYTuQpP4K"
             target="_blank"
             className="footer-link"
             aria-label="Discord"
