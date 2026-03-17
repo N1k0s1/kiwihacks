@@ -931,3 +931,21 @@ footer {
     gap: 0.5rem;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .faq-box {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  #title:hover, #big-button:hover, .faq-box:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
