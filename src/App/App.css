@@ -670,6 +670,7 @@ footer {
   padding: 0;
   -webkit-user-drag: none;
   user-select: none;
+  transition: transform 0.2s ease;
 }
 
 #small-decorative-image:hover {
@@ -732,7 +733,7 @@ footer {
 #stars:nth-child(9) {
   top: 55%;
   right: 3%;
-  transform: rotate(167deg);
+  transform: rotate(-80deg);
 }
 
 #stars:hover {
