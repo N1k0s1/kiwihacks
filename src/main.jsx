@@ -6,7 +6,7 @@ import DateChangePage from "./DateChangePage/DateChangePage.jsx";
 import NotFound from "./NotFound/NotFound.jsx";
 import CodeOfConduct from "./CodeOfConduct/CodeOfConduct.jsx";
 import ForkPreviewPage from "./ForkPreviewPage/ForkPreviewPage.jsx";
-import { seoHeadElements } from "./SEO/seoConfig.js";
+import { seoHeadHtml } from "./SEO/seoConfig.js";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -41,22 +41,17 @@ function removeSeoElements() {
   });
 }
 
-function appendHeadElement({ tag, attributes = {}, textContent = "" }) {
-  const element = document.createElement(tag);
+function appendSeoHtml(html) {
+  const template = document.createElement("template");
+  template.innerHTML = html.trim();
 
-  Object.entries(attributes).forEach(([key, value]) => {
-    element.setAttribute(key, value);
+  const nodes = Array.from(template.content.childNodes);
+  nodes.forEach((node) => {
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      node.setAttribute("data-seo", "managed");
+    }
+    document.head.appendChild(node);
   });
-
-  if (tag === "script") {
-    element.dataset.seo = "managed";
-  }
-
-  if (textContent) {
-    element.textContent = textContent;
-  }
-
-  document.head.appendChild(element);
 }
 
 function applySeoSettings(seoEnabled) {
@@ -64,10 +59,7 @@ function applySeoSettings(seoEnabled) {
   removeSeoElements();
 
   if (!seoEnabled) {
-    appendHeadElement({
-      tag: "title",
-      textContent: "KiwiHacks Fork Preview",
-    });
+    document.title = "KiwiHacks Fork Preview";
     upsertMeta('meta[name="robots"]', {
       name: "robots",
       content: "noindex,nofollow,noarchive,nosnippet,max-image-preview:none",
@@ -75,7 +67,7 @@ function applySeoSettings(seoEnabled) {
     return;
   }
 
-  seoHeadElements.forEach(appendHeadElement);
+  appendSeoHtml(seoHeadHtml);
 }
 
 applySeoSettings(isSeoEnabled);

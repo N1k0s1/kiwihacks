@@ -1,11 +1,11 @@
 import "./App.css";
 import Logo from "../assets/kiwihackslogo.png";
-import NikoImage from "../assets/niko.jpg";
-import JoshImage from "../assets/josh.jpg";
-import KyleImage from "../assets/kyle.jpg";
-import AudreyImage from "../assets/audrey.jpg";
-import ChristieImage from "../assets/christie.jpg";
-import MaggieImage from "../assets/maggie.jpg";
+import NikoImage from "../assets/People/niko.jpg";
+import JoshImage from "../assets/People/josh.jpg";
+import KyleImage from "../assets/People/kyle.jpg";
+import AudreyImage from "../assets/People/audrey.jpg";
+import ChristieImage from "../assets/People/christie.jpg";
+import MaggieImage from "../assets/People/maggie.jpg";
 import LogoText from "../assets/kiwihackstext.png";
 import ExampleImage from "../assets/example.png";
 import SignatureImage from "../assets/signatures.png";
@@ -15,7 +15,8 @@ import StarsImage from "../assets/stars.png";
 import TapeImage from "../assets/tape.png";
 import CampfireImage from "../assets/campfire.png";
 import ExtraordinaryLogo from "../assets/Sponsors/extraordinary-logo.png";
-//import SebastianImage from "../assets/sebastian.jpg";
+import CanvaLogo from "../assets/Sponsors/canva-logo.png";
+import SebastianImage from "../assets/People/sebastian.jpg";
 import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 
@@ -60,21 +61,21 @@ export default function App() {
         <span className="date-change-cta">Click to learn more</span>
       </a>
 
-      <img id="logo" src={Logo} alt="KiwiHacks Kiwi Bird" fetchPriority="high" width="150" height="150" />
+      <img id="logo" src={Logo} alt="KiwiHacks Kiwi Bird" fetchPriority="high" width="150" height="150" draggable="false" />
 
       <main>
       <header id="home">
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
 
-        <img src={LogoText} alt="Kiwihacks" id="kiwihacks-text" fetchPriority="high" />
+        <img src={LogoText} alt="Kiwihacks" id="kiwihacks-text" fetchPriority="high" draggable="false" />
         <h2 className="mono" id="subtitle">
           Auckland’s free 24hr hackathon for high schoolers
         </h2>
@@ -270,16 +271,26 @@ export default function App() {
         <p id="sponsor-text">A HUGE thank you to our sponsors!</p>
 
         <div id="sponsors">
-          <a id="sponsor-link" href="https://hackclub.com" target="_blank" rel="noreferrer">
+          <a 
+              id="sponsor-link" 
+              href="https://hackclub.com" 
+              target="_blank" 
+              rel="noreferrer"
+            >
             <div id="sponsor">
-              <img className="sponsor-img" src="https://assets.hackclub.com/flag-standalone.svg" alt="Hack Club Flag Logo" loading="lazy" />
+              <img className="sponsor-img" src="https://assets.hackclub.com/flag-standalone.svg" alt="Hack Club Flag Logo" loading="lazy" draggable="false" />
               <p>Hack Club</p>
             </div>
           </a>
 
-          <a id="sponsor-link" href="https://gen.xyz/" target="_blank" rel="noreferrer">
+          <a 
+              id="sponsor-link" 
+              href="https://gen.xyz/" 
+              target="_blank" 
+              rel="noreferrer"
+            >
             <div id="sponsor">
-              <img className="sponsor-img" src="https://gen.xyz/wp-content/themes/xyz/images/our-tlds/xyz.png" alt=".xyz domains Logo" loading="lazy" />
+              <img className="sponsor-img" src="https://gen.xyz/wp-content/themes/xyz/images/our-tlds/xyz.png" alt=".xyz domains Logo" loading="lazy" draggable="false" />
               <p>.xyz domains</p>
             </div>
           </a>
@@ -290,11 +301,23 @@ export default function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <div id="sponsor">
-                <img className="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" />
-                <p>Extraordinary</p>
-              </div>
-            </a>
+            <div id="sponsor">
+              <img className="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" draggable="false" />
+              <p>Extraordinary</p>
+            </div>
+          </a>
+
+          <a
+              id="sponsor-link"
+              href="https://www.canva.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+            <div id="sponsor">
+              <img className="sponsor-img" src={CanvaLogo} alt="Canva Logo" loading="lazy" draggable="false" />
+              <p>Canva</p>
+            </div>
+          </a>
         </div>
 
         <p id="sponsor-text">
@@ -329,6 +352,19 @@ export default function App() {
               organized for students in Auckland! I’m passionate about both
               sailing and coding, and I’m super excited to help create an
               awesome experience for everyone who attends!!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <img src={SebastianImage} alt="Sebastian Johnson" loading="lazy" />
+            <h2>Sebastian Johnson</h2>
+            <p><a href="mailto:pakkid@stuffandthings.cc">pakkid@stuffandthings.cc</a></p>
+            <p>
+              I’m a 15 year old student from Pakuranga College helping out with the
+              website and technical infrastructure for KiwiHacks. I’m passionate about
+              technology, AV, and building cool systems that make events run smoothly.
+              I’m excited to help bring KiwiHacks to life and see the amazing projects
+              people create during the hackathon!
             </p>
           </div>
 
@@ -399,19 +435,6 @@ export default function App() {
               everyone!
             </p>
           </div>
-
-          {/*<div className="team-member-div">
-            <img src="https://placehold.co/600x581?text=Placeholder\nImage" alt="Sebastian Johnson" loading="lazy" />
-            <h2>Sebastian Johnson</h2>
-            <p><a href="mailto:pakkid@stuffandthings.cc">pakkid@stuffandthings.cc</a></p>
-            <p>
-              I’m a 15 year old student from Pakuranga College helping out with the
-              website and technical infrastructure for KiwiHacks. I’m passionate about
-              technology, AV, and building cool systems that make events run smoothly.
-              I’m excited to help bring KiwiHacks to life and see the amazing projects
-              people create during the hackathon!
-            </p>
-          </div>*/}
         </div>
       </section>
 
@@ -447,6 +470,7 @@ export default function App() {
           src={SignatureImage}
           alt="Signatures of the KiwiHacks team"
           id="signatures"
+          draggable="false"
         />
         <div className="footer-links">
           <a
