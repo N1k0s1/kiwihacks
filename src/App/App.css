@@ -932,7 +932,7 @@ footer {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
+/*@media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     transition: none !important;
     animation: none !important;
@@ -948,7 +948,6 @@ footer {
 
   #title:hover, #big-button:hover, .faq-box:hover, #sponsor:hover, .footer-link:hover, #signatures:hover, #example:hover, .date-change-chip:hover {
     transform: none !important;
-    /*box-shadow: none !important;*/
     scale: none !important;
   }
-}
+}*/
