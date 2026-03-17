@@ -1,12 +1,12 @@
 @font-face {
-  font-family: ABeeZee;
-  src: url("fonts/ABeeZee.ttf");
+  font-family: 'ABeeZee';
+  src: url("/font/ABeeZee.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Code Pro";
-  src: url("fonts/SourceCodePro.ttf");
+  font-family: 'Source Code Pro';
+  src: url("/fonts/SourceCodePro.ttf") format("truetype");
   font-display: swap;
 }
 
