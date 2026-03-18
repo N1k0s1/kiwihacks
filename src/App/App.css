@@ -374,8 +374,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  width: 80%;
+  gap: 1.2rem 1.2rem;
+  width: min(95%, 920px);
   margin: 0 auto;
   padding: 2rem 0;
 }
@@ -393,6 +393,7 @@ p {
   box-shadow: rgba(46, 82, 43, 0.1) 0px 2px 8px 0px;
   transition: all 0.3s ease;
   border: 2px solid rgba(46, 82, 43, 0.1);
+  flex: 0 0 auto;
 }
 
 #sponsor p {
@@ -406,11 +407,11 @@ p {
 }
 
 .sponsor-img {
-  max-width: 120px;
+  max-width: 150px;
   max-height: 80px;
   height: auto;
   object-fit: contain;
-  filter: brightness(0.9);
+  opacity: 0.8;
   transition: all 0.3s ease;
   -webkit-user-drag: none;
   user-select: none;
@@ -424,7 +425,7 @@ p {
 }
 
 #sponsor:hover img {
-  filter: brightness(1);
+  opacity: 1;
   transform: scale(1.05);
 }
 
