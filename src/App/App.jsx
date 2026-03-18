@@ -14,8 +14,11 @@ import PolaroidImage2 from "../assets/polaroid2.png";
 import StarsImage from "../assets/stars.png";
 import TapeImage from "../assets/tape.png";
 import CampfireImage from "../assets/campfire.png";
-import ExtraordinaryLogo from "../assets/Sponsors/extraordinary-logo.png";
-import CanvaLogo from "../assets/Sponsors/canva-logo.png";
+import ExtraordinaryLogo from "../assets/Sponsors/extraordinary-logo.svg";
+import CanvaLogo from "../assets/Sponsors/canva-logo.svg";
+import ElevenLabsLogo from "../assets/Sponsors/elevenlabs-logo-black.svg";
+import xyzLogo from "../assets/Sponsors/xyz-white-logo.svg";
+import HackClubLogo from "../assets/Sponsors/hackclub-logo.svg";
 import SebastianImage from "../assets/People/sebastian.jpg";
 import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
@@ -266,7 +269,7 @@ export default function App() {
         <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
         <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
         <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <h1>Sponsorships</h1>
+        <h1>Sponsors</h1>
 
         <p id="sponsor-text">A HUGE thank you to our sponsors!</p>
 
@@ -278,8 +281,7 @@ export default function App() {
               rel="noreferrer"
             >
             <div id="sponsor">
-              <img className="sponsor-img" src="https://assets.hackclub.com/flag-standalone.svg" alt="Hack Club Flag Logo" loading="lazy" draggable="false" />
-              <p>Hack Club</p>
+              <img className="sponsor-img" src={HackClubLogo} alt="Hack Club Flag Logo" loading="lazy" draggable="false" />
             </div>
           </a>
 
@@ -290,8 +292,7 @@ export default function App() {
               rel="noreferrer"
             >
             <div id="sponsor">
-              <img className="sponsor-img" src="https://gen.xyz/wp-content/themes/xyz/images/our-tlds/xyz.png" alt=".xyz domains Logo" loading="lazy" draggable="false" />
-              <p>.xyz domains</p>
+              <img className="sponsor-img" src={xyzLogo} alt=".xyz domains Logo" loading="lazy" draggable="false" />
             </div>
           </a>
 
@@ -303,7 +304,6 @@ export default function App() {
             >
             <div id="sponsor">
               <img className="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" draggable="false" />
-              <p>Extraordinary</p>
             </div>
           </a>
 
@@ -315,7 +315,17 @@ export default function App() {
             >
             <div id="sponsor">
               <img className="sponsor-img" src={CanvaLogo} alt="Canva Logo" loading="lazy" draggable="false" />
-              <p>Canva</p>
+            </div>
+          </a>
+
+          <a
+              id="sponsor-link"
+              href="https://elevenlabs.io/"
+              target="_blank"
+              rel="noreferrer"
+            >
+            <div id="sponsor">
+              <img className="sponsor-img" src={ElevenLabsLogo} alt="ElevenLabs Logo" loading="lazy" draggable="false" />
             </div>
           </a>
         </div>
