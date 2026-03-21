@@ -1,12 +1,12 @@
 @font-face {
-  font-family: ABeeZee;
-  src: url("fonts/ABeeZee.ttf");
+  font-family: 'ABeeZee';
+  src: url("/font/ABeeZee.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Code Pro";
-  src: url("fonts/SourceCodePro.ttf");
+  font-family: 'Source Code Pro';
+  src: url("/fonts/SourceCodePro.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -79,6 +79,8 @@ body {
 #kiwihacks-text {
   width: 30%;
   margin-top: 0;
+-webkit-user-drag: none;
+  user-select: none;
 }
 
 .button-container {
@@ -222,6 +224,8 @@ p {
   width: 25%;
   height: auto;
   margin-bottom: 0;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 .text {
@@ -267,27 +271,27 @@ p {
   padding: 1.5rem;
   box-shadow: var(--very-dark-green) 0px 2px 4px 0px;
   display: grid;
-  transition: box-shadow 0.3s ease, transform 3.0s ease, opacity 3.0s ease;
+  transition: box-shadow 0.3s ease, translate 2s ease-out, opacity 2.0s ease-out, scale 0.3s ease;
   opacity: 0;
-  transform: translateX(-100%);
+  translate: -100% 0;
 }
 
 .faq-box.show {
   opacity: 1;
   filter: blur(0);
-  transform: translateX(0);
+  translate: 0 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .faq-box {
     opacity: 1;
-    transform: translateX(0);
+    translate: 0 0;
   }
 }
 
 .faq-box:hover {
   box-shadow: var(--very-dark-green) 0px 6px 12px 0px;
-  transform: scale(1.02);
+  scale: 1.02;
 }
 
 .faq-box:nth-child(2) {
@@ -370,8 +374,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  width: 80%;
+  gap: 1.2rem 1.2rem;
+  width: min(95%, 920px);
   margin: 0 auto;
   padding: 2rem 0;
 }
@@ -389,6 +393,7 @@ p {
   box-shadow: rgba(46, 82, 43, 0.1) 0px 2px 8px 0px;
   transition: all 0.3s ease;
   border: 2px solid rgba(46, 82, 43, 0.1);
+  flex: 0 0 auto;
 }
 
 #sponsor p {
@@ -402,12 +407,14 @@ p {
 }
 
 .sponsor-img {
-  max-width: 120px;
+  max-width: 150px;
   max-height: 80px;
   height: auto;
   object-fit: contain;
-  filter: brightness(0.9);
+  opacity: 0.8;
   transition: all 0.3s ease;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 #sponsor:hover {
@@ -418,7 +425,7 @@ p {
 }
 
 #sponsor:hover img {
-  filter: brightness(1);
+  opacity: 1;
   transform: scale(1.05);
 }
 
@@ -495,6 +502,8 @@ footer {
   border: 5px solid var(--medium-green);
   box-shadow: var(--very-dark-green) 0px 1px 2px 0px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 #signatures:hover {
@@ -660,6 +669,9 @@ footer {
   position: absolute; 
   margin: 0;
   padding: 0;
+  -webkit-user-drag: none;
+  user-select: none;
+  transition: transform 0.2s ease;
 }
 
 #small-decorative-image:hover {
@@ -722,7 +734,7 @@ footer {
 #stars:nth-child(9) {
   top: 55%;
   right: 3%;
-  transform: rotate(167deg);
+  transform: rotate(-80deg);
 }
 
 #stars:hover {
@@ -921,3 +933,23 @@ footer {
     gap: 0.5rem;
   }
 }
+
+/*@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+    scale: none !important;
+  }
+
+  .faq-box {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    scale: none !important;
+  }
+
+  #title:hover, #big-button:hover, .faq-box:hover, #sponsor:hover, .footer-link:hover, #signatures:hover, #example:hover, .date-change-chip:hover {
+    transform: none !important;
+    scale: none !important;
+  }
+}*/

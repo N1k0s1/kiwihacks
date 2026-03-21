@@ -7,4 +7,7 @@ export default defineConfig({
   server: {
     allowedHosts: true,
   },
+  build: {
+    assetsInlineLimit: 0,
+  },
 })
