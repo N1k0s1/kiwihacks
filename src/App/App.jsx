@@ -44,7 +44,7 @@ export default function App() {
     <>
       <Navbar />
 
-      <a
+    {/*<a
         className="date-change-chip"
         href="/date-change"
         aria-label="Learn more about the KiwiHacks date change"
@@ -59,6 +59,7 @@ export default function App() {
         </span>
         <span className="date-change-cta">Click to learn more</span>
       </a>
+    */}
 
       <img id="logo" src={Logo} alt="KiwiHacks Kiwi Bird" fetchPriority="high" width="150" height="150" />
 
