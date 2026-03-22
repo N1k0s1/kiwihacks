@@ -81,7 +81,13 @@ if (pathname === "/" || pathname === "") {
 } else if (pathname === "/date-change") {
   PageComponent = DateChangePage;
 } else if (pathname === "/discord" || pathname === "/chat" || pathname === "/community" || pathname === "/dc") {
-  window.location.replace("https://discord.gg/GSZXeYwS");
+  window.location.replace("https://discord.gg/NgYTuQpP4K");
+  PageComponent = EmptyPage;
+} else if (pathname === "/github" || pathname === "/code" || pathname === "/repo") {
+  window.location.replace("https://github.com/N1k0s1/kiwihacks");
+  PageComponent = EmptyPage;
+} else if (pathname === "/register" || pathname === "/countmein" || pathname === "/signup") {
+  window.location.replace("https://forms.hackclub.com/kiwihacks");
   PageComponent = EmptyPage;
 } else if (pathname === "/code-of-conduct" || pathname === "/coc" || pathname === "/codeofconduct" || pathname === "/conduct") {
   PageComponent = CodeOfConduct;
