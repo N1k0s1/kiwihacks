@@ -487,28 +487,51 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .footer-text-piece {
-  margin: 0;
   padding: 0.2rem;
   width: fit-content;
   font-size: 1.2rem;
 }
 
+.footer-text-piece a {
+  color: inherit;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.footer-text-piece a:hover {
+  color: var(--bright-blue);
+}
+
+.footer-signature-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+
 #signatures {
-  max-width: 20%;
+  width: 100%;
+  max-width: 700px;
+  min-width: 200px;
   height: auto;
   border: 5px solid var(--medium-green);
   box-shadow: var(--very-dark-green) 0px 1px 2px 0px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   -webkit-user-drag: none;
   user-select: none;
+  display: block;
+  margin: 0 auto;
 }
 
 #signatures:hover {
   box-shadow: var(--very-dark-green) 0px 4px 8px 0px;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .footer-links {
@@ -559,6 +582,7 @@ footer {
 .footer-important-links a {
   color: inherit;
   text-decoration: underline;
+  transition: all 0.3s ease;
 }
 
 .footer-important-links a:hover {
@@ -897,14 +921,20 @@ footer {
     box-sizing: border-box;
   }
 
+
   /* Footer */
   footer {
     flex-direction: column;
     gap: 1.5rem;
   }
-  
+
+  .footer-signature-container {
+    margin-bottom: 0.5rem;
+  }
+
   #signatures {
-    max-width: 80%;
+    max-width: 320px;
+    min-width: 120px;
   }
 
   /* Team Grid adjustments if needed */
