@@ -1,27 +1,33 @@
 import "./App.css";
+import Navbar from "../Navbar/Navbar";
+//Branding
 import Logo from "../assets/kiwihackslogo.png";
+import LogoText from "../assets/kiwihackstext.png";
+//Team Images
 import NikoImage from "../assets/People/niko.jpg";
 import JoshImage from "../assets/People/josh.jpg";
 import KyleImage from "../assets/People/kyle.jpg";
 import AudreyImage from "../assets/People/audrey.jpg";
 import ChristieImage from "../assets/People/christie.jpg";
 import MaggieImage from "../assets/People/maggie.jpg";
-import LogoText from "../assets/kiwihackstext.png";
+import SebastianImage from "../assets/People/sebastian.jpg";
+import KieraImage from "../assets/People/kiera.jpg";
+//Decorative Images
 import ExampleImage from "../assets/example.png";
 import SignatureImage from "../assets/signatures.png";
 import PolaroidImage1 from "../assets/polaroid1.png";
 import PolaroidImage2 from "../assets/polaroid2.png";
 import StarsImage from "../assets/stars.png";
 import TapeImage from "../assets/tape.png";
-import CampfireImage from "../assets/campfire.png";
+//Sponsors
 import ExtraordinaryLogo from "../assets/Sponsors/extraordinary-logo.svg";
 import CanvaLogo from "../assets/Sponsors/canva-logo.svg";
 import ElevenLabsLogo from "../assets/Sponsors/elevenlabs-logo-black.svg";
 import xyzLogo from "../assets/Sponsors/xyz-white-logo.svg";
 import HackClubLogo from "../assets/Sponsors/hackclub-logo.svg";
-import SebastianImage from "../assets/People/sebastian.jpg";
+//React being react
 import { useEffect } from "react";
-import Navbar from "../Navbar/Navbar";
+
 
 
 export default function App() {
@@ -444,6 +450,18 @@ export default function App() {
               social media and advertising for KiwiHacks. I’m excited to help
               spread the word about KiwiHacks to make it a super fun event for
               everyone!
+            </p>
+          </div>
+
+          <div className="team-member-div">
+            <img src={KieraImage} alt="Kiera Langridge" loading="lazy" />
+            <h2>Kiera Langridge</h2>
+            <p><a href="mailto:kiera.langridge@gmail.com">kiera.langridge@gmail.com</a></p>
+            <p>
+              I’m a 16 year old student from Baradene College helping out with outreach and branding. 
+              I’m passionate about learning, writing, and coding awesome projects. 
+              I can’t wait to see what people create at KiwiHacks, 
+              and I’m so excited to help bring the event to life!
             </p>
           </div>
         </div>
