@@ -15,6 +15,7 @@ import KieraImage from "../assets/People/kiera.jpg";
 //Decorative Images
 import ExampleImage from "../assets/example.png";
 import SignatureImage from "../assets/signatures.png";
+import SignatureWideImage from "../assets/signatures-wide.png";
 import PolaroidImage1 from "../assets/polaroid1.png";
 import PolaroidImage2 from "../assets/polaroid2.png";
 import StarsImage from "../assets/stars.png";
@@ -484,23 +485,31 @@ export default function App() {
       </section>
       </main>
       <footer>
+        <div className="footer-signature-container">
+          <picture>
+            <source
+              srcSet={SignatureWideImage}
+              media="(min-width: 768px)"
+            />
+            <img
+              src={SignatureImage}
+              alt="Signatures of the KiwiHacks team"
+              id="signatures"
+              draggable="false"
+            />
+          </picture>
+        </div>
         <div className="footer-text">
           <p className="footer-text-piece">© 2026 KiwiHacks</p>
           <p className="footer-text-piece">
             Built with ❤️ by teens, for teens.
           </p>
           <p className="footer-text-piece">
-            <a href="https://github.com/N1k0s1/kiwihacks" target="_blank" rel="noreferrer" style={{ color: "inherit", textDecoration: "underline" }}>
+            <a href="https://github.com/N1k0s1/kiwihacks" target="_blank" rel="noreferrer">
               View our code on GitHub
             </a>
           </p>
         </div>
-        <img
-          src={SignatureImage}
-          alt="Signatures of the KiwiHacks team"
-          id="signatures"
-          draggable="false"
-        />
         <div className="footer-links">
           <a
             href="https://discord.gg/NgYTuQpP4K"
