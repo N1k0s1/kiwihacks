@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App/App.jsx";
 import DateChangePage from "./DateChangePage/DateChangePage.jsx";
+import AnnouncementVideoPage from "./AnnouncementVideoPage/AnnouncementVideoPage.jsx";
 import NotFound from "./NotFound/NotFound.jsx";
 import CodeOfConduct from "./CodeOfConduct/CodeOfConduct.jsx";
 import ForkPreviewPage from "./ForkPreviewPage/ForkPreviewPage.jsx";
@@ -80,6 +81,8 @@ if (pathname === "/" || pathname === "") {
   PageComponent = App;
 } else if (pathname === "/date-change") {
   PageComponent = DateChangePage;
+} else if (pathname === "/announcement" || pathname === "/announcement-video") {
+  PageComponent = AnnouncementVideoPage;
 } else if (pathname === "/discord" || pathname === "/chat" || pathname === "/community" || pathname === "/dc") {
   window.location.replace("https://discord.gg/NgYTuQpP4K");
   PageComponent = EmptyPage;
