@@ -19,6 +19,7 @@ export default function AnnouncementVideoPage() {
   const hideControlsTimerRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [controlsVisible, setControlsVisible] = useState(true);
@@ -44,6 +45,35 @@ export default function AnnouncementVideoPage() {
       video.removeEventListener("timeupdate", onTimeUpdate);
       video.removeEventListener("play", onPlay);
       video.removeEventListener("pause", onPause);
+    };
+  }, []);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) {
+      return undefined;
+    }
+
+    const onFullscreenChange = () => {
+      setIsFullscreen(Boolean(document.fullscreenElement));
+    };
+
+    const onWebkitFullscreenBegin = () => {
+      setIsFullscreen(true);
+    };
+
+    const onWebkitFullscreenEnd = () => {
+      setIsFullscreen(false);
+    };
+
+    document.addEventListener("fullscreenchange", onFullscreenChange);
+    video.addEventListener("webkitbeginfullscreen", onWebkitFullscreenBegin);
+    video.addEventListener("webkitendfullscreen", onWebkitFullscreenEnd);
+
+    return () => {
+      document.removeEventListener("fullscreenchange", onFullscreenChange);
+      video.removeEventListener("webkitbeginfullscreen", onWebkitFullscreenBegin);
+      video.removeEventListener("webkitendfullscreen", onWebkitFullscreenEnd);
     };
   }, []);
 
@@ -134,6 +164,42 @@ export default function AnnouncementVideoPage() {
     revealControls();
   };
 
+  const toggleFullscreen = async () => {
+    const video = videoRef.current;
+    if (!video) {
+      return;
+    }
+
+    revealControls();
+
+    if (document.fullscreenElement) {
+      if (document.exitFullscreen) {
+        try {
+          await document.exitFullscreen();
+        } catch {
+          // Ignore fullscreen exit failures and keep current state.
+        }
+      }
+      return;
+    }
+
+    if (video.requestFullscreen) {
+      try {
+        await video.requestFullscreen();
+      } catch {
+        // Ignore fullscreen request failures and try iOS fallback below.
+      }
+    }
+
+    if (video.webkitEnterFullscreen) {
+      try {
+        video.webkitEnterFullscreen();
+      } catch {
+        // Ignore iOS fullscreen fallback failures.
+      }
+    }
+  };
+
   return (
     <>
       <Navbar />
@@ -168,6 +234,14 @@ export default function AnnouncementVideoPage() {
                 </button>
                 <button type="button" onClick={toggleMute} aria-label={isMuted ? "Unmute video" : "Mute video"}>
                   {isMuted ? "Unmute" : "Mute"}
+                </button>
+                <button
+                  type="button"
+                  className="announcement-video__fullscreen-button"
+                  onClick={toggleFullscreen}
+                  aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+                >
+                  {isFullscreen ? "Exit Fullscreen" : "Fullscreen"}
                 </button>
               </div>
 
