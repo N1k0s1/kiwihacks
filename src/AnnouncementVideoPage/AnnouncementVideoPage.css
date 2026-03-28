@@ -1,0 +1,186 @@
+:root {
+  --announcement-mobile-bg: #EAE6E2;
+  --announcement-mobile-ink: #132f1e;
+  --announcement-mobile-card: rgba(118, 176, 112, 0.16);
+  --announcement-mobile-border: rgba(19, 47, 30, 0.2);
+  --announcement-mobile-chip: rgba(145, 226, 255, 0.95);
+}
+
+.announcement-mobile-page {
+  min-height: calc(100vh - 78px);
+  padding: 2rem 1rem 2.5rem;
+  background:
+    var(--announcement-mobile-bg);
+}
+
+.announcement-mobile-card {
+  width: min(900px, 94vw);
+  margin: 0 auto;
+  background: var(--announcement-mobile-card);
+  border: 2px solid var(--announcement-mobile-border);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(19, 47, 30, 0.12);
+  padding: 1.35rem 1rem;
+  text-align: center;
+  backdrop-filter: blur(2px);
+}
+
+.announcement-mobile-label {
+  margin: 0 auto;
+  padding: 0.35rem 0.72rem;
+  border-radius: 12px;
+  border: 1.5px dashed #132f1e;
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  color: var(--announcement-mobile-ink);
+  background: var(--announcement-mobile-chip);
+  text-align: center;
+}
+
+.announcement-mobile-card h1 {
+  margin: 1rem 0 0.45rem;
+  color: var(--announcement-mobile-ink);
+  font-size: clamp(1.9rem, 4.4vw, 2.8rem);
+  line-height: 1.1;
+  font-family: "Source Code Pro", monospace;
+}
+
+.announcement-mobile-player {
+  position: relative;
+  margin-top: 1rem;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1.5px dashed #132f1e;
+  background: #000;
+}
+
+.announcement-mobile-video {
+  width: 100%;
+  display: block;
+  background: #000;
+}
+
+.announcement-mobile-controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(5, 16, 30, 0.88) 0%, rgba(5, 16, 30, 0) 100%);
+}
+
+.announcement-video__controls {
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(9px);
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.announcement-video__controls.is-visible {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.announcement-video__control-row {
+  display: flex;
+  gap: 0.45rem;
+  margin-bottom: 0.5rem;
+}
+
+.announcement-video__control-row button {
+  pointer-events: auto;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #041f39;
+  background: #f4fbff;
+}
+
+.announcement-video__control-row button:hover {
+  background: #d5ebf7;
+}
+
+.announcement-video__fullscreen-button {
+  margin-left: auto;
+  color: #f3fbff;
+  background: linear-gradient(135deg, #0f4d6e 0%, #07344f 100%);
+  border: 1px solid rgba(186, 236, 255, 0.65);
+}
+
+.announcement-video__fullscreen-button:hover {
+  background: linear-gradient(135deg, #15628d 0%, #0a4264 100%);
+}
+
+.announcement-video__timeline {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.announcement-video__timeline input[type="range"] {
+  width: 100%;
+  accent-color: #7de4ff;
+  cursor: pointer;
+}
+
+.announcement-mobile-back {
+  display: inline-flex;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--announcement-mobile-ink);
+  background: #76b070;
+  border-radius: 14px;
+  padding: 0.85rem 1.4rem;
+  font-weight: 700;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.announcement-mobile-back:hover {
+  color: #fff;
+  background: #5c8f57;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .announcement-mobile-page {
+    padding: 1.1rem 0.8rem 2rem;
+  }
+
+  .announcement-mobile-card {
+    width: 100%;
+    margin: 0;
+    padding: 1.1rem 0.85rem;
+  }
+
+  .announcement-mobile-card p {
+    width: 96%;
+  }
+
+  .announcement-video__control-row button {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.74rem;
+  }
+
+  .announcement-video__fullscreen-button {
+    padding-inline: 0.55rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.01em;
+  }
+
+  .announcement-video__timeline {
+    font-size: 0.68rem;
+  }
+}

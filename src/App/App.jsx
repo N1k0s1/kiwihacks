@@ -1,5 +1,7 @@
 import "./App.css";
 import Navbar from "../Navbar/Navbar";
+import AnnouncementVideoPlayer from "../Video/Video";
+import AnnouncementVideo from "../Video/assests/announcement.mp4";
 //Branding
 import Logo from "../assets/kiwihackslogo.png";
 import LogoText from "../assets/kiwihackstext.png";
@@ -31,8 +33,8 @@ import { useEffect } from "react";
 
 
 
-export default function App() {
-  useEffect(() => {
+
+export default function App() {  useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -50,6 +52,17 @@ export default function App() {
       hiddenElements.forEach((el) => observer.unobserve(el));
     };
   }, []);
+
+  const announcementVideoConfig = {
+    src: AnnouncementVideo,
+    title: "Announcement",
+    autoPlay: true,
+    defaultMuted: false,
+    loop: false,
+    desktopMinWidth: 768,
+    mobilePageHref: "/announcement",
+    mobileBannerText: "Watch update",
+  };
 
   return (
     <>
@@ -581,6 +594,7 @@ export default function App() {
           <a href="/code-of-conduct">Code of Conduct</a>
         </div>
       </footer>
+      <AnnouncementVideoPlayer {...announcementVideoConfig} />
     </>
   );
 }
