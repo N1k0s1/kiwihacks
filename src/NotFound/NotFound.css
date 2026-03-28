@@ -123,7 +123,7 @@
   flex-wrap: wrap;
 }
 
-#big-button {
+.big-button {
   padding: 1rem 4rem;
   background: var(--medium-green);
   border-radius: 15px;
@@ -134,7 +134,7 @@
   font-size: 1.1rem;
 }
 
-#big-button:hover {
+.big-button:hover {
   background: #88bc82;
   box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
@@ -164,7 +164,6 @@
   align-items: center;
 }
 
-#link,
 .link {
   color: var(--very-dark-green);
   text-decoration: none;
@@ -172,12 +171,11 @@
   transition: color 0.2s ease;
 }
 
-#link:hover,
 .link:hover {
   color: var(--bright-blue);
 }
 
-#small-button {
+.small-button {
   padding: 0.5em;
   background: var(--light-blue);
   font-size: 0.8rem;
@@ -190,7 +188,7 @@
   border: 1.5px dashed var(--very-dark-green);
 }
 
-#small-button:hover {
+.small-button:hover {
   background: var(--very-light-blue);
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
 }
@@ -232,7 +230,7 @@
     gap: 1rem;
   }
 
-  #small-button {
+  .small-button {
     position: static;
     margin-top: 1rem;
   }

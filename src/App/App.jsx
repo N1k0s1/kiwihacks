@@ -85,27 +85,27 @@ export default function App() {  useEffect(() => {
       </a>
     */}
 
-      <img id="logo" src={Logo} alt="KiwiHacks Kiwi Bird" fetchPriority="high" width="150" height="150" draggable="false" />
+      <img className="logo" src={Logo} alt="KiwiHacks Kiwi Bird" fetchPriority="high" width="150" height="150" draggable="false" />
 
       <main>
       <header id="home">
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
-        <img src={StarsImage} alt="Background Stars" id="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" className="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" className="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" className="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" className="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" className="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" className="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" className="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" className="stars" aria-hidden="true" draggable="false" />
+        <img src={StarsImage} alt="Background Stars" className="stars" aria-hidden="true" draggable="false" />
 
-        <img src={LogoText} alt="Kiwihacks" id="kiwihacks-text" fetchPriority="high" draggable="false" />
-        <h2 className="mono" id="subtitle">
+        <img src={LogoText} alt="Kiwihacks" className="kiwihacks-text" fetchPriority="high" draggable="false" />
+        <h2 className="mono subtitle">
           Auckland’s free 24hr hackathon for high schoolers
         </h2>
       </header>
 
-      <section id="basicinfo">
+      <section className="basicinfo">
         <p className="info">May 2nd - 3rd 2026</p>
         <p className="info">
           <a
@@ -122,16 +122,14 @@ export default function App() {  useEffect(() => {
 
       <div className="button-container">
         <a
-          className="sign-up-link"
-          id="big-button"
+          className="sign-up-link big-button"
           href="https://forms.hackclub.com/kiwihacks"
           target="_blank"
         >
           <b>Sign up for KiwiHacks!</b>
         </a>
         {/* <a
-          className="sign-up-link"
-          id="calendar-button"
+          className="sign-up-link calendar-button"
           href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=KiwiHacks+2026&dates=20260320T210000Z/20260321T210000Z&details=Auckland%E2%80%99s+free+24hr+hackathon+for+teenage+coders+and+innovators.+Join+us+for+a+weekend+of+coding%2C+mentorship%2C+and+fun!&location=GridAKL+%2F+John+Lysaght+Building%2C+Auckland"
           target="_blank"
         >
@@ -139,30 +137,30 @@ export default function App() {  useEffect(() => {
         </a> */}
       </div>
 
-      <section id="about">
+      <section id="about" className="about">
         <div className="text">
           <h2>About KiwiHacks</h2>
-          <p id="about-text">
+          <p className="about-text">
             KiwiHacks is a free 24-hour hackathon run by teenagers, for teenagers. 
             If you’re 18 or under, come along to meet new people, learn new skills, 
             and build something awesome together.
           </p>
-          <p id="about-text">
+          <p className="about-text">
             Held at the GridAKL / John Lysaght Building, 
             KiwiHacks brings together 100+ students for a full weekend of creating and experimenting. 
             You can build any coding or hardware project you like - 
             apps, games, websites, robots, or something totally different.
           </p>
-          <p id="about-text">
+          <p className="about-text">
             Throughout the event there will be mentors and beginner-friendly workshops to help you get started or solve problems along the way. 
             Food, snacks, and drinks are all provided for free, plus there are free T-shirts, swag, and prizes for some of the best projects.
           </p>
-          <p id="about-text">
+          <p className="about-text">
             It’s an unforgettable weekend of coding, creativity, and collaboration, and all skill levels are welcome.
           </p>
         </div>
         <img
-          id="example"
+          className="example"
           src={ExampleImage}
           alt="Students hacking at previous events"
           loading="lazy"
@@ -193,7 +191,7 @@ export default function App() {  useEffect(() => {
         <img
           src={PolaroidImage2}
           alt=""
-          id="small-decorative-image"
+          className="small-decorative-image"
           loading="lazy"
         />
         */}
@@ -224,7 +222,7 @@ export default function App() {  useEffect(() => {
         <img
           src={PolaroidImage1}
           alt=""
-          id="small-decorative-image"
+          className="small-decorative-image"
           loading="lazy"
         />
         */}
@@ -272,98 +270,98 @@ export default function App() {  useEffect(() => {
         </div>
       </section>
 
-      <section id="sponsorships">
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" id="tape" aria-hidden="true" />
+      <section id="sponsorships" className="sponsorships">
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
         <h1>Sponsors</h1>
 
-        <p id="sponsor-text">A HUGE thank you to our sponsors!</p>
+        <p className="sponsor-text">A HUGE thank you to our sponsors!</p>
 
-        <div id="sponsors">
+        <div className="sponsors">
           <a 
-              id="sponsor-link" 
+              className="sponsor-link" 
               href="https://hackclub.com" 
               target="_blank" 
               rel="noreferrer"
             >
-            <div id="sponsor">
+            <div className="sponsor">
               <img className="sponsor-img" src={HackClubLogo} alt="Hack Club Flag Logo" loading="lazy" draggable="false" />
             </div>
           </a>
 
           <a 
-              id="sponsor-link" 
+              className="sponsor-link" 
               href="https://gen.xyz/" 
               target="_blank" 
               rel="noreferrer"
             >
-            <div id="sponsor">
+            <div className="sponsor">
               <img className="sponsor-img" src={xyzLogo} alt=".xyz domains Logo" loading="lazy" draggable="false" />
             </div>
           </a>
 
           <a
-              id="sponsor-link"
+              className="sponsor-link"
               href="https://www.extraordinarypay.com/"
               target="_blank"
               rel="noreferrer"
             >
-            <div id="sponsor">
+            <div className="sponsor">
               <img className="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" draggable="false" />
             </div>
           </a>
 
           <a
-              id="sponsor-link"
+              className="sponsor-link"
               href="https://www.canva.com/"
               target="_blank"
               rel="noreferrer"
             >
-            <div id="sponsor">
+            <div className="sponsor">
               <img className="sponsor-img" src={CanvaLogo} alt="Canva Logo" loading="lazy" draggable="false" />
             </div>
           </a>
 
           <a
-              id="sponsor-link"
+              className="sponsor-link"
               href="https://elevenlabs.io/"
               target="_blank"
               rel="noreferrer"
             >
-            <div id="sponsor">
+            <div className="sponsor">
               <img className="sponsor-img" src={ElevenLabsLogo} alt="ElevenLabs Logo" loading="lazy" draggable="false" />
             </div>
           </a>
         </div>
 
-        <p id="sponsor-text">
+        <p className="sponsor-text">
           {" "}
           By becoming a sponsor, you support the next generation of innovators
           and gain visibility for your brand within the tech community.
         </p>
         <br />
-        <p id="sponsor-text">
+        <p className="sponsor-text">
           If you're interested in making the hackathon better by sponsoring
           KiwiHacks, please reach out to{" "}
           <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>.
         </p>
         <br />
-        <p id="sponsor-text">We're really grateful for your support.</p>
+        <p className="sponsor-text">We're really grateful for your support.</p>
       </section>
 
       <section id="team">
@@ -481,15 +479,14 @@ export default function App() {  useEffect(() => {
         </div>
       </section>
 
-      <section id="cta">
+      <section id="cta" className="cta">
         <p className="boldp">What are you waiting for?</p>
         <p className="lastp">
           Join us for an unforgettable weekend of coding, creativity, and fun.
         </p>
         <a
           href="https://forms.hackclub.com/kiwihacks"
-          className="sign-up-link"
-          id="last-button"
+          className="sign-up-link last-button"
           target="_blank"
           rel="noreferrer"
         >
@@ -507,7 +504,7 @@ export default function App() {  useEffect(() => {
             <img
               src={SignatureImage}
               alt="Signatures of the KiwiHacks team"
-              id="signatures"
+              className="signatures"
               draggable="false"
             />
           </picture>
