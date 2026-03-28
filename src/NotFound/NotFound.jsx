@@ -23,7 +23,7 @@ export default function NotFound() {
             TODO: fix broken link or navigate back to main
           </p>
           <div className="button-container">
-            <a href="/" id="big-button" className="sign-up-link display">
+            <a href="/" className="sign-up-link display big-button">
               <b>Return to Home</b>
             </a>
           </div>
