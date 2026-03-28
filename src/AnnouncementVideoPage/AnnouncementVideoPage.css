@@ -40,18 +40,11 @@
 }
 
 .announcement-mobile-card h1 {
-  margin: 0.7rem 0 0.45rem;
+  margin: 1rem 0 0.45rem;
   color: var(--announcement-mobile-ink);
   font-size: clamp(1.9rem, 4.4vw, 2.8rem);
   line-height: 1.1;
   font-family: "Source Code Pro", monospace;
-}
-
-.announcement-mobile-card p {
-  width: min(640px, 94%);
-  margin: 0 auto;
-  color: var(--announcement-mobile-ink);
-  font-size: clamp(1rem, 2vw, 1.1rem);
 }
 
 .announcement-mobile-player {

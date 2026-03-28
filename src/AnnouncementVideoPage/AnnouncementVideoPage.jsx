@@ -205,9 +205,7 @@ export default function AnnouncementVideoPage() {
       <Navbar />
       <main className="announcement-mobile-page">
         <section className="announcement-mobile-card">
-          <p className="announcement-mobile-label">Announcement</p>
-          <h1>Watch The Announcement</h1>
-          <p>Tap or hover the video to reveal controls. They fade away automatically.</p>
+          <h1>Announcement</h1>
 
           <div
             className="announcement-mobile-player"

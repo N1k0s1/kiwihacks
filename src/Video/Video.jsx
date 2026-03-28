@@ -17,7 +17,7 @@ export default function AnnouncementVideoPlayer({
 	title = "Announcement",
 	poster,
 	autoPlay = false,
-	defaultMuted = true,
+	defaultMuted = false,
 	loop = false,
 	desktopMinWidth = 768,
 	mobilePageHref = "/announcement",
@@ -29,7 +29,7 @@ export default function AnnouncementVideoPlayer({
 	const [isPlaying, setIsPlaying] = useState(autoPlay);
 	const [isMuted, setIsMuted] = useState(defaultMuted);
 	const [isExpanded, setIsExpanded] = useState(false);
-	const [isMinimized, setIsMinimized] = useState(false);
+	const [isMinimized, setIsMinimized] = useState(true);
 	const [isClosing, setIsClosing] = useState(false);
 	const [controlsVisible, setControlsVisible] = useState(false);
 	const [duration, setDuration] = useState(0);
