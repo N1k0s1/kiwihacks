@@ -84,7 +84,7 @@ if (pathname === "/" || pathname === "") {
 } else if (pathname === "/announcement" || pathname === "/announcement-video") {
   PageComponent = AnnouncementVideoPage;
 } else if (pathname === "/discord" || pathname === "/chat" || pathname === "/community" || pathname === "/dc") {
-  window.location.replace("https://discord.gg/NgYTuQpP4K");
+  window.location.replace("https://discord.gg/SNdNUQ4Vp7");
   PageComponent = EmptyPage;
 } else if (pathname === "/github" || pathname === "/code" || pathname === "/repo") {
   window.location.replace("https://github.com/N1k0s1/kiwihacks");
