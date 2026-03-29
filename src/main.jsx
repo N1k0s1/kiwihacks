@@ -7,6 +7,7 @@ import AnnouncementVideoPage from "./AnnouncementVideoPage/AnnouncementVideoPage
 import NotFound from "./NotFound/NotFound.jsx";
 import CodeOfConduct from "./CodeOfConduct/CodeOfConduct.jsx";
 import ForkPreviewPage from "./ForkPreviewPage/ForkPreviewPage.jsx";
+import ParentsGuide from "./ParentsGuide/ParentsGuide.jsx";
 import { seoHeadHtml } from "./SEO/seoConfig.js";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
@@ -94,6 +95,8 @@ if (pathname === "/" || pathname === "") {
   PageComponent = EmptyPage;
 } else if (pathname === "/code-of-conduct" || pathname === "/coc" || pathname === "/codeofconduct" || pathname === "/conduct") {
   PageComponent = CodeOfConduct;
+} else if (pathname === "/parents-guide" || pathname === "/parentsguide" || pathname === "/parents") {
+  PageComponent = ParentsGuide;
 } else {
   PageComponent = NotFound;
 }

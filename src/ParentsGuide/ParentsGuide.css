@@ -1,0 +1,161 @@
+.pg-main {
+  min-height: calc(100vh - 78px);
+  padding: 2rem 1rem 2.5rem;
+  background: #EAE6E2;
+}
+
+.pg-card {
+  max-width: 1400px;
+  width: 94vw;
+  margin: 0 auto;
+  background: rgba(118, 176, 112, 0.16);
+  border: 1.5px dashed var(--very-dark-green);
+  border-radius: 16px;
+  padding: 2.5rem 4rem;
+  box-shadow: 0 10px 30px rgba(19, 47, 30, 0.12);
+  text-align: left;
+}
+
+.pg-content {
+  max-width: 100%;
+}
+
+/* Page title */
+.pg-content h1 {
+  text-align: center;
+  color: var(--very-dark-green);
+  font-family: 'Source Code Pro', monospace;
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+  margin: 0 0 0.4rem;
+  line-height: 1.1;
+}
+
+/* Section headings (What is KiwiHacks?, Expenses, etc.) */
+.pg-content h3 {
+  color: var(--dark-green);
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.35rem;
+  margin: 1.5rem 0 0.5rem;
+  background: rgba(54, 198, 251, 0.12);
+  border: 1.5px dashed var(--very-dark-green);
+  border-radius: 16px;
+  padding: 1rem 2rem 0.8rem;
+}
+
+/* "Outline" heading – keep the card style but center it */
+.pg-content h3:first-of-type {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Person names */
+.pg-content h4 {
+  color: var(--very-dark-green);
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin: 1.2rem 0 0.25rem;
+  padding-left: 0;
+}
+
+.pg-content p {
+  color: var(--very-dark-green);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.6rem;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+/* Table of contents list */
+.pg-content ol {
+  color: var(--very-dark-green);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.9;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.6rem;
+  padding-left: 1.4rem;
+  padding-right: 0;
+}
+
+.pg-content ul {
+  color: var(--very-dark-green);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.6rem;
+  padding-left: 1.4rem;
+  padding-right: 0;
+  list-style: disc;
+}
+
+.pg-content a {
+  color: var(--dark-green);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.pg-content a:hover {
+  color: var(--bright-blue);
+}
+
+/* Contain the embedded map image */
+.pg-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 0.8rem auto 0.6rem;
+}
+
+.pg-cta-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.pg-primary-cta {
+  display: inline-block;
+  color: var(--very-dark-green);
+  text-decoration: none;
+  background: var(--medium-green);
+  border-radius: 14px;
+  padding: 0.95rem 1.8rem;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pg-primary-cta:hover {
+  background: #5c8f57;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .pg-card {
+    width: 95%;
+    padding: 1.4rem 1rem;
+  }
+
+  .pg-content p,
+  .pg-content ol,
+  .pg-content ul,
+  .pg-content h4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .pg-primary-cta {
+    transition: none;
+  }
+
+  .pg-primary-cta:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
