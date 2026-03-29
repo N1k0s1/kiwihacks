@@ -40,12 +40,7 @@
   border: 1.5px dashed var(--very-dark-green);
   border-radius: 16px;
   padding: 1rem 2rem 0.8rem;
-}
-
-/* "Outline" heading – keep the card style but center it */
-.pg-content h3:first-of-type {
   text-align: center;
-  margin-top: 1rem;
 }
 
 /* Person names */
@@ -104,13 +99,17 @@
   color: var(--bright-blue);
 }
 
-/* Contain the embedded map image */
-.pg-content img {
+/* Style embedded map for clean, responsive display */
+.pg-content iframe {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  max-width: 47.5rem;
+  aspect-ratio: 4 / 3;
   height: auto;
-  border-radius: 12px;
-  margin: 0.8rem auto 0.6rem;
+  border: 0;
+  border-radius: 0.875rem;
+  margin: 0.9rem auto 0.8rem;
+  box-shadow: 0 10px 24px rgba(19, 47, 30, 0.14);
 }
 
 .pg-cta-row {
@@ -157,5 +156,11 @@
   .pg-primary-cta:hover {
     transform: none;
     box-shadow: none;
+  }
+
+  .pg-content iframe {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.75rem;
   }
 }

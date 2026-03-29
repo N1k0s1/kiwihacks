@@ -250,8 +250,7 @@ export default function App() {  useEffect(() => {
             We understand that parents want to ensure their children are safe.
             Check out our{" "}
             <a
-              href="https://docs.google.com/document/d/14HMPfRkPQrFVf1E87cvsUqguILbtwoifEJ5hYUwhgRM/edit?tab=t.0#heading=h.12mg8uzylly"
-              target="_blank"
+              href="./parents-guide"
             >
               parents guide
             </a>
