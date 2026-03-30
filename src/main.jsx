@@ -98,6 +98,7 @@ if (pathname === "/" || pathname === "") {
 } else if (pathname === "/parents-guide" || pathname === "/parentsguide" || pathname === "/parents") {
   //PageComponent = ParentsGuide;
   window.location.replace("https://docs.google.com/document/d/14HMPfRkPQrFVf1E87cvsUqguILbtwoifEJ5hYUwhgRM/edit");
+  PageComponent = EmptyPage;
 } else {
   PageComponent = NotFound;
 }
