@@ -251,6 +251,7 @@ export default function App() {  useEffect(() => {
             Check out our{" "}
             <a
               href="./parents-guide"
+              target="_blank"
             >
               parents guide
             </a>
