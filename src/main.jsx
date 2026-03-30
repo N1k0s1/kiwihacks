@@ -96,7 +96,8 @@ if (pathname === "/" || pathname === "") {
 } else if (pathname === "/code-of-conduct" || pathname === "/coc" || pathname === "/codeofconduct" || pathname === "/conduct") {
   PageComponent = CodeOfConduct;
 } else if (pathname === "/parents-guide" || pathname === "/parentsguide" || pathname === "/parents") {
-  PageComponent = ParentsGuide;
+  //PageComponent = ParentsGuide;
+  window.location.replace("https://docs.google.com/document/d/14HMPfRkPQrFVf1E87cvsUqguILbtwoifEJ5hYUwhgRM/edit");
 } else {
   PageComponent = NotFound;
 }
