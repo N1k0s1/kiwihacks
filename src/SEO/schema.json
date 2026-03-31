@@ -32,7 +32,7 @@
           "image": "https://kiwihacks.org/team/sebastian.jpg",
           "sameAs": [
             "https://github.com/pakkid",
-            "https://instagram.com/le_snakeyboi",
+            "https://instagram.com/le_snakey",
             "https://www.linkedin.com/in/sebastian-johnson-61389138b"
           ]
         },
@@ -43,7 +43,6 @@
           "image": "https://kiwihacks.org/team/kyle.jpg",
           "sameAs": [
             "https://github.com/Dekoder-py",
-            "https://instagram.com/your_nemisis24",
             "https://linkedin.com/in/kyle-b-134a48390"
           ]
         },
@@ -54,7 +53,6 @@
           "image": "https://kiwihacks.org/team/josh.jpg",
           "sameAs": [
             "https://github.com/heycastawhat",
-            "https://www.instagram.com/joooooshp/",
             "https://www.linkedin.com/in/josh-palmer-b9942237b/"
           ]
         },
@@ -64,7 +62,6 @@
           "jobTitle": "Organiser",
           "image": "https://kiwihacks.org/team/audrey.jpg",
           "sameAs": [
-            "https://www.instagram.com/audri.121/",
             "https://www.linkedin.com/in/audrey-shi-0657213b4/"
           ]
         },
@@ -74,18 +71,14 @@
           "jobTitle": "Organiser",
           "image": "https://kiwihacks.org/team/christie.jpg",
           "sameAs": [
-            "https://github.com/Christie125",
-            "https://www.instagram.com/christieb125/"
+            "https://github.com/Christie125"
           ]
         },
         {
           "@type": "Person",
           "name": "Maggie Berenshteyn",
           "jobTitle": "Organiser",
-          "image": "https://kiwihacks.org/team/maggie.jpg",
-          "sameAs": [
-            "https://www.instagram.com/maggieb.shteyn/"
-          ]
+          "image": "https://kiwihacks.org/team/maggie.jpg"
         },
         {
           "@type": "Person",
@@ -93,7 +86,6 @@
           "jobTitle": "Organiser",
           "image": "https://kiwihacks.org/team/kiera.jpg",
           "sameAs": [
-            "https://www.instagram.com/k.kindatiredtvt/",
             "https://www.linkedin.com/in/kiera-langridge-459098322/"
           ]
         }
