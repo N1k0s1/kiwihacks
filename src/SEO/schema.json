@@ -1,0 +1,145 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kiwihacks.org/#org",
+      "name": "KiwiHacks",
+      "url": "https://kiwihacks.org/",
+      "logo": "https://kiwihacks.org/favicon/android-chrome-512x512.png",
+      "sameAs": [
+        "https://www.instagram.com/kiwihacks/",
+        "https://nz.linkedin.com/company/kiwihacks",
+        "https://github.com/orgs/KiwiHacksNZ",
+        "https://kiwihacks.org/discord"
+      ],
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Niko Purdie",
+          "jobTitle": "Chief KiwiHacker",
+          "image": "https://kiwihacks.org/team/niko.jpg",
+          "sameAs": [
+            "https://github.com/N1k0s1",
+            "https://www.linkedin.com/in/nikopurdie?originalSubdomain=nz",
+            "https://www.instagram.com/niko_p101/?hl=en"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Sebastian Johnson",
+          "jobTitle": "Organiser",
+          "image": "https://kiwihacks.org/team/sebastian.jpg",
+          "sameAs": [
+            "https://github.com/pakkid",
+            "https://instagram.com/le_snakeyboi",
+            "https://www.linkedin.com/in/sebastian-johnson-61389138b"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Kyle Bendall",
+          "jobTitle": "Organiser",
+          "image": "https://kiwihacks.org/team/kyle.jpg",
+          "sameAs": [
+            "https://github.com/Dekoder-py",
+            "https://instagram.com/your_nemisis24",
+            "https://linkedin.com/in/kyle-b-134a48390"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Josh Palmer",
+          "jobTitle": "Organiser",
+          "image": "https://kiwihacks.org/team/josh.jpg",
+          "sameAs": [
+            "https://github.com/heycastawhat",
+            "https://www.instagram.com/joooooshp/",
+            "https://www.linkedin.com/in/josh-palmer-b9942237b/"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Audrey Shi",
+          "jobTitle": "Organiser",
+          "image": "https://kiwihacks.org/team/audrey.jpg",
+          "sameAs": [
+            "https://www.instagram.com/audri.121/",
+            "https://www.linkedin.com/in/audrey-shi-0657213b4/"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Christie Berenshteyn",
+          "jobTitle": "Organiser",
+          "image": "https://kiwihacks.org/team/christie.jpg",
+          "sameAs": [
+            "https://github.com/Christie125",
+            "https://www.instagram.com/christieb125/"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Maggie Berenshteyn",
+          "jobTitle": "Organiser",
+          "image": "https://kiwihacks.org/team/maggie.jpg",
+          "sameAs": [
+            "https://www.instagram.com/maggieb.shteyn/"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Kiera Langridge",
+          "jobTitle": "Organiser",
+          "image": "https://kiwihacks.org/team/kiera.jpg",
+          "sameAs": [
+            "https://www.instagram.com/k.kindatiredtvt/",
+            "https://www.linkedin.com/in/kiera-langridge-459098322/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Event",
+      "name": "KiwiHacks 2026",
+      "startDate": "2026-05-02T11:00",
+      "endDate": "2026-05-03T11:00",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "GridAKL, John Lysaught building",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "101 Pakenham Street West",
+          "addressLocality": "Auckland CBD",
+          "addressRegion": "Auckland",
+          "postalCode": "1010",
+          "addressCountry": "NZ"
+        }
+      },
+      "image": "https://kiwihacks.org/kiwihacksimage.png",
+      "description": "Auckland's free 24hr hackathon for teenage coders and innovators. Join KiwiHacks May 2-3, 2026 at GridAKL, John Lysaught building, 101 Pakenham Street West, Auckland CBD, Auckland 1010.",
+      "organizer": {
+        "@type": "Organization",
+        "name": "KiwiHacks",
+        "url": "https://kiwihacks.org/"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kiwihacks.org/#website",
+      "url": "https://kiwihacks.org/",
+      "name": "KiwiHacks"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kiwihacks.org/#webpage",
+      "url": "https://kiwihacks.org/",
+      "name": "KiwiHacks",
+      "mainEntity": {
+        "@id": "https://kiwihacks.org/#org"
+      }
+    }
+  ]
+}

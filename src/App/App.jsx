@@ -22,19 +22,42 @@ import PolaroidImage1 from "../assets/polaroid1.png";
 import PolaroidImage2 from "../assets/polaroid2.png";
 import StarsImage from "../assets/stars.png";
 import TapeImage from "../assets/tape.png";
-//Sponsors
-import ExtraordinaryLogo from "../assets/Sponsors/extraordinary-logo.svg";
-import CanvaLogo from "../assets/Sponsors/canva-logo.svg";
-import ElevenLabsLogo from "../assets/Sponsors/elevenlabs-logo-black.svg";
-import xyzLogo from "../assets/Sponsors/xyz-white-logo.svg";
-import HackClubLogo from "../assets/Sponsors/hackclub-logo.svg";
+// Sponsors
+import sponsorsData from "./sponsors.json";
+// Automatically import all logos in the Sponsors directory
+const sponsorLogos = import.meta.glob("../assets/Sponsors/*", { import: "default", eager: true });
+import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope, FaPhoneFlip } from "react-icons/fa6";
+
 //React being react
 import { useEffect } from "react";
 
 
 
 
-export default function App() {  useEffect(() => {
+export default function App() {
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const stars = document.querySelectorAll(".stars");
+      stars.forEach((star) => {
+        const rect = star.getBoundingClientRect();
+        if (
+          e.clientX >= rect.left &&
+          e.clientX <= rect.right &&
+          e.clientY >= rect.top &&
+          e.clientY <= rect.bottom
+        ) {
+          star.classList.add("star-hovered");
+        } else {
+          star.classList.remove("star-hovered");
+        }
+      });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -293,60 +316,28 @@ export default function App() {  useEffect(() => {
         <p className="sponsor-text">A HUGE thank you to our sponsors!</p>
 
         <div className="sponsors">
-          <a 
-              className="sponsor-link" 
-              href="https://hackclub.com" 
-              target="_blank" 
-              rel="noreferrer"
-            >
-            <div className="sponsor">
-              <img className="sponsor-img" src={HackClubLogo} alt="Hack Club Flag Logo" loading="lazy" draggable="false" />
-            </div>
-          </a>
-
-          <a 
-              className="sponsor-link" 
-              href="https://gen.xyz/" 
-              target="_blank" 
-              rel="noreferrer"
-            >
-            <div className="sponsor">
-              <img className="sponsor-img" src={xyzLogo} alt=".xyz domains Logo" loading="lazy" draggable="false" />
-            </div>
-          </a>
-
-          <a
-              className="sponsor-link"
-              href="https://www.extraordinarypay.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-            <div className="sponsor">
-              <img className="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" draggable="false" />
-            </div>
-          </a>
-
-          <a
-              className="sponsor-link"
-              href="https://www.canva.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-            <div className="sponsor">
-              <img className="sponsor-img" src={CanvaLogo} alt="Canva Logo" loading="lazy" draggable="false" />
-            </div>
-          </a>
-
-          <a
-              className="sponsor-link"
-              href="https://elevenlabs.io/"
-              target="_blank"
-              rel="noreferrer"
-            >
-            <div className="sponsor">
-              <img className="sponsor-img" src={ElevenLabsLogo} alt="ElevenLabs Logo" loading="lazy" draggable="false" />
-            </div>
-          </a>
+          {sponsorsData.map((sponsor, idx) => {
+            const logoSrc = sponsorLogos[`../assets/Sponsors/${sponsor.logo}`];
+            return (
+              <a
+                key={idx}
+                className="sponsor-link"
+                href={sponsor.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="sponsor">
+                  <img
+                    className="sponsor-img"
+                    src={logoSrc}
+                    alt={sponsor.alt || `${sponsor.name} Logo`}
+                    loading="lazy"
+                    draggable="false"
+                  />
+                </div>
+              </a>
+            );
+          })}
         </div>
 
         <p className="sponsor-text">
@@ -370,11 +361,13 @@ export default function App() {  useEffect(() => {
           <div className="team-member-div">
             <img src={NikoImage} alt="Niko Purdie" loading="lazy" />
             <h2>Niko Purdie</h2>
-            <p>
-              <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>
-              <br />
-              <a href="tel:0221350419">022 135 0419</a>
-            </p>
+            <div className="team-socials">
+              <a href="mailto:niko@kiwihacks.org" aria-label="Email" target="_blank" rel="noreferrer"><FaEnvelope /></a>
+              <a href="tel:0221350419" aria-label="Phone" target="_blank" rel="noreferrer"><FaPhoneFlip /></a>
+              <a href="https://www.instagram.com/niko_p101/?hl=en" aria-label="Instagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
+              <a href="https://www.linkedin.com/in/nikopurdie?originalSubdomain=nz" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+              <a href="https://github.com/N1k0s1" aria-label="Github" target="_blank" rel="noreferrer"><FaGithub /></a>
+            </div>
             <p>
               I'm a 17 year old coder from Sacred Heart College and the lead
               organiser of KiwiHacks. This is the fourth hackathon I’ve
@@ -387,7 +380,12 @@ export default function App() {  useEffect(() => {
           <div className="team-member-div">
             <img src={SebastianImage} alt="Sebastian Johnson" loading="lazy" />
             <h2>Sebastian Johnson</h2>
-            <p><a href="mailto:pakkid@stuffandthings.cc">pakkid@stuffandthings.cc</a></p>
+            <div className="team-socials">
+              <a href="mailto:pakkid@stuffandthings.cc" aria-label="Email" target="_blank" rel="noreferrer"><FaEnvelope /></a>
+              <a href="https://www.instagram.com/le_snakeyboi" aria-label="Instagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
+              <a href="https://www.linkedin.com/in/sebastian-johnson-61389138b" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+              <a href="https://github.com/pakkid" aria-label="Github" target="_blank" rel="noreferrer"><FaGithub /></a>
+            </div>
             <p>
               I’m a 15 year old student from Pakuranga College helping out with the
               website and technical infrastructure for KiwiHacks. I’m passionate about
@@ -400,9 +398,12 @@ export default function App() {  useEffect(() => {
           <div className="team-member-div">
             <img src={JoshImage} alt="Josh Palmer" loading="lazy" />
             <h2>Josh Palmer</h2>
-            <p>
-              <a href="mailto:josh@kiwihacks.org">josh@kiwihacks.org</a>
-            </p>
+            <div className="team-socials">
+              <a href="mailto:josh@kiwihacks.org" aria-label="Email" target="_blank" rel="noreferrer"><FaEnvelope /></a>
+              <a href="https://www.instagram.com/joooooshp/" aria-label="Instagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
+              <a href="https://www.linkedin.com/in/josh-palmer-b9942237b/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+              <a href="https://github.com/heycastawhat" aria-label="Github" target="_blank" rel="noreferrer"><FaGithub /></a>
+            </div>
             <p>
               I’m a 14 year old scout from Selwyn College leading outreach +
               helping out the website. I'm passionate about coding & learning. I
@@ -414,9 +415,12 @@ export default function App() {  useEffect(() => {
           <div className="team-member-div">
             <img src={AudreyImage} alt="Audrey Shi" loading="lazy" />
             <h2>Audrey Shi</h2>
-            <p>
-              <a href="mailto:audrey@kiwihacks.org">audrey@kiwihacks.org</a>
-            </p>
+            <div className="team-socials">
+              <a href="mailto:audrey@kiwihacks.org" aria-label="Email" target="_blank" rel="noreferrer"><FaEnvelope /></a>
+              <a href="https://www.instagram.com/audri.121/" aria-label="Instagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
+              <a href="https://www.linkedin.com/in/audrey-shi-0657213b4/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+              {/* <a href="https://github.com/AudreyShi" aria-label="Github" target="_blank" rel="noreferrer"><FaGithub /></a> */}
+            </div>
             <p>
               Hey there! I’m a 15 year old coder from Glendowie College, and the
               Art & Branding lead at KiwiHacks. I have a passion for all sorts
@@ -429,9 +433,12 @@ export default function App() {  useEffect(() => {
           <div className="team-member-div">
             <img src={KyleImage} alt="Kyle Bendall" loading="lazy" />
             <h2>Kyle Bendall</h2>
-            <p>
-              <a href="mailto:kyle@kiwihacks.org">kyle@kiwihacks.org</a>
-            </p>
+            <div className="team-socials">
+              <a href="mailto:kyle@kiwihacks.org" aria-label="Email" target="_blank" rel="noreferrer"><FaEnvelope /></a>
+              <a href="https://instagram.com/your_nemisis24" aria-label="Instagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
+              <a href="https://linkedin.com/in/kyle-b-134a48390" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+              <a href="https://github.com/Dekoder-py" aria-label="Github" target="_blank" rel="noreferrer"><FaGithub /></a>
+            </div>
             <p>
               I’m a 16 year old coder from Marcellin College leading website
               building and helping with outreach. I’m passionate about coding
@@ -443,9 +450,12 @@ export default function App() {  useEffect(() => {
           <div className="team-member-div">
             <img src={ChristieImage} alt="Christie Berenshteyn" loading="lazy" />
             <h2>Christie Berenshteyn</h2>
-            <p>
-              <a href="mailto:christie@kiwihacks.org">christie@kiwihacks.org</a>
-            </p>
+            <div className="team-socials">
+              <a href="mailto:christie@kiwihacks.org" aria-label="Email" target="_blank" rel="noreferrer"><FaEnvelope /></a>
+              <a href="https://www.instagram.com/christieb125/" aria-label="Instagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
+              {/* <a href="https://www.linkedin.com/in/christie-berenshteyn-3b3b3b/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedin /></a> */}
+              <a href="https://github.com/Christie125" aria-label="Github" target="_blank" rel="noreferrer"><FaGithub /></a>
+            </div>
             <p>
               I’m a Year 11 Glendowie College student helping with the website, outreach, and marketing, among other things &mdash; I have my eggs in a lot of baskets! <br />
               Outside of coding, I enjoy playing the piano, baking, and learning new things. I'm also super passionate about supporting my community, and lead several school clubs. <br />
@@ -456,7 +466,12 @@ export default function App() {  useEffect(() => {
           <div className="team-member-div">
             <img src={MaggieImage} alt="Maggie Berenshteyn" loading="lazy" />
             <h2>Maggie Berenshteyn</h2>
-            <p><a href="mailto:maggie.berenshteyn@gmail.com">maggie.berenshteyn@gmail.com</a></p>
+            <div className="team-socials">
+              <a href="mailto:maggie.berenshteyn@gmail.com" aria-label="Email" target="_blank" rel="noreferrer"><FaEnvelope /></a>
+              <a href="https://www.instagram.com/maggieb.shteyn/" aria-label="Instagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
+              {/* <a href="https://www.linkedin.com/in/maggie-berenshteyn-3b3b3b/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+              <a href="https://github.com/MaggieBerenshteyn" aria-label="Github" target="_blank" rel="noreferrer"><FaGithub /></a> */}
+            </div>
             <p>
               I’m a 15 year old student from Glendowie College who organises the
               social media and advertising for KiwiHacks. I’m excited to help
@@ -468,7 +483,12 @@ export default function App() {  useEffect(() => {
           <div className="team-member-div">
             <img src={KieraImage} alt="Kiera Langridge" loading="lazy" />
             <h2>Kiera Langridge</h2>
-            <p><a href="mailto:kiera.langridge@gmail.com">kiera.langridge@gmail.com</a></p>
+            <div className="team-socials">
+              <a href="mailto:kiera.langridge@gmail.com" aria-label="Email" target="_blank" rel="noreferrer"><FaEnvelope /></a>
+              <a href="https://www.instagram.com/k.kindatiredtvt/" aria-label="Instagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
+              <a href="https://www.linkedin.com/in/kiera-langridge-459098322/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+              {/* <a href="https://github.com/KieraLangridge" aria-label="Github" target="_blank" rel="noreferrer"><FaGithub /></a> */}
+            </div>
             <p>
               I’m a 16 year old student from Baradene College helping out with outreach and branding. 
               I’m passionate about learning, writing, and coding awesome projects. 
