@@ -42,8 +42,8 @@
           "jobTitle": "Organiser",
           "image": "https://kiwihacks.org/team/kyle.jpg",
           "sameAs": [
-            "https://github.com/Dekoder-py",
-            "https://linkedin.com/in/kyle-b-134a48390"
+            "https://gitlab.com/dekoder-py",
+            "https://www.linkedin.com/in/kyle-b-134a48390"
           ]
         },
         {
@@ -52,7 +52,7 @@
           "jobTitle": "Organiser",
           "image": "https://kiwihacks.org/team/josh.jpg",
           "sameAs": [
-            "https://github.com/heycastawhat",
+            "https://gitlab.com/castawhat",
             "https://www.linkedin.com/in/josh-palmer-b9942237b/"
           ]
         },
