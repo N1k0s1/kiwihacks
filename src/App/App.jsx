@@ -221,10 +221,10 @@ export default function App() {
 
         <div className="faq-box">
           <h2 className="mono faq-question">
-            I'm not a good coder. Can I come?
+            I’m not a good coder. Can I come?
           </h2>
           <p className="faq-answer">
-            Absolutely &mdash; KiwiHacks is for creatives of all skill levels! We'll
+            Absolutely &mdash; KiwiHacks is for creatives of all skill levels! We’ll
             have workshops for beginners on how to code the basics, and everyone
             will finish a project.
           </p>
@@ -236,8 +236,8 @@ export default function App() {
           <p className="faq-answer">
             Bring your laptop, charger, toiletries and sleeping bag (if you plan
             to stay overnight), and an open mind! If you plan to work on a
-            hardware project, bring the tools you'll need. We'll have limited
-            tools, a 3D printer & soldering station available. We'll provide
+            hardware project, bring the tools you’ll need. We’ll have limited
+            tools, a 3D printer & soldering station available. We’ll provide
             food, drinks, and snacks throughout the event.
           </p>
         </div>
@@ -261,7 +261,7 @@ export default function App() {
           <h2 className="mono faq-question">What can I make at KiwiHacks?</h2>
           <p className="faq-answer">
             Anything you want! You can build a website, app, game, robot, or
-            anything else you can dream up. We'll have a bunch of resources and
+            anything else you can dream up. We’ll have a bunch of resources and
             mentors to help you out!
           </p>
         </div>
@@ -278,7 +278,7 @@ export default function App() {
             >
               parents guide
             </a>
-            . If your parents have any questions or concerns, we're here to help
+            . If your parents have any questions or concerns, we’re here to help
             - please have them reach out to us at{" "}
             <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>!
           </p>
@@ -347,12 +347,12 @@ export default function App() {
         </p>
         <br />
         <p className="sponsor-text">
-          If you're interested in making the hackathon better by sponsoring
+          If you’re interested in making the hackathon better by sponsoring
           KiwiHacks, please reach out to{" "}
           <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>.
         </p>
         <br />
-        <p className="sponsor-text">We're really grateful for your support.</p>
+        <p className="sponsor-text">We’re really grateful for your support.</p>
       </section>
 
       <section id="team">
@@ -369,7 +369,7 @@ export default function App() {
               <a href="https://github.com/N1k0s1" aria-label="Github" target="_blank" rel="noreferrer"><FaGithub /></a>
             </div>
             <p>
-              I'm a 17 year old coder from Sacred Heart College and the lead
+              I’m a 17 year old coder from Sacred Heart College and the lead
               organiser of KiwiHacks. This is the fourth hackathon I’ve
               organized for students in Auckland! I’m passionate about both
               sailing and coding, and I’m super excited to help create an
@@ -405,7 +405,7 @@ export default function App() {
             </div>
             <p>
               I’m a 14 year old scout from Selwyn College leading outreach +
-              helping out the website. I'm passionate about coding & learning. I
+              helping out the website. I’m passionate about coding & learning. I
               love the thrill of getting a project finally working & I’m super
               excited to see what people create at KiwiHacks!
             </p>
@@ -453,8 +453,8 @@ export default function App() {
               <a href="https://github.com/Christie125" aria-label="Github" target="_blank" rel="noreferrer"><FaGithub /></a>
             </div>
             <p>
-              I’m a Year 11 Glendowie College student helping with the website, outreach, and marketing, among other things &mdash; I have my eggs in a lot of baskets! <br />
-              Outside of coding, I enjoy playing the piano, baking, and learning new things. I'm also super passionate about supporting my community, and lead several school clubs. <br />
+              I’m a Year 11 Glendowie College student helping with outreach and marketing, among other things. Outside of coding, 
+              I enjoy playing the piano, baking, learning new things, and leading several school clubs. 
               I’m really excited to make KiwiHacks New Zealand’s BEST hackathon!
             </p>
           </div>
