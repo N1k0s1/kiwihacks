@@ -26,7 +26,7 @@ import TapeImage from "../assets/tape.png";
 import sponsorsData from "./sponsors.json";
 // Automatically import all logos in the Sponsors directory
 const sponsorLogos = import.meta.glob("../assets/Sponsors/*", { import: "default", eager: true });
-import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope, FaPhoneFlip, FaDiscord } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope, FaPhoneFlip, FaDiscord, FaGitlab } from "react-icons/fa6";
 
 //React being react
 import { useEffect } from "react";
@@ -402,6 +402,7 @@ export default function App() {
               <a href="mailto:josh@kiwihacks.org" aria-label="Email" target="_blank" rel="noreferrer"><FaEnvelope /></a>
               <a href="https://www.linkedin.com/in/josh-palmer-b9942237b/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedin /></a>
               <a href="https://github.com/heycastawhat" aria-label="Github" target="_blank" rel="noreferrer"><FaGithub /></a>
+              <a href="https://gitlab.com/castawhat" aria-label="GitLab" target="_blank" rel="noreferrer"><FaGitlab /></a>
             </div>
             <p>
               I’m a 14 year old scout from Selwyn College leading outreach +
@@ -435,6 +436,7 @@ export default function App() {
               <a href="mailto:kyle@kiwihacks.org" aria-label="Email" target="_blank" rel="noreferrer"><FaEnvelope /></a>
               <a href="https://linkedin.com/in/kyle-b-134a48390" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedin /></a>
               <a href="https://github.com/Dekoder-py" aria-label="Github" target="_blank" rel="noreferrer"><FaGithub /></a>
+              <a href="https://gitlab.com/dekoder-py" aria-label="GitLab" target="_blank" rel="noreferrer"><FaGitlab /></a>
             </div>
             <p>
               I’m a 16 year old coder from Marcellin College leading website
