@@ -305,6 +305,7 @@ export default function AnnouncementVideoPlayer({
 				playsInline
 				loop={loop}
 				preload="metadata"
+				onClick={togglePlayback}
 			/>
 
 			<div

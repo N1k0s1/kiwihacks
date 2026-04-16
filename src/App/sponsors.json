@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Hack Club",
+    "url": "https://hackclub.com",
+    "logo": "hackclub-logo.svg",
+    "alt": "Hack Club Flag Logo"
+  },
+  {
+    "name": ".xyz domains",
+    "url": "https://gen.xyz/",
+    "logo": "xyz-white-logo.svg",
+    "alt": ".xyz domains Logo"
+  },
+  {
+    "name": "Extraordinary Pay",
+    "url": "https://www.extraordinarypay.com/",
+    "logo": "extraordinary-logo.svg",
+    "alt": "Extraordinary Pay Logo"
+  },
+  {
+    "name": "Canva",
+    "url": "https://www.canva.com/",
+    "logo": "canva-logo.svg",
+    "alt": "Canva Logo"
+  },
+  {
+    "name": "ElevenLabs",
+    "url": "https://elevenlabs.io/",
+    "logo": "elevenlabs-logo-black.svg",
+    "alt": "ElevenLabs Logo"
+  }
+]

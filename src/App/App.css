@@ -206,7 +206,7 @@ p {
   padding: 1rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  background: rgba(118, 176, 112, 0.5);
+  background: rgba(176, 203, 169, 1);
   width: 80%;
   text-align: center;
   margin: auto;
@@ -239,7 +239,7 @@ p {
   padding-top: 4rem;
   padding-bottom: 4rem;
   margin-top: 2rem;
-  background-color: rgba(118, 176, 112, 0.15);
+  background-color: #76b07026;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -696,6 +696,7 @@ footer {
   -webkit-user-drag: none;
   user-select: none;
   transition: transform 0.2s ease;
+  z-index: -1;
 }
 
 .small-decorative-image:hover {
@@ -761,7 +762,7 @@ footer {
   transform: rotate(-80deg);
 }
 
-.stars:hover {
+.stars.star-hovered {
   transform: scale(1.1);
 }
 
@@ -770,6 +771,29 @@ footer {
   background: var(--semi-opaque-green);
   width: 100%;
   max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-socials {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-socials a {
+  color: black;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.team-socials a:hover {
+  color: var(--bright-blue, #36c6fb);
+  transform: translateY(-3px);
 }
 
 .team-member-div p {
