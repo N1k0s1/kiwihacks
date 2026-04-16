@@ -270,7 +270,7 @@ export default function App() {  useEffect(() => {
         </div>
       </section>
 
-      <section id="sponsorships" className="sponsorships">
+      <section id="partners" className="partners-section">
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
@@ -288,80 +288,80 @@ export default function App() {  useEffect(() => {
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <h1>Sponsors</h1>
+        <h1>Partners</h1>
 
-        <p className="sponsor-text">A HUGE thank you to our sponsors!</p>
+        <p className="partner-text">A HUGE thank you to our partners!</p>
 
-        <div className="sponsors">
+        <div className="partners-grid">
           <a 
-              className="sponsor-link" 
+              className="partner-item" 
               href="https://hackclub.com" 
               target="_blank" 
               rel="noreferrer"
             >
-            <div className="sponsor">
-              <img className="sponsor-img" src={HackClubLogo} alt="Hack Club Flag Logo" loading="lazy" draggable="false" />
+            <div className="partner-card">
+              <img className="partner-logo" src={HackClubLogo} alt="Hack Club Flag Logo" loading="lazy" draggable="false" />
             </div>
           </a>
 
           <a 
-              className="sponsor-link" 
+              className="partner-item" 
               href="https://gen.xyz/" 
               target="_blank" 
               rel="noreferrer"
             >
-            <div className="sponsor">
-              <img className="sponsor-img" src={xyzLogo} alt=".xyz domains Logo" loading="lazy" draggable="false" />
+            <div className="partner-card">
+              <img className="partner-logo" src={xyzLogo} alt=".xyz domains Logo" loading="lazy" draggable="false" />
             </div>
           </a>
 
           <a
-              className="sponsor-link"
+              className="partner-item"
               href="https://www.extraordinarypay.com/"
               target="_blank"
               rel="noreferrer"
             >
-            <div className="sponsor">
-              <img className="sponsor-img" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" draggable="false" />
+            <div className="partner-card">
+              <img className="partner-logo" src={ExtraordinaryLogo} alt="Extraordinary Pay Logo" loading="lazy" draggable="false" />
             </div>
           </a>
 
           <a
-              className="sponsor-link"
+              className="partner-item"
               href="https://www.canva.com/"
               target="_blank"
               rel="noreferrer"
             >
-            <div className="sponsor">
-              <img className="sponsor-img" src={CanvaLogo} alt="Canva Logo" loading="lazy" draggable="false" />
+            <div className="partner-card">
+              <img className="partner-logo" src={CanvaLogo} alt="Canva Logo" loading="lazy" draggable="false" />
             </div>
           </a>
 
           <a
-              className="sponsor-link"
+              className="partner-item"
               href="https://elevenlabs.io/"
               target="_blank"
               rel="noreferrer"
             >
-            <div className="sponsor">
-              <img className="sponsor-img" src={ElevenLabsLogo} alt="ElevenLabs Logo" loading="lazy" draggable="false" />
+            <div className="partner-card">
+              <img className="partner-logo" src={ElevenLabsLogo} alt="ElevenLabs Logo" loading="lazy" draggable="false" />
             </div>
           </a>
         </div>
 
-        <p className="sponsor-text">
+        <p className="partner-text">
           {" "}
-          By becoming a sponsor, you support the next generation of innovators
+          By becoming a partner, you support the next generation of innovators
           and gain visibility for your brand within the tech community.
         </p>
         <br />
-        <p className="sponsor-text">
-          If you're interested in making the hackathon better by sponsoring
-          KiwiHacks, please reach out to{" "}
+        <p className="partner-text">
+          If you're interested in making the hackathon better by partnering
+          with KiwiHacks, please reach out to{" "}
           <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>.
         </p>
         <br />
-        <p className="sponsor-text">We're really grateful for your support.</p>
+        <p className="partner-text">We're really grateful for your support.</p>
       </section>
 
       <section id="team">
