@@ -5,7 +5,6 @@ import App from "./App/App.jsx";
 import DateChangePage from "./DateChangePage/DateChangePage.jsx";
 import NotFound from "./NotFound/NotFound.jsx";
 import CodeOfConduct from "./CodeOfConduct/CodeOfConduct.jsx";
-import TermsAndConditions from "./TermsAndConditions/TermsAndConditions.jsx";
 import ForkPreviewPage from "./ForkPreviewPage/ForkPreviewPage.jsx";
 import ParentsGuide from "./ParentsGuide/ParentsGuide.jsx";
 import AnnouncementVideoPage from "./Video/mobile/AnnouncementVideoPage.jsx";
