@@ -96,8 +96,6 @@ if (pathname === "/" || pathname === "") {
   PageComponent = EmptyPage;
 } else if (pathname === "/code-of-conduct" || pathname === "/coc" || pathname === "/codeofconduct" || pathname === "/conduct") {
   PageComponent = CodeOfConduct;
-} else if (pathname === "/terms-and-conditions" || pathname === "/tac" || pathname === "/termsandconditions" || pathname === "/terms" || pathname === "/conditions") {
-  PageComponent = TermsAndConditions;
 } else if (pathname === "/parents-guide" || pathname === "/parentsguide" || pathname === "/parents") {
   //PageComponent = ParentsGuide;
   window.location.replace("https://docs.google.com/document/d/14HMPfRkPQrFVf1E87cvsUqguILbtwoifEJ5hYUwhgRM/edit");

@@ -293,7 +293,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="sponsorships" className="sponsorships">
+      <section id="sponsorships" className="sponsorships" data-role="partners">
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
@@ -315,18 +315,18 @@ export default function App() {
 
         <p className="sponsor-text">A HUGE thank you to our sponsors!</p>
 
-        <div className="sponsors">
+        <div className="sponsors" data-role="partners">
           {sponsorsData.map((sponsor, idx) => {
             const logoSrc = sponsorLogos[`../assets/Sponsors/${sponsor.logo}`];
             return (
               <a
                 key={idx}
-                className="sponsor-link"
+                className="sponsor-link" data-role="partner-link"
                 href={sponsor.url}
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="sponsor">
+                <div className="sponsor" data-role="partner">
                   <img
                     className="sponsor-img"
                     src={logoSrc}
@@ -340,19 +340,21 @@ export default function App() {
           })}
         </div>
 
-        <p className="sponsor-text">
+        <p className="sponsor-text" data-role="partner-cta">
           {" "}
           By becoming a sponsor, you support the next generation of innovators
           and gain visibility for your brand within the tech community.
         </p>
         <br />
-        <p className="sponsor-text">
+        <p className="sponsor-text" data-role="partner-contact">
           If you’re interested in making the hackathon better by sponsoring
           KiwiHacks, please reach out to{" "}
           <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>.
         </p>
         <br />
-        <p className="sponsor-text">We’re really grateful for your support.</p>
+        <p className="sponsor-text" data-role="partner-thanks">
+          We’re really grateful for your support.
+        </p>
       </section>
 
       <section id="team">
