@@ -210,41 +210,43 @@ export default function App() {
         <img src={TapeImage} alt="" className="divider-tape" />
       </div>
 
-      <section id="merch" className="merch">
-        <div className="merch-copy">
-          <p className="merch-eyebrow mono">Free KiwiHacks merch</p>
-          <h2>Shirts for every attendee</h2>
-          <p className="merch-text">
-            Every hacker that ships a project gets a KiwiHacks tee, completely free! Here’s a
-            look at the front and back of this year’s shirt.
-          </p>
-        </div>
-        <div className="merch-gallery">
-          <figure className="merch-card">
-            <div className="merch-image-shell">
-              <img
-                className="merch-image"
-                src="/kiwihacks_shirt_front_cutout.png"
-                alt="Front of the KiwiHacks shirt"
-                loading="lazy"
-                draggable="false"
-              />
-            </div>
-            <figcaption className="mono">Front</figcaption>
-          </figure>
+      <section id="swag" className="merch">
+        <h1 className="mono section-heading">Swag</h1>
+        <div className="merch-content">
+          <div className="merch-copy">
+            <h3>Shirts for every attendee</h3>
+            <p className="merch-text">
+              Every hacker that ships a project gets a KiwiHacks tee, completely free! Here’s a
+              look at the front and back of this year’s shirt.
+            </p>
+          </div>
+          <div className="merch-gallery">
+            <figure className="merch-card">
+              <div className="merch-image-shell">
+                <img
+                  className="merch-image"
+                  src="/kiwihacks_shirt_front_cutout.png"
+                  alt="Front of the KiwiHacks shirt"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </div>
+              <figcaption className="mono">Front</figcaption>
+            </figure>
 
-          <figure className="merch-card">
-            <div className="merch-image-shell">
-              <img
-                className="merch-image"
-                src="/kiwihacks_shirt_back_cutout.png"
-                alt="Back of the KiwiHacks shirt"
-                loading="lazy"
-                draggable="false"
-              />
-            </div>
-            <figcaption className="mono">Back</figcaption>
-          </figure>
+            <figure className="merch-card">
+              <div className="merch-image-shell">
+                <img
+                  className="merch-image"
+                  src="/kiwihacks_shirt_back_cutout.png"
+                  alt="Back of the KiwiHacks shirt"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </div>
+              <figcaption className="mono">Back</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 

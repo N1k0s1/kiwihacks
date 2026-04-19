@@ -269,7 +269,7 @@ p {
   align-items: center;
   gap: 0;
   width: 100%;
-  padding: 0 0 0.75rem;
+  padding: 0 0 0.15rem;
   overflow: hidden;
   background: #76b07026;
 }
@@ -284,15 +284,31 @@ p {
 
 .merch {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.25rem 2rem 4rem;
+  background: #76b07026;
+}
+
+.merch-content {
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 4rem 2rem;
-  background: #76b07026;
+  width: min(100%, 80rem);
 }
 
 .merch-copy {
   width: min(30rem, 100%);
+}
+
+.section-heading {
+  width: min(100%, 80rem);
+  margin: 0 0 0.75rem;
+  color: var(--very-dark-green);
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 700;
 }
 
 .merch-eyebrow {
@@ -305,7 +321,7 @@ p {
   font-size: 0.95rem;
 }
 
-.merch-copy h2 {
+.merch-copy h3 {
   margin: 0;
   color: var(--very-dark-green);
   font-size: clamp(2rem, 3vw, 3rem);
@@ -1003,12 +1019,16 @@ footer {
   }
 
   .merch {
-    flex-direction: column;
-    padding: 2.5rem 1rem;
+    padding: 0.25rem 1rem 2.5rem;
   }
 
   .section-tape-divider {
     display: none;
+  }
+
+  .merch-content {
+    flex-direction: column;
+    width: 100%;
   }
 
   .merch-copy {
