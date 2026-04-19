@@ -263,6 +263,107 @@ p {
   box-shadow: var(--dark-green) 0px 4px 8px 0px;
 }
 
+.section-tape-divider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  padding: 0 0 0.75rem;
+  overflow: hidden;
+  background: #76b07026;
+}
+
+.divider-tape {
+  width: calc(100% / 17);
+  max-width: 7vw;
+  height: auto;
+  display: block;
+  flex: 0 0 auto;
+}
+
+.merch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: #76b07026;
+}
+
+.merch-copy {
+  width: min(30rem, 100%);
+}
+
+.merch-eyebrow {
+  width: 100%;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  color: var(--dark-green);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.95rem;
+}
+
+.merch-copy h2 {
+  margin: 0;
+  color: var(--very-dark-green);
+  font-size: clamp(2rem, 3vw, 3rem);
+  text-align: left;
+}
+
+.merch-text {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0 0;
+  font-size: 1.25rem;
+}
+
+.merch-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 1.5rem;
+  width: min(48rem, 100%);
+}
+
+.merch-card {
+  margin: 0;
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1.5px solid rgba(19, 47, 30, 0.12);
+  box-shadow: rgba(19, 47, 30, 0.12) 0px 10px 30px;
+  backdrop-filter: blur(8px);
+}
+
+.merch-image-shell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+}
+
+.merch-image {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 18px 22px rgba(19, 47, 30, 0.22));
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.merch-card figcaption {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--very-dark-green);
+  font-size: 0.95rem;
+}
+
 .faq-box {
   background: var(--bright-blue);
   border-radius: 15px;
@@ -899,6 +1000,37 @@ footer {
   .about-text {
     width: 100%;
     font-size: 1.2rem;
+  }
+
+  .merch {
+    flex-direction: column;
+    padding: 2.5rem 1rem;
+  }
+
+  .section-tape-divider {
+    display: none;
+  }
+
+  .merch-copy {
+    width: 90%;
+  }
+
+  .merch-text {
+    font-size: 1.1rem;
+  }
+
+  .merch-gallery {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .merch-card {
+    width: min(28rem, 100%);
+    margin: 0 auto;
+  }
+
+  .merch-image-shell {
+    min-height: 260px;
   }
 
   .example {

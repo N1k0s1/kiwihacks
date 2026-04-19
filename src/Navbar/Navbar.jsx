@@ -33,6 +33,7 @@ export default function Navbar() {
       <div className="nav-links" style={navLinksStyle}>
         <a href="../" className="nav-link" onClick={close}>Home</a>
         <a href="../#about" className="nav-link" onClick={close}>About</a>
+        <a href="../#merch" className="nav-link" onClick={close}>Merch</a>
         <a href="../#faq" className="nav-link" onClick={close}>FAQ</a>
         <a href="../#sponsorships" className="nav-link" onClick={close}>Sponsors</a>
         <a href="../#team" className="nav-link" onClick={close}>Meet The Team</a>
