@@ -348,20 +348,20 @@ p {
   font-size: 1.2rem;
 }
 
-.sponsorships {
+.partnerships {
   margin: auto;
   padding: 2rem;
   text-align: center;
   background-color: rgba(118, 176, 112, 0.15);
 }
 
-.sponsorships h1 {
+.partnerships h1 {
   margin: 0;
   padding: 0;
   padding-bottom: 1rem;
 }
 
-.sponsorships p {
+.partnerships p {
   margin: auto;
   margin-bottom: 0;
   margin-top: 0;
@@ -370,7 +370,7 @@ p {
   text-align: left;
 }
 
-.sponsors {
+.partners {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -380,7 +380,7 @@ p {
   padding: 2rem 0;
 }
 
-.sponsor {
+.partner {
   display: flex;
   flex-direction: column;
   background-color: rgba(118, 176, 112, 0.3);
@@ -396,17 +396,17 @@ p {
   flex: 0 0 auto;
 }
 
-.sponsor p {
+.partner p {
   text-align: center;
   width: 100%;
 }
 
-.sponsor-link {
+.partner-link {
   text-decoration: none;
   color: #132f1e;
 }
 
-.sponsor-img {
+.partner-img {
   max-width: 150px;
   max-height: 80px;
   height: auto;
@@ -417,14 +417,14 @@ p {
   user-select: none;
 }
 
-.sponsor:hover {
+.partner:hover {
   background-color: rgba(118, 176, 112, 0.5);
   box-shadow: rgba(46, 82, 43, 0.2) 0px 4px 12px 0px;
   transform: translateY(-2px);
   border-color: rgba(46, 82, 43, 0.3);
 }
 
-.sponsor:hover img {
+.partner:hover img {
   opacity: 1;
   transform: scale(1.05);
 }
@@ -861,7 +861,7 @@ footer {
   }
 
   /* Global Paragraphs */
-  p, .info, .cta p, .sponsorships p {
+  p, .info, .cta p, .partnerships p {
     width: 90% !important;
   }
 
@@ -1002,7 +1002,7 @@ footer {
     scale: none !important;
   }
 
-  .title:hover, .big-button:hover, .faq-box:hover, .sponsor:hover, .footer-link:hover, .signatures:hover, .example:hover, .date-change-chip:hover {
+  .title:hover, .big-button:hover, .faq-box:hover, .partner:hover, .footer-link:hover, .signatures:hover, .example:hover, .date-change-chip:hover {
     transform: none !important;
     scale: none !important;
   }
