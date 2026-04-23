@@ -28,5 +28,11 @@
     "url": "https://elevenlabs.io/",
     "logo": "elevenlabs-logo-black.svg",
     "alt": "ElevenLabs Logo"
+  },
+  {
+    "name": "Blackbird",
+    "url": "https://www.blackbird.vc/",
+    "logo": "blackbird-logo-black.png",
+    "alt": "Blackbird Logo"
   }
 ]
