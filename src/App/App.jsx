@@ -353,7 +353,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="sponsorships" className="sponsorships">
+      <section id="partnerships" className="partnerships" data-role="partners">
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
@@ -371,24 +371,24 @@ export default function App() {
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
         <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <h1>Sponsors</h1>
+        <h1>Partners</h1>
 
-        <p className="sponsor-text">A HUGE thank you to our sponsors!</p>
+        <p className="partner-text">A HUGE thank you to our partners!</p>
 
-        <div className="sponsors">
+        <div className="partners" data-role="partners">
           {sponsorsData.map((sponsor, idx) => {
             const logoSrc = sponsorLogos[`../assets/Sponsors/${sponsor.logo}`];
             return (
               <a
                 key={idx}
-                className="sponsor-link"
+                className="partner-link" data-role="partner-link"
                 href={sponsor.url}
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="sponsor">
+                <div className="partner" data-role="partner">
                   <img
-                    className="sponsor-img"
+                    className="partner-img"
                     src={logoSrc}
                     alt={sponsor.alt || `${sponsor.name} Logo`}
                     loading="lazy"
@@ -400,19 +400,21 @@ export default function App() {
           })}
         </div>
 
-        <p className="sponsor-text">
+        <p className="partner-text" data-role="partner-cta">
           {" "}
-          By becoming a sponsor, you support the next generation of innovators
+          By becoming a partner, you support the next generation of innovators
           and gain visibility for your brand within the tech community.
         </p>
         <br />
-        <p className="sponsor-text">
-          If you’re interested in making the hackathon better by sponsoring
+        <p className="partner-text" data-role="partner-contact">
+          If you’re interested in making the hackathon better by partnering with
           KiwiHacks, please reach out to{" "}
           <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a>.
         </p>
         <br />
-        <p className="sponsor-text">We’re really grateful for your support.</p>
+        <p className="partner-text" data-role="partner-thanks">
+          We’re really grateful for your support.
+        </p>
       </section>
 
       <section id="team">
