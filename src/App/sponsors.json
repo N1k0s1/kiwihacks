@@ -1,13 +1,13 @@
 [
   {
     "name": "Hack Club",
-    "url": "https://hackclub.com",
+    "url": "https://www.hackclub.com",
     "logo": "hackclub-logo.svg",
     "alt": "Hack Club Flag Logo"
   },
   {
     "name": ".xyz domains",
-    "url": "https://gen.xyz/",
+    "url": "https://www.gen.xyz/",
     "logo": "xyz-white-logo.svg",
     "alt": ".xyz domains Logo"
   },
@@ -25,14 +25,20 @@
   },
   {
     "name": "ElevenLabs",
-    "url": "https://elevenlabs.io/",
+    "url": "https://www.elevenlabs.io/",
     "logo": "elevenlabs-logo-black.svg",
     "alt": "ElevenLabs Logo"
   },
   {
-    "name": "Blackbird",
-    "url": "https://www.blackbird.vc/",
-    "logo": "blackbird-logo-black.png",
-    "alt": "Blackbird Logo"
+    "name": "Blackbird Foundation",
+    "url": "https://www.blackbird.foundation/",
+    "logo": "blackbird-foundation-logo.svg",
+    "alt": "Blackbird Foundation Logo"
+  },
+  {
+    "name": "Vercel",
+    "url": "https://www.vercel.com/",
+    "logo": "vercel-logotype-light.svg",
+    "alt": "Vercel Logo"
   }
 ]

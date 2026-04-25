@@ -22,6 +22,9 @@ import PolaroidImage1 from "../assets/polaroid1.png";
 import PolaroidImage2 from "../assets/polaroid2.png";
 import StarsImage from "../assets/stars.png";
 import TapeImage from "../assets/tape.png";
+// Other Images
+import Shirt_Front from "../assets/Swag/shirt-front.png";
+import Shirt_Back from "../assets/Swag/shirt-back.png";
 // Sponsors
 import sponsorsData from "./sponsors.json";
 // Automatically import all logos in the Sponsors directory
@@ -190,62 +193,21 @@ export default function App() {
         />
       </section>
 
-      <div className="section-tape-divider" aria-hidden="true">
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-        <img src={TapeImage} alt="" className="divider-tape" />
-      </div>
-
-      <section id="swag" className="merch">
-        <h1 className="mono section-heading">Swag</h1>
-        <div className="merch-content">
-          <div className="merch-copy">
-            <h3>Shirts for every attendee</h3>
-            <p className="merch-text">
-              Every hacker that ships a project gets a KiwiHacks tee, completely free! Here’s a
-              look at the front and back of this year’s shirt.
-            </p>
+      <section id="swag" className="swag-section">
+        <h1 className="mono">Free Swag!</h1>
+        <p className="swag-text">
+          Everyone who attends will get a free, limited-edition KiwiHacks T-shirt as well as other cool merch and stickers!
+        </p>
+        <div className="swag-container">
+          <div className="swag-box">
+            {/* Replace with your actual front T-shirt image import */}
+            <img src={Shirt_Front} alt="KiwiHacks T-shirt Front" loading="lazy" draggable="false" />
+            <p className="mono">Shirt Front</p>
           </div>
-          <div className="merch-gallery">
-            <figure className="merch-card">
-              <div className="merch-image-shell">
-                <img
-                  className="merch-image"
-                  src="/kiwihacks_shirt_front_cutout.png"
-                  alt="Front of the KiwiHacks shirt"
-                  loading="lazy"
-                  draggable="false"
-                />
-              </div>
-              <figcaption className="mono">Front</figcaption>
-            </figure>
-
-            <figure className="merch-card">
-              <div className="merch-image-shell">
-                <img
-                  className="merch-image"
-                  src="/kiwihacks_shirt_back_cutout.png"
-                  alt="Back of the KiwiHacks shirt"
-                  loading="lazy"
-                  draggable="false"
-                />
-              </div>
-              <figcaption className="mono">Back</figcaption>
-            </figure>
+          <div className="swag-box">
+            {/* Replace with your actual actual back T-shirt image import */}
+            <img src={Shirt_Back} alt="KiwiHacks T-shirt Back" loading="lazy" draggable="false" />
+            <p className="mono">Shirt Back</p>
           </div>
         </div>
       </section>
@@ -354,23 +316,11 @@ export default function App() {
       </section>
 
       <section id="partnerships" className="partnerships" data-role="partners">
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
-        <img src={TapeImage} alt="Tape" className="tape" aria-hidden="true" />
+        <div 
+          className="tape-divider-container" 
+          style={{ backgroundImage: `url(${TapeImage})` }} 
+          aria-hidden="true"
+        ></div>
         <h1>Partners</h1>
 
         <p className="partner-text">A HUGE thank you to our partners!</p>
