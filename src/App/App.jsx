@@ -210,6 +210,33 @@ export default function App() {
             <p className="mono">Shirt Back</p>
           </div>
         </div>
+    <br />
+        <h2 className="swag-text">
+          Placing Prizes
+        </h2>
+        <div className="swag-container">
+          <div className="swag-box">
+            <h3 className="mono">3rd Place</h3>
+            <p>Galaxy Projector, Gaming Mouse, Bluetooth Speaker!</p>
+          </div>
+          <div className="swag-box">
+            <h3 className="mono">2nd Place</h3>
+            <p>Gaming Headset, Active Smart Watch, Posca Paint Markers!</p>
+          </div>
+          <div className="swag-box">
+            <h3 className="mono">1st Place</h3>
+            <p>Noise-cancelling Earbuds, Instax Digital Camera, Drawing Tablet!</p>
+          </div>
+        </div>
+    <br />
+        <h2 className="swag-text">
+          Canva Design Award
+        </h2>
+        <div className="swag-container">
+          <div className="swag-box">
+            <p>A box of Canva merch!!</p>
+          </div>
+        </div>
       </section>
 
       <section id="faq">
