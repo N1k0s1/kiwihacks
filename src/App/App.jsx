@@ -216,16 +216,16 @@ export default function App() {
         </h2>
         <div className="swag-container">
           <div className="swag-box">
-            <h3 className="mono">3rd Place</h3>
-            <p>Galaxy Projector, Gaming Mouse, Bluetooth Speaker!</p>
+            <h3 className="mono">1st Place</h3>
+            <p>Noise-cancelling Earbuds, Instax Digital Camera, Drawing Tablet!</p>
           </div>
           <div className="swag-box">
             <h3 className="mono">2nd Place</h3>
             <p>Gaming Headset, Active Smart Watch, Posca Paint Markers!</p>
           </div>
           <div className="swag-box">
-            <h3 className="mono">1st Place</h3>
-            <p>Noise-cancelling Earbuds, Instax Digital Camera, Drawing Tablet!</p>
+            <h3 className="mono">3rd Place</h3>
+            <p>Galaxy Projector, Gaming Mouse, Bluetooth Speaker!</p>
           </div>
         </div>
     <br />
