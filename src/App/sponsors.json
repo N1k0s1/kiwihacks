@@ -29,4 +29,11 @@
     "logo": "elevenlabs-logo-black.svg",
     "alt": "ElevenLabs Logo"
   }
+  ,
+  {
+    "name": "Vercel",
+    "url": "https://vercel.com/",
+    "logo": "vercel-logo.svg",
+    "alt": "Vercel Logo"
+  }
 ]
