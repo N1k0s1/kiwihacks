@@ -81,9 +81,11 @@ const EmptyPage = () => null;
 if (pathname === "/" || pathname === "") {
   PageComponent = App;
 } else if (pathname === "/date-change") {
-  PageComponent = DateChangePage;
+  //PageComponent = DateChangePage;
+  PageComponent = NotFound;
 } else if (pathname === "/announcement" || pathname === "/announcement-video") {
-  PageComponent = AnnouncementVideoPage;
+  //PageComponent = AnnouncementVideoPage;
+  PageComponent = NotFound;
 } else if (pathname === "/discord" || pathname === "/chat" || pathname === "/community" || pathname === "/dc") {
   window.location.replace("https://discord.gg/SNdNUQ4Vp7");
   PageComponent = EmptyPage;
