@@ -1,21 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  useEffect(() => {
-    const onResize = () => setIsMobile(window.innerWidth <= 768);
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-  }, []);
 
   const toggle = () => setIsOpen((prev) => !prev);
   const close = () => setIsOpen(false);
-
-  // On mobile, only show nav-links when open. On desktop, always show.
-  const navLinksStyle = isMobile ? { display: isOpen ? "flex" : "none" } : {};
 
   return (
     <nav className="navbar">
@@ -30,7 +20,7 @@ export default function Navbar() {
         <span className="bar" />
       </button>
 
-      <div className="nav-links" style={navLinksStyle}>
+      <div className={`nav-links ${isOpen ? "open" : ""}`}>
         <a href="../" className="nav-link" onClick={close}>Home</a>
         <a href="../#about" className="nav-link" onClick={close}>About</a>
         <a href="../#swag" className="nav-link" onClick={close}>Swag</a>

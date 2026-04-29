@@ -902,7 +902,7 @@ export default function App() {
           <a href="../code-of-conduct">Code of Conduct</a>
         </div>
       </footer>
-      <AnnouncementVideoPlayer {...announcementVideoConfig} />
+      {/* <AnnouncementVideoPlayer {...announcementVideoConfig} /> */}
     </>
   );
 }
