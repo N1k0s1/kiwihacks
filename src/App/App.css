@@ -96,6 +96,7 @@ body {
   padding-left: 4rem;
   padding-right: 4rem;
   background: var(--medium-green);
+  border: 1.5px dashed var(--very-dark-green);
 }
 
 .calendar-button {
@@ -317,6 +318,155 @@ p {
   width: 100%;
 }
 
+.prizes-section {
+  padding: 4rem 2rem;
+  background: transparent;
+  color: var(--very-dark-green);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prizes-section h1 {
+  margin: 0 0 0.5rem 0;
+  color: var(--very-dark-green);
+  font-size: 2.5rem;
+}
+
+.prizes-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.prizes-container.podium-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 400px;
+  margin-top: 2rem;
+}
+
+.prize-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem 1.5rem;
+  width: clamp(250px, 30%, 300px);
+  border: 1.5px dashed var(--very-dark-green);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prize-medal {
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+.prize-card h3 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px dashed rgba(19, 47, 30, 0.2);
+  width: 100%;
+  text-align: center;
+}
+
+.prize-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.prize-list li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Podium Heights and Colors */
+.prize-card.gold {
+  transform: translateY(-40px);
+  z-index: 3;
+}
+
+.prize-card.gold:hover {
+  transform: translateY(-45px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.prize-card.gold h3 {
+  color: #c9a400;
+}
+
+.prize-card.silver {
+  transform: translateY(-20px);
+  z-index: 2;
+}
+
+.prize-card.silver:hover {
+  transform: translateY(-25px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.prize-card.silver h3 {
+  color: #929292;
+}
+
+.prize-card.bronze {
+  z-index: 1;
+}
+
+.prize-card.bronze:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.prize-card.bronze h3 {
+  color: #CD7F32;
+}
+
+@media (max-width: 768px) {
+  .prizes-container.podium-layout {
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: auto;
+  }
+  
+  .prize-card.gold, .prize-card.silver, .prize-card.bronze {
+    transform: none !important;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .prize-card.gold {
+    order: -1;
+  }
+
+  .prize-card.gold:hover, .prize-card.silver:hover, .prize-card.bronze:hover {
+    transform: translateY(-5px) !important;
+  }
+}
+
 .example {
   width: 35%;
   height: 35%;
@@ -327,6 +477,10 @@ p {
 .example:hover {
   transform: scale(1.02);
   box-shadow: var(--dark-green) 0px 4px 8px 0px;
+}
+
+.faq-section {
+  padding-top: 0.1rem;
 }
 
 .faq-box {

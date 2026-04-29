@@ -34,6 +34,7 @@ export default function Navbar() {
         <a href="../" className="nav-link" onClick={close}>Home</a>
         <a href="../#about" className="nav-link" onClick={close}>About</a>
         <a href="../#swag" className="nav-link" onClick={close}>Swag</a>
+        <a href="../#prizes" className="nav-link" onClick={close}>Prizes</a>
         <a href="../#faq" className="nav-link" onClick={close}>FAQ</a>
         <a href="../#partnerships" className="nav-link" onClick={close}>Partners</a>
         <a href="../#team" className="nav-link" onClick={close}>Meet The Team</a>

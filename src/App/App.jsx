@@ -32,6 +32,7 @@ const sponsorLogos = import.meta.glob("../assets/Sponsors/*", {
   import: "default",
   eager: true,
 });
+
 import {
   FaInstagram,
   FaLinkedin,
@@ -40,6 +41,8 @@ import {
   FaPhoneFlip,
   FaDiscord,
   FaGitlab,
+  FaTrophy,
+  FaMedal,
 } from "react-icons/fa6";
 
 //React being react
@@ -225,7 +228,7 @@ export default function App() {
         <div className="button-container">
           <a
             className="sign-up-link big-button"
-            href="https://forms.hackclub.com/kiwihacks"
+            href="./signup"
             target="_blank"
           >
             <b>Sign up for KiwiHacks!</b>
@@ -243,26 +246,20 @@ export default function App() {
           <div className="text">
             <h2>About KiwiHacks</h2>
             <p className="about-text">
-              KiwiHacks is a free 24-hour hackathon run by teenagers, for
-              teenagers. If you’re 18 or under, come along to meet new people,
-              learn new skills, and build something awesome together.
+              KiwiHacks is a free 24-hour hackathon for high school students 18 and under. 
+              It’s a chance to meet new people, learn some new skills, and build something 
+              you’re actually proud of, whether that’s an app, game, website, robot, or 
+              a chair that runs away from you.
             </p>
             <p className="about-text">
-              Held at the GridAKL / John Lysaght Building, KiwiHacks brings
-              together 100+ students for a full weekend of creating and
-              experimenting. You can build any coding or hardware project you
-              like - apps, games, websites, robots, or something totally
-              different.
+              It’s held at GridAKL in Auckland and brings together 100+ students for a full 
+              weekend of creating. We’ve got mentors around to help, plus beginner-friendly 
+              workshops if you’re just getting started. Food, drinks, T-shirts, and prizes 
+              are all included.
             </p>
             <p className="about-text">
-              Throughout the event there will be mentors and beginner-friendly
-              workshops to help you get started or solve problems along the way.
-              Food, snacks, and drinks are all provided for free, plus there are
-              free T-shirts, swag, and prizes for some of the best projects.
-            </p>
-            <p className="about-text">
-              It’s an unforgettable weekend of coding, creativity, and
-              collaboration, and all skill levels are welcome.
+              No matter your skill level, you’re welcome. Just sign up, show up, and give 
+              it a go.
             </p>
           </div>
           <img
@@ -301,28 +298,50 @@ export default function App() {
               <p className="mono">Shirt Back</p>
             </div>
           </div>
-          <br />
-          <h2 className="swag-text">Placing Prizes</h2>
-          <div className="swag-container">
-            <div className="swag-box">
-              <h3 className="mono">1st Place</h3>
-              <p>
-                Noise-cancelling Earbuds, Instax Digital Camera, Drawing Tablet!
-              </p>
-            </div>
-            <div className="swag-box">
-              <h3 className="mono">2nd Place</h3>
-              <p>Gaming Headset, Active Smart Watch, Posca Paint Markers!</p>
-            </div>
-            <div className="swag-box">
-              <h3 className="mono">3rd Place</h3>
-              <p>Galaxy Projector, Gaming Mouse, Bluetooth Speaker!</p>
-            </div>
-          </div>
-          <br />
         </section>
 
-        <section id="faq">
+        <section id="prizes" className="prizes-section">
+          <h1 className="mono">Placing Prizes</h1>
+          <p className="prizes-subtitle">Compete and win amazing gear for your setup!</p>
+          <div className="prizes-container podium-layout">
+            <div className="prize-card silver">
+              <div className="prize-medal"><FaMedal /></div>
+              <h3 className="mono">2nd Place</h3>
+              <ul className="prize-list">
+                <li>Gaming Headset</li>
+                <li>Active Smart Watch</li>
+                <li>Posca Paint Markers</li>
+              </ul>
+            </div>
+            
+            <div className="prize-card gold">
+              <div className="prize-medal"><FaTrophy /></div>
+              <h3 className="mono">1st Place</h3>
+              <ul className="prize-list">
+                <li>Noise-cancelling Earbuds</li>
+                <li>Instax Digital Camera</li>
+                <li>Drawing Tablet</li>
+              </ul>
+            </div>
+
+            <div className="prize-card bronze">
+              <div className="prize-medal"><FaMedal /></div>
+              <h3 className="mono">3rd Place</h3>
+              <ul className="prize-list">
+                <li>Galaxy Projector</li>
+                <li>Gaming Mouse</li>
+                <li>Bluetooth Speaker</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" className="faq-section" style={{ position: "relative" }}>
+          <div
+            className="tape-divider-container"
+            style={{ backgroundImage: `url(${TapeImage})` }}
+            aria-hidden="true"
+          ></div>
           <h1 className="mono">Event Info</h1>
           <div className="faq-box">
             <h2 className="mono faq-question">
@@ -808,7 +827,7 @@ export default function App() {
             Join us for an unforgettable weekend of coding, creativity, and fun.
           </p>
           <a
-            href="./signup"
+            href="../signup"
             className="sign-up-link last-button"
             target="_blank"
             rel="noreferrer"
@@ -846,7 +865,7 @@ export default function App() {
         </div>
         <div className="footer-links">
           <a
-            href="./discord"
+            href="../discord"
             target="_blank"
             className="footer-link"
             aria-label="Discord"
@@ -880,7 +899,7 @@ export default function App() {
         </div>
         <div className="footer-important-links">
           <p>Important Links</p>
-          <a href="/code-of-conduct">Code of Conduct</a>
+          <a href="../code-of-conduct">Code of Conduct</a>
         </div>
       </footer>
       <AnnouncementVideoPlayer {...announcementVideoConfig} />
