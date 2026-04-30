@@ -49,6 +49,42 @@ import {
 import { useEffect } from "react";
 
 export default function App() {
+  const inKindSponsorNames = new Set(["Canva", "ElevenLabs", ".xyz domains"]);
+  const inKindSponsors = sponsorsData.filter((sponsor) =>
+    inKindSponsorNames.has(sponsor.name)
+  );
+  const partnerSponsors = sponsorsData.filter(
+    (sponsor) => !inKindSponsorNames.has(sponsor.name)
+  );
+
+  const renderSponsorGrid = (sponsors, dataRole = "partners") => (
+    <div className="partners" data-role={dataRole}>
+      {sponsors.map((sponsor, idx) => {
+        const logoSrc = sponsorLogos[`../assets/Sponsors/${sponsor.logo}`];
+        return (
+          <a
+            key={`${sponsor.name}-${idx}`}
+            className="partner-link"
+            data-role="partner-link"
+            href={sponsor.url}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="partner" data-role="partner">
+              <img
+                className="partner-img"
+                src={logoSrc}
+                alt={sponsor.alt || `${sponsor.name} Logo`}
+                loading="lazy"
+                draggable="false"
+              />
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  );
+
   useEffect(() => {
     const handleMouseMove = (e) => {
       const stars = document.querySelectorAll(".stars");
@@ -456,33 +492,10 @@ export default function App() {
           <h1>Partners</h1>
 
           <p className="partner-text">A HUGE thank you to our partners!</p>
+          {renderSponsorGrid(partnerSponsors)}
 
-          <div className="partners" data-role="partners">
-            {sponsorsData.map((sponsor, idx) => {
-              const logoSrc =
-                sponsorLogos[`../assets/Sponsors/${sponsor.logo}`];
-              return (
-                <a
-                  key={idx}
-                  className="partner-link"
-                  data-role="partner-link"
-                  href={sponsor.url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="partner" data-role="partner">
-                    <img
-                      className="partner-img"
-                      src={logoSrc}
-                      alt={sponsor.alt || `${sponsor.name} Logo`}
-                      loading="lazy"
-                      draggable="false"
-                    />
-                  </div>
-                </a>
-              );
-            })}
-          </div>
+          <h2 className="partner-subheading mono">In-Kind Partners</h2>
+          {renderSponsorGrid(inKindSponsors, "in-kind-partners")}
 
           <p className="partner-text" data-role="partner-cta">
             {" "}
