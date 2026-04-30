@@ -1,33 +1,9 @@
 [
   {
-    "name": "Hack Club",
-    "url": "https://www.hackclub.com",
-    "logo": "hackclub-logo.svg",
-    "alt": "Hack Club Flag Logo"
-  },
-  {
-    "name": ".xyz domains",
-    "url": "https://www.gen.xyz/",
-    "logo": "xyz-white-logo.svg",
-    "alt": ".xyz domains Logo"
-  },
-  {
     "name": "Extraordinary Pay",
     "url": "https://www.extraordinarypay.com/",
     "logo": "extraordinary-logo.svg",
     "alt": "Extraordinary Pay Logo"
-  },
-  {
-    "name": "Canva",
-    "url": "https://www.canva.com/",
-    "logo": "canva-logo.svg",
-    "alt": "Canva Logo"
-  },
-  {
-    "name": "ElevenLabs",
-    "url": "https://www.elevenlabs.io/",
-    "logo": "elevenlabs-logo-black.svg",
-    "alt": "ElevenLabs Logo"
   },
   {
     "name": "Blackbird Foundation",
@@ -40,5 +16,41 @@
     "url": "https://www.vercel.com/",
     "logo": "vercel-logotype-light.svg",
     "alt": "Vercel Logo"
+  },
+  {
+    "name": "FireEyes",
+    "url": "https://fireeyes.xyx",
+    "logo": "fireeyes-logo.svg",
+    "alt": "FireEyes Logo"
+  },
+  {
+    "name": "Hack Club",
+    "url": "https://www.hackclub.com",
+    "logo": "hackclub-logo.svg",
+    "alt": "Hack Club Flag Logo"
+  },
+  {
+    "name": "ElevenLabs",
+    "url": "https://www.elevenlabs.io/",
+    "logo": "elevenlabs-logo-black.svg",
+    "alt": "ElevenLabs Logo"
+  },
+  {
+    "name": ".xyz domains",
+    "url": "https://www.gen.xyz/",
+    "logo": "xyz-white-logo.svg",
+    "alt": ".xyz domains Logo"
+  },
+  {
+    "name": "Canva",
+    "url": "https://www.canva.com/",
+    "logo": "canva-logo.svg",
+    "alt": "Canva Logo"
+  },
+  {
+    "name": "PhaseOneVentures",
+    "url": "https://www.phaseone.ventures/",
+    "logo": "phaseoneventures-logo.svg",
+    "alt": "Phase One Ventures Logo"
   }
 ]
