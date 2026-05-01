@@ -55,6 +55,9 @@ class SponsorApp(tk.Tk):
         self.entry_alt = ttk.Entry(self.form_frame)
         self.entry_alt.pack(fill=tk.X, pady=(0, 10))
 
+        self.var_inkind = tk.BooleanVar()
+        ttk.Checkbutton(self.form_frame, text="In-Kind Sponsor", variable=self.var_inkind).pack(anchor=tk.W, pady=(0, 10))
+
         ttk.Button(self.form_frame, text="Save", command=self.save_sponsor).pack(fill=tk.X, pady=10)
         
         self.current_index = None
@@ -107,6 +110,8 @@ class SponsorApp(tk.Tk):
         self.entry_alt.insert(0, sp.get('alt', ''))
         
         self.combo_logo.set(sp.get('logo', ''))
+        
+        self.var_inkind.set(sp.get('inKind', False))
 
     def clear_form(self):
         self.current_index = None
@@ -115,6 +120,7 @@ class SponsorApp(tk.Tk):
         self.entry_alt.delete(0, tk.END)
         if self.logos:
             self.combo_logo.current(0)
+        self.var_inkind.set(False)
         self.listbox.selection_clear(0, tk.END)
 
     def save_sponsor(self):
@@ -122,6 +128,7 @@ class SponsorApp(tk.Tk):
         url = self.entry_url.get().strip()
         logo = self.combo_logo.get().strip()
         alt = self.entry_alt.get().strip()
+        in_kind = self.var_inkind.get()
         
         if not name or not url or not logo:
             messagebox.showwarning("Validation Error", "Name, URL, and Logo are required.")
@@ -131,7 +138,8 @@ class SponsorApp(tk.Tk):
             "name": name,
             "url": url,
             "logo": logo,
-            "alt": alt
+            "alt": alt,
+            "inKind": in_kind
         }
 
         if self.current_index is not None:
