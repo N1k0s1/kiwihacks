@@ -126,7 +126,7 @@ export default function App() {
     };
   }, []);
 
-  const announcementVideoConfig = {
+  const ANNOUNCEMENT_VIDEO_CONFIG = {
     src: AnnouncementVideo,
     title: "Announcement",
     autoPlay: true,
