@@ -219,8 +219,7 @@ export default function Showcase() {
         ) : (
           <section className="showcase-empty-state">
             <h1 className="display">No projects yet</h1>
-            <p>Add projects from the admin page and they will appear here.</p>
-            <a href="/admin">Open admin</a>
+            <p>Projects will appear here after they are added to the showcase.</p>
           </section>
         )}
 
