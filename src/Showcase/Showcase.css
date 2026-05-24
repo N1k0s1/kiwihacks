@@ -116,10 +116,11 @@
   flex-direction: column;
   justify-content: center;
   min-width: 0;
+  max-width: 100%;
   background: #58c8eb;
   border: 4px dashed #000;
   color: #0d0d0d;
-  line-height: 1;
+  line-height: 0.98;
 }
 
 .showcase-award-large {
@@ -138,14 +139,17 @@
 }
 
 .showcase-award span {
-  font-size: clamp(2rem, 4vw, 3rem);
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: clamp(1.55rem, 3.2vw, 2.55rem);
   font-weight: 400;
 }
 
 .showcase-award small {
   margin-top: 0.2rem;
   font-size: clamp(0.78rem, 1.3vw, 1.05rem);
-  white-space: nowrap;
+  line-height: 1.15;
+  white-space: normal;
 }
 
 .showcase-project-actions {
