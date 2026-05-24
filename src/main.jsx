@@ -8,6 +8,9 @@ import CodeOfConduct from "./CodeOfConduct/CodeOfConduct.jsx";
 import ForkPreviewPage from "./ForkPreviewPage/ForkPreviewPage.jsx";
 import ParentsGuide from "./ParentsGuide/ParentsGuide.jsx";
 import AnnouncementVideoPage from "./Video/mobile/AnnouncementVideoPage.jsx";
+import Showcase from "./Showcase/Showcase.jsx";
+import AdminPage from "./Admin/AdminPage.jsx";
+import AppConvexProvider from "./ConvexProvider.jsx";
 import { seoHeadHtml } from "./SEO/seoConfig.js";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
@@ -76,7 +79,7 @@ applySeoSettings(isSeoEnabled);
 
 const pathname = window.location.pathname.toLowerCase();
 let PageComponent;
-const EmptyPage = () => null;
+const renderNothing = () => null;
 
 if (pathname === "/" || pathname === "") {
   PageComponent = App;
@@ -88,27 +91,33 @@ if (pathname === "/" || pathname === "") {
   PageComponent = NotFound;
 } else if (pathname === "/discord" || pathname === "/chat" || pathname === "/community" || pathname === "/dc") {
   window.location.replace("https://discord.gg/SNdNUQ4Vp7");
-  PageComponent = EmptyPage;
+  PageComponent = renderNothing;
 } else if (pathname === "/github" || pathname === "/code" || pathname === "/repo") {
   window.location.replace("https://github.com/N1k0s1/kiwihacks");
-  PageComponent = EmptyPage;
+  PageComponent = renderNothing;
 } else if (pathname === "/register" || pathname === "/countmein" || pathname === "/signup") {
   window.location.replace("https://forms.hackclub.com/kiwihacks");
-  PageComponent = EmptyPage;
+  PageComponent = renderNothing;
 } else if (pathname === "/code-of-conduct" || pathname === "/coc" || pathname === "/codeofconduct" || pathname === "/conduct") {
   PageComponent = CodeOfConduct;
+} else if (pathname === "/showcase" || pathname === "/projects") {
+  PageComponent = Showcase;
+} else if (pathname === "/admin" || pathname === "/showcase-admin") {
+  PageComponent = AdminPage;
 } else if (pathname === "/parents-guide" || pathname === "/parentsguide" || pathname === "/parents") {
   //PageComponent = ParentsGuide;
   window.location.replace("https://docs.google.com/document/d/14HMPfRkPQrFVf1E87cvsUqguILbtwoifEJ5hYUwhgRM/edit");
-  PageComponent = EmptyPage;
+  PageComponent = renderNothing;
 } else {
   PageComponent = NotFound;
 }
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <SpeedInsights /> {/*these get blocked by ad blockers, but they are still useful for development and for users who don't have ad blockers*/}
-    <Analytics /> {/*these get blocked by ad blockers, but they are still useful for development and for users who don't have ad blockers*/}
-    {isSeoEnabled ? <PageComponent /> : <ForkPreviewPage><PageComponent /></ForkPreviewPage>}
+    <AppConvexProvider>
+      <SpeedInsights /> {/*these get blocked by ad blockers, but they are still useful for development and for users who don't have ad blockers*/}
+      <Analytics /> {/*these get blocked by ad blockers, but they are still useful for development and for users who don't have ad blockers*/}
+      {isSeoEnabled ? <PageComponent /> : <ForkPreviewPage><PageComponent /></ForkPreviewPage>}
+    </AppConvexProvider>
   </StrictMode>,
 );
