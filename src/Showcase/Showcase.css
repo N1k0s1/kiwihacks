@@ -416,14 +416,30 @@
     font-size: 2.5rem;
   }
 
-  .showcase-project-actions,
-  .showcase-project-actions-compact {
-    grid-template-columns: 1fr;
-    flex-direction: column;
+  .showcase-project-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
   }
 
-  .showcase-award-small,
+  .showcase-project-actions a {
+    min-height: 46px;
+    padding: 0.45rem 0.55rem;
+    border-width: 3px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
   .showcase-project-actions-compact {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .showcase-project-actions-compact a {
+    min-height: 46px;
+    font-size: 0.95rem;
+  }
+
+  .showcase-award-small {
     flex-basis: auto;
     width: 100%;
   }
