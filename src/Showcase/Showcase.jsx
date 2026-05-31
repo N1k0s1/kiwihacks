@@ -2,7 +2,6 @@ import { useMemo, useState } from "react";
 import { useQuery } from "convex/react";
 import "./Showcase.css";
 import Navbar from "../Navbar/Navbar";
-import HackingImage from "../assets/003_hacking.jpg";
 import { api } from "../../convex/_generated/api";
 import { isConvexConfigured } from "../convexConfig";
 import {
@@ -12,89 +11,7 @@ import {
   FaCodeBranch,
 } from "react-icons/fa6";
 
-const projects = [
-  {
-    id: "campus-compass",
-    title: "Campus Compass",
-    team: "Maya R, Leo T, Amara S",
-    description:
-      "Campus Compass helps new students find rooms, workshops, mentors, and food during a busy event weekend.",
-    image: HackingImage,
-    event: "KiwiHacks '26",
-    place: "1st",
-    points: 30,
-    repoUrl: "https://github.com/KiwiHacksNZ",
-    demoUrl: "https://kiwihacks.org",
-    featured: true,
-  },
-  {
-    id: "sprout",
-    title: "Sprout",
-    team: "Eli W, Priya K, Noah M",
-    description:
-      "Sprout turns small environmental actions into team challenges with streaks, quick check-ins, and local impact stats.",
-    image: HackingImage,
-    event: "KiwiHacks '26",
-    place: "2nd",
-    points: 20,
-    repoUrl: "https://github.com/KiwiHacksNZ",
-    demoUrl: "https://kiwihacks.org",
-    featured: true,
-  },
-  {
-    id: "tiny-tutor",
-    title: "Tiny Tutor",
-    team: "James P, Tom W, Anduin A",
-    description:
-      "Tiny Tutor gives high schoolers fast practice questions, hints, and worked answers for topics they are stuck on.",
-    image: HackingImage,
-    event: "KiwiHacks '26",
-    place: "3rd",
-    points: 15,
-    repoUrl: "https://github.com/KiwiHacksNZ",
-    demoUrl: "https://kiwihacks.org",
-    featured: true,
-  },
-  {
-    id: "budget-buddy",
-    title: "Budget Buddy",
-    team: "Anika H, Sam C",
-    description:
-      "A friendly budgeting tool for students tracking savings goals, subscriptions, and weekly spending.",
-    image: HackingImage,
-    event: "KiwiHacks '26",
-    place: "Finalist",
-    points: 8,
-    repoUrl: "https://github.com/KiwiHacksNZ",
-    demoUrl: "https://kiwihacks.org",
-  },
-  {
-    id: "signal",
-    title: "Signal",
-    team: "Riley B, Zoe N, Finn L",
-    description:
-      "A lightweight emergency check-in board for clubs, camps, and school trips.",
-    image: HackingImage,
-    event: "KiwiHacks '26",
-    place: "Finalist",
-    points: 7,
-    repoUrl: "https://github.com/KiwiHacksNZ",
-    demoUrl: "https://kiwihacks.org",
-  },
-  {
-    id: "pixel-pantry",
-    title: "Pixel Pantry",
-    team: "Luca D, Hana P",
-    description:
-      "A recipe finder that suggests cheap meals from whatever ingredients students already have.",
-    image: HackingImage,
-    event: "KiwiHacks '26",
-    place: "Finalist",
-    points: 6,
-    repoUrl: "https://github.com/KiwiHacksNZ",
-    demoUrl: "https://kiwihacks.org",
-  },
-];
+const emptyProjects = [];
 
 function AwardPill({ project, variant = "large" }) {
   return (
@@ -127,11 +44,13 @@ function ProjectActions({ project, compact = false }) {
 }
 
 export default function Showcase() {
+  const convexReady = isConvexConfigured();
   const dbProjects = useQuery(
     api.projects.list,
-    isConvexConfigured() ? {} : "skip",
+    convexReady ? {} : "skip",
   );
-  const visibleProjects = dbProjects ?? projects;
+  const isLoadingProjects = convexReady && dbProjects === undefined;
+  const visibleProjects = dbProjects ?? emptyProjects;
   const featuredProjects = useMemo(
     () => {
       const featured = visibleProjects
@@ -163,7 +82,12 @@ export default function Showcase() {
       <Navbar />
 
       <main className="showcase-main">
-        {activeProject ? (
+        {isLoadingProjects ? (
+          <section className="showcase-loading-state" aria-live="polite">
+            <h1 className="display">Loading projects</h1>
+            <p>Fetching the latest showcase entries.</p>
+          </section>
+        ) : activeProject ? (
           <section className="showcase-hero-carousel" aria-label="Featured projects">
             {hasMultipleFeaturedProjects ? (
               <button
@@ -228,32 +152,34 @@ export default function Showcase() {
           </section>
         )}
 
-        <section className="showcase-projects-section">
-          <div className="showcase-project-grid">
-            {visibleProjects.map((project) => (
-              <article className="showcase-project-card" key={project._id || project.id}>
-                <img
-                  src={project.imageUrl || project.image}
-                  alt={`${project.title} project screenshot`}
-                  className="showcase-project-image"
-                  loading="lazy"
-                  draggable="false"
-                />
-                <div className="showcase-project-body">
-                  <h3>{project.title}</h3>
-                  <p className="showcase-project-team">{project.team}</p>
-                  <p className="showcase-project-description">
-                    {project.description}
-                  </p>
-                  <div className="showcase-project-card-footer">
-                    <ProjectActions project={project} compact />
-                    <AwardPill project={project} variant="small" />
+        {!isLoadingProjects && visibleProjects.length > 0 ? (
+          <section className="showcase-projects-section">
+            <div className="showcase-project-grid">
+              {visibleProjects.map((project) => (
+                <article className="showcase-project-card" key={project._id || project.id}>
+                  <img
+                    src={project.imageUrl || project.image}
+                    alt={`${project.title} project screenshot`}
+                    className="showcase-project-image"
+                    loading="lazy"
+                    draggable="false"
+                  />
+                  <div className="showcase-project-body">
+                    <h3>{project.title}</h3>
+                    <p className="showcase-project-team">{project.team}</p>
+                    <p className="showcase-project-description">
+                      {project.description}
+                    </p>
+                    <div className="showcase-project-card-footer">
+                      <ProjectActions project={project} compact />
+                      <AwardPill project={project} variant="small" />
+                    </div>
                   </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
+                </article>
+              ))}
+            </div>
+          </section>
+        ) : null}
       </main>
     </>
   );
