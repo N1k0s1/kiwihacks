@@ -39,7 +39,7 @@
 
 .showcase-featured-card {
   display: grid;
-  grid-template-columns: minmax(0, 2.05fr) minmax(300px, 0.72fr);
+  grid-template-columns: minmax(0, 1.45fr) minmax(400px, 0.95fr);
   gap: 1.4rem;
   align-items: stretch;
   min-height: 540px;
@@ -65,6 +65,7 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
+  max-width: 100%;
   padding: 0.4rem 0.2rem 0.2rem 0;
   text-align: left;
 }
@@ -83,11 +84,14 @@
 
 .showcase-featured-title {
   margin: 0;
+  max-width: 100%;
   color: #0d0d0d;
-  font-size: clamp(2.4rem, 4.2vw, 4.1rem);
+  overflow-wrap: anywhere;
+  font-size: clamp(2.15rem, 2.6vw, 3rem);
   font-weight: 400;
   line-height: 1.02;
   letter-spacing: 0;
+  word-break: break-word;
 }
 
 .showcase-project-team {
@@ -116,10 +120,11 @@
   flex-direction: column;
   justify-content: center;
   min-width: 0;
+  max-width: 100%;
   background: #58c8eb;
   border: 4px dashed #000;
   color: #0d0d0d;
-  line-height: 1;
+  line-height: 0.98;
 }
 
 .showcase-award-large {
@@ -138,14 +143,17 @@
 }
 
 .showcase-award span {
-  font-size: clamp(2rem, 4vw, 3rem);
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: clamp(1.55rem, 3.2vw, 2.55rem);
   font-weight: 400;
 }
 
 .showcase-award small {
   margin-top: 0.2rem;
   font-size: clamp(0.78rem, 1.3vw, 1.05rem);
-  white-space: nowrap;
+  line-height: 1.15;
+  white-space: normal;
 }
 
 .showcase-project-actions {
@@ -412,14 +420,30 @@
     font-size: 2.5rem;
   }
 
-  .showcase-project-actions,
-  .showcase-project-actions-compact {
-    grid-template-columns: 1fr;
-    flex-direction: column;
+  .showcase-project-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
   }
 
-  .showcase-award-small,
+  .showcase-project-actions a {
+    min-height: 46px;
+    padding: 0.45rem 0.55rem;
+    border-width: 3px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
   .showcase-project-actions-compact {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .showcase-project-actions-compact a {
+    min-height: 46px;
+    font-size: 0.95rem;
+  }
+
+  .showcase-award-small {
     flex-basis: auto;
     width: 100%;
   }

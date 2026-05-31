@@ -144,6 +144,7 @@ export default function Showcase() {
   const [activeFeaturedIndex, setActiveFeaturedIndex] = useState(0);
   const activeProject =
     featuredProjects[Math.min(activeFeaturedIndex, featuredProjects.length - 1)];
+  const hasMultipleFeaturedProjects = featuredProjects.length > 1;
 
   const showPreviousProject = () => {
     setActiveFeaturedIndex((index) =>
@@ -164,15 +165,16 @@ export default function Showcase() {
       <main className="showcase-main">
         {activeProject ? (
           <section className="showcase-hero-carousel" aria-label="Featured projects">
-            <button
-              className="showcase-carousel-arrow showcase-carousel-arrow-left"
-              type="button"
-              onClick={showPreviousProject}
-              aria-label="Previous featured project"
-              disabled={featuredProjects.length < 2}
-            >
-              <FaChevronLeft aria-hidden="true" />
-            </button>
+            {hasMultipleFeaturedProjects ? (
+              <button
+                className="showcase-carousel-arrow showcase-carousel-arrow-left"
+                type="button"
+                onClick={showPreviousProject}
+                aria-label="Previous featured project"
+              >
+                <FaChevronLeft aria-hidden="true" />
+              </button>
+            ) : null}
 
             <article className="showcase-featured-card">
               <img
@@ -194,27 +196,30 @@ export default function Showcase() {
               </div>
             </article>
 
-            <button
-              className="showcase-carousel-arrow showcase-carousel-arrow-right"
-              type="button"
-              onClick={showNextProject}
-              aria-label="Next featured project"
-              disabled={featuredProjects.length < 2}
-            >
-              <FaChevronRight aria-hidden="true" />
-            </button>
-
-            <div className="showcase-carousel-dots" aria-label="Featured project position">
-              {featuredProjects.map((project, index) => (
+            {hasMultipleFeaturedProjects ? (
+              <>
                 <button
-                  className={index === activeFeaturedIndex ? "active" : ""}
-                  key={project._id || project.id}
+                  className="showcase-carousel-arrow showcase-carousel-arrow-right"
                   type="button"
-                  onClick={() => setActiveFeaturedIndex(index)}
-                  aria-label={`Show ${project.title}`}
-                />
-              ))}
-            </div>
+                  onClick={showNextProject}
+                  aria-label="Next featured project"
+                >
+                  <FaChevronRight aria-hidden="true" />
+                </button>
+
+                <div className="showcase-carousel-dots" aria-label="Featured project position">
+                  {featuredProjects.map((project, index) => (
+                    <button
+                      className={index === activeFeaturedIndex ? "active" : ""}
+                      key={project._id || project.id}
+                      type="button"
+                      onClick={() => setActiveFeaturedIndex(index)}
+                      aria-label={`Show ${project.title}`}
+                    />
+                  ))}
+                </div>
+              </>
+            ) : null}
           </section>
         ) : (
           <section className="showcase-empty-state">
