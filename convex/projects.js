@@ -1,4 +1,5 @@
 import { v } from "convex/values";
+import { getAuthUserId } from "@convex-dev/auth/server";
 import { mutation, query } from "./_generated/server";
 
 const projectFields = {
@@ -15,23 +16,27 @@ const projectFields = {
   sortOrder: v.number(),
 };
 
-function getGitHubUsername(identity) {
-  const profileUsername = identity.preferredUsername || identity.nickname;
-  if (profileUsername) {
-    return profileUsername.toLowerCase();
+function getGitHubUsername(user) {
+  if (!user?.name || user.name.includes(" ")) {
+    return null;
   }
 
-  if (identity.name && !identity.name.includes(" ")) {
-    return identity.name.toLowerCase();
+  return user.name.toLowerCase();
+}
+
+async function getSignedInUser(ctx) {
+  const userId = await getAuthUserId(ctx);
+  if (!userId) {
+    return null;
   }
 
-  return null;
+  return await ctx.db.get(userId);
 }
 
 async function getAdmin(ctx) {
-  const identity = await ctx.auth.getUserIdentity();
-  if (!identity) {
-    return { isAdmin: false, identity: null };
+  const user = await getSignedInUser(ctx);
+  if (!user) {
+    return { isAdmin: false, user: null };
   }
 
   const allowedUsernames = (process.env.ADMIN_GITHUB_USERNAMES || "")
@@ -40,42 +45,42 @@ async function getAdmin(ctx) {
     .filter(Boolean);
 
   if (allowedUsernames.length === 0) {
-    return { isAdmin: true, identity };
+    return { isAdmin: true, user };
   }
 
-  const username = getGitHubUsername(identity);
+  const username = getGitHubUsername(user);
   return {
     isAdmin: Boolean(username && allowedUsernames.includes(username)),
-    identity,
+    user,
   };
 }
 
 async function requireAdmin(ctx) {
   const admin = await getAdmin(ctx);
-  if (!admin.identity) {
+  if (!admin.user) {
     throw new Error("Sign in with GitHub first.");
   }
   if (!admin.isAdmin) {
     throw new Error("You are not allowed to manage showcase projects.");
   }
-  return admin.identity;
+  return admin.user;
 }
 
 export const currentUser = query({
   args: {},
   handler: async (ctx) => {
     const admin = await getAdmin(ctx);
-    if (!admin.identity) {
+    if (!admin.user) {
       return { isAuthenticated: false, isAdmin: false };
     }
 
     return {
       isAuthenticated: true,
       isAdmin: admin.isAdmin,
-      name: admin.identity.name,
-      username: getGitHubUsername(admin.identity),
-      email: admin.identity.email,
-      pictureUrl: admin.identity.pictureUrl,
+      name: admin.user.name,
+      username: getGitHubUsername(admin.user),
+      email: admin.user.email,
+      pictureUrl: admin.user.image,
       unrestrictedDevMode: !(process.env.ADMIN_GITHUB_USERNAMES || "").trim(),
     };
   },
@@ -95,14 +100,15 @@ export const list = query({
 export const create = mutation({
   args: projectFields,
   handler: async (ctx, args) => {
-    const identity = await requireAdmin(ctx);
+    const user = await requireAdmin(ctx);
+    const username = getGitHubUsername(user) || user.email || user._id;
     const now = Date.now();
     return await ctx.db.insert("projects", {
       ...args,
       createdAt: now,
-      createdBy: getGitHubUsername(identity) || identity.subject,
+      createdBy: username,
       updatedAt: now,
-      updatedBy: getGitHubUsername(identity) || identity.subject,
+      updatedBy: username,
     });
   },
 });
@@ -113,12 +119,12 @@ export const update = mutation({
     ...projectFields,
   },
   handler: async (ctx, args) => {
-    const identity = await requireAdmin(ctx);
+    const user = await requireAdmin(ctx);
     const { id, ...patch } = args;
     await ctx.db.patch(id, {
       ...patch,
       updatedAt: Date.now(),
-      updatedBy: getGitHubUsername(identity) || identity.subject,
+      updatedBy: getGitHubUsername(user) || user.email || user._id,
     });
   },
 });
