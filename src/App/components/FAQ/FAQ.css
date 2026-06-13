@@ -1,0 +1,142 @@
+.faq-section {
+  padding-top: 0.1rem;
+}
+
+.faq-box {
+  background: var(--bright-blue);
+  border-radius: 15px;
+  width: 35%;
+  margin: 2rem;
+  padding: 1.5rem;
+  box-shadow: var(--very-dark-green) 0px 2px 4px 0px;
+  display: grid;
+  transition: box-shadow 0.3s ease, translate 2s ease-out, opacity 2.0s ease-out, scale 0.3s ease;
+  opacity: 0;
+  translate: -100% 0;
+}
+
+.faq-box.show {
+  opacity: 1;
+  filter: blur(0);
+  translate: 0 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-box {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.faq-box:hover {
+  box-shadow: var(--very-dark-green) 0px 6px 12px 0px;
+  scale: 1.02;
+}
+
+.faq-box:nth-child(2) {
+  margin-left: 20%;
+}
+
+.faq-box:nth-child(3) {
+  margin-left: 50%;
+}
+
+.faq-box:nth-child(4) {
+  margin-left: 40%;
+}
+
+.faq-box:nth-child(5) {
+  margin-left: 60%;
+}
+
+.faq-box:nth-child(6) {
+  margin-left: 40%;
+}
+
+.faq-box:nth-child(7) {
+  margin-left: 30%;
+}
+
+.faq-box:nth-child(8) {
+  margin-left: 10%;
+}
+
+.faq-box:nth-child(9) {
+  margin-left: 40%;
+}
+
+.faq-box:nth-child(10) {
+  margin-left: 50%;
+}
+
+.faq-question {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-answer {
+  width: 100% !important;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+  vertical-align: middle;
+  font-size: 1.2rem;
+}
+
+.tape-divider-container {
+  width: 100%;
+  height: 90px;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: -45px;
+  left: 0;
+  z-index: 10;
+}
+
+.small-decorative-image {
+  max-width: 10vw !important;
+  height: auto;
+  position: absolute;
+  border: 0.5px solid var(--very-dark-green);
+  box-shadow: var(--very-dark-green) 0px 1px 2px 0px;
+  margin: 0;
+  padding: 0;
+}
+
+.small-decorative-image:nth-child(1) {
+  left: 80% !important;
+  transform: rotate(-15deg);
+}
+
+.small-decorative-image:nth-child(2) {
+  left: 10% !important;
+  transform: rotate(25deg);
+}
+
+.small-decorative-image:hover {
+  box-shadow: var(--very-dark-green) 0px 4px 8px 0px;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .faq-box {
+    width: 90% !important;
+    margin: 1.5rem auto !important;
+    display: block;
+    opacity: 1 !important;
+    transform: none !important;
+    translate: none !important;
+    scale: none !important;
+    transition: none !important;
+  }
+
+  .tape-divider-container, .small-decorative-image {
+    display: none;
+  }
+}

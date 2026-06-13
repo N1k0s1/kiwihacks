@@ -1,0 +1,100 @@
+.kiwihacks-text {
+  width: 30%;
+  margin-top: 0;
+-webkit-user-drag: none;
+  user-select: none;
+}
+
+.subtitle {
+  font-weight: 400;
+  color: #132f1e;
+  margin: 0;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.stars {
+  max-width: 10vw !important;
+  height: auto;
+  position: absolute; 
+  margin: 0;
+  padding: 0;
+  -webkit-user-drag: none;
+  user-select: none;
+  transition: transform 0.2s ease;
+  z-index: -1;
+}
+
+.stars:nth-child(1) {
+  top: 15%;
+  left: 5%;
+  transform: rotate(-10deg);
+}
+
+.stars:nth-child(2) {
+  top: 35%;
+  right: 30%;
+  transform: rotate(15deg);
+  max-width: 12vw !important;
+}
+
+.stars:nth-child(3) {
+  top: 30%;
+  left: 20%;
+  transform: rotate(40deg);
+  max-width: 14vw !important;
+}
+
+.stars:nth-child(4) {
+  top: 11%;
+  right: 15%;
+  transform: rotate(-40deg);
+  max-width: 11vw !important;
+}
+
+.stars:nth-child(5) {
+  top: 53%;
+  left: 20%;
+  transform: rotate(-25deg);
+  max-width: 13vw !important;
+}
+
+.stars:nth-child(6) {
+  top: 30%;
+  right: 15%;
+  max-width: 12.5vw !important;
+}
+
+.stars:nth-child(7) {
+  top: 45%;
+  left: 5%;
+  transform: rotate(45deg);
+}
+
+.stars:nth-child(8) {
+  top: 51%;
+  right: 20%;
+  transform: rotate(75deg);
+}
+
+.stars:nth-child(9) {
+  top: 55%;
+  right: 3%;
+  transform: rotate(-80deg);
+}
+
+.stars.star-hovered {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .kiwihacks-text {
+    width: 80%;
+  }
+
+  .stars {
+    display: none;
+  }
+}

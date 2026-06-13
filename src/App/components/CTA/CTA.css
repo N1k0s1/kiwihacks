@@ -1,0 +1,59 @@
+.cta {
+  margin: auto;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  background-color: #baedff;
+}
+
+.cta p {
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  width: 60% !important;
+  text-align: center;
+}
+
+.last-button {
+  padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background: #36c6fbb2;
+  margin: 3rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.last-button:hover {
+  background: #36c6fbd8;
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.boldp {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: auto;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.lastp {
+  margin-bottom: 3rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .last-button {
+    width: 80%;
+    padding: 1rem;
+    display: block;
+    margin: 2rem auto;
+    box-sizing: border-box;
+  }
+}

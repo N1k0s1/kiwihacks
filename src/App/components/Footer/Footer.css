@@ -1,0 +1,138 @@
+footer {
+  color: #132f1e;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-text-piece {
+  padding: 0.2rem;
+  width: fit-content;
+  font-size: 1.2rem;
+}
+
+.footer-text-piece a {
+  color: inherit;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.footer-text-piece a:hover {
+  color: var(--bright-blue);
+}
+
+.footer-signature-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.signatures {
+  width: 100%;
+  max-width: 700px;
+  min-width: 200px;
+  height: auto;
+  border: 5px solid var(--medium-green);
+  box-shadow: var(--very-dark-green) 0px 1px 2px 0px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  -webkit-user-drag: none;
+  user-select: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.signatures:hover {
+  box-shadow: var(--very-dark-green) 0px 4px 8px 0px;
+  transform: scale(1.01);
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.footer-link {
+  color: #132f1e;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link:hover {
+  color: #36c6fb;
+  transform: translateY(-3px);
+}
+
+.footer-link svg {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-important-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.footer-important-links p {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.footer-important-links a {
+  color: inherit;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.footer-important-links a:hover {
+  color: var(--bright-blue);
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-signature-container {
+    margin-bottom: 0.5rem;
+  }
+
+  .signatures {
+    max-width: 320px;
+    min-width: 120px;
+  }
+
+  .footer-text-piece {
+    text-align: center;
+  }
+
+  .footer-text {
+    width: 100% !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
