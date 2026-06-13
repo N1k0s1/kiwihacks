@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'ABeeZee';
+  font-family: "ABeeZee";
   src: url("/font/ABeeZee.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   src: url("/fonts/SourceCodePro.ttf") format("truetype");
   font-display: swap;
 }
@@ -29,7 +29,9 @@ body {
   padding: 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -60,6 +62,12 @@ body {
   transform: scale(1.05);
 }
 
+.nova-sign-up-link {
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+}
+
 .sign-up-link {
   border-radius: 15px;
   color: var(--very-dark-green);
@@ -72,6 +80,14 @@ body {
   gap: 1.5rem;
   margin-bottom: 3rem;
   flex-wrap: wrap;
+}
+
+.nova-big-button {
+  padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background: #8b59a3;
+  border: 1.5px dashed #161e5a;
 }
 
 .big-button {
@@ -119,7 +135,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0.6rem;
-  background: linear-gradient(135deg, #89BD83, #6a9265);
+  background: linear-gradient(135deg, #89bd83, #6a9265);
   color: #fff;
   padding: 1.2rem 1.9rem;
   border-radius: 12px;
@@ -127,7 +143,9 @@ body {
   font-size: 1.05rem;
   width: fit-content;
   margin: 0.6rem auto 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   position: relative;
   z-index: 100;
   text-align: center;
@@ -195,7 +213,7 @@ p {
   .title {
     font-size: 3rem;
   }
-  
+
   h1 {
     font-size: 2.2rem;
   }
@@ -206,7 +224,9 @@ p {
   }
 
   /* Disable Animations & Transitions */
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     transition: none !important;
     animation: none !important;
     transform: none !important;
@@ -215,7 +235,8 @@ p {
     rotate: none !important;
   }
 
-  .title:hover, .big-button:hover {
+  .title:hover,
+  .big-button:hover {
     transform: none !important;
     translate: none !important;
     scale: none !important;
@@ -223,7 +244,10 @@ p {
   }
 
   /* Global Paragraphs */
-  p, .info, .cta p, .partnerships p {
+  p,
+  .info,
+  .cta p,
+  .partnerships p {
     width: 90% !important;
   }
 
@@ -260,13 +284,21 @@ p {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     transition: none !important;
     animation: none !important;
     scale: none !important;
   }
 
-  .title:hover, .big-button:hover, .partner:hover, .footer-link:hover, .signatures:hover, .example:hover, .date-change-chip:hover {
+  .title:hover,
+  .big-button:hover,
+  .partner:hover,
+  .footer-link:hover,
+  .signatures:hover,
+  .example:hover,
+  .date-change-chip:hover {
     transform: none !important;
     scale: none !important;
   }
