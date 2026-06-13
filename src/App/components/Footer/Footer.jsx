@@ -1,0 +1,80 @@
+import "./Footer.css";
+import SignatureImage from "../../../assets/signatures.png";
+import SignatureWideImage from "../../../assets/signatures-wide.png";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaGithub,
+  FaDiscord,
+} from "react-icons/fa6";
+
+export default function Footer() {
+  return (
+    <footer>
+      <div className="footer-signature-container">
+        <picture>
+          <source srcSet={SignatureWideImage} media="(min-width: 768px)" />
+          <img
+            src={SignatureImage}
+            alt="Signatures of the KiwiHacks team"
+            className="signatures"
+            draggable="false"
+          />
+        </picture>
+      </div>
+      <div className="footer-text">
+        <p className="footer-text-piece">© 2026 KiwiHacks</p>
+        <p className="footer-text-piece">
+          Built with ❤️ by teens, for teens.
+        </p>
+        <p className="footer-text-piece">
+          <a
+            href="https://github.com/N1k0s1/kiwihacks"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View our code on GitHub
+          </a>
+        </p>
+      </div>
+      <div className="footer-links">
+        <a
+          href="../discord"
+          target="_blank"
+          className="footer-link"
+          aria-label="Discord"
+        >
+          <FaDiscord />
+        </a>
+        <a
+          href="https://www.instagram.com/kiwihacks/"
+          target="_blank"
+          className="footer-link"
+          aria-label="Instagram"
+        >
+          <FaInstagram />
+        </a>
+        <a
+          href="https://nz.linkedin.com/company/kiwihacks"
+          target="_blank"
+          className="footer-link"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://github.com/orgs/KiwiHacksNZ"
+          target="_blank"
+          className="footer-link"
+          aria-label="GitHub"
+        >
+          <FaGithub />
+        </a>
+      </div>
+      <div className="footer-important-links">
+        <p>Important Links</p>
+        <a href="../code-of-conduct">Code of Conduct</a>
+      </div>
+    </footer>
+  );
+}
