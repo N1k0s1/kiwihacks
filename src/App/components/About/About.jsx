@@ -7,16 +7,14 @@ export default function About() {
       <div className="text">
         <h2>About KiwiHacks</h2>
         <p className="about-text">
-          KiwiHacks is a free 24-hour hackathon for high school students 18 and under. 
-          It's a chance to meet new people, learn some new skills, and build something 
+          KiwiHacks is New Zealand's first high school hackathon club, running hackathons for high school students 18 and under. 
+          Our events's are a chance to meet new people, learn some new skills, and build something 
           you're actually proud of, whether that's an app, game, website, robot, or 
           a chair that runs away from you.
         </p>
         <p className="about-text">
-          It's held at GridAKL in Auckland and brings together 100+ students for a full 
-          weekend of creating. We've got mentors around to help, plus beginner-friendly 
-          workshops if you're just getting started. Food, drinks, T-shirts, and prizes 
-          are all included.
+          KiwiHacks is run by high schoolers, for high schoolers, meaning every site (yes, even this one!), piece of art, event, and everything else was made by like-minded Kiwi high schoolers who are
+          building a comunity of like minded kiwi high schoolers through KiwiHacks!
         </p>
         <p className="about-text">
           No matter your skill level, you're welcome. Just sign up, show up, and give 

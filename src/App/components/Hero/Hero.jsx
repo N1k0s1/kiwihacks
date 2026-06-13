@@ -77,7 +77,7 @@ export default function Hero() {
         draggable="false"
       />
       <h2 className="mono subtitle">
-        Auckland's free 24hr hackathon for high schoolers
+        New Zealand's high school hackathon club
       </h2>
     </header>
   );

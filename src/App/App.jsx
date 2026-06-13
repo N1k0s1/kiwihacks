@@ -93,15 +93,13 @@ export default function App() {
       <main>
         <Hero />
 
-        <BasicInfo />
-
         <div className="button-container">
           <a
-            className="sign-up-link big-button"
-            href="./signup"
+            className="nova-sign-up-link nova-big-button"
+            href="https://nova.kiwihacks.org"
             target="_blank"
           >
-            <b>Sign up for KiwiHacks!</b>
+            <b>Explore KiwiHacks Nova!</b>
           </a>
           {/* <a
           className="sign-up-link calendar-button"
@@ -113,8 +111,6 @@ export default function App() {
         </div>
 
         <About />
-        <Swag />
-        <Prizes />
         <FAQ />
         <Partners />
         <Team />

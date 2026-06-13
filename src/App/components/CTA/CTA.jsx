@@ -5,15 +5,15 @@ export default function CTA() {
     <section id="cta" className="cta">
       <p className="boldp">What are you waiting for?</p>
       <p className="lastp">
-        Join us for an unforgettable weekend of coding, creativity, and fun.
+    Find out more about our biggest event yet!
       </p>
       <a
-        href="../signup"
-        className="sign-up-link last-button"
+        href="https://nova.kiwihacks.org"
+        className="nova-sign-up-link nova-last-button"
         target="_blank"
         rel="noreferrer"
       >
-        Sign up for KiwiHacks
+        Explore KiwiHacks Nova!
       </a>
     </section>
   );
