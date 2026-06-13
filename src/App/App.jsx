@@ -49,13 +49,8 @@ import {
 import { useEffect } from "react";
 
 export default function App() {
-  const inKindSponsorNames = new Set(["Canva", "ElevenLabs", ".xyz domains"]);
-  const inKindSponsors = sponsorsData.filter((sponsor) =>
-    inKindSponsorNames.has(sponsor.name)
-  );
-  const partnerSponsors = sponsorsData.filter(
-    (sponsor) => !inKindSponsorNames.has(sponsor.name)
-  );
+  const inKindSponsors = sponsorsData.filter((sponsor) => sponsor.inKind);
+  const partnerSponsors = sponsorsData.filter((sponsor) => !sponsor.inKind);
 
   const renderSponsorGrid = (sponsors, dataRole = "partners") => (
     <div className="partners" data-role={dataRole}>
@@ -491,7 +486,7 @@ export default function App() {
           ></div>
           <h1>Partners</h1>
 
-          <p className="partner-text">A HUGE thank you to our partners!</p>
+          <p className="partner-text partner-text-center">A HUGE thank you to our partners!</p>
           {renderSponsorGrid(partnerSponsors)}
 
           <h2 className="partner-subheading mono">In-Kind Partners</h2>

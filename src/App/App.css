@@ -597,6 +597,10 @@ p {
   text-align: left;
 }
 
+.partner-text-center {
+  text-align: center !important;
+}
+
 .partners {
   display: flex;
   flex-wrap: wrap;
