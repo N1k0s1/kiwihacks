@@ -9,7 +9,7 @@ export default function FAQ() {
         style={{ backgroundImage: `url(${TapeImage})` }}
         aria-hidden="true"
       ></div>
-      <h1 className="mono">Event Info</h1>
+      <h1 className="mono">FAQ</h1>
       <div className="faq-box">
         <h2 className="mono faq-question">What is KiwiHacks?</h2>
         <p className="faq-answer">
