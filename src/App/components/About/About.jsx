@@ -3,7 +3,7 @@ import Carousel from "../Carousel/Carousel";
 
 const photos = [
   { src: "/assets/gallery/DSCF3841.jpg", alt: "Students working together at a KiwiHacks event" },
-  { src: "/assets/gallery/DSCF4012.jpg", alt: "A hardware project taking shape on a workbench" },
+  { src: "/assets/gallery/kh26-group.jpg", alt: "Everyone at KiwiHacks 2026 together for the group photo" },
   { src: "/assets/gallery/DSCF2200.jpg", alt: "High schoolers deep in a project at KiwiHacks" },
   { src: "/assets/gallery/DSCF3768.jpg", alt: "Students showing off what they built" },
   { src: "/assets/gallery/DSCF3771.jpg", alt: "Soldering and tinkering at a KiwiHacks event" },
