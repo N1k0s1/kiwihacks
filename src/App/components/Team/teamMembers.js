@@ -46,7 +46,7 @@ export const teamMembers = [
       { type: "github", href: "https://github.com/Dekoder-py", label: "Kyle on GitHub" },
       { type: "gitlab", href: "https://gitlab.com/dekoder-py", label: "Kyle on GitLab" },
     ],
-    bio: "I'm a 16 year old coder from Marcellin College leading website building and helping with outreach. I'm passionate about coding and learning (and playing video games). I'm excited to help people create something cool at KiwiHacks!",
+    bio: "I'm a 17 year old coder from Marcellin College leading website building and helping with outreach. I'm passionate about coding and learning (and playing video games). I'm excited to help people create something cool at KiwiHacks!",
   },
   {
     name: "Christie Berenshteyn",
