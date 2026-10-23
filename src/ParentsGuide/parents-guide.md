@@ -73,7 +73,7 @@ Hey there\! I’m a 15 year old coder from Glendowie College, and the Art & Bran
 Mob: 027 248 1095  
 Email: [kyle@kiwihacks.org](mailto:kyle@kiwihacks.org)  
 About Me:  
-I’m a 16 year old coder from Marcellin College leading website building and helping with outreach. I’m passionate about coding and learning (and playing video games). I’m excited to help people create something cool at KiwiHacks\!
+I’m a 17 year old coder from Marcellin College leading website building and helping with outreach. I’m passionate about coding and learning (and playing video games). I’m excited to help people create something cool at KiwiHacks\!
 
 #### **Christie Berenshteyn** 
 
